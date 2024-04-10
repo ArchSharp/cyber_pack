@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import cyberpack from "../CyberPack/Jpgs/Cyberpack.png";
+import cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
 
 export const Header = () => {
   return (
