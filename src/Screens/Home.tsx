@@ -81,8 +81,10 @@ export const Home = () => {
 
           <img src={microsoft} alt="microsoft" className="" />
         </div>
-        <div className="w-[65vw]">
-          <div className="w-[90%] h-[65vh] ml-10 bg-main"></div>
+        <div className="w-[70vw]">
+          <div className="w-[80%] h-[70vh] ml-24 bg-main flex flex-col">
+            <div className="loader w-[20px] ml-auto mr-2 mt-2"></div>
+          </div>
         </div>
       </div>
     </div>
