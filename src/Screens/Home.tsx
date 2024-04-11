@@ -1,9 +1,27 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
+import cbp01 from "../Images/cbp01.jpg";
 
 export const Home = () => {
+  const [lslide, setLslide] = useState("cbp01");
+  const [lslide2, setLslide2] = useState("cbp03");
+  const [lslide3, setLslide3] = useState("cbp04");
+  const [lslide4, setLslide4] = useState("cbp05");
+
+  useEffect(() => {
+    const LSlide = setInterval(() => {
+      setLslide((prev) => (prev === "cbp02" ? "cbp01" : "cbp02"));
+      setLslide2((prev) => (prev === "cbp03" ? "cbp06" : "cbp03"));
+      setLslide3((prev) => (prev === "cbp04" ? "cbp07" : "cbp04"));
+      setLslide4((prev) => (prev === "cbp05" ? "cbp08" : "cbp05"));
+    }, 12000);
+    return () => {
+      clearInterval(LSlide);
+    };
+  }, []);
+
   return (
     <div>
       <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
@@ -82,8 +100,55 @@ export const Home = () => {
           <img src={microsoft} alt="microsoft" className="" />
         </div>
         <div className="w-[70vw]">
-          <div className="w-[80%] h-[70vh] ml-24 bg-main flex flex-col">
+          <div className="w-[56vw] h-[70vh] ml-24 bg-main flex flex-col top-display">
             <div className="loader w-[20px] ml-auto mr-2 mt-2"></div>
+            <div className="flex">
+              <div
+                className={`${lslide} mt-[17vh] bg-blue-400 h-[30vh] w-[300px] italic flex items-center justify-center`}
+              >
+                <div className="">
+                  <div className="text-md font-semibold text-white">
+                    CYBERPACK'S DEVELOPMENT
+                  </div>
+                  <div className="text-4xl font-bold text-white">
+                    CAPABILITIES
+                  </div>
+                </div>
+              </div>
+              <div className="ml-auto w-[28vw] overflow-hidden">
+                <div
+                  className={`${lslide2} flex w-[70%] items-center ml-[35%] mr-auto mt-14`}
+                >
+                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
+                  <div className="text-white ml-3">
+                    <div className=" font-bold text-3xl">21+</div>
+                    <div className=" font-medium text-sm">
+                      Development Frameworks
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className={`${lslide3} flex w-[70%] items-center ml-[35%] mr-auto my-16`}
+                >
+                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
+                  <div className="text-white ml-3">
+                    <div className=" font-bold text-3xl">600+</div>
+                    <div className=" font-medium text-sm">IT Professionals</div>
+                  </div>
+                </div>
+                <div
+                  className={`${lslide4} flex w-[70%] items-center ml-[35%] mr-auto`}
+                >
+                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
+                  <div className="text-white ml-3">
+                    <div className=" font-bold text-3xl">500+</div>
+                    <div className=" font-medium text-sm">
+                      Projects Completed
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

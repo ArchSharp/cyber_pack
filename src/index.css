@@ -73,6 +73,13 @@ code {
   background: #b0b0b0;
 }
 
+.top-display {
+  background-image: url("./Images/crypto-shield-2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 /* HTML: <div class="loader"></div> */
 .loader {
   /* width: 60px; */
@@ -88,7 +95,7 @@ code {
   inset: -6px;
   border-radius: 50%;
   border: 7px solid #514b82;
-  animation: l18 10s infinite linear;
+  animation: l18 8s infinite linear;
 }
 @keyframes l18 {
   0% {
@@ -105,5 +112,170 @@ code {
   }
   100% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.main-loader {
+  position: relative;
+  width: 20px; /* 100px */
+  height: 20px; /* 100px */
+}
+
+.main-loader:before,
+.main-loader:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.main-loader:after {
+  box-shadow: 0 2px 0 #ff3d00 inset;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cbp01 {
+  width: 300px;
+  animation: cbp01-slide-in 1s ease-in;
+  overflow: hidden;
+}
+
+.cbp02 {
+  width: 0px;
+  animation: cbp01-slide-out 1.5s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp01-slide-in {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 300px;
+  }
+}
+
+@keyframes cbp01-slide-out {
+  from {
+    width: 300px;
+  }
+
+  to {
+    width: 0px;
+  }
+}
+
+.cbp03 {
+  animation: cbp03-slide-in 1s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp03-slide-in {
+  from {
+    margin-left: 100%;
+    margin-right: 0px;
+  }
+
+  to {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+}
+
+.cbp04 {
+  animation: cbp04-slide-in 1.5s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp04-slide-in {
+  from {
+    margin-left: 100%;
+    margin-right: 0px;
+  }
+
+  to {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+}
+
+.cbp05 {
+  animation: cbp05-slide-in 2s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp05-slide-in {
+  from {
+    margin-left: 100%;
+    margin-right: 0px;
+  }
+
+  to {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+}
+
+.cbp06 {
+  margin-left: 100%;
+  animation: cbp06-slide-out 2s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp06-slide-out {
+  from {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+
+  to {
+    margin-left: 100%;
+    margin-right: 0px;
+  }
+}
+
+.cbp07 {
+  margin-left: 100%;
+  animation: cbp07-slide-out 1.5s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp07-slide-out {
+  from {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+
+  to {
+    margin-left: 100%;
+    margin-right: 0px;
+  }
+}
+
+.cbp08 {
+  margin-left: 100%;
+  animation: cbp08-slide-out 1s ease-in;
+  overflow: hidden;
+}
+
+@keyframes cbp08-slide-out {
+  from {
+    margin-left: 35%;
+    margin-right: auto;
+  }
+
+  to {
+    margin-left: 100%;
+    margin-right: 0px;
   }
 }
