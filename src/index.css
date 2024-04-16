@@ -303,3 +303,8 @@ code {
   background-attachment: fixed;
   opacity: 0.4;
 }
+
+.slider-news {
+  width: 21vw !important;
+  height: 480px !important;
+}

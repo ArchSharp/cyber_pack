@@ -1,3 +1,6 @@
+import Slider, { Settings } from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
@@ -6,6 +9,7 @@ import cbp01 from "../Images/cbp01.jpg";
 import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 import ceo from "../Images/ceo.png";
+import crypto from "../Images/crypto-shield.jpg";
 
 export const Home = () => {
   const [lslide, setLslide] = useState("cbp01");
@@ -24,6 +28,48 @@ export const Home = () => {
       clearInterval(LSlide);
     };
   }, []);
+
+  const settings: Settings = {
+    rtl: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          // arrows: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div>
@@ -408,12 +454,45 @@ export const Home = () => {
       </div>
 
       {/* News and Insight */}
-      <div className="flex items-center mt-24">
+      <div className="flex flex-col mt-24">
         <div className="w-fit ml-[5vw]">
           <div className="font-Cervanttis text-blue-500 text-5xl">
             News and insights
           </div>
           <hr className="ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
+        </div>
+
+        <div className="h-[500px] mt-10 mb-10 ml-[7.5vw] mr-[5vw]">
+          <Slider {...settings}>
+            {partners.map((image, index) => (
+              <div
+                key={index}
+                className="rounded-[30px] shadow-lg slider-news flex flex-col relative my-2"
+              >
+                <img
+                  src={crypto}
+                  alt={`Slide ${index + 1}`}
+                  className="rounded-t-[30px] w-full h-[180px]"
+                />
+                <div className="text-blue-800 font-bold px-4 py-2">
+                  THE IT TRENDS THAT MATTER IN 2024
+                </div>
+                <hr className="border-[1px] my-4 mx-2" />
+                <div className="text-sm text-slate-400 flex items-center pl-5">
+                  <div className="mr-3 size-3 bg-yellow-600 -skew-x-12"></div>
+                  Company Announcement
+                </div>
+                <div className="py-2 px-4 text-slate-700">
+                  Greetings and my very best wishes to you for 2024. This year,
+                  just as last, seems tobe on fast-forward....
+                </div>
+                <div className="pl-5 text-sm font-semibold flex items-center absolute bottom-5 hover:cursor-pointer">
+                  READ MORE
+                  <FaArrowCircleRight className="ml-3 text-2xl text-blue-700 hover:text-orange-500" />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
