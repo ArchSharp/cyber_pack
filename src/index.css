@@ -308,3 +308,13 @@ code {
   width: 21vw !important;
   height: 480px !important;
 }
+
+.connect-with-us {
+  background-image: url("./Images/crowd.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 700px;
+  opacity: 0.5;
+}

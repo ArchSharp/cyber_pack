@@ -495,6 +495,12 @@ export const Home = () => {
           </Slider>
         </div>
       </div>
+
+      <div className="connect-with-us mt-28 flex flex-col">
+        <div className=" font-Cervanttis text-blue-500 text-4xl font-bold mt-10 text-center">
+          Connect with CyberPack
+        </div>
+      </div>
     </div>
   );
 
