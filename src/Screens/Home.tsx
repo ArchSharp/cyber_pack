@@ -3,6 +3,9 @@ import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
+import programmer from "../Images/programmer.jpg";
+import { FaArrowCircleRight } from "react-icons/fa";
+import ceo from "../Images/ceo.png";
 
 export const Home = () => {
   const [lslide, setLslide] = useState("cbp01");
@@ -152,6 +155,288 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* our services */}
+
+      <div className="ml-[5vw] mt-16 mb-28 w-fit">
+        <div className=" font-Cervanttis text-blue-500 text-6xl">
+          Our Services
+        </div>
+        <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
+      </div>
+
+      <div className="mt-20 flex items-center">
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            Software <span className="ml-1 font-bold"> Engineering</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            With more than 24 years of success in custom (bespoke) software
+            development, DVT has the expertise, experience and scale to service
+            enterprise requirements in web and mobile applications. Whether your
+            requirement is to build a new application, enhance an existing
+            application or require support to maintain your current application,
+            we have the services you need in Microsoft .NET, JAVA and
+            open-source technology development stacks.
+          </div>
+          {ServicesComponent("CUSTOM SOFTWARE DEVELOPMENT", "#")}
+          {ServicesComponent("MOBILE APP DEVELOPMENT", "#")}
+          {ServicesComponent("MICROSOFT SERVICES", "#")}
+          {ServicesComponent("WEB APPLICATION SERVICES", "#")}
+        </div>
+        <div className="w-[26vw] h-[28vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* IT Staff augumentation */}
+      <div className="mt-20 mb-10 flex items-center">
+        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            IT Staff
+            <span className="ml-1 font-bold"> Augmentation</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            DVT solves your challenge to find scarce, high-performing IT staff
+            for your IT projects and capacity needs. We provide remote, hybrid
+            and on-site IT professionals to augment your team. Our capability to
+            rapidly fulfil your staff requirements based on our 600+ employees
+            and global presence means a solution to your on-hold projects, late
+            or delayed delivery and backlog of business requests.
+          </div>
+          {ServicesComponent("AGILE TECHNOLOGY TEAMS", "#")}
+          {ServicesComponent("STAFF AUGMENTATION", "#")}
+          {ServicesComponent("MICROSOFT", "#")}
+          {ServicesComponent("OPEN-SOURCE/JAVA", "#")}
+        </div>
+      </div>
+
+      {/* Data and Automation */}
+      <div className="mt-20 mb-10 flex items-center">
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            Data and
+            <span className="ml-1 font-bold">Automation</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            Transform your business decision-making, customer acquisition,
+            retention and service leveraging our expertise in data, analytics
+            and automation. Data, business intelligence, analytics and
+            automation are critical capabilities in the modern, digital
+            business. DVT enables your business to become data-driven, gain key
+            insights from analytics and benefit from efficiencies through
+            automation. Our comprehensive services in data, business
+            intelligence, analytics and automation are ready to service your
+            requirements and progress your digital business enablement maturity.
+          </div>
+          {ServicesComponent("BI & DATA ANALYTICS", "#")}
+          {ServicesComponent("ROBOTIC PROCESS AUTOMATION", "#")}
+          {ServicesComponent("AI SOLUTIONS", "#")}
+          {ServicesComponent("DATABRICKS SERVICES", "#")}
+        </div>
+
+        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* Digital Transformation */}
+      <div className="mt-20 mb-10 flex items-center">
+        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            Digital
+            <span className="ml-1 font-bold">Transformation</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            Digital transformation of business goes beyond the implementation of
+            technology to the adoption of processes, methodology and progression
+            of skills maturity that truly enable digital capability. Realise
+            your digital business aspirations with DVT’s services focused on
+            enterprise Agile transformation, business analysis, change
+            management and technology project delivery management. DVT partners
+            with our customers on their Agile journey to achieve greater success
+            in IT projects, faster delivery, improved quality and real ROI.
+          </div>
+          {ServicesComponent("BUSINESS ANALYSIS", "#")}
+          {ServicesComponent("CHANGE MANAGEMENT", "#")}
+          {ServicesComponent("DELIVERY MANAGEMENT", "#")}
+          {ServicesComponent("AGILE CONSULTING", "#")}
+        </div>
+      </div>
+
+      {/* Cloud Solutions */}
+      <div className="mt-20 mb-10 flex items-center">
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            Cloud
+            <span className="ml-1 font-bold">Solutions</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            Cloud adoption is a key enabler and critical success factor for
+            modern digital business. DVT provides expertise in Microsoft Azure,
+            AWS and Google Cloud to ensure your successful migration, adoption
+            and PAAS management on the world’s best cloud platforms. Realise the
+            real benefits of cloud adoption through our application
+            modernization and migration services. Scalable, reliable and secure
+            applications that are architected and developed to run in the cloud
+            as intended. DevSecOps implementation to optimize your development
+            process management.
+          </div>
+          {ServicesComponent("APPLICATION MODERNISATION", "#")}
+          {ServicesComponent("CLOUD APPLICATION SERVICES", "#")}
+          {ServicesComponent("DEVOPS CONSULTING", "#")}
+        </div>
+
+        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* Design Services */}
+      <div className="mt-20 mb-10 flex items-center">
+        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+
+        <div className="w-[55vw] ml-[5vw]">
+          <div className="text-4xl text-blue-600 flex items-center italic">
+            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
+            Design
+            <span className="ml-1 font-bold">Services</span>
+          </div>
+          <div className="pl-7 mt-5 text-slate-600 text-left">
+            With a keen eye for digital experience design and user interfaces,
+            we craft seamless digital experience solutions for your business,
+            marrying business goals with user needs. Great UX and UI are the
+            competitive edge in the modern digital business world. Your digital
+            channels have the functional capability. We make it an incredible
+            experience.
+          </div>
+          {ServicesComponent("UX REVIEW & ANALYSIS", "#")}
+          {ServicesComponent("UX DESIGN", "#")}
+          {ServicesComponent("UI DESIGN", "#")}
+          {ServicesComponent("OTHER DESIGN SERVICES", "#")}
+        </div>
+      </div>
+
+      {/* transparent background */}
+      <div className="glacier mb-16"></div>
+
+      {/* Meet our CEO */}
+      <div className="flex justify-center items-center">
+        <div className="size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
+          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
+        </div>
+        <div className="ml-8">
+          <div className="w-fit">
+            <div className="font-Cervanttis text-blue-500 text-5xl">
+              Meet our CEO
+            </div>
+            <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
+          </div>
+          <div className=" text-slate-600 w-[400px] my-7">
+            I have been passionate about software solutions since I wrote my
+            first software program on a ZX Spectrum in primary school! Leading a
+            team of IT professionals at DVT who share this passion, is immensely
+            rewarding and a great privilege.
+          </div>
+          <div className=" text-blue-700 font-bold">
+            Prof. OLAKUNLE IGBAROOLA
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center mt-36">
+        <div className="ml-8">
+          <div className="w-fit">
+            <div className="font-Cervanttis text-blue-500 text-5xl">
+              Meet our MD
+            </div>
+            <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
+          </div>
+          <div className=" text-slate-600 w-[400px] my-7">
+            At DVT, we are privileged to provide quality software development
+            services and solutions to our clients in Southern Africa, while also
+            contributing meaningfully to addressing the technology skills gap in
+            the region.
+          </div>
+          <div className=" text-blue-700 font-bold">
+            Prof. OLAKUNLE IGBAROOLA
+          </div>
+        </div>
+
+        <div className="size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
+          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
+        </div>
+      </div>
+
+      {/* News and Insight */}
+      <div className="flex items-center mt-24">
+        <div className="w-fit ml-[5vw]">
+          <div className="font-Cervanttis text-blue-500 text-5xl">
+            News and insights
+          </div>
+          <hr className="ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
+        </div>
+      </div>
     </div>
   );
+
+  function ServicesComponent(text: string, link: string) {
+    return (
+      <div className="border-b-[1px] border-slate-500 ml-7 mt-7 flex items-center">
+        <a
+          href={`https://${link}`}
+          target="_self"
+          className="italic font-semibold mb-3 text-slate-700 text-sm"
+        >
+          {text}
+        </a>
+        <a
+          href={`https://${link}`}
+          target="_self"
+          className="ml-auto mr-2 mb-2"
+        >
+          <FaArrowCircleRight className="text-blue-700" />
+        </a>
+      </div>
+    );
+  }
 };

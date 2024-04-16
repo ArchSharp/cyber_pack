@@ -7,7 +7,7 @@ module.exports = {
         main: "#1F456E",
         iconBg: "#52B2BF",
       },
-      fontFamily: { poppins: "PoppinsLight" },
+      fontFamily: { poppins: "PoppinsLight", Cervanttis: "Cervanttis" },
     },
   },
   plugins: [],
