@@ -315,6 +315,10 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 700px;
-  opacity: 0.5;
+  /* height: 700px; */
+  opacity: 1;
+}
+
+.option {
+  color: rgb(173, 175, 177) !important;
 }
