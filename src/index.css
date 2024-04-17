@@ -344,3 +344,35 @@ code {
     margin: 8px 1vw !important;
   }
 }
+
+.navbar1 {
+  width: 60vw;
+  animation: navbar1-slide-in 0.3s ease-in;
+  overflow: hidden;
+}
+
+.navbar2 {
+  width: 0vw;
+  animation: navbar2-slide-out 0.2s ease-in;
+  overflow: hidden;
+}
+
+@keyframes navbar1-slide-in {
+  from {
+    width: 0vw;
+  }
+
+  to {
+    width: 60vw;
+  }
+}
+
+@keyframes navbar2-slide-out {
+  from {
+    width: 60vw;
+  }
+
+  to {
+    width: 0vw;
+  }
+}

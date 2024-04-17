@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         main: "#1F456E",
+        navbar: "rgb(70,130,180)",
         iconBg: "#52B2BF",
         cbp01_blue: "rgba(0,191,255,0.5)",
       },
