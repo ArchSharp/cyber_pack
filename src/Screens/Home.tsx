@@ -799,9 +799,6 @@ export const Home = () => {
           </Slider>
         </div>
       </div>
-
-      {/* Footer */}
-      <div className="h-[85vh] bg-main"></div>
     </div>
   );
 
