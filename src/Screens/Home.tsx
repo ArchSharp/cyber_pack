@@ -42,7 +42,7 @@ export const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     pauseOnFocus: true,
     pauseOnHover: true,
@@ -53,10 +53,19 @@ export const Home = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 4,
           infinite: true,
           dots: true,
           arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 2,
+          // arrows: true,
         },
       },
       {
@@ -513,7 +522,7 @@ export const Home = () => {
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="size-72 md:size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
+        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
           <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
         <div className="ml-0 md:ml-8 mt-16 md:mt-0">
@@ -554,7 +563,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="size-72 md:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
+        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
           <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
       </div>
@@ -568,7 +577,7 @@ export const Home = () => {
           <hr className="ml-[40%] md:ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
         </div>
 
-        <div className="h-[520px] mt-10 mb-10 w-[98vw] md:w-[90vw] mx-auto">
+        <div className="h-[520px] mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[94vw] mx-auto">
           <Slider {...settings}>
             {partners.map((image, index) => (
               <div

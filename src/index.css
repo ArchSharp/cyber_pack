@@ -329,7 +329,15 @@ code {
   color: rgb(173, 175, 177) !important;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .slider-news {
+    width: 31vw !important;
+    height: 480px !important;
+    margin: 8px 1vw !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .slider-news {
     width: 21vw !important;
     height: 480px !important;
