@@ -305,8 +305,9 @@ code {
 }
 
 .slider-news {
-  width: 21vw !important;
+  width: 90vw !important;
   height: 480px !important;
+  margin: 8px 5vw !important;
 }
 
 .connect-with-us {
@@ -321,4 +322,12 @@ code {
 
 .option {
   color: rgb(173, 175, 177) !important;
+}
+
+@media screen and (min-width: 480px) {
+  .slider-news {
+    width: 21vw !important;
+    height: 480px !important;
+    margin: 8px 1vw !important;
+  }
 }

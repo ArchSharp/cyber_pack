@@ -8,7 +8,7 @@ import Error from "./Components/Error";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path={routes.homepage} index element={<Home />} />
         <Route path="*" element={<Error />}></Route>
