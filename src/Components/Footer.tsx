@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="h-[85vh] bg-main flex items-center lg:items-start lg:justify-center pt-[10vh] flex-col lg:flex-row">
+    <div className="h-fit bg-main flex items-center lg:items-start lg:justify-center pt-[10vh] flex-col lg:flex-row">
       <div className="flex items-start lg:w-[50vw]">
         <div className="w-[45vw] lg:w-[22vw]">
           <div className="text-orange-600 font-bold">
