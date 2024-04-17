@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaBars,
 } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoClose, IoSearch } from "react-icons/io5";
 import cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
@@ -45,8 +46,9 @@ export const Header = () => {
           <div className="mr-6 cursor-pointer">Careers</div>
           <div className="cursor-pointer">Contact Us</div>
         </div>
+        <FiSearch className="lg:hidden ml-auto mr-5 text-2xl" />
         <FaBars
-          className="lg:hidden ml-auto mr-5 text-3xl"
+          className="lg:hidden mr-5 text-2xl"
           onClick={() => setIsOpen(!isOpen)}
         />
         {/* {isOpen && ( */}

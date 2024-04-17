@@ -319,14 +319,14 @@ export const Home = () => {
 
       {/* our services */}
 
-      <div className="ml-[5vw] mt-16 mb-28 w-fit">
-        <div className=" font-Cervanttis text-blue-500 text-4xl md:text-6xl">
+      <div className="ml-[5vw] mt-8 md:mt-16 mb-10 md:mb-28 w-fit">
+        <div className="font-Cervanttis text-blue-500 text-4xl md:text-6xl">
           Our Services
         </div>
         <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
       </div>
 
-      <div className="mt-20 flex items-center">
+      <div className="mt-10 md:mt-20 flex flex-col md:flex-row items-center">
         <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
@@ -346,7 +346,8 @@ export const Home = () => {
           {ServicesComponent("MICROSOFT SERVICES", "#")}
           {ServicesComponent("WEB APPLICATION SERVICES", "#")}
         </div>
-        <div className="w-[26vw] h-[28vw] ml-[5vw] rounded-xl hidden md:block">
+
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -356,8 +357,8 @@ export const Home = () => {
       </div>
 
       {/* IT Staff augumentation */}
-      <div className="mt-20 mb-10 flex items-center">
-        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl hidden md:block">
+      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -387,7 +388,7 @@ export const Home = () => {
       </div>
 
       {/* Data and Automation */}
-      <div className="mt-20 mb-10 flex items-center">
+      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
         <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
@@ -411,7 +412,7 @@ export const Home = () => {
           {ServicesComponent("DATABRICKS SERVICES", "#")}
         </div>
 
-        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl hidden md:block">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -421,8 +422,8 @@ export const Home = () => {
       </div>
 
       {/* Digital Transformation */}
-      <div className="mt-20 mb-10 flex items-center">
-        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl hidden md:block">
+      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -454,7 +455,7 @@ export const Home = () => {
       </div>
 
       {/* Cloud Solutions */}
-      <div className="mt-20 mb-10 flex items-center">
+      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
         <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
@@ -477,7 +478,7 @@ export const Home = () => {
           {ServicesComponent("DEVOPS CONSULTING", "#")}
         </div>
 
-        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl hidden md:block">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -487,8 +488,8 @@ export const Home = () => {
       </div>
 
       {/* Design Services */}
-      <div className="mt-20 mb-10 flex items-center">
-        <div className="w-[26vw] h-[26vw] ml-[5vw] rounded-xl hidden md:block">
+      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
