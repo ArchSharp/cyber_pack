@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AppThunk } from "../../Store/store";
-import { axios /*axiosWithAuth*/ } from "../utils";
-import axiosWithAuth from "../utils";
-import { clearErrors, setError /*setSuccess*/ } from "../Error/errorSlice";
+// import { AppThunk } from "../../Store/store";
+// import { axios /*axiosWithAuth*/ } from "../utils";
+// import axiosWithAuth from "../utils";
+// import { clearErrors, setError /*setSuccess*/ } from "../Error/errorSlice";
 
 const initialState: any = {
   isLoading: false,
@@ -26,7 +26,7 @@ const userSlice = createSlice({
   },
 });
 
-const BasePath = "TMS";
+// const BasePath = "TMS";
 
 // export const reset_password = (data: IResetPassword): AppThunk => {
 //   return async (dispatch) => {
