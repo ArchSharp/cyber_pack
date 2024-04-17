@@ -46,6 +46,8 @@
 
 :root {
   --tw-skew-x: 20;
+  --cbpo1-width: 30px;
+  --cbpo3-ml: 0%;
 }
 
 /* body {
@@ -153,7 +155,7 @@ code {
 }
 
 .cbp01 {
-  width: 300px;
+  width: var(--cbpo1-width);
   animation: cbp01-slide-in 1s ease-in;
   overflow: hidden;
 }
@@ -170,13 +172,13 @@ code {
   }
 
   to {
-    width: 300px;
+    width: var(--cbpo1-width);
   }
 }
 
 @keyframes cbp01-slide-out {
   from {
-    width: 300px;
+    width: var(--cbpo1-width);
   }
 
   to {
@@ -185,6 +187,7 @@ code {
 }
 
 .cbp03 {
+  margin-left: var(--cbpo3-ml);
   animation: cbp03-slide-in 1s ease-in;
   overflow: hidden;
 }
@@ -196,12 +199,13 @@ code {
   }
 
   to {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 }
 
 .cbp04 {
+  margin-left: var(--cbpo3-ml);
   animation: cbp04-slide-in 1.5s ease-in;
   overflow: hidden;
 }
@@ -213,12 +217,13 @@ code {
   }
 
   to {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 }
 
 .cbp05 {
+  margin-left: var(--cbpo3-ml);
   animation: cbp05-slide-in 2s ease-in;
   overflow: hidden;
 }
@@ -230,7 +235,7 @@ code {
   }
 
   to {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 }
@@ -243,7 +248,7 @@ code {
 
 @keyframes cbp06-slide-out {
   from {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 
@@ -261,7 +266,7 @@ code {
 
 @keyframes cbp07-slide-out {
   from {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 
@@ -279,7 +284,7 @@ code {
 
 @keyframes cbp08-slide-out {
   from {
-    margin-left: 35%;
+    margin-left: var(--cbpo3-ml);
     margin-right: auto;
   }
 

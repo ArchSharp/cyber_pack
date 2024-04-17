@@ -8,6 +8,9 @@ module.exports = {
         iconBg: "#52B2BF",
       },
       fontFamily: { poppins: "PoppinsLight", Cervanttis: "Cervanttis" },
+      fontSize: {
+        xxs: "8px",
+      },
     },
   },
   plugins: [],

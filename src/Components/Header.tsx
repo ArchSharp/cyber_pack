@@ -31,7 +31,7 @@ export const Header = () => {
       </div>
       <div className="flex w-screen">
         <img src={cyberpack} alt="cyberpack" className="w-[180px] ml-[6vw]" />
-        <div className="flex ml-auto mr-[8vw] text-sm">
+        <div className="hidden md:flex ml-auto mr-[8vw] text-sm">
           <div className="ml-auto mr-6 cursor-pointer">About Us</div>
           <div className="mr-6 cursor-pointer">Services</div>
           <div className="mr-6 cursor-pointer">Clients</div>

@@ -14,6 +14,7 @@ import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch } from "../Store/store";
 import { IServiceEnquiry } from "../Features/User/type";
+import { useMediaQuery } from "react-responsive";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
@@ -118,35 +119,59 @@ export const Home = () => {
     onSubmit: handleSubmit,
   });
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
+  console.log("isMobile: ", isMobile);
+
   return (
     <div>
-      {/* <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
-        <div className="text-5xl text-white w-[60vw] mt-[120px] ml-[5vw] font-bold">
-          Custom Software and <br /> Data Engineering services.
+      <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
+        <div className="text-[40px] md:text-6xl text-white w-[90vw] md:w-[60vw] mt-[120px] mx-[5vw] pr-0 md:pr-[10vw] font-bold">
+          Custom Software and Data Engineering services.
         </div>
-        <div className="w-fit ml-[5vw] my-5 font-semibold text-orange-600 text-lg">
+        <div className="w-fit mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
           Global Scale. Local Engagement.
         </div>
-        <div className="w-[50vw] font-medium text-lg text-white pl-[5vw]">
+        <div className="w-[100vw] md:w-[50vw] font-medium text-lg text-white px-[5vw]">
           Need an experienced software technology team or staff to build,
           enhance or maintain your software applications?
         </div>
         <div className="flex w-fit ml-[5vw] my-8">
-          <div className="w-[150px] h-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className=" text-4xl text-white font-medium">24+</div>
-            <div className="text-xs text-white">Years of service</div>
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
+            <div className="text-xl md:text-4xl text-white font-medium">
+              24+
+            </div>
+            <div className="text-xxs md:text-xs w-fit text-white">
+              Years of service
+            </div>
           </div>
-          <div className="w-[150px] h-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className=" text-4xl text-white font-medium">600+</div>
-            <div className="text-xs text-white">IT Professionals</div>
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
+            <div className="text-xl md:text-4xl text-white font-medium">
+              600+
+            </div>
+            <div className="text-xxs md:text-xs w-fit text-white">
+              IT Professionals
+            </div>
           </div>
-          <div className="w-[150px] h-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className=" text-4xl text-white font-medium">500+</div>
-            <div className="text-xs text-white">Completed projects</div>
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
+            <div className="text-xl md:text-4xl text-white font-medium">
+              500+
+            </div>
+            <div className="text-xxs md:text-xs text-white">
+              Completed projects
+            </div>
           </div>
-          <div className="w-[150px] h-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className=" text-4xl text-white font-medium">10+</div>
-            <div className="text-xs text-white">Digital services</div>
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
+            <div className="text-xl md:text-4xl text-white font-medium">
+              10+
+            </div>
+            <div className="text-xxs md:text-xs text-white">
+              Digital services
+            </div>
           </div>
         </div>
         <div className="mb-16">
@@ -164,7 +189,7 @@ export const Home = () => {
             {partners.map((eachImage, index) => (
               <div
                 key={index}
-                className="mx-2 h-[90px] sm:h-[130px] w-[250px] flex items-center justify-center rounded-lg bg-main"
+                className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-main"
               >
                 <img
                   src={eachImage.src}
@@ -175,10 +200,10 @@ export const Home = () => {
             ))}
           </div>
         </MarqueeHolder>
-      </div> */}
+      </div>
 
-      {/* <div className="flex items-center py-[8vh]">
-        <div className="w-[25vw] ml-[5vw]">
+      <div className="flex flex-col md:flex-row items-center py-[8vh]">
+        <div className="w-[90vw] md:w-[25vw] mx-[5vw]">
           <div className="text-main text-xl font-bold italic w-fit">
             CUSTOM SOFTWARE DEVELOPMENT
           </div>
@@ -195,50 +220,84 @@ export const Home = () => {
 
           <img src={microsoft} alt="microsoft" className="" />
         </div>
-        <div className="w-[70vw]">
-          <div className="w-[56vw] h-[70vh] ml-24 bg-main flex flex-col top-display">
-            <div className="loader w-[20px] ml-auto mr-2 mt-2"></div>
+        <div className="w-[100vw] md:w-[70vw] mt-16 md:mt-0">
+          <div className="w-[98vw] md:w-[56vw] h-[70vh] ml-[1vw] md:ml-24 flex flex-col top-display">
+            <div className="loader w-[10px] md:w-[20px] ml-auto mr-2 mt-2"></div>
             <div className="flex">
               <div
-                className={`${lslide} mt-[17vh] bg-blue-400 h-[30vh] w-[300px] italic flex items-center justify-center`}
+                style={
+                  {
+                    "--cbpo1-width": `${isMobile ? "150px" : "300px"}`,
+                  } as any
+                }
+                className={`${lslide} mt-[17vh] bg-blue-400 h-[30vh] italic flex items-center`}
               >
-                <div className="">
-                  <div className="text-md font-semibold text-white">
+                <div className="ml-5 md:ml-10">
+                  <div className="text-xs md:text-md font-semibold text-white">
                     CYBERPACK'S DEVELOPMENT
                   </div>
-                  <div className="text-4xl font-bold text-white">
+                  <div className="text-lg w-fit md:text-4xl font-bold text-white">
                     CAPABILITIES
                   </div>
                 </div>
               </div>
-              <div className="ml-auto w-[28vw] overflow-hidden">
+              <div className="ml-auto w-[35vw] md:w-[28vw] overflow-hidden">
                 <div
-                  className={`${lslide2} flex w-[70%] items-center ml-[35%] mr-auto mt-14`}
+                  style={
+                    {
+                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                    } as any
+                  }
+                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14`}
                 >
-                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
-                  <div className="text-white ml-3">
-                    <div className=" font-bold text-3xl">21+</div>
-                    <div className=" font-medium text-sm">
+                  <img
+                    src={cbp01}
+                    alt="cbp02"
+                    className="w-[35px] md:w-[80px]"
+                  />
+                  <div className="text-white ml-2 md:ml-3">
+                    <div className=" font-bold text-xl md:text-3xl">21+</div>
+                    <div className=" font-medium text-xs md:text-sm">
                       Development Frameworks
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`${lslide3} flex w-[70%] items-center ml-[35%] mr-auto my-16`}
+                  style={
+                    {
+                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                    } as any
+                  }
+                  className={`${lslide3} flex w-[90%] md:w-[70%] items-center mr-auto my-16`}
                 >
-                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
-                  <div className="text-white ml-3">
-                    <div className=" font-bold text-3xl">600+</div>
-                    <div className=" font-medium text-sm">IT Professionals</div>
+                  <img
+                    src={cbp01}
+                    alt="cbp01"
+                    className="w-[35px] md:w-[80px]"
+                  />
+                  <div className="text-white ml-2 md:ml-3">
+                    <div className=" font-bold text-xl md:text-3xl">600+</div>
+                    <div className=" font-medium text-xs md:text-sm">
+                      IT Professionals
+                    </div>
                   </div>
                 </div>
                 <div
-                  className={`${lslide4} flex w-[70%] items-center ml-[35%] mr-auto`}
+                  style={
+                    {
+                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                    } as any
+                  }
+                  className={`${lslide4} flex w-[90%] md:w-[70%] items-center mr-auto`}
                 >
-                  <img src={cbp01} alt="cbp01" className="w-[80px]" />
-                  <div className="text-white ml-3">
-                    <div className=" font-bold text-3xl">500+</div>
-                    <div className=" font-medium text-sm">
+                  <img
+                    src={cbp01}
+                    alt="cbp01"
+                    className="w-[35px] md:w-[80px]"
+                  />
+                  <div className="text-white ml-2 md:ml-3">
+                    <div className=" font-bold text-xl md:text-3xl">500+</div>
+                    <div className=" font-medium text-xs md:text-sm">
                       Projects Completed
                     </div>
                   </div>
@@ -247,7 +306,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* our services */}
 
