@@ -141,32 +141,32 @@ export const Home = () => {
           enhance or maintain your software applications?
         </div>
         <div className="flex w-fit ml-[5vw] my-8">
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className="text-xl md:text-4xl text-white font-medium">
+          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+            <div className="text-lg md:text-4xl text-white font-medium">
               24+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               Years of service
             </div>
           </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className="text-xl md:text-4xl text-white font-medium">
+          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+            <div className="text-lg md:text-4xl text-white font-medium">
               600+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               IT Professionals
             </div>
           </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className="text-xl md:text-4xl text-white font-medium">
+          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+            <div className="text-lg md:text-4xl text-white font-medium">
               500+
             </div>
-            <div className="text-xxs md:text-xs text-white">
+            <div className="text-xxs md:text-xs text-white w-fit">
               Completed projects
             </div>
           </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-3 border-2 flex items-center justify-center flex-col">
-            <div className="text-xl md:text-4xl text-white font-medium">
+          <div className="size-[70px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
+            <div className="text-lg md:text-4xl text-white font-medium">
               10+
             </div>
             <div className="text-xxs md:text-xs text-white">
@@ -311,7 +311,7 @@ export const Home = () => {
       {/* our services */}
 
       <div className="ml-[5vw] mt-16 mb-28 w-fit">
-        <div className=" font-Cervanttis text-blue-500 text-6xl">
+        <div className=" font-Cervanttis text-blue-500 text-4xl md:text-6xl">
           Our Services
         </div>
         <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
@@ -513,12 +513,12 @@ export const Home = () => {
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
+        <div className="size-72 md:size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
           <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
         <div className="ml-0 md:ml-8 mt-16 md:mt-0">
           <div className="w-[100vw] md:w-fit">
-            <div className="font-Cervanttis text-blue-500 text-5xl text-center md:text-left">
+            <div className="font-Cervanttis text-blue-500 text-3xl md:text-5xl text-center md:text-left">
               Meet our CEO
             </div>
             <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
@@ -538,12 +538,12 @@ export const Home = () => {
       <div className="flex flex-col md:flex-row justify-center items-center mt-36">
         <div className="ml-0 md:ml-8">
           <div className="w-[100vw] md:w-fit text-center md:text-left">
-            <div className="font-Cervanttis text-blue-500 text-5xl">
+            <div className="font-Cervanttis text-blue-500 text-3xl md:text-5xl">
               Meet our MD
             </div>
             <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
           </div>
-          <div className=" text-slate-600 w-[400px] my-7 text-center md:text-left">
+          <div className=" text-slate-600 w-[100vw] md:w-[400px] px-5 md:px-2 my-7 text-center md:text-left">
             At DVT, we are privileged to provide quality software development
             services and solutions to our clients in Southern Africa, while also
             contributing meaningfully to addressing the technology skills gap in
@@ -554,15 +554,15 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
+        <div className="size-72 md:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
           <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
       </div>
 
       {/* News and Insight */}
       <div className="flex flex-col mt-24">
-        <div className="w-fit ml-[5vw]">
-          <div className="font-Cervanttis text-blue-500 text-5xl">
+        <div className="w-fit mx-auto md:mx-[5vw]">
+          <div className="font-Cervanttis text-blue-500 text-4xl md:text-5xl">
             News and insights
           </div>
           <hr className="ml-[40%] md:ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
@@ -627,7 +627,7 @@ export const Home = () => {
               you. Contact your local DVT leadership today.
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[90vw] md:w-[34vw] h-[515px] ml-[5vw] md:ml-16 mt-10 md:mt-0 overflow-y-auto">
+          <div className="bg-white rounded-lg w-[90vw] md:w-[34vw] h-[515px] mx-[5vw] md:mx-16 mt-10 md:mt-0 overflow-y-auto">
             <div className="pl-7 pt-3 text-3xl text-blue-600 flex items-center italic">
               <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
               <span className="mr-2 font-bold">SERVICE</span>ENQUIRIES
