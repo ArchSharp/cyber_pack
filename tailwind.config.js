@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         main: "#1F456E",
         iconBg: "#52B2BF",
+        cbp01_blue: "rgba(0,191,255,0.5)",
       },
       fontFamily: { poppins: "PoppinsLight", Cervanttis: "Cervanttis" },
       fontSize: {

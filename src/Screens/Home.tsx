@@ -239,7 +239,7 @@ export const Home = () => {
                     "--cbpo1-width": `${isMobile ? "150px" : "300px"}`,
                   } as any
                 }
-                className={`${lslide} mt-[17vh] bg-blue-400 h-[30vh] italic flex items-center`}
+                className={`${lslide} mt-[17vh] bg-cbp01_blue h-[30vh] italic flex items-center`}
               >
                 <div className="ml-5 md:ml-10">
                   <div className="text-xs md:text-md font-semibold text-white">
