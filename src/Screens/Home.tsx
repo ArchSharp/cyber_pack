@@ -258,12 +258,12 @@ export const Home = () => {
                       "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
                     } as any
                   }
-                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14 border-2`}
+                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14`}
                 >
                   <img
                     src={cbp01}
                     alt="cbp02"
-                    className="w-[35px] md:w-[50px] lg:w-[80vw]"
+                    className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
                     <div className=" font-bold text-xl md:text-3xl">21+</div>
