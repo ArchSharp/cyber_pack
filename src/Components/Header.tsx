@@ -11,11 +11,11 @@ import { IoClose, IoSearch } from "react-icons/io5";
 import cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { IoIosArrowForward } from "react-icons/io";
+import { Navbar } from "./NavBar";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isRotate, setIsRotate] = useState(false);
+
   const isTabletOrPhone = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
@@ -71,10 +71,10 @@ export const Header = () => {
 
                 <ul className="pl-5 mt-10">
                   <li className="text-slate-200 text-lg px-2 py-2 font-bold">
-                    {navbarHead("About Us")}
+                    <Navbar head={"About Us"} />
                   </li>
                   <li className="text-slate-200 text-lg px-2 py-2 font-bold">
-                    {navbarHead("Services")}
+                    <Navbar head={"Services"} />
                   </li>
                   <li className="text-slate-200 text-lg px-2 py-2 font-bold">
                     Clients
@@ -93,45 +93,4 @@ export const Header = () => {
       </div>
     </div>
   );
-
-  function navbarHead(head: string) {
-    return (
-      <>
-        <div
-          className="flex items-center"
-          onClick={() => setIsRotate(!isRotate)}
-        >
-          {head}
-          <IoIosArrowForward
-            className={`ml-auto mr-5 text-2xl ${
-              isRotate ? "arrow-rotate" : "reverse-rotate"
-            }`}
-          />
-        </div>
-        {isRotate && (
-          <ul
-            className={`${
-              isRotate ? "open-height" : "close-height"
-            } overflow-y-auto`}
-          >
-            <li className="text-slate-200 text-base px-2 py-2 font-bold">
-              Company Overview
-            </li>
-            <li className="text-slate-200 text-base px-2 py-2 font-bold">
-              Our Leadership
-            </li>
-            <li className="text-slate-200 text-base px-2 py-2 font-bold">
-              Social Contribution
-            </li>
-            <li className="text-slate-200 text-base px-2 py-2 font-bold">
-              Dynamic Technologies Group
-            </li>
-            <li className="text-slate-200 text-base px-2 py-2 font-bold">
-              Softwares Partners
-            </li>
-          </ul>
-        )}
-      </>
-    );
-  }
 };
