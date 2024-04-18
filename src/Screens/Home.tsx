@@ -134,23 +134,23 @@ export const Home = () => {
   // const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
   // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
-  console.log("isMobile: ", isMobile);
+  // console.log("isMobile: ", isMobile);
 
   return (
     <div>
       <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
-        <div className="text-[40px] md:text-6xl text-white w-[90vw] md:w-[60vw] mt-[120px] mx-[5vw] pr-0 md:pr-[10vw] font-bold">
+        <div className="text-[40px] md:text-6xl text-white w-[90vw] md:w-[60vw] mt-[120px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
           Custom Software and Data Engineering services.
         </div>
-        <div className="w-fit mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
+        <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
           Global Scale. Local Engagement.
         </div>
-        <div className="w-[100vw] md:w-[50vw] font-medium text-lg text-white px-[5vw]">
+        <div className="w-[100vw] md:w-[50vw] font-medium text-lg text-white px-[2vw] md:px-0 md:mx-[5vw]">
           Need an experienced software technology team or staff to build,
           enhance or maintain your software applications?
         </div>
-        <div className="flex w-fit ml-[5vw] my-8">
-          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+        <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
               24+
             </div>
@@ -158,7 +158,7 @@ export const Home = () => {
               Years of service
             </div>
           </div>
-          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
               600+
             </div>
@@ -166,7 +166,7 @@ export const Home = () => {
               IT Professionals
             </div>
           </div>
-          <div className="size-[70px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
+          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
               500+
             </div>
@@ -174,7 +174,7 @@ export const Home = () => {
               Completed projects
             </div>
           </div>
-          <div className="size-[70px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
+          <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
               10+
             </div>
@@ -184,7 +184,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="mb-16">
-          <button className="ml-[5vw] px-7 py-2 border-[3px] italic border-white text-lg font-bold text-white bg-gradient-to-r from-yellow-900 via-yellow-500 to-yellow-300 rounded-full">
+          <button className="ml-[2vw] md:ml-[5vw] px-7 py-2 border-[3px] italic border-white text-lg font-bold text-white bg-gradient-to-r from-yellow-900 via-yellow-500 to-yellow-300 rounded-full">
             CONNECT WITH US
           </button>
         </div>
@@ -194,7 +194,7 @@ export const Home = () => {
           mGradient={false}
           mgradientColor={"rgb(126, 200, 227)"}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             {partners.map((eachImage, index) => (
               <div
                 key={index}
@@ -212,11 +212,11 @@ export const Home = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center py-[8vh]">
-        <div className="w-[90vw] md:w-[25vw] mx-[5vw]">
-          <div className="text-main text-xl font-bold italic w-fit">
+        <div className="w-[90vw] md:w-[35vw] lg:w-[25vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
+          <div className="text-main text-lg lg:text-xl font-bold italic w-fit">
             CUSTOM SOFTWARE DEVELOPMENT
           </div>
-          <div className="text-blue-700 text-2xl font-bold italic w-fit">
+          <div className="text-blue-700 text-xl lg:text-2xl font-bold italic w-fit">
             DRIVES DIGITAL BUSINESS DISTINCTION
           </div>
 
@@ -229,9 +229,10 @@ export const Home = () => {
 
           <img src={microsoft} alt="microsoft" className="" />
         </div>
-        <div className="w-[100vw] md:w-[70vw] mt-16 md:mt-0">
-          <div className="w-[98vw] md:w-[56vw] h-[70vh] ml-[1vw] md:ml-24 flex flex-col top-display">
-            <div className="loader w-[10px] md:w-[20px] ml-auto mr-2 mt-2"></div>
+
+        <div className="w-[100vw] md:w-[60vw] lg:w-[70vw] mt-16 md:mt-0">
+          <div className="w-[98vw] md:w-[56vw] h-[70vh] ml-[1vw] md:ml-4 lg:ml-20 flex flex-col top-display">
+            <div className="loader w-[10px] md:w-[13px] lg:w-[20px] ml-auto mr-2 mt-2"></div>
             <div className="flex">
               <div
                 style={
@@ -242,10 +243,10 @@ export const Home = () => {
                 className={`${lslide} mt-[17vh] bg-cbp01_blue h-[30vh] italic flex items-center`}
               >
                 <div className="ml-5 md:ml-10">
-                  <div className="text-xs md:text-md font-semibold text-white">
+                  <div className="text-xs md:text-sm font-semibold text-white">
                     CYBERPACK'S DEVELOPMENT
                   </div>
-                  <div className="text-lg w-fit md:text-4xl font-bold text-white">
+                  <div className="text-lg w-fit md:text-2xl lg:text-4xl font-bold text-white">
                     CAPABILITIES
                   </div>
                 </div>
@@ -257,12 +258,12 @@ export const Home = () => {
                       "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
                     } as any
                   }
-                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14`}
+                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14 border-2`}
                 >
                   <img
                     src={cbp01}
                     alt="cbp02"
-                    className="w-[35px] md:w-[80px]"
+                    className="w-[35px] md:w-[50px] lg:w-[80vw]"
                   />
                   <div className="text-white ml-2 md:ml-3">
                     <div className=" font-bold text-xl md:text-3xl">21+</div>
@@ -327,7 +328,7 @@ export const Home = () => {
       </div>
 
       <div className="mt-10 md:mt-20 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw] md:pl-0 md:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Software <span className="ml-1 font-bold"> Engineering</span>
@@ -358,7 +359,7 @@ export const Home = () => {
 
       {/* IT Staff augumentation */}
       <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 pl-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -366,7 +367,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             IT Staff
@@ -389,7 +390,7 @@ export const Home = () => {
 
       {/* Data and Automation */}
       <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Data and
@@ -423,7 +424,7 @@ export const Home = () => {
 
       {/* Digital Transformation */}
       <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 pl-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -431,7 +432,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Digital
@@ -456,7 +457,7 @@ export const Home = () => {
 
       {/* Cloud Solutions */}
       <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Cloud
@@ -497,7 +498,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] ml-[5vw]">
+        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Design

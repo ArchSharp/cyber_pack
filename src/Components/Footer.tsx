@@ -1,68 +1,145 @@
+import cyber from "../Images/CyberPack/Jpgs/Cyberpack.png";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 export const Footer = () => {
   return (
-    <div className="h-fit bg-main flex items-center lg:items-start lg:justify-center pt-[10vh] flex-col lg:flex-row">
-      <div className="flex items-start lg:w-[50vw]">
-        <div className="w-[45vw] lg:w-[22vw]">
-          <div className="text-orange-600 font-bold">
-            CONNECT
-            <hr />
+    <div className="min-h-[70vh] bg-main pt-[10vh] pb-5">
+      <div className="flex items-center lg:items-start lg:justify-center flex-col lg:flex-row">
+        <div className="flex items-start lg:w-[45vw]">
+          <div className="w-[45vw] lg:w-[21vw]">
+            <div className="text-orange-600 font-bold">
+              CONNECT
+              <hr />
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-white font-bold text-sm">Nigeria</h3>
+              <div>
+                <span className="text-xs text-white">Lagos: </span>
+                <span className="text-orange-500 text-xs">
+                  +234 810 224 2355
+                </span>
+              </div>
+            </div>
+
+            <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
+              <a href="mailto:info@cyberpack.com">info@cyberpack.com</a>
+            </button>
+          </div>
+
+          <div className="w-[45vw] lg:w-[21vw] ml-[2vw]">
+            <div className="text-orange-600 font-bold">
+              ABOUT US
+              <hr />
+            </div>
+
+            <div className="mt-10 text-sm text-white">
+              CyberPack was founded in 1999 and has grown to over 600 staff with
+              offices in South Africa, Kenya and Europe (UK, Ireland, the
+              Netherlands and Switzerland). We service more than 100 medium and
+              large organisations and build long term partnerships with our
+              clients.
+            </div>
+            <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
+              LEARN MORE
+            </button>
           </div>
         </div>
 
-        <div className="w-[45vw] lg:w-[22vw] ml-[3vw]">
-          <div className="text-orange-600 font-bold">
-            ABOUT US
-            <hr />
+        <div className="flex items-start mt-5 lg:mt-0 lg:w-[45vw]">
+          <div className="w-[45vw] lg:w-[21vw] mr-[2vw]">
+            <div className="text-orange-600 font-bold">
+              WORK FOR CYBERPACK
+              <hr />
+            </div>
+
+            <div className="mt-10 text-sm text-white">
+              Grow your IT career with us. Remote and on-site vacancies
+              available for mobile, Front-End, Java, Microsoft and Full-Stack
+              developers. UX/UI Designers, Scrum Masters, Business Analysts,
+              Project Managers and Agile Coaches.
+            </div>
+            <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
+              LEARN MORE
+            </button>
           </div>
 
-          <div className="mt-10 text-sm text-white">
-            CyberPack was founded in 1999 and has grown to over 600 staff with
-            offices in South Africa, Kenya and Europe (UK, Ireland, the
-            Netherlands and Switzerland). We service more than 100 medium and
-            large organisations and build long term partnerships with our
-            clients.
+          <div className="w-[45vw] lg:w-[21vw]">
+            <div className="text-orange-600 font-bold">
+              CYBERPACK VALUES
+              <hr />
+            </div>
+
+            <div className="mt-10 text-sm text-white">
+              Our values guide us in making a positive impact with our clients,
+              partners and the communities we operate in.
+              <h3 className="mt-1">Our Purpose:</h3>
+              <div className="mt-2 text-sm font-bold text-white flex items-center italic">
+                <div className="mr-2 size-3 bg-yellow-600 -skew-x-12"></div>
+                to Serve
+              </div>
+              <div className="text-sm font-bold text-white flex items-center italic">
+                <div className="mr-2 size-3 bg-yellow-600 -skew-x-12"></div>
+                to Solve
+              </div>
+              <div className="text-sm font-bold text-white flex items-center italic">
+                <div className="mr-2 size-3 bg-yellow-600 -skew-x-12"></div>
+                to Grow
+              </div>
+            </div>
+            <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
+              LEARN MORE
+            </button>
           </div>
-          <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
-            LEARN MORE
-          </button>
         </div>
       </div>
 
-      <div className="flex items-start mt-5 lg:mt-0">
-        <div className="w-[45vw] lg:w-[22vw] mr-[1vw]">
-          <div className="text-orange-600 font-bold">
-            WORK FOR CYBERPACK
-            <hr />
-          </div>
+      <hr className="w-[90vw] mt-16 border-slate-500 mx-auto" />
 
-          <div className="mt-10 text-sm text-white">
-            Grow your IT career with us. Remote and on-site vacancies available
-            for mobile, Front-End, Java, Microsoft and Full-Stack developers.
-            UX/UI Designers, Scrum Masters, Business Analysts, Project Managers
-            and Agile Coaches.
-          </div>
-          <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
-            LEARN MORE
-          </button>
+      <div className="flex flex-col lg:flex-row items-center justify-center mx-auto w-[90vw]">
+        <div className="mt-10 mb-5 lg:mb-0">
+          <img src={cyber} alt="cyber" className="w-[250px]" />
         </div>
 
-        <div className="w-[45vw] lg:w-[22vw]">
-          <div className="text-orange-600 font-bold">
-            CYBERPACK VALUES
-            <hr />
+        <div className="w-fit mx-auto text-center mb-5 lg:mb-0">
+          <div className="text-xs text-white">
+            Copyright © 2024 Dynamic Visual Technologies (Pty) Ltd. All rights
+            reserved.
           </div>
+          <div className="text-xs text-orange-500">
+            A Dynamic Technologies company
+          </div>
+          <div className="flex items-center justify-center text-xs text-orange-500">
+            <div className="">Contact Us |</div>
+            <div className="mx-1">About Us |</div>
+            <div className="">Sitemap |</div>
+            <div className="mx-1">PAIA |</div>
+            <div className="w-fit">Business Ethics Policy</div>
+          </div>
+        </div>
 
-          <div className="mt-10 text-sm text-white">
-            Our values guide us in making a positive impact with our clients,
-            partners and the communities we operate in. <br /> <br />
-            Our Purpose: <br /> <br />
-            to Serve <br />
-            to Solve <br />
-            to Grow
+        <div className="ml-auto mt-[2vh] mb-[3vh] mx-auto lg:mx-0 flex items-center text-white">
+          <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-orange-400 cursor-pointer">
+            <FaFacebookF className="text-xs" />
           </div>
-          <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
-            LEARN MORE
-          </button>
+          <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-orange-400 cursor-pointer">
+            <FaXTwitter className="text-xs" />
+          </div>
+          <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-orange-400 cursor-pointer">
+            <FaYoutube className="text-xs" />
+          </div>
+          <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-orange-400 cursor-pointer">
+            <FaLinkedinIn className="text-xs" />
+          </div>
+          <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-orange-400 cursor-pointer">
+            <FaInstagram className="text-xs" />
+          </div>
         </div>
       </div>
     </div>
