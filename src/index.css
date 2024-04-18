@@ -376,3 +376,43 @@ code {
     width: 0vw;
   }
 }
+
+.arrow-rotate {
+  transform: rotateZ(90deg);
+  transition: transform 0.6s ease-in;
+}
+
+.reverse-rotate {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s ease-in;
+}
+
+.open-height {
+  height: 220px;
+  animation: open-height-anim 0.6s ease-in;
+}
+
+.close-height {
+  height: 0px;
+  animation: close-height-anim 0.5s ease-in;
+}
+
+@keyframes open-height-anim {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 220px;
+  }
+}
+
+@keyframes close-height-anim {
+  from {
+    height: 220px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
