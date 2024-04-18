@@ -62,8 +62,8 @@ export const Home = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           initialSlide: 2,
           // arrows: true,
         },
@@ -133,19 +133,18 @@ export const Home = () => {
   // });
   // const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
   // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
-  // console.log("isMobile: ", isMobile);
+  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <div>
       <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
-        <div className="text-[40px] md:text-6xl text-white w-[90vw] md:w-[60vw] mt-[120px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
+        <div className="text-[40px] md:text-6xl text-white w-[90vw] lg:w-[60vw] mt-[80px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
           Custom Software and Data Engineering services.
         </div>
         <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
           Global Scale. Local Engagement.
         </div>
-        <div className="w-[100vw] md:w-[50vw] font-medium text-lg text-white px-[2vw] md:px-0 md:mx-[5vw]">
+        <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw]">
           Need an experienced software technology team or staff to build,
           enhance or maintain your software applications?
         </div>
@@ -211,8 +210,8 @@ export const Home = () => {
         </MarqueeHolder>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center py-[8vh]">
-        <div className="w-[90vw] md:w-[35vw] lg:w-[25vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
+      <div className="flex flex-col lg:flex-row items-center py-[8vh]">
+        <div className="w-[90vw] lg:w-[25vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
           <div className="text-main text-lg lg:text-xl font-bold italic w-fit">
             CUSTOM SOFTWARE DEVELOPMENT
           </div>
@@ -230,14 +229,14 @@ export const Home = () => {
           <img src={microsoft} alt="microsoft" className="" />
         </div>
 
-        <div className="w-[100vw] md:w-[60vw] lg:w-[70vw] mt-16 md:mt-0">
-          <div className="w-[98vw] md:w-[56vw] h-[70vh] ml-[1vw] md:ml-4 lg:ml-20 flex flex-col top-display">
+        <div className="w-[100vw] lg:w-[70vw] mt-16 lg:mt-0">
+          <div className="w-[90vw] lg:w-[56vw] h-[60vh] md:h-[70vh] ml-[5vw] lg:ml-20 flex flex-col top-display">
             <div className="loader w-[10px] md:w-[13px] lg:w-[20px] ml-auto mr-2 mt-2"></div>
             <div className="flex">
               <div
                 style={
                   {
-                    "--cbpo1-width": `${isMobile ? "150px" : "300px"}`,
+                    "--cbpo1-width": `${isTablet ? "150px" : "300px"}`,
                   } as any
                 }
                 className={`${lslide} mt-[17vh] bg-cbp01_blue h-[30vh] italic flex items-center`}
@@ -255,10 +254,10 @@ export const Home = () => {
                 <div
                   style={
                     {
-                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
                     } as any
                   }
-                  className={`${lslide2} flex w-[90%] md:w-[70%] items-center mr-auto mt-14`}
+                  className={`${lslide2} flex w-[90%] md:w-[80%] items-center mr-auto mt-14`}
                 >
                   <img
                     src={cbp01}
@@ -266,7 +265,7 @@ export const Home = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">21+</div>
+                    <div className="font-bold text-xl md:text-3xl">21+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       Development Frameworks
                     </div>
@@ -275,15 +274,15 @@ export const Home = () => {
                 <div
                   style={
                     {
-                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
                     } as any
                   }
-                  className={`${lslide3} flex w-[90%] md:w-[70%] items-center mr-auto my-16`}
+                  className={`${lslide3} flex w-[90%] md:w-[80%] items-center mr-auto my-12`}
                 >
                   <img
                     src={cbp01}
                     alt="cbp01"
-                    className="w-[35px] md:w-[80px]"
+                    className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
                     <div className=" font-bold text-xl md:text-3xl">600+</div>
@@ -295,15 +294,15 @@ export const Home = () => {
                 <div
                   style={
                     {
-                      "--cbpo3-ml": `${isMobile ? "10%" : "35%"}`,
+                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
                     } as any
                   }
-                  className={`${lslide4} flex w-[90%] md:w-[70%] items-center mr-auto`}
+                  className={`${lslide4} flex w-[90%] md:w-[80%] items-center mr-auto`}
                 >
                   <img
                     src={cbp01}
                     alt="cbp01"
-                    className="w-[35px] md:w-[80px]"
+                    className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
                     <div className=" font-bold text-xl md:text-3xl">500+</div>
@@ -327,8 +326,8 @@ export const Home = () => {
         <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
       </div>
 
-      <div className="mt-10 md:mt-20 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw] md:pl-0 md:ml-[5vw]">
+      <div className="mt-10 md:mt-20 flex flex-col lg:flex-row items-center">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Software <span className="ml-1 font-bold"> Engineering</span>
@@ -348,7 +347,7 @@ export const Home = () => {
           {ServicesComponent("WEB APPLICATION SERVICES", "#")}
         </div>
 
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -358,8 +357,8 @@ export const Home = () => {
       </div>
 
       {/* IT Staff augumentation */}
-      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 pl-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -367,7 +366,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             IT Staff
@@ -389,8 +388,8 @@ export const Home = () => {
       </div>
 
       {/* Data and Automation */}
-      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
+      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Data and
@@ -413,7 +412,7 @@ export const Home = () => {
           {ServicesComponent("DATABRICKS SERVICES", "#")}
         </div>
 
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -423,8 +422,8 @@ export const Home = () => {
       </div>
 
       {/* Digital Transformation */}
-      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 pl-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -432,7 +431,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Digital
@@ -456,8 +455,8 @@ export const Home = () => {
       </div>
 
       {/* Cloud Solutions */}
-      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
+      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Cloud
@@ -479,7 +478,7 @@ export const Home = () => {
           {ServicesComponent("DEVOPS CONSULTING", "#")}
         </div>
 
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mt-6 md:mt-0 ml-[5vw] rounded-xl">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -489,8 +488,8 @@ export const Home = () => {
       </div>
 
       {/* Design Services */}
-      <div className="mt-20 mb-10 flex flex-col md:flex-row items-center">
-        <div className="w-[90vw] md:w-[26vw] h-[55vw] md:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -498,7 +497,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="w-[100vw] md:w-[55vw] pl-[5vw]">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
             <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
             Design
@@ -613,12 +612,13 @@ export const Home = () => {
         </div>
       </div>
 
+      {/* Connect with cyberpack */}
       <div className="connect-with-us mt-28 flex flex-col">
         <div className=" font-Cervanttis text-blue-500 text-3xl md:text-5xl font-bold mt-10 text-center">
           Connect with CyberPack
         </div>
-        <div className="my-24 flex flex-col md:flex-row items-center">
-          <div className="w-[90vw] md:w-[25vw] ml-[7vw]">
+        <div className="my-24 flex flex-col lg:flex-row items-center">
+          <div className="w-[90vw] lg:w-[25vw] ml-[7vw]">
             <h3 className="text-orange-600 text-3xl font-bold">
               World Class IT services.
             </h3>
@@ -638,13 +638,13 @@ export const Home = () => {
               you. Contact your local DVT leadership today.
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[90vw] md:w-[34vw] h-[515px] mx-[5vw] md:mx-16 mt-10 md:mt-0 overflow-y-auto">
+          <div className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto">
             <div className="pl-7 pt-3 text-3xl text-blue-600 flex items-center italic">
               <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
               <span className="mr-2 font-bold">SERVICE</span>ENQUIRIES
             </div>
             <form onSubmit={formik.handleSubmit} className="">
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <input
                   type="text"
                   id="Name"
@@ -662,7 +662,7 @@ export const Home = () => {
                 )}
               </div>
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <input
                   type="text"
                   id="Email"
@@ -680,7 +680,7 @@ export const Home = () => {
                 )}
               </div>
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <select
                   id="Country"
                   name="Country"
@@ -703,7 +703,7 @@ export const Home = () => {
                 )}
               </div>
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <textarea
                   rows={4}
                   id="Questions"
@@ -721,7 +721,7 @@ export const Home = () => {
                 )}
               </div>
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <div className="flex items-center">
                   <label>
                     <input
@@ -738,7 +738,7 @@ export const Home = () => {
                 </div>
               </div>
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[30vw]">
+              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
                 <div className="flex items-center">
                   <label>
                     <input
