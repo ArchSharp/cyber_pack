@@ -48,6 +48,7 @@
   --tw-skew-x: 20;
   --cbpo1-width: 30px;
   --cbpo3-ml: 0%;
+  --navbar-width: 0vw;
 }
 
 /* body {
@@ -346,7 +347,7 @@ code {
 }
 
 .navbar1 {
-  width: 60vw;
+  width: var(--navbar-width);
   animation: navbar1-slide-in 0.3s ease-in;
   overflow: hidden;
 }
@@ -363,13 +364,13 @@ code {
   }
 
   to {
-    width: 60vw;
+    width: var(--navbar-width);
   }
 }
 
 @keyframes navbar2-slide-out {
   from {
-    width: 60vw;
+    width: var(--navbar-width);
   }
 
   to {

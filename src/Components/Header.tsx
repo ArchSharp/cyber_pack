@@ -17,6 +17,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const isTabletOrPhone = useMediaQuery({ query: "(max-width: 768px)" });
+  const isPhone = useMediaQuery({ query: "(max-width: 425px)" });
 
   return (
     <div className="header flex flex-col items-center h-[12vh] lg:h-[20vh] bg-main text-white font-poppins">
@@ -60,7 +61,12 @@ export const Header = () => {
             />
             {isOpen && (
               <div
-                className={`lg:hidden fixed top-0 right-0 w-[85vw] md:w-[75vw] h-[100vh] bg-navbar z-[2] ${
+                style={
+                  {
+                    "--navbar-width": `${isPhone ? "85vw" : "60vw"}`,
+                  } as any
+                }
+                className={`lg:hidden fixed top-0 right-0 h-[100vh] bg-navbar z-[2] ${
                   isOpen ? "navbar1" : "navbar2"
                 }`}
               >
