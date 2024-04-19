@@ -60,7 +60,7 @@ export const Header = () => {
             />
             {isOpen && (
               <div
-                className={`lg:hidden fixed top-0 right-0 w-[75vw] h-[100vh] bg-navbar z-[2] ${
+                className={`lg:hidden fixed top-0 right-0 w-[85vw] md:w-[75vw] h-[100vh] bg-navbar z-[2] ${
                   isOpen ? "navbar1" : "navbar2"
                 }`}
               >
