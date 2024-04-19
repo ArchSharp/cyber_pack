@@ -102,12 +102,12 @@ export const Footer = () => {
 
       <hr className="w-[90vw] mt-16 border-slate-500 mx-auto" />
 
-      <div className="flex flex-col lg:flex-row items-center justify-center mx-auto w-[90vw]">
-        <div className="mt-10 mb-5 lg:mb-0">
+      <div className="flex flex-col lg:flex-row items-center justify-center mx-auto mt-4 md:w-[90vw]">
+        <div className="mt-10 mb-5 lg:mt-0 lg:mb-0">
           <img src={cyber} alt="cyber" className="w-[250px]" />
         </div>
 
-        <div className="w-fit mx-auto text-center mb-5 lg:mb-0">
+        <div className="w-[98vw] md:w-fit mx-auto text-center mb-5 lg:mb-0">
           <div className="text-xs text-white">
             Copyright © 2024 Dynamic Visual Technologies (Pty) Ltd. All rights
             reserved.
@@ -116,7 +116,7 @@ export const Footer = () => {
             A Dynamic Technologies company
           </div>
           <div className="flex items-center justify-center text-xs text-orange-500">
-            <div className="">Contact Us |</div>
+            <div className="flex items-center">Contact Us |</div>
             <div className="mx-1">About Us |</div>
             <div className="">Sitemap |</div>
             <div className="mx-1">PAIA |</div>
