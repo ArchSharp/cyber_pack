@@ -55,7 +55,7 @@ export const Footer = () => {
         <div className="flex items-start mt-5 lg:mt-0 lg:w-[45vw]">
           <div className="w-[45vw] lg:w-[21vw] mr-[2vw]">
             <div className="text-orange-600 font-bold">
-              WORK FOR CYBERPACK
+              WORK FOR CYBERPACKHQ
               <hr />
             </div>
 
@@ -72,7 +72,7 @@ export const Footer = () => {
 
           <div className="w-[45vw] lg:w-[21vw]">
             <div className="text-orange-600 font-bold">
-              CYBERPACK VALUES
+              CYBERPACKHQ VALUES
               <hr />
             </div>
 
