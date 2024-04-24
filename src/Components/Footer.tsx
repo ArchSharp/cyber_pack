@@ -109,11 +109,10 @@ export const Footer = () => {
 
         <div className="w-[98vw] md:w-fit mx-auto text-center mb-5 lg:mb-0">
           <div className="text-xs text-white">
-            Copyright © 2024 Dynamic Visual Technologies (Pty) Ltd. All rights
-            reserved.
+            Copyright © 2024 CyberPackHQ Ltd. All rights reserved.
           </div>
           <div className="text-xs text-orange-500">
-            A Dynamic Technologies company
+            A Superb Technologies company
           </div>
           <div className="flex items-center justify-center text-xs text-orange-500">
             <div className="flex items-center">Contact Us |</div>

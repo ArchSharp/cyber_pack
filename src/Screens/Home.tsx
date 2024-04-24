@@ -222,8 +222,9 @@ export const Home = () => {
           <p className="my-10 text-slate-600">
             Need to build a new web or mobile application, enhance an existing
             application or require support to maintain your current application?
-            DVT have the custom software development services you need in
-            Microsoft .NET, JAVA and open-source technology development stacks.
+            CyberPackHQ have the custom software development services you need
+            in Microsoft .NET, JAVA and open-source technology development
+            stacks.
           </p>
 
           <img src={microsoft} alt="microsoft" className="" />
@@ -334,12 +335,12 @@ export const Home = () => {
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
             With more than 24 years of success in custom (bespoke) software
-            development, DVT has the expertise, experience and scale to service
-            enterprise requirements in web and mobile applications. Whether your
-            requirement is to build a new application, enhance an existing
-            application or require support to maintain your current application,
-            we have the services you need in Microsoft .NET, JAVA and
-            open-source technology development stacks.
+            development, CyberPackHQ has the expertise, experience and scale to
+            service enterprise requirements in web and mobile applications.
+            Whether your requirement is to build a new application, enhance an
+            existing application or require support to maintain your current
+            application, we have the services you need in Microsoft .NET, JAVA
+            and open-source technology development stacks.
           </div>
           {ServicesComponent("CUSTOM SOFTWARE DEVELOPMENT", "#")}
           {ServicesComponent("MOBILE APP DEVELOPMENT", "#")}
@@ -373,12 +374,12 @@ export const Home = () => {
             <span className="ml-1 font-bold"> Augmentation</span>
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
-            DVT solves your challenge to find scarce, high-performing IT staff
-            for your IT projects and capacity needs. We provide remote, hybrid
-            and on-site IT professionals to augment your team. Our capability to
-            rapidly fulfil your staff requirements based on our 600+ employees
-            and global presence means a solution to your on-hold projects, late
-            or delayed delivery and backlog of business requests.
+            CyberPackHQ solves your challenge to find scarce, high-performing IT
+            staff for your IT projects and capacity needs. We provide remote,
+            hybrid and on-site IT professionals to augment your team. Our
+            capability to rapidly fulfil your staff requirements based on our
+            600+ employees and global presence means a solution to your on-hold
+            projects, late or delayed delivery and backlog of business requests.
           </div>
           {ServicesComponent("AGILE TECHNOLOGY TEAMS", "#")}
           {ServicesComponent("STAFF AUGMENTATION", "#")}
@@ -400,9 +401,9 @@ export const Home = () => {
             retention and service leveraging our expertise in data, analytics
             and automation. Data, business intelligence, analytics and
             automation are critical capabilities in the modern, digital
-            business. DVT enables your business to become data-driven, gain key
-            insights from analytics and benefit from efficiencies through
-            automation. Our comprehensive services in data, business
+            business. CyberPackHQ enables your business to become data-driven,
+            gain key insights from analytics and benefit from efficiencies
+            through automation. Our comprehensive services in data, business
             intelligence, analytics and automation are ready to service your
             requirements and progress your digital business enablement maturity.
           </div>
@@ -441,11 +442,12 @@ export const Home = () => {
             Digital transformation of business goes beyond the implementation of
             technology to the adoption of processes, methodology and progression
             of skills maturity that truly enable digital capability. Realise
-            your digital business aspirations with DVT’s services focused on
-            enterprise Agile transformation, business analysis, change
-            management and technology project delivery management. DVT partners
-            with our customers on their Agile journey to achieve greater success
-            in IT projects, faster delivery, improved quality and real ROI.
+            your digital business aspirations with CyberPackHQ’s services
+            focused on enterprise Agile transformation, business analysis,
+            change management and technology project delivery management.
+            CyberPackHQ partners with our customers on their Agile journey to
+            achieve greater success in IT projects, faster delivery, improved
+            quality and real ROI.
           </div>
           {ServicesComponent("BUSINESS ANALYSIS", "#")}
           {ServicesComponent("CHANGE MANAGEMENT", "#")}
@@ -464,10 +466,10 @@ export const Home = () => {
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
             Cloud adoption is a key enabler and critical success factor for
-            modern digital business. DVT provides expertise in Microsoft Azure,
-            AWS and Google Cloud to ensure your successful migration, adoption
-            and PAAS management on the world’s best cloud platforms. Realise the
-            real benefits of cloud adoption through our application
+            modern digital business. CyberPackHQ provides expertise in Microsoft
+            Azure, AWS and Google Cloud to ensure your successful migration,
+            adoption and PAAS management on the world’s best cloud platforms.
+            Realise the real benefits of cloud adoption through our application
             modernization and migration services. Scalable, reliable and secure
             applications that are architected and developed to run in the cloud
             as intended. DevSecOps implementation to optimize your development
@@ -536,8 +538,8 @@ export const Home = () => {
           <div className=" text-slate-600 w-[100vw] md:w-[50vw] my-7 text-center md:text-left">
             I have been passionate about software solutions since I wrote my
             first software program on a ZX Spectrum in primary school! Leading a
-            team of IT professionals at DVT who share this passion, is immensely
-            rewarding and a great privilege.
+            team of IT professionals at CyberPackHQ who share this passion, is
+            immensely rewarding and a great privilege.
           </div>
           <div className=" text-blue-700 font-bold text-center md:text-left">
             Prof. OLAKUNLE IGBAROOLA
@@ -554,10 +556,10 @@ export const Home = () => {
             <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
           </div>
           <div className=" text-slate-600 w-[100vw] md:w-[400px] px-5 md:px-2 my-7 text-center md:text-left">
-            At DVT, we are privileged to provide quality software development
-            services and solutions to our clients in Southern Africa, while also
-            contributing meaningfully to addressing the technology skills gap in
-            the region.
+            At CyberPackHQ, we are privileged to provide quality software
+            development services and solutions to our clients in Southern
+            Africa, while also contributing meaningfully to addressing the
+            technology skills gap in the region.
           </div>
           <div className=" text-blue-700 font-bold text-center md:text-left">
             Prof. OLAKUNLE IGBAROOLA
@@ -629,13 +631,14 @@ export const Home = () => {
               </span>
             </div>
             <div className="mt-5 text-slate-300 text-left">
-              DVT leadership and experts are located in our customer regions
-              including the United Kingdom, Ireland, Netherlands, Switzerland,
-              South Africa, Kenya and the United Arab Emirates. Local capability
-              to partner with you for all your service requirements. Global
-              scalability to ensure fast, efficient and effective fulfilment on
-              your IT service and staffing needs. We are ready to partner with
-              you. Contact your local DVT leadership today.
+              CyberPackHQ leadership and experts are located in our customer
+              regions including the United Kingdom, Ireland, Netherlands,
+              Switzerland, South Africa, Kenya and the United Arab Emirates.
+              Local capability to partner with you for all your service
+              requirements. Global scalability to ensure fast, efficient and
+              effective fulfilment on your IT service and staffing needs. We are
+              ready to partner with you. Contact your local CyberPackHQ
+              leadership today.
             </div>
           </div>
           <div className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto">
@@ -749,8 +752,8 @@ export const Home = () => {
                     />
                   </label>
                   <div className="text-xs pl-2">
-                    I grant DVT permission to process the personal information
-                    provided
+                    I grant CyberPackHQ permission to process the personal
+                    information provided
                   </div>
                 </div>
               </div>
