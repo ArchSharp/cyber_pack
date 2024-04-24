@@ -617,7 +617,7 @@ export const Home = () => {
       {/* Connect with cyberpack */}
       <div className="connect-with-us mt-28 flex flex-col">
         <div className=" font-Cervanttis text-blue-500 text-3xl md:text-5xl font-bold mt-10 text-center">
-          Connect with CyberPack
+          Connect with CyberPackHQ
         </div>
         <div className="my-24 flex flex-col lg:flex-row items-center">
           <div className="w-[90vw] lg:w-[25vw] ml-[7vw]">
@@ -775,7 +775,7 @@ export const Home = () => {
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-          CyberPack is your
+          CyberPackHQ is your
         </div>
         <div className="h-[50px] w-[100vw] md:w-[30vw] mt-2 mx-auto">
           <Slider {...settings2}>
