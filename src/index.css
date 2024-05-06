@@ -300,14 +300,18 @@ code {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #464646;
+  /* background-color: rgba(70, 70, 70, 0.6); */
   max-width: 100%;
   width: 100vw;
-  height: 650px;
+  /* height: 650px; */
   padding-left: 0px;
   padding-right: 0px;
   background-attachment: fixed;
-  opacity: 0.4;
+  /* opacity: 0.2; */
+}
+
+.glacier > div {
+  background-color: rgba(70, 70, 70, 0.6);
 }
 
 .slider-news {

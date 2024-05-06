@@ -521,7 +521,24 @@ export const Home = () => {
       </div>
 
       {/* transparent background */}
-      <div className="glacier mb-16"></div>
+      <div className="glacier h-[260px] md:h-[650px] mb-16">
+        <div className="flex items-center h-full">
+          <div className="w-[50vw] h-full flex relative">
+            <div className="text-white font-poppins w-[20vw] absolute top-[27%] right-[90px] md:right-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl">
+              "Comforting to have such a professional partner on call to help
+              you."
+            </div>
+            <div className="size-[20vw] md:size-40 bg-white rounded-[50%] absolute top-[27%] right-[0%]"></div>
+          </div>
+          <div className="w-[50vw] h-full flex relative">
+            <div className="text-white font-poppins w-[20vw] absolute top-[34%] md:top-[37%] left-[20vw] md:left-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl">
+              "Creativity delivered what others couldn't; cost-effective and
+              timely."
+            </div>
+            <div className="size-[20vw] md:size-40 bg-white rounded-[50%] absolute top-[34%] md:top-[37%] left-[-8%] md:left-[-3%]"></div>
+          </div>
+        </div>
+      </div>
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
