@@ -424,12 +424,12 @@ code {
 
 .slide-up {
   top: 27%;
-  animation: slide-up-anim 1s ease-in;
+  animation: slide-up-anim 500ms ease-in;
 }
 
 .slide-up-text {
   top: 27%;
-  animation: slide-up-anim 1.5s ease-in;
+  animation: slide-up-anim 650ms ease-in;
 }
 
 @keyframes slide-up-anim {
@@ -471,12 +471,12 @@ code {
 /* slide down */
 .slide-down {
   top: 37%;
-  animation: slide-down-anim 1s ease-in;
+  animation: slide-down-anim 500ms ease-in;
 }
 
 .slide-down-text {
   top: 37%;
-  animation: slide-down-anim 1.5s ease-in;
+  animation: slide-down-anim 650ms ease-in;
 }
 
 @keyframes slide-down-anim {
