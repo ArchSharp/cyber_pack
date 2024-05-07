@@ -15,6 +15,8 @@ import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch } from "../Store/store";
 import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
+import nasa from "../Images/Companies/seven.png";
+import cisco from "../Images/Companies/eight.png";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
@@ -23,6 +25,8 @@ export const Home = () => {
   const [lslide3, setLslide3] = useState("cbp04");
   const [lslide4, setLslide4] = useState("cbp05");
   const [isRead, setIsRead] = useState(false);
+  const [isSlideUp, setIsSlideUp] = useState(false);
+  const [isSlideDown, setIsSlideDown] = useState(false);
 
   useEffect(() => {
     const LSlide = setInterval(() => {
@@ -31,6 +35,16 @@ export const Home = () => {
       setLslide3((prev) => (prev === "cbp04" ? "cbp07" : "cbp04"));
       setLslide4((prev) => (prev === "cbp05" ? "cbp08" : "cbp05"));
     }, 12000);
+    return () => {
+      clearInterval(LSlide);
+    };
+  }, []);
+
+  useEffect(() => {
+    const LSlide = setInterval(() => {
+      setIsSlideUp((prev) => (prev === true ? false : true));
+      setIsSlideDown((prev) => (prev === true ? false : true));
+    }, 5000);
     return () => {
       clearInterval(LSlide);
     };
@@ -524,18 +538,38 @@ export const Home = () => {
       <div className="glacier h-[260px] md:h-[650px] mb-16">
         <div className="flex items-center h-full">
           <div className="w-[50vw] h-full flex relative">
-            <div className="text-white font-poppins w-[20vw] absolute top-[27%] right-[90px] md:right-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl">
+            <div
+              className={`${
+                isSlideUp ? "slide-up-text" : "slide-up-text-off"
+              } text-white font-poppins w-[20vw] absolute right-[90px] md:right-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
+            >
               "Comforting to have such a professional partner on call to help
               you."
             </div>
-            <div className="size-[20vw] md:size-40 bg-white rounded-[50%] absolute top-[27%] right-[0%]"></div>
+            <div
+              className={`${
+                isSlideUp ? "slide-up" : "slide-up-off"
+              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute right-[0%] flex items-center justify-center`}
+            >
+              <img src={nasa} alt="nasa" className="w-[50px] md:w-[100px]" />
+            </div>
           </div>
           <div className="w-[50vw] h-full flex relative">
-            <div className="text-white font-poppins w-[20vw] absolute top-[34%] md:top-[37%] left-[20vw] md:left-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl">
+            <div
+              className={`${
+                isSlideDown ? "slide-down-text" : "slide-down-text-off"
+              } text-white font-poppins w-[20vw] absolute top-[34%] md:top-[37%] left-[20vw] md:left-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
+            >
               "Creativity delivered what others couldn't; cost-effective and
               timely."
             </div>
-            <div className="size-[20vw] md:size-40 bg-white rounded-[50%] absolute top-[34%] md:top-[37%] left-[-8%] md:left-[-3%]"></div>
+            <div
+              className={`${
+                isSlideDown ? "slide-down" : "slide-down-off"
+              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute md:top-[37%] left-[-8%] md:left-[-3%] flex items-center justify-center`}
+            >
+              <img src={cisco} alt="cisco" className="w-[50px] md:w-[100px]" />
+            </div>
           </div>
         </div>
       </div>
