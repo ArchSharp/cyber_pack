@@ -17,6 +17,11 @@ import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
 import nasa from "../Images/Companies/seven.png";
 import cisco from "../Images/Companies/eight.png";
+import ios from "../Images/ios-logo.png";
+import android from "../Images/Android.png";
+import windows from "../Images/windows.png";
+import html from "../Images/html5.png";
+import java from "../Images/java.png";
 
 export const CustomSoftwareDev = () => {
   const dispatch = useAppDispatch();
@@ -354,28 +359,65 @@ export const CustomSoftwareDev = () => {
         </div>
       </div>
 
-      <div className="min-h-[650px] pb-10 bg-main flex flex-col">
+      <div className="min-h-[650px] pb-10 bg-customsoftware flex flex-col">
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
           <div>Custom Software Development Services</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
-          {FlipCard("")}
-          {FlipCard("")}
-          {FlipCard("")}
-          {FlipCard("")}
-          {FlipCard("")}
+        <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] lg:h-[700px] xl:h-[300px] w-[98vw] md:w-[80vw] lg:w-[96vw] mx-auto mt-10 overflow-x-auto">
+          {FlipCard("", "orange", "IT Staff augumentation")}
+          {FlipCard(
+            "",
+            "#1F456E",
+            "Project based custom software development solutions"
+          )}
+          {FlipCard("", "rgb(70,130,180)", "Consulting services")}
+          {FlipCard("", "#33363D", "Code Reviews")}
+          {FlipCard("", "#666362", "Technical Analysis")}
         </div>
 
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
           <div>Supported Software Frameworks</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
+
+        <div className="grid grid-cols-3 gap-y-5 lg:flex items-end justify-between px-[1vw] h-[250px] md:h-[420px] lg:h-[220px] w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
+          <div className="flex flex-col items-center justify-center">
+            <img src={ios} alt="ios" className="w-[50px] md:w-[100px]" />
+            <div className=" text-white font-bold">iOS</div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <img
+              src={android}
+              alt="android"
+              className="w-[50px] md:w-[100px]"
+            />
+            <div className="mt-3 text-white font-bold text-sm">Android</div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <img
+              src={windows}
+              alt="windows"
+              className="w-[50px] md:w-[120px]"
+            />
+            <div className="mt-3 text-white font-bold text-sm">Windows</div>
+          </div>
+
+          <div className="flex flex-col items-center justify-center">
+            <img src={html} alt="html" className="w-[50px] md:w-[130px]" />
+            <div className="mt-3 text-white font-bold text-sm">HTML5</div>
+          </div>
+
+          <div className="flex flex-col items-center justify-center">
+            <img src={java} alt="java" className="w-[50px] md:w-[100px]" />
+            <div className="mt-3 text-white font-bold text-sm">Java</div>
+          </div>
+        </div>
       </div>
 
       {/* transparent background */}
-      <div className="glacier h-[260px] md:h-[650px] mb-16">
+      <div className="glacier h-[300px] md:h-[670px] mb-16 overflow-hidden">
         <div className="flex items-center h-full">
           <div className="w-[50vw] h-full flex relative">
             <div
@@ -649,14 +691,19 @@ export const CustomSoftwareDev = () => {
     </div>
   );
 
-  function FlipCard(flipcss: string) {
+  function FlipCard(flipcss: string, bgcolour: string, frontText: string) {
     return (
       <div
-        className={`flip-card bg-yellow-400 h-[280px] w-[45vw] md:w-56 rounded-[30px] text-center ${flipcss}`}
+        style={
+          {
+            "--flip-card-bg-colour": `${bgcolour}`,
+          } as any
+        }
+        className={`flip-card h-[280px] w-[45vw] md:w-56 rounded-[30px] text-center ${flipcss} shadow-xl`}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front flex items-center justify-center text-xl md:text-2xl text-white font-bold px-5 rounded-[30px]">
-            IT Staff augumentation
+            {frontText}
           </div>
           <div className="flip-card-back rounded-[30px] flex items-center justify-center px-4 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores

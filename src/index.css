@@ -49,6 +49,7 @@
   --cbpo1-width: 30px;
   --cbpo3-ml: 0%;
   --navbar-width: 0vw;
+  --flip-card-bg-colour: yellow;
 }
 
 /* body {
@@ -546,12 +547,12 @@ code {
 }
 
 .flip-card-front {
-  background-color: orange;
+  background-color: var(--flip-card-bg-colour);
   /* color: black; */
 }
 
 .flip-card-back {
-  background-color: orange;
+  background-color: var(--flip-card-bg-colour);
   color: white;
   transform: rotateY(180deg);
 }
