@@ -360,7 +360,7 @@ export const CustomSoftwareDev = () => {
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-5 lg:gap-y-0 items-center justify-between w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
           {FlipCard("")}
           {FlipCard("")}
           {FlipCard("")}
@@ -652,10 +652,10 @@ export const CustomSoftwareDev = () => {
   function FlipCard(flipcss: string) {
     return (
       <div
-        className={`flip-card bg-yellow-400 h-[280px] w-40 md:w-56 rounded-[30px] text-center ${flipcss}`}
+        className={`flip-card bg-yellow-400 h-[280px] w-[45vw] md:w-56 rounded-[30px] text-center ${flipcss}`}
       >
         <div className="flip-card-inner">
-          <div className="flip-card-front flex items-center justify-center text-2xl text-white font-bold px-5 rounded-[30px]">
+          <div className="flip-card-front flex items-center justify-center text-xl md:text-2xl text-white font-bold px-5 rounded-[30px]">
             IT Staff augumentation
           </div>
           <div className="flip-card-back rounded-[30px] flex items-center justify-center px-4 ">
