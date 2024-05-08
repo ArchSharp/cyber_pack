@@ -652,7 +652,7 @@ export const CustomSoftwareDev = () => {
   function FlipCard(flipcss: string) {
     return (
       <div
-        className={`flip-card bg-yellow-400 h-[280px] w-48 md:w-56 rounded-[30px] text-center ${flipcss}`}
+        className={`flip-card bg-yellow-400 h-[280px] w-40 md:w-56 rounded-[30px] text-center ${flipcss}`}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front flex items-center justify-center text-2xl text-white font-bold px-5 rounded-[30px]">
