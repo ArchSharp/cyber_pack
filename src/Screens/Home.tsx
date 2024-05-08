@@ -625,7 +625,7 @@ export const Home = () => {
       </div>
 
       {/* transparent background */}
-      <div className="glacier h-[260px] md:h-[650px] mb-16">
+      <div className="glacier h-[260px] md:h-[650px] mb-16 overflow-hidden">
         <div className="flex items-center h-full">
           <div className="w-[50vw] h-full flex relative">
             <div
