@@ -5,6 +5,7 @@ import * as routes from "./Data/Routes";
 import { Home } from "./Screens/Home";
 import Error from "./Components/Error";
 import { Footer } from "./Components/Footer";
+import { CustomSoftwareDev } from "./Screens/CustomSoftwareDev";
 
 function App() {
   return (
@@ -12,6 +13,11 @@ function App() {
       <Header />
       <Routes>
         <Route path={routes.homepage} index element={<Home />} />
+        <Route
+          path={routes.custom_softwareDev}
+          index
+          element={<CustomSoftwareDev />}
+        />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

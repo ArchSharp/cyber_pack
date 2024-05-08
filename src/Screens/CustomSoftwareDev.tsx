@@ -8,21 +8,18 @@ import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
-import programmer from "../Images/programmer.jpg";
+// import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
-import ceo from "../Images/ceo.png";
+// import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch } from "../Store/store";
 import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
 import nasa from "../Images/Companies/seven.png";
 import cisco from "../Images/Companies/eight.png";
-import { useNavigate } from "react-router-dom";
-import * as routes from "../Data/Routes";
 
-export const Home = () => {
+export const CustomSoftwareDev = () => {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
   const [lslide, setLslide] = useState("cbp01");
   const [lslide2, setLslide2] = useState("cbp03");
   const [lslide3, setLslide3] = useState("cbp04");
@@ -159,6 +156,17 @@ export const Home = () => {
       connect.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  //   useEffect(() => {
+  //     const handleScrollToTop = () => {
+  //       window.scrollTo({
+  //         top: 0,
+  //         behavior: "smooth", // Optional: smooth scrolling animation
+  //       });
+  //     };
+
+  //     handleScrollToTop();
+  //   }, []);
 
   return (
     <div>
@@ -346,281 +354,18 @@ export const Home = () => {
         </div>
       </div>
 
-      {/* our services */}
-
-      <div className="ml-[5vw] mt-8 md:mt-16 mb-10 md:mb-28 w-fit">
-        <div className="font-Cervanttis text-blue-500 text-4xl md:text-6xl">
-          Our Services
-        </div>
-        <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
-      </div>
-
-      <div className="mt-10 md:mt-20 flex flex-col lg:flex-row items-center">
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            Software <span className="ml-1 font-bold"> Engineering</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            With more than 24 years of success in custom (bespoke) software
-            development, CyberPackHQ has the expertise, experience and scale to
-            service enterprise requirements in web and mobile applications.
-            Whether your requirement is to build a new application, enhance an
-            existing application or require support to maintain your current
-            application, we have the services you need in Microsoft .NET, JAVA
-            and open-source technology development stacks.
-          </div>
-          {ServicesComponent(
-            "CUSTOM SOFTWARE DEVELOPMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "MOBILE APP DEVELOPMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "MICROSOFT SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "WEB APPLICATION SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
+      <div className="h-[650px] bg-main flex flex-col">
+        <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
+          <div>Custom Software Development Services</div>
+          <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-      </div>
-
-      {/* IT Staff augumentation */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            IT Staff
-            <span className="ml-1 font-bold"> Augmentation</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            CyberPackHQ solves your challenge to find scarce, high-performing IT
-            staff for your IT projects and capacity needs. We provide remote,
-            hybrid and on-site IT professionals to augment your team. Our
-            capability to rapidly fulfil your staff requirements based on our
-            600+ employees and global presence means a solution to your on-hold
-            projects, late or delayed delivery and backlog of business requests.
-          </div>
-          {ServicesComponent(
-            "AGILE TECHNOLOGY TEAMS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "STAFF AUGMENTATION",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent("MICROSOFT", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "OPEN-SOURCE/JAVA",
-            "#",
-            routes.custom_softwareDev
-          )}
-        </div>
-      </div>
-
-      {/* Data and Automation */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            Data and
-            <span className="ml-1 font-bold">Automation</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            Transform your business decision-making, customer acquisition,
-            retention and service leveraging our expertise in data, analytics
-            and automation. Data, business intelligence, analytics and
-            automation are critical capabilities in the modern, digital
-            business. CyberPackHQ enables your business to become data-driven,
-            gain key insights from analytics and benefit from efficiencies
-            through automation. Our comprehensive services in data, business
-            intelligence, analytics and automation are ready to service your
-            requirements and progress your digital business enablement maturity.
-          </div>
-          {ServicesComponent(
-            "BI & DATA ANALYTICS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "ROBOTIC PROCESS AUTOMATION",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent("AI SOLUTIONS", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "DATABRICKS SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
-        </div>
-
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-      </div>
-
-      {/* Digital Transformation */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            Digital
-            <span className="ml-1 font-bold">Transformation</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            Digital transformation of business goes beyond the implementation of
-            technology to the adoption of processes, methodology and progression
-            of skills maturity that truly enable digital capability. Realise
-            your digital business aspirations with CyberPackHQ’s services
-            focused on enterprise Agile transformation, business analysis,
-            change management and technology project delivery management.
-            CyberPackHQ partners with our customers on their Agile journey to
-            achieve greater success in IT projects, faster delivery, improved
-            quality and real ROI.
-          </div>
-          {ServicesComponent(
-            "BUSINESS ANALYSIS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "CHANGE MANAGEMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "DELIVERY MANAGEMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "AGILE CONSULTING",
-            "#",
-            routes.custom_softwareDev
-          )}
-        </div>
-      </div>
-
-      {/* Cloud Solutions */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            Cloud
-            <span className="ml-1 font-bold">Solutions</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            Cloud adoption is a key enabler and critical success factor for
-            modern digital business. CyberPackHQ provides expertise in Microsoft
-            Azure, AWS and Google Cloud to ensure your successful migration,
-            adoption and PAAS management on the world’s best cloud platforms.
-            Realise the real benefits of cloud adoption through our application
-            modernization and migration services. Scalable, reliable and secure
-            applications that are architected and developed to run in the cloud
-            as intended. DevSecOps implementation to optimize your development
-            process management.
-          </div>
-          {ServicesComponent(
-            "APPLICATION MODERNISATION",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "CLOUD APPLICATION SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "DEVOPS CONSULTING",
-            "#",
-            routes.custom_softwareDev
-          )}
-        </div>
-
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-      </div>
-
-      {/* Design Services */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
-            <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-            Design
-            <span className="ml-1 font-bold">Services</span>
-          </div>
-          <div className="pl-7 mt-5 text-slate-600 text-left">
-            With a keen eye for digital experience design and user interfaces,
-            we craft seamless digital experience solutions for your business,
-            marrying business goals with user needs. Great UX and UI are the
-            competitive edge in the modern digital business world. Your digital
-            channels have the functional capability. We make it an incredible
-            experience.
-          </div>
-          {ServicesComponent(
-            "UX REVIEW & ANALYSIS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent("UX DESIGN", "#", routes.custom_softwareDev)}
-          {ServicesComponent("UI DESIGN", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "OTHER DESIGN SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
+        <div className="flex items-center justify-between w-[80vw] mx-auto mt-10 overflow-x-auto">
+          {FlipCard("")}
+          {FlipCard("")}
+          {FlipCard("")}
+          {FlipCard("")}
+          {FlipCard("")}
         </div>
       </div>
 
@@ -661,54 +406,6 @@ export const Home = () => {
               <img src={cisco} alt="cisco" className="w-[50px] md:w-[100px]" />
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Meet our CEO */}
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
-          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
-        </div>
-        <div className="ml-0 md:ml-8 mt-16 md:mt-0">
-          <div className="w-[100vw] md:w-fit">
-            <div className="font-Cervanttis text-blue-500 text-3xl md:text-5xl text-center md:text-left">
-              Meet our CEO
-            </div>
-            <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
-          </div>
-          <div className=" text-slate-600 w-[100vw] md:w-[50vw] my-7 text-center md:text-left">
-            I have been passionate about software solutions since I wrote my
-            first software program on a ZX Spectrum in primary school! Leading a
-            team of IT professionals at CyberPackHQ who share this passion, is
-            immensely rewarding and a great privilege.
-          </div>
-          <div className=" text-blue-700 font-bold text-center md:text-left">
-            Prof. OLAKUNLE IGBAROOLA
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row justify-center items-center mt-36">
-        <div className="ml-0 md:ml-8">
-          <div className="w-[100vw] md:w-fit text-center md:text-left">
-            <div className="font-Cervanttis text-blue-500 text-3xl md:text-5xl">
-              Meet our MD
-            </div>
-            <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
-          </div>
-          <div className=" text-slate-600 w-[100vw] md:w-[400px] px-5 md:px-2 my-7 text-center md:text-left">
-            At CyberPackHQ, we are privileged to provide quality software
-            development services and solutions to our clients in Southern
-            Africa, while also contributing meaningfully to addressing the
-            technology skills gap in the region.
-          </div>
-          <div className=" text-blue-700 font-bold text-center md:text-left">
-            Prof. OLAKUNLE IGBAROOLA
-          </div>
-        </div>
-
-        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
-          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
       </div>
 
@@ -947,26 +644,19 @@ export const Home = () => {
     </div>
   );
 
-  function ServicesComponent(text: string, link: string, route: string) {
+  function FlipCard(flipcss: string) {
     return (
-      <div className="border-b-[1px] border-slate-500 w-[90%] mx-auto mt-7 flex items-center">
-        <div
-          // href={`https://${link}`}
-          // target="_self"
-          className="italic font-semibold mb-3 text-slate-700 text-sm cursor-pointer"
-          onClick={() => navigate(route)}
-        >
-          {text}
-        </div>
-        <div
-          // href={`https://${link}`}
-          // target="_self"
-          className="ml-auto mr-2 mb-2 cursor-pointer"
-        >
-          <FaArrowCircleRight
-            className="text-blue-700"
-            onClick={() => navigate(route)}
-          />
+      <div
+        className={`flip-card bg-yellow-400 h-[280px] w-56 rounded-[30px] text-center ${flipcss}`}
+      >
+        <div className="flip-card-inner">
+          <div className="flip-card-front flex items-center justify-center text-2xl text-white font-bold px-5 rounded-[30px]">
+            IT Staff augumentation
+          </div>
+          <div className="flip-card-back rounded-[30px] flex items-center justify-center px-4 ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            culpa sit tempora. Odit quas animi qui exercitationem delectus eaque
+          </div>
         </div>
       </div>
     );
