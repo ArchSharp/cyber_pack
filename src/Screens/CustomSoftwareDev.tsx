@@ -354,18 +354,23 @@ export const CustomSoftwareDev = () => {
         </div>
       </div>
 
-      <div className="h-[650px] bg-main flex flex-col">
+      <div className="min-h-[650px] pb-10 bg-main flex flex-col">
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
           <div>Custom Software Development Services</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="flex items-center justify-between w-[80vw] mx-auto mt-10 overflow-x-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-5 lg:gap-y-0 items-center justify-between w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
           {FlipCard("")}
           {FlipCard("")}
           {FlipCard("")}
           {FlipCard("")}
           {FlipCard("")}
+        </div>
+
+        <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
+          <div>Supported Software Frameworks</div>
+          <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
       </div>
 
@@ -647,7 +652,7 @@ export const CustomSoftwareDev = () => {
   function FlipCard(flipcss: string) {
     return (
       <div
-        className={`flip-card bg-yellow-400 h-[280px] w-56 rounded-[30px] text-center ${flipcss}`}
+        className={`flip-card bg-yellow-400 h-[280px] w-48 md:w-56 rounded-[30px] text-center ${flipcss}`}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front flex items-center justify-center text-2xl text-white font-bold px-5 rounded-[30px]">

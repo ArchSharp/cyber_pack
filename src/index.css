@@ -517,8 +517,8 @@ code {
 
 .flip-card {
   background-color: transparent;
-  width: 244px !important;
-  height: 280px !important;
+  /* width: 244px !important;
+  height: 280px !important; */
   perspective: 1000px;
 }
 
