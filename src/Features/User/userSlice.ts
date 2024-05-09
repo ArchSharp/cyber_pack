@@ -12,14 +12,18 @@ const initialState: IUserState = {
 };
 
 const userSlice = createSlice({
-  name: "patient",
+  name: "user",
   initialState,
   reducers: {
     setLoading: (state, { payload }: PayloadAction<boolean>) => {
       state.isLoading = payload;
     },
 
-    setLogout: (state) => {},
+    setLogout: (state) => {
+      state.header = "";
+      state.isAuth = false;
+      state.isLoading = false;
+    },
 
     setISAuth: (state, { payload }: PayloadAction<boolean>) => {
       state.isAuth = payload;

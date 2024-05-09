@@ -162,16 +162,16 @@ export const CustomSoftwareDev = () => {
     }
   };
 
-  //   useEffect(() => {
-  //     const handleScrollToTop = () => {
-  //       window.scrollTo({
-  //         top: 0,
-  //         behavior: "smooth", // Optional: smooth scrolling animation
-  //       });
-  //     };
+  // useEffect(() => {
+  //   const handleScrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth", // Optional: smooth scrolling animation
+  //     });
+  //   };
 
-  //     handleScrollToTop();
-  //   }, []);
+  //   handleScrollToTop();
+  // }, []);
 
   return (
     <div>
@@ -365,7 +365,7 @@ export const CustomSoftwareDev = () => {
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] lg:h-[700px] xl:h-[300px] w-[98vw] md:w-[80vw] lg:w-[96vw] mx-auto mt-10 overflow-x-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] lg:h-[700px] xl:h-[300px] w-[98vw] md:w-[80vw] lg:w-[85vw] mx-auto mt-10 overflow-x-auto">
           {FlipCard("", "orange", "IT Staff augumentation")}
           {FlipCard(
             "",
@@ -382,7 +382,7 @@ export const CustomSoftwareDev = () => {
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-3 gap-y-5 lg:flex items-end justify-between px-[1vw] h-[250px] md:h-[420px] lg:h-[220px] w-[98vw] md:w-[80vw] mx-auto mt-10 overflow-x-auto">
+        <div className="grid grid-cols-3 gap-y-5 lg:flex items-end justify-between px-[1vw] h-[250px] md:h-[420px] lg:h-[220px] w-[98vw] md:w-[70vw] lg:w[60vw] mx-auto mt-10 overflow-x-auto">
           <div className="flex flex-col items-center justify-center">
             <img src={ios} alt="ios" className="w-[50px] md:w-[100px]" />
             <div className=" text-white font-bold">iOS</div>
@@ -414,6 +414,24 @@ export const CustomSoftwareDev = () => {
             <div className="mt-3 text-white font-bold text-sm">Java</div>
           </div>
         </div>
+      </div>
+
+      {/* fixed right side navbar */}
+      <div className=" bg-sidenavbar w-[170px] rounded-tl-[30px] rounded-bl-[30px] z-[1] h-[300px] fixed right-0 top-[35vh] hidden lg:block">
+        <div className=" text-main font-bold pl-7 pt-5">Quick Nav</div>
+        <hr className="ml-7 mr-4 border-main my-3" />
+        <ul className=" text-main pl-7">
+          <li className=" cursor-pointer hover:text-orange-400">Services</li>
+          <li className="py-2 cursor-pointer hover:text-orange-400">
+            Featured
+          </li>
+          <li className=" cursor-pointer hover:text-orange-400">References</li>
+          <li className="py-2 cursor-pointer hover:text-orange-400">
+            Client Projects
+          </li>
+          <li className=" cursor-pointer hover:text-orange-400">Contact Us</li>
+          <li className="pt-2 cursor-pointer hover:text-orange-400">FAQ's</li>
+        </ul>
       </div>
 
       {/* transparent background */}
@@ -699,7 +717,7 @@ export const CustomSoftwareDev = () => {
             "--flip-card-bg-colour": `${bgcolour}`,
           } as any
         }
-        className={`flip-card h-[280px] w-[45vw] md:w-56 rounded-[30px] text-center ${flipcss} shadow-xl`}
+        className={`flip-card h-[280px] w-[45vw] md:w-[35vw] lg:w-[20vw] xl:w-[15vw] rounded-[30px] text-center ${flipcss} shadow-xl`}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front flex items-center justify-center text-xl md:text-2xl text-white font-bold px-5 rounded-[30px]">

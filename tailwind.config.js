@@ -9,6 +9,7 @@ module.exports = {
         navbar: "rgb(70,130,180)",
         iconBg: "#52B2BF",
         cbp01_blue: "rgba(0,191,255,0.5)",
+        sidenavbar: "rgba(226 ,232, 240,0.5)",
       },
       fontFamily: { poppins: "PoppinsLight", Cervanttis: "Cervanttis" },
       fontSize: {

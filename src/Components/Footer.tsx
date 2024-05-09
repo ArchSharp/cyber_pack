@@ -5,11 +5,26 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { BiUpArrow } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: smooth scrolling animation
+    });
+  };
+
   return (
     <div className="min-h-[70vh] bg-main pt-[10vh] pb-5">
+      <div
+        className=" size-10 text-xl rounded-[50%] animate-bounce bg-slate-300 fixed bottom-4 right-5 cursor-pointer shadow-2xl"
+        onClick={() => handleScrollToTop()}
+      >
+        <BiUpArrow className="mx-auto my-2" />
+      </div>
+
       <div className="flex items-center lg:items-start lg:justify-center flex-col lg:flex-row">
         <div className="flex items-start lg:w-[45vw]">
           <div className="w-[45vw] lg:w-[21vw]">
