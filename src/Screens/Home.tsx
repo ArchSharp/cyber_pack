@@ -12,16 +12,18 @@ import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
-import { useAppDispatch } from "../Store/store";
+import { useAppDispatch, useAppSelector } from "../Store/store";
 import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
 import nasa from "../Images/Companies/seven.png";
 import cisco from "../Images/Companies/eight.png";
 import { useNavigate } from "react-router-dom";
 import * as routes from "../Data/Routes";
+import { setHeader } from "../Features/User/userSlice";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
+  const { header } = useAppSelector((state) => state.user);
   const navigate = useNavigate();
   const [lslide, setLslide] = useState("cbp01");
   const [lslide2, setLslide2] = useState("cbp03");
@@ -151,14 +153,36 @@ export const Home = () => {
   // const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
   // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
-
   const connect = useRef<HTMLDivElement>(null);
+  const services = useRef<HTMLDivElement>(null);
+  const clients = useRef<HTMLDivElement>(null);
+  const aboutus = useRef<HTMLDivElement>(null);
   const handleScrollToBottom = () => {
     if (connect.current) {
-      // Scroll to the third div
       connect.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (header === "services") {
+      if (services.current) {
+        services.current.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (header === "clients") {
+      if (clients.current) {
+        clients.current.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (header === "contactus") {
+      if (connect.current) {
+        connect.current.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (header === "aboutus") {
+      if (aboutus.current) {
+        aboutus.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    dispatch(setHeader(""));
+  }, [dispatch, header]);
 
   return (
     <div>
@@ -348,7 +372,10 @@ export const Home = () => {
 
       {/* our services */}
 
-      <div className="ml-[5vw] mt-8 md:mt-16 mb-10 md:mb-28 w-fit">
+      <div
+        className="ml-[5vw] mt-8 md:mt-16 mb-10 md:mb-28 w-fit"
+        ref={services}
+      >
         <div className="font-Cervanttis text-blue-500 text-4xl md:text-6xl">
           Our Services
         </div>
@@ -625,7 +652,10 @@ export const Home = () => {
       </div>
 
       {/* transparent background */}
-      <div className="glacier h-[260px] md:h-[650px] mb-16 overflow-hidden">
+      <div
+        className="glacier h-[260px] md:h-[650px] mb-16 overflow-hidden"
+        ref={clients}
+      >
         <div className="flex items-center h-full">
           <div className="w-[50vw] h-full flex relative">
             <div
@@ -756,7 +786,7 @@ export const Home = () => {
       </div>
 
       {/* Connect with cyberpack */}
-      <div className="connect-with-us mt-28 flex flex-col" ref={connect}>
+      <div className="connect-with-us mt-28 flex flex-col">
         <div className=" font-Cervanttis text-blue-500 text-3xl md:text-5xl font-bold mt-10 text-center">
           Connect with CyberPackHQ
         </div>
@@ -782,7 +812,10 @@ export const Home = () => {
               leadership today.
             </div>
           </div>
-          <div className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto">
+          <div
+            className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto"
+            ref={connect}
+          >
             <div className="pl-7 pt-3 text-3xl text-blue-600 flex items-center italic">
               <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
               <span className="mr-2 font-bold">SERVICE</span>ENQUIRIES
@@ -913,7 +946,10 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="h-[25vh] flex flex-col items-center justify-center">
+      <div
+        className="h-[25vh] flex flex-col items-center justify-center"
+        ref={aboutus}
+      >
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
           CyberPackHQ is your

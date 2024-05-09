@@ -9,19 +9,61 @@ import { FiSearch } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoClose, IoSearch } from "react-icons/io5";
 import cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navbar } from "./NavBar";
+import { useAppDispatch } from "../Store/store";
+import { setHeader } from "../Features/User/userSlice";
+// import { useAppSelector } from "../Store/store";
 
 export const Header = () => {
+  const dispatch = useAppDispatch();
   const [isOpen, setIsOpen] = useState(false);
-
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [hideTopNav, setHideTopNav] = useState(false);
   const isTabletOrPhone = useMediaQuery({ query: "(max-width: 768px)" });
   const isPhone = useMediaQuery({ query: "(max-width: 425px)" });
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Update the scroll position
+      setScrollPosition(window.scrollY);
+    };
+
+    // Add the event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrollPosition > 60) {
+      setHideTopNav(true);
+    } else if (scrollPosition === 0) {
+      setHideTopNav(false);
+    }
+  }, [scrollPosition]);
+
+  const handleScrollToTop = () => {
+    // Scroll the window to the top of the document smoothly
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="header flex flex-col items-center h-[12vh] lg:h-[20vh] bg-main text-white font-poppins">
-      <div className="ml-auto mr-[8vw] mt-[2vh] mb-[3vh] hidden lg:flex items-center">
+    <div
+      className={`header flex flex-col items-center justify-center  bg-main text-white font-poppins z-[2] ${
+        hideTopNav === true ? "sticky top-0 header-a" : "relative header-b"
+      }`}
+    >
+      {/* {!hideTopNav && ( */}
+      <div
+        className={`${
+          hideTopNav ? "header-fade" : ""
+        } ml-auto mr-[8vw] mb-[1vh] hidden lg:flex items-center`}
+      >
         <IoSearch className="mr-2 text-2xl cursor-pointer" />
         <div className="w-6 h-6 flex items-center justify-center rounded-[50%] bg-iconBg mr-2 hover:bg-slate-400 cursor-pointer">
           <FaFacebookF className="text-xs" />
@@ -39,18 +81,40 @@ export const Header = () => {
           <FaInstagram className="text-xs" />
         </div>
       </div>
+      {/* )} */}
       <div className="h-[12vh] lg:h-fit flex items-center w-screen">
         <img
           src={cyberpack}
           alt="cyberpack"
-          className="w-[100px] lg:w-[180px] h-[30px] ml-[6vw]"
+          className="w-[100px] lg:w-[180px] h-[30px] ml-[6vw] cursor-pointer"
+          onClick={handleScrollToTop}
         />
         <div className="hidden lg:flex ml-auto mr-[8vw] text-sm">
-          <div className="ml-auto mr-6 cursor-pointer">About Us</div>
-          <div className="mr-6 cursor-pointer">Services</div>
-          <div className="mr-6 cursor-pointer">Clients</div>
+          <div
+            className="ml-auto mr-6 cursor-pointer"
+            onClick={() => dispatch(setHeader("aboutus"))}
+          >
+            About Us
+          </div>
+          <div
+            className="mr-6 cursor-pointer"
+            onClick={() => dispatch(setHeader("services"))}
+          >
+            Services
+          </div>
+          <div
+            className="mr-6 cursor-pointer"
+            onClick={() => dispatch(setHeader("clients"))}
+          >
+            Clients
+          </div>
           <div className="mr-6 cursor-pointer">Careers</div>
-          <div className="cursor-pointer">Contact Us</div>
+          <div
+            className="cursor-pointer"
+            onClick={() => dispatch(setHeader("contactus"))}
+          >
+            Contact Us
+          </div>
         </div>
         {isTabletOrPhone && (
           <>

@@ -1,10 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { IUserState } from "./type";
 // import { AppThunk } from "../../Store/store";
 // import { axios /*axiosWithAuth*/ } from "../utils";
 // import axiosWithAuth from "../utils";
 // import { clearErrors, setError /*setSuccess*/ } from "../Error/errorSlice";
 
-const initialState: any = {
+const initialState: IUserState = {
   isLoading: false,
   userId: "",
   isDefaultPassword: false,
@@ -22,6 +23,9 @@ const userSlice = createSlice({
 
     setISAuth: (state, { payload }: PayloadAction<boolean>) => {
       state.isAuth = payload;
+    },
+    setHeader: (state, { payload }: PayloadAction<string>) => {
+      state.header = payload;
     },
   },
 });
@@ -117,5 +121,5 @@ const userSlice = createSlice({
 //   };
 // };
 
-export const { setLoading } = userSlice.actions;
+export const { setLoading, setHeader } = userSlice.actions;
 export default userSlice.reducer;

@@ -556,3 +556,18 @@ code {
   color: white;
   transform: rotateY(180deg);
 }
+
+.header-a {
+  height: 12vh;
+  transition: height 600ms ease-in-out;
+}
+
+.header-b {
+  height: 20vh;
+  transition: height 600ms ease-in-out;
+}
+
+.header-fade {
+  /* z-index: -10;
+  transition: z-index 1.5s ease-in-out; */
+}

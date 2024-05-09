@@ -5,3 +5,11 @@ export interface IServiceEnquiry {
   Questions: string;
   IsGrantCyberPack: boolean;
 }
+
+export interface IUserState {
+  isLoading: boolean;
+  userId: string;
+  isDefaultPassword: boolean;
+  isAuth?: boolean;
+  header?: string;
+}
