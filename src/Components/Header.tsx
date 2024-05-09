@@ -14,10 +14,13 @@ import { useMediaQuery } from "react-responsive";
 import { Navbar } from "./NavBar";
 import { useAppDispatch } from "../Store/store";
 import { setHeader } from "../Features/User/userSlice";
+import { useNavigate } from "react-router-dom";
+import * as routes from "../Data/Routes";
 // import { useAppSelector } from "../Store/store";
 
 export const Header = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [hideTopNav, setHideTopNav] = useState(false);
@@ -47,10 +50,10 @@ export const Header = () => {
     }
   }, [scrollPosition]);
 
-  const handleScrollToTop = () => {
-    // Scroll the window to the top of the document smoothly
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // const handleScrollToTop = () => {
+  //   // Scroll the window to the top of the document smoothly
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
     <div
@@ -87,7 +90,7 @@ export const Header = () => {
           src={cyberpack}
           alt="cyberpack"
           className="w-[100px] lg:w-[180px] h-[30px] ml-[6vw] cursor-pointer"
-          onClick={handleScrollToTop}
+          onClick={() => navigate(routes.homepage)}
         />
         <div className="hidden lg:flex ml-auto mr-[8vw] text-sm">
           <div

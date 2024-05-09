@@ -162,16 +162,16 @@ export const CustomSoftwareDev = () => {
     }
   };
 
-  // useEffect(() => {
-  //   const handleScrollToTop = () => {
-  //     window.scrollTo({
-  //       top: 0,
-  //       behavior: "smooth", // Optional: smooth scrolling animation
-  //     });
-  //   };
+  useEffect(() => {
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional: smooth scrolling animation
+      });
+    };
 
-  //   handleScrollToTop();
-  // }, []);
+    handleScrollToTop();
+  }, []);
 
   return (
     <div>

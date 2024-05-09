@@ -184,6 +184,17 @@ export const Home = () => {
     dispatch(setHeader(""));
   }, [dispatch, header]);
 
+  useEffect(() => {
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional: smooth scrolling animation
+      });
+    };
+
+    handleScrollToTop();
+  }, []);
+
   return (
     <div>
       <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
