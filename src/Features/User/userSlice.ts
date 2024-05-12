@@ -19,6 +19,9 @@ const userSlice = createSlice({
       state.isLoading = payload;
     },
 
+    setLastRoute: (state, { payload }: PayloadAction<string>) => {
+      state.lastRoute = payload;
+    },
     setLogout: (state) => {
       state.header = "";
       state.isAuth = false;
@@ -125,5 +128,5 @@ const userSlice = createSlice({
 //   };
 // };
 
-export const { setLoading, setHeader } = userSlice.actions;
+export const { setLoading, setHeader, setLastRoute } = userSlice.actions;
 export default userSlice.reducer;

@@ -23,7 +23,7 @@ import { setHeader } from "../Features/User/userSlice";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
-  const { header } = useAppSelector((state) => state.user);
+  const { header, lastRoute } = useAppSelector((state) => state.user);
   const navigate = useNavigate();
   const [lslide, setLslide] = useState("cbp01");
   const [lslide2, setLslide2] = useState("cbp03");
@@ -164,36 +164,42 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    if (header === "services") {
-      if (services.current) {
-        services.current.scrollIntoView({ behavior: "smooth" });
+    const timer = setTimeout(() => {
+      if (header === "services") {
+        if (services.current) {
+          services.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (header === "clients") {
+        if (clients.current) {
+          clients.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (header === "contactus") {
+        if (connect.current) {
+          connect.current.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (header === "aboutus") {
+        if (aboutus.current) {
+          aboutus.current.scrollIntoView({ behavior: "smooth" });
+        }
       }
-    } else if (header === "clients") {
-      if (clients.current) {
-        clients.current.scrollIntoView({ behavior: "smooth" });
-      }
-    } else if (header === "contactus") {
-      if (connect.current) {
-        connect.current.scrollIntoView({ behavior: "smooth" });
-      }
-    } else if (header === "aboutus") {
-      if (aboutus.current) {
-        aboutus.current.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-    dispatch(setHeader(""));
+      dispatch(setHeader(""));
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, [dispatch, header]);
 
   useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+    if (lastRoute !== "/") {
+      const handleScrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Optional: smooth scrolling animation
+        });
+      };
 
-    handleScrollToTop();
-  }, []);
+      handleScrollToTop();
+    }
+  }, [lastRoute]);
 
   return (
     <div>

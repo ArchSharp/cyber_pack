@@ -11,21 +11,26 @@ import { IoClose, IoSearch } from "react-icons/io5";
 import cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Navbar } from "./NavBar";
+// import { Navbar } from "./NavBar";
 import { useAppDispatch } from "../Store/store";
 import { setHeader } from "../Features/User/userSlice";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import * as routes from "../Data/Routes";
 // import { useAppSelector } from "../Store/store";
 
 export const Header = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [hideTopNav, setHideTopNav] = useState(false);
   const isTabletOrPhone = useMediaQuery({ query: "(max-width: 768px)" });
   const isPhone = useMediaQuery({ query: "(max-width: 425px)" });
+
+  // Accessing the current route
+  const currentRoute = location.pathname;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,10 +60,14 @@ export const Header = () => {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
   // };
 
+  // console.log("current route: ", currentRoute);
+
   return (
     <div
-      className={`header flex flex-col items-center justify-center  bg-main text-white font-poppins z-[2] ${
-        hideTopNav === true ? "sticky top-0 header-a" : "relative header-b"
+      className={`flex flex-col items-center justify-center bg-main text-white font-poppins z-[2] ${
+        hideTopNav === true
+          ? "sticky top-0 header-minH"
+          : "relative header-maxH"
       }`}
     >
       {/* {!hideTopNav && ( */}
@@ -143,19 +152,57 @@ export const Header = () => {
                 />
 
                 <ul className="pl-5 mt-10">
-                  <li className="text-slate-200 text-lg px-2 py-2 font-bold">
-                    <Navbar head={"About Us"} />
+                  <li
+                    className="text-slate-200 text-lg px-2 py-2 font-bold"
+                    onClick={() => {
+                      dispatch(setHeader("aboutus"));
+                      if (currentRoute === "/custom-software-development") {
+                        navigate(routes.homepage);
+                      }
+                      setIsOpen(!isOpen);
+                    }}
+                  >
+                    {/* <Navbar head={"About Us"} /> */}
+                    About Us
                   </li>
-                  <li className="text-slate-200 text-lg px-2 py-2 font-bold">
-                    <Navbar head={"Services"} />
+                  <li
+                    className="text-slate-200 text-lg px-2 py-2 font-bold"
+                    onClick={() => {
+                      dispatch(setHeader("services"));
+                      if (currentRoute === "/custom-software-development") {
+                        navigate(routes.homepage);
+                      }
+                      setIsOpen(!isOpen);
+                    }}
+                  >
+                    {/* <Navbar head={"Services"} /> */}
+                    Services
                   </li>
-                  <li className="text-slate-200 text-lg px-2 py-2 font-bold">
+                  <li
+                    className="text-slate-200 text-lg px-2 py-2 font-bold"
+                    onClick={() => {
+                      dispatch(setHeader("clients"));
+                      if (currentRoute === "/custom-software-development") {
+                        navigate(routes.homepage);
+                      }
+                      setIsOpen(!isOpen);
+                    }}
+                  >
                     Clients
                   </li>
                   <li className="text-slate-200 text-lg px-2 py-2 font-bold">
                     Careers
                   </li>
-                  <li className="text-slate-200 text-lg px-2 py-2 font-bold">
+                  <li
+                    className="text-slate-200 text-lg px-2 py-2 font-bold"
+                    onClick={() => {
+                      dispatch(setHeader("contactus"));
+                      if (currentRoute === "/custom-software-development") {
+                        navigate(routes.homepage);
+                      }
+                      setIsOpen(!isOpen);
+                    }}
+                  >
                     Contact Us
                   </li>
                 </ul>

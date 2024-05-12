@@ -12,4 +12,5 @@ export interface IUserState {
   isDefaultPassword: boolean;
   isAuth?: boolean;
   header?: string;
+  lastRoute?: string;
 }

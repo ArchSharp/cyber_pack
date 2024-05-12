@@ -557,17 +557,48 @@ code {
   transform: rotateY(180deg);
 }
 
-.header-a {
-  height: 12vh;
+.header-minH {
+  height: 10vh;
+  /* border: 2px solid red; */
   transition: height 600ms ease-in-out;
 }
 
-.header-b {
+.header-maxH {
   height: 20vh;
+
   transition: height 600ms ease-in-out;
 }
 
-.header-fade {
-  /* z-index: -10;
-  transition: z-index 1.5s ease-in-out; */
+.show-details {
+  max-height: 1000px; /* Set a large enough value to ensure that all content is visible */
+  /* transition: max-height 0.8s ease-in; Smoothly transition max-height property */
+  animation: show-details 1400ms ease-out;
+}
+
+@keyframes show-details {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+
+.hide-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px 3vw;
+  /* transition: max-height 1.3s ease-in, padding 1.3s ease-in; */
+  animation: hide-details 100ms ease-in;
+}
+
+@keyframes hide-details {
+  from {
+    max-height: 1000px;
+    padding: 12px 3vw;
+  }
+  to {
+    max-height: 0;
+    padding: 0px 3vw;
+  }
 }

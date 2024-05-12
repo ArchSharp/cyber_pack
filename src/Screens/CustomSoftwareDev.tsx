@@ -22,9 +22,14 @@ import android from "../Images/Android.png";
 import windows from "../Images/windows.png";
 import html from "../Images/html5.png";
 import java from "../Images/java.png";
+import { setLastRoute } from "../Features/User/userSlice";
+import { useLocation } from "react-router-dom";
+import programmer from "../Images/programmer.jpg";
+import { Challenges } from "../Components/Challenges";
 
 export const CustomSoftwareDev = () => {
   const dispatch = useAppDispatch();
+  const location = useLocation();
   const [lslide, setLslide] = useState("cbp01");
   const [lslide2, setLslide2] = useState("cbp03");
   const [lslide3, setLslide3] = useState("cbp04");
@@ -32,6 +37,9 @@ export const CustomSoftwareDev = () => {
   const [isRead, setIsRead] = useState(false);
   const [isSlideUp, setIsSlideUp] = useState(false);
   const [isSlideDown, setIsSlideDown] = useState(false);
+
+  // Accessing the current route
+  const currentRoute = location.pathname;
 
   useEffect(() => {
     const LSlide = setInterval(() => {
@@ -162,16 +170,20 @@ export const CustomSoftwareDev = () => {
     }
   };
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  // useEffect(() => {
+  //   const handleScrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth", // Optional: smooth scrolling animation
+  //     });
+  //   };
 
-    handleScrollToTop();
-  }, []);
+  //   handleScrollToTop();
+  // }, []);
+
+  useEffect(() => {
+    dispatch(setLastRoute(currentRoute));
+  }, [currentRoute, dispatch]);
 
   return (
     <div>
@@ -432,6 +444,50 @@ export const CustomSoftwareDev = () => {
           <li className=" cursor-pointer hover:text-orange-400">Contact Us</li>
           <li className="pt-2 cursor-pointer hover:text-orange-400">FAQ's</li>
         </ul>
+      </div>
+
+      {/* solve the business challenges */}
+      <div className="mt-20">
+        <div className="text-xl pl-[5vw] italic font-bold text-customsoftware">
+          DVT CUSTOM SOFTWARE DEVELOPMENT SERVICES
+        </div>
+        <div className="text-3xl pl-[5vw] italic font-bold text-blue-600">
+          SOLVE THESE BUSINESS CHALLENGES:
+        </div>
+      </div>
+      <div className="mt-0 mb-10 flex flex-col lg:flex-row items-start">
+        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
+          <Challenges
+            classes={"mt-12"}
+            title={"Sourcing scarce IT-skills:"}
+            details={
+              "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. DVT's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
+            }
+          />
+          <Challenges
+            classes={"mt-1"}
+            title={"Faster delivery on business needs:"}
+            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. DVT has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
+          />
+          <Challenges
+            classes={"mt-1"}
+            title={"Reduce complexity and improve performance"}
+            details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. DVT's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
+          />
+          <Challenges
+            classes={"mt-1"}
+            title={"Enable unique IP"}
+            details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. DVT's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
+          />
+        </div>
+
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] md:ml-auto md:mr-auto lg:mr-0 lg:ml-0 rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
       </div>
 
       {/* transparent background */}
