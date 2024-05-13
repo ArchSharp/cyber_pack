@@ -494,7 +494,7 @@ export const CustomSoftwareDev = () => {
       {/* solve the business challenges */}
       <div className="mt-20">
         <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
-          DVT CUSTOM SOFTWARE DEVELOPMENT SERVICES
+          CyberPackHQ CUSTOM SOFTWARE DEVELOPMENT SERVICES
         </div>
         <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
           SOLVE THESE BUSINESS CHALLENGES:
@@ -509,7 +509,7 @@ export const CustomSoftwareDev = () => {
             }
             title={"Sourcing scarce IT-skills:"}
             details={
-              "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. DVT's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
+              "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. CyberPackHQ's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
             }
           />
           <Challenges
@@ -518,7 +518,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Faster delivery on business needs:"}
-            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. DVT has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
+            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPackHQ has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
           />
           <Challenges
             classes={"mt-1"}
@@ -526,7 +526,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Reduce complexity and improve performance"}
-            details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. DVT's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
+            details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. CyberPackHQ's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
           />
           <Challenges
             classes={"mt-1"}
@@ -534,7 +534,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Enable unique IP"}
-            details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. DVT's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
+            details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. CyberPackHQ's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
           />
         </div>
 
@@ -573,7 +573,7 @@ export const CustomSoftwareDev = () => {
             }
             title={"Skilled Development Capacity On-Demand"}
             details={
-              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, DVT are able to assemble and provide you with the development capacity scale you need when you need it."
+              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPackHQ are able to assemble and provide you with the development capacity scale you need when you need it."
             }
           />
           <Challenges
@@ -590,7 +590,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"No language barrier"}
-            details="All DVT team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
+            details="All CyberPackHQ team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
           />
           <Challenges
             classes={"mt-1"}
@@ -598,7 +598,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Favourable time-zone"}
-            details="All DVT team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
+            details="All CyberPackHQ team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
           />
           <Challenges
             classes={"mt-1"}
@@ -614,7 +614,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Experts in using Agile"}
-            details="DVT is an expert in using Agile methodologies for software development. Agile is a collaborative and iterative approach to software development that emphasizes flexibility, customer satisfaction, and continuous improvement. Working with DVT means that your business will benefit from their expertise in Agile development, ensuring that your software solution is built quickly and efficiently while meeting your specific needs and requirements."
+            details="CyberPackHQ is an expert in using Agile methodologies for software development. Agile is a collaborative and iterative approach to software development that emphasizes flexibility, customer satisfaction, and continuous improvement. Working with CyberPackHQ means that your business will benefit from their expertise in Agile development, ensuring that your software solution is built quickly and efficiently while meeting your specific needs and requirements."
           />
           <Challenges
             classes={"mt-1"}
@@ -622,7 +622,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Efficient support and resources"}
-            details="DVT's custom software services provide businesses with efficient support and resources throughout the software development process. This includes project management, quality assurance, testing, and maintenance. DVT's team of experts can help businesses navigate the complexities of software development, ensuring that the project is delivered on time, within budget, and to the highest standards of quality."
+            details="CyberPackHQ's custom software services provide businesses with efficient support and resources throughout the software development process. This includes project management, quality assurance, testing, and maintenance. CyberPackHQ's team of experts can help businesses navigate the complexities of software development, ensuring that the project is delivered on time, within budget, and to the highest standards of quality."
           />
           <Challenges
             classes={"mt-1"}
@@ -630,7 +630,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Certified Partners"}
-            details="DVT is a certified partner of leading technology providers, including Microsoft, AWS, and Oracle. This means that DVT has access to the latest tools, technologies, and resources required to deliver high-quality software solutions. Working with DVT as a certified partner ensures that your business will benefit from the latest innovations in software development, enabling you to stay competitive and meet the changing needs of your customers."
+            details="CyberPackHQ is a certified partner of leading technology providers, including Microsoft, AWS, and Oracle. This means that CyberPackHQ has access to the latest tools, technologies, and resources required to deliver high-quality software solutions. Working with CyberPackHQ as a certified partner ensures that your business will benefit from the latest innovations in software development, enabling you to stay competitive and meet the changing needs of your customers."
           />
         </div>
       </div>
@@ -664,17 +664,17 @@ export const CustomSoftwareDev = () => {
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
-              DVT Solution
+              CyberPackHQ Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              DVT was able to ensure the entire platform runs on Microsoft Azure
-              and makes use of various platform as a service (PaaS) services,
-              removing the burden of maintaining and securing the underlying
-              infrastructure. The system gives Perkaloo partners access to
-              targeted marketing data from registered users, allowing them to
-              better tailor their rewards based on demand. An employer can log
-              in and register a dozen employees in minutes, giving them instant
-              access to the rewards they're entitled to.
+              CyberPackHQ was able to ensure the entire platform runs on
+              Microsoft Azure and makes use of various platform as a service
+              (PaaS) services, removing the burden of maintaining and securing
+              the underlying infrastructure. The system gives Perkaloo partners
+              access to targeted marketing data from registered users, allowing
+              them to better tailor their rewards based on demand. An employer
+              can log in and register a dozen employees in minutes, giving them
+              instant access to the rewards they're entitled to.
             </div>
 
             <div className=" text-center lg:text-left">
@@ -785,7 +785,7 @@ export const CustomSoftwareDev = () => {
 
       {/* video */}
       <div className="cyberpack_video-bg h-fit lg:h-[500px] mt-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[100vw] lg:w-[50vw] text-center mt-10 lg:mt-0">
+        <div className="w-[100vw] lg:w-[50vw] text-center lg:text-left mt-10 lg:mt-0">
           <div className="text-white pl-[5vw] text-lg md:text-2xl italic font-poppins font-bold">
             Meet
           </div>
