@@ -646,12 +646,12 @@ export const MobileAppDev = () => {
               CyberPackHQ Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              DVT assisted our client through a skills augmentation service. DVT
-              provided software development professional services that ensured
-              our client had a high performing software development team that
-              can deliver business value faster in Scrum Agile Sprints. DVT
-              utilised Scrum Masters, Java developer and mobile developer
-              consultants on the assignment.
+              CyberPackHQ assisted our client through a skills augmentation
+              service. CyberPackHQ provided software development professional
+              services that ensured our client had a high performing software
+              development team that can deliver business value faster in Scrum
+              Agile Sprints. CyberPackHQ utilised Scrum Masters, Java developer
+              and mobile developer consultants on the assignment.
             </div>
 
             <div className=" text-center lg:text-left">
