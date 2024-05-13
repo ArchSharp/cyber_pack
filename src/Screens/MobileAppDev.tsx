@@ -10,6 +10,7 @@ import mobile from "../Images/TechStacks/mobile.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 // import ceo from "../Images/ceo.png";
 // import crypto from "../Images/crypto-shield.jpg";
+import { FcViewDetails } from "react-icons/fc";
 import { useAppDispatch, useAppSelector } from "../Store/store";
 // import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
@@ -26,6 +27,7 @@ import media from "../Images/TechStacks/media.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
+import { LuDot } from "react-icons/lu";
 
 export const MobileAppDev = () => {
   const dispatch = useAppDispatch();
@@ -712,6 +714,74 @@ export const MobileAppDev = () => {
           </div>
           <hr className="border-[2px] border-orange-500 w-[100px] mx-auto mt-6" />
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] py-[1vh] lg:h-[700px] xl:h-[300px] w-[98vw] md:w-[80vw] lg:w-[85vw] mx-auto mt-10 overflow-x-auto">
+          {FlipCard2(
+            "",
+            "white",
+            "Strategise",
+            [
+              "MEAP decision",
+              "Build vs. buy",
+              "Hardware selection",
+              "Mobile Application Development Platform",
+              "Cross-platform/native/ hybrid approach",
+            ],
+            "border-blue-400"
+          )}
+          {FlipCard2(
+            "",
+            "white",
+            "Design",
+            [
+              "System architecture",
+              "Application architecture",
+              "Security focus",
+              "User experience (UX) analysis",
+              "User interface (UI) design",
+            ],
+            "border-slate-700"
+          )}
+          {FlipCard2(
+            "",
+            "white",
+            "Develop",
+            [
+              "Cross-platform development",
+              "Fully native development",
+              "HTML/ hybrid app development",
+              "Continuous integration",
+              "Agile methodology",
+            ],
+            "border-slate-300"
+          )}
+          {FlipCard2(
+            "",
+            "white",
+            "Test",
+            [
+              "Test-driven development",
+              "UI automation testing",
+              "Integration testing",
+              "Performance testing",
+              "Testing lab",
+            ],
+            "border-blue-900"
+          )}
+          {FlipCard2(
+            "",
+            "white",
+            "Deploy",
+            [
+              "Maintenence and support",
+              "Analytics and reporting",
+              "Enterprise Mobility Management",
+              "Mobile Application Management",
+              "Mobile Device Management",
+            ],
+            "border-yellow-400"
+          )}
+        </div>
       </div>
 
       {/* video */}
@@ -762,20 +832,22 @@ export const MobileAppDev = () => {
         <Challenges
           classes={"w-[95vw] md:w-[80vw] mt-10 mx-auto"}
           titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
-          title={"What are the benefits of custom software development?"}
-          details="The benefits of custom software development include increased efficiency and productivity, improved data management, enhanced user experience, increased security, and a competitive advantage. Additionally, custom software can be easily integrated with existing systems and can be scaled to meet the changing needs of an organization."
+          title={"What are the different types of mobile app development?"}
+          details="The two main types of mobile app development are native app development and cross-platform app development. Native app development involves building an app specifically for a particular operating system, such as iOS or Android. Cross-platform app development involves building an app that can run on multiple operating systems, such as iOS, Android, and Windows."
         />
         <Challenges
           classes={"w-[95vw] md:w-[80vw] mt-2 mx-auto"}
           titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
-          title={"What are the stages of custom software development?"}
-          details="The stages of custom software development typically include: requirements gathering and analysis, design, development, testing and quality assurance, deployment, and maintenance."
+          title={"What is the process of mobile app development?"}
+          details="The process of mobile app development typically involves the following steps: ideation and planning, design, development, testing and quality assurance, and deployment and maintenance."
         />
         <Challenges
           classes={"w-[95vw] md:w-[80vw] mt-2 mx-auto"}
           titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
-          title={"Can custom software be integrated with existing systems?"}
-          details="Yes, custom software can be easily integrated with existing systems. This allows for seamless data transfer and improved efficiency, as the custom software can be designed to work with the organization's existing systems and processes."
+          title={
+            "How can I ensure the success of my mobile app development project?"
+          }
+          details="To ensure the success of your mobile app development project, it is important to have a clear and well-defined plan, choose the right development team, engage in constant communication and collaboration with the development team, and have a strong focus on user experience and customer satisfaction. Additionally, it is important to have a solid marketing and launch plan in place to ensure the app reaches the right audience and achieves its desired goals."
         />
       </div>
 
@@ -834,6 +906,76 @@ export const MobileAppDev = () => {
           </div>
           <div className="flip-card-back rounded-[30px] flex items-center justify-center px-4 ">
             {backText}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function FlipCard2(
+    flipcss: string,
+    bgcolour: string,
+    frontText: string,
+    backText: string[],
+    borderColor: string
+  ) {
+    return (
+      <div
+        style={
+          {
+            "--flip-card-bg-colour": `${bgcolour}`,
+          } as any
+        }
+        className={`flip-card h-fit md:h-[300px] py-2 w-[92vw] md:w-[35vw] lg:w-[20vw] xl:w-[15vw] mx-auto md:mx-0 text-center ${flipcss}`}
+      >
+        <div className="flip-card-inner hidden md:block">
+          <div className="flip-card-front flex flex-col items-center justify-center px-5 rounded-[30px]">
+            <div
+              className={`border-[17px] ${borderColor} size-[170px] rounded-[50%] flex items-center justify-center shadow-xl shadow-black`}
+            >
+              <FcViewDetails className="w-[100px]" />
+            </div>
+            <div className="text-lg text-slate-500 font-poppins font-semibold mt-4">
+              {frontText}
+            </div>
+          </div>
+          <div
+            style={{ backgroundColor: "slategray" }}
+            className="flip-card-back rounded-[30px] flex items-center justify-center p2-4 "
+          >
+            <ul className=" text-left">
+              {backText.map((text, index) => (
+                <li key={index}>
+                  <div className="flex items-center">
+                    <LuDot className="text-2xl mr-2" /> {text}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* small screen */}
+        <div className="flex items-start md:hidden">
+          <div
+            className={`border-[7px] ${borderColor} size-[100px] rounded-[50%] flex items-center justify-center shadow-xl shadow-black`}
+          >
+            <FcViewDetails className="w-[100px]" />
+          </div>
+
+          <div className="flex flex-col px-4">
+            <div className="text-slate-600 text-left font-bold pl-2">
+              {frontText}
+            </div>
+            <ul className="text-left text-xs md:text-base">
+              {backText.map((text, index) => (
+                <li key={index}>
+                  <div className="flex items-center">
+                    <LuDot className="text-2xl mr-1" /> {text}
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
