@@ -112,7 +112,7 @@ export const Header = () => {
             className="mr-6 cursor-pointer"
             onClick={() => {
               dispatch(setHeader("services"));
-              if (currentRoute === "/custom-software-development") {
+              if (currentRoute !== "/") {
                 navigate(routes.homepage);
               }
             }}
