@@ -322,13 +322,41 @@ code {
 }
 
 .connect-with-us {
+  position: relative;
+  /* height: 100vh; */
+  z-index: 1;
+}
+
+.connect-with-us::before {
   background-image: url("./Images/crowd.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  /* height: 700px; */
-  opacity: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.connect-with-us::after {
+  content: "";
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the overlay on top of the background image */
 }
 
 .option {
@@ -601,4 +629,40 @@ code {
     max-height: 0;
     padding: 0px 3vw;
   }
+}
+
+.slider-news-v2 {
+  width: 28.6vw !important;
+  height: fit-content !important;
+  margin: 8px 3vw !important;
+}
+@media screen and (min-width: 768px) {
+  .slider-news-v2 {
+    width: 28vw !important;
+    height: fit-content !important;
+    margin: 8px 1vw !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-news-v2 {
+    width: 22.6vw !important;
+    height: fit-content !important;
+    margin: 8px 1vw !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider-news-v2 {
+    width: 11.3vw !important;
+    height: fit-content !important;
+    margin: 8px 1vw !important;
+  }
+}
+
+.cyberpack_video-bg {
+  background-image: url("./Images/meet-team-video-globe-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
 }

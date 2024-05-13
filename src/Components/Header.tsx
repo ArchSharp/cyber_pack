@@ -110,7 +110,12 @@ export const Header = () => {
           </div>
           <div
             className="mr-6 cursor-pointer"
-            onClick={() => dispatch(setHeader("services"))}
+            onClick={() => {
+              dispatch(setHeader("services"));
+              if (currentRoute === "/custom-software-development") {
+                navigate(routes.homepage);
+              }
+            }}
           >
             Services
           </div>

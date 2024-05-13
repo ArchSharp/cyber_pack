@@ -7,8 +7,26 @@ import {
 } from "react-icons/fa";
 import { BiUpArrow } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import { useAppDispatch, useAppSelector } from "../Store/store";
+import { useEffect, useRef } from "react";
 
 export const Footer = () => {
+  const dispatch = useAppDispatch();
+  const { header } = useAppSelector((state) => state.user);
+  const aboutus = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (header === "aboutus") {
+        if (aboutus.current) {
+          aboutus.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [dispatch, header]);
+
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -17,7 +35,7 @@ export const Footer = () => {
   };
 
   return (
-    <div className="min-h-[70vh] bg-main pt-[10vh] pb-5">
+    <div className="min-h-[70vh] bg-main pt-[10vh] pb-5" ref={aboutus}>
       <div
         className=" size-10 text-xl rounded-[50%] animate-bounce bg-slate-300 fixed bottom-4 right-5 cursor-pointer shadow-2xl"
         onClick={() => handleScrollToTop()}

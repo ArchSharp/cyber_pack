@@ -5,9 +5,15 @@ interface ChallengesProps {
   title: string;
   details: string;
   classes: string;
+  titleClass: string;
 }
 
-export const Challenges = ({ title, details, classes }: ChallengesProps) => {
+export const Challenges = ({
+  title,
+  details,
+  classes,
+  titleClass,
+}: ChallengesProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={`${classes}`}>
@@ -22,9 +28,7 @@ export const Challenges = ({ title, details, classes }: ChallengesProps) => {
             }`}
           />
         </div>
-        <div className="text-blue-600 text-2xl font-medium italic font-poppins">
-          {title}
-        </div>
+        <div className={`${titleClass}`}>{title}</div>
       </div>
       <div
         className={`pl-[3vw] py-3 text-slate-500 ${

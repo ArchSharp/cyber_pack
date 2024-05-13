@@ -1,8 +1,6 @@
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import { useEffect, useRef, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
@@ -13,13 +11,13 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
-import { IServiceEnquiry } from "../Features/User/type";
+// import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
-import nasa from "../Images/Companies/seven.png";
-import cisco from "../Images/Companies/eight.png";
 import { useNavigate } from "react-router-dom";
 import * as routes from "../Data/Routes";
 import { setHeader } from "../Features/User/userSlice";
+import { ConnectWithUs } from "../Components/ConnectWithUs";
+import { ClientsReview } from "../Components/ClientsReview";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
@@ -29,9 +27,6 @@ export const Home = () => {
   const [lslide2, setLslide2] = useState("cbp03");
   const [lslide3, setLslide3] = useState("cbp04");
   const [lslide4, setLslide4] = useState("cbp05");
-  const [isRead, setIsRead] = useState(false);
-  const [isSlideUp, setIsSlideUp] = useState(false);
-  const [isSlideDown, setIsSlideDown] = useState(false);
 
   useEffect(() => {
     const LSlide = setInterval(() => {
@@ -40,16 +35,6 @@ export const Home = () => {
       setLslide3((prev) => (prev === "cbp04" ? "cbp07" : "cbp04"));
       setLslide4((prev) => (prev === "cbp05" ? "cbp08" : "cbp05"));
     }, 12000);
-    return () => {
-      clearInterval(LSlide);
-    };
-  }, []);
-
-  useEffect(() => {
-    const LSlide = setInterval(() => {
-      setIsSlideUp((prev) => (prev === true ? false : true));
-      setIsSlideDown((prev) => (prev === true ? false : true));
-    }, 5000);
     return () => {
       clearInterval(LSlide);
     };
@@ -120,33 +105,6 @@ export const Home = () => {
     arrows: false,
   };
 
-  const validationSchema = Yup.object({
-    Name: Yup.string().required("Name is required"),
-    Email: Yup.string().required("Email is required"),
-    Country: Yup.string().required("Country is required"),
-    Questions: Yup.string().required("Questions is required"),
-    IsGrantCyberPack: Yup.boolean().required("Questions is required"),
-  });
-
-  const initialValues = {
-    Name: "",
-    Email: "",
-    Country: "",
-    Questions: "",
-    IsGrantCyberPack: false,
-  };
-
-  // Submit handler
-  const handleSubmit = (values: IServiceEnquiry) => {
-    dispatch(() => {});
-  };
-
-  const formik = useFormik<IServiceEnquiry>({
-    initialValues,
-    validationSchema,
-    onSubmit: handleSubmit,
-  });
-
   // const isDesktopOrLaptop = useMediaQuery({
   //   query: "(min-width: 1224px)",
   // });
@@ -156,7 +114,6 @@ export const Home = () => {
   const connect = useRef<HTMLDivElement>(null);
   const services = useRef<HTMLDivElement>(null);
   const clients = useRef<HTMLDivElement>(null);
-  const aboutus = useRef<HTMLDivElement>(null);
   const handleScrollToBottom = () => {
     if (connect.current) {
       connect.current.scrollIntoView({ behavior: "smooth" });
@@ -169,20 +126,18 @@ export const Home = () => {
         if (services.current) {
           services.current.scrollIntoView({ behavior: "smooth" });
         }
+        dispatch(setHeader(""));
       } else if (header === "clients") {
         if (clients.current) {
           clients.current.scrollIntoView({ behavior: "smooth" });
         }
+        dispatch(setHeader(""));
       } else if (header === "contactus") {
         if (connect.current) {
           connect.current.scrollIntoView({ behavior: "smooth" });
         }
-      } else if (header === "aboutus") {
-        if (aboutus.current) {
-          aboutus.current.scrollIntoView({ behavior: "smooth" });
-        }
+        dispatch(setHeader(""));
       }
-      dispatch(setHeader(""));
     }, 1000);
 
     return () => clearTimeout(timer);
@@ -669,47 +624,7 @@ export const Home = () => {
       </div>
 
       {/* transparent background */}
-      <div
-        className="glacier h-[260px] md:h-[650px] mb-16 overflow-hidden"
-        ref={clients}
-      >
-        <div className="flex items-center h-full">
-          <div className="w-[50vw] h-full flex relative">
-            <div
-              className={`${
-                isSlideUp ? "slide-up-text" : "slide-up-text-off"
-              } text-white font-poppins w-[20vw] absolute right-[90px] md:right-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
-            >
-              "Comforting to have such a professional partner on call to help
-              you."
-            </div>
-            <div
-              className={`${
-                isSlideUp ? "slide-up" : "slide-up-off"
-              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute right-[0%] flex items-center justify-center`}
-            >
-              <img src={nasa} alt="nasa" className="w-[50px] md:w-[100px]" />
-            </div>
-          </div>
-          <div className="w-[50vw] h-full flex relative">
-            <div
-              className={`${
-                isSlideDown ? "slide-down-text" : "slide-down-text-off"
-              } text-white font-poppins w-[20vw] absolute top-[34%] md:top-[37%] left-[20vw] md:left-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
-            >
-              "Creativity delivered what others couldn't; cost-effective and
-              timely."
-            </div>
-            <div
-              className={`${
-                isSlideDown ? "slide-down" : "slide-down-off"
-              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute md:top-[37%] left-[-8%] md:left-[-3%] flex items-center justify-center`}
-            >
-              <img src={cisco} alt="cisco" className="w-[50px] md:w-[100px]" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ClientsReview clients={clients} />
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
@@ -803,170 +718,9 @@ export const Home = () => {
       </div>
 
       {/* Connect with cyberpack */}
-      <div className="connect-with-us mt-28 flex flex-col">
-        <div className=" font-Cervanttis text-blue-500 text-3xl md:text-5xl font-bold mt-10 text-center">
-          Connect with CyberPackHQ
-        </div>
-        <div className="my-24 flex flex-col lg:flex-row items-center">
-          <div className="w-[90vw] lg:w-[25vw] ml-[7vw]">
-            <h3 className="text-orange-600 text-3xl font-bold">
-              World Class IT services.
-            </h3>
-            <div className="text-white text-3xl font-bold">
-              Regional presence to partner with you for{" "}
-              <span className="text-orange-600 text-3xl font-bold">
-                success.
-              </span>
-            </div>
-            <div className="mt-5 text-slate-300 text-left">
-              CyberPackHQ leadership and experts are located in our customer
-              regions including the United Kingdom, Ireland, Netherlands,
-              Switzerland, South Africa, Kenya and the United Arab Emirates.
-              Local capability to partner with you for all your service
-              requirements. Global scalability to ensure fast, efficient and
-              effective fulfilment on your IT service and staffing needs. We are
-              ready to partner with you. Contact your local CyberPackHQ
-              leadership today.
-            </div>
-          </div>
-          <div
-            className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto"
-            ref={connect}
-          >
-            <div className="pl-7 pt-3 text-3xl text-blue-600 flex items-center italic">
-              <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-              <span className="mr-2 font-bold">SERVICE</span>ENQUIRIES
-            </div>
-            <form onSubmit={formik.handleSubmit} className="">
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <input
-                  type="text"
-                  id="Name"
-                  name="Name"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Name || ""}
-                  placeholder="Name"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Name && formik.errors.Name && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Name}
-                  </div>
-                )}
-              </div>
+      <ConnectWithUs connect={connect} mt={"mt-28"} />
 
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <input
-                  type="text"
-                  id="Email"
-                  name="Email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Email || ""}
-                  placeholder="Email"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Email && formik.errors.Email && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Email}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <select
-                  id="Country"
-                  name="Country"
-                  value={formik.values.Country || ""}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                >
-                  <option value="" className="text-slate-400 option">
-                    Country
-                  </option>
-                  <option value="saab">Nigeria</option>
-                  <option value="mercedes">Australia</option>
-                  <option value="audi">Texas</option>
-                </select>
-                {formik.touched.Country && formik.errors.Country && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Country}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <textarea
-                  rows={4}
-                  id="Questions"
-                  name="Questions"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Questions || ""}
-                  placeholder="What can we help you with?"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Questions && formik.errors.Questions && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Questions}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <div className="flex items-center">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="IsRead"
-                      checked={isRead}
-                      onChange={(e) => setIsRead(!isRead)}
-                    />
-                  </label>
-                  <div className="text-xs pl-2 underline">
-                    I have read, understand and accept the Privacy Notice and
-                    Terms of Service
-                  </div>
-                </div>
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <div className="flex items-center">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="IsGrantCyberPack"
-                      checked={formik.values.IsGrantCyberPack}
-                      onChange={formik.handleChange}
-                    />
-                  </label>
-                  <div className="text-xs pl-2">
-                    I grant CyberPackHQ permission to process the personal
-                    information provided
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="text-white font-bold rounded-3xl bg-main w-[90%] px-5 py-2"
-                >
-                  SUBMIT
-                </button>
-              </div>
-            </form>
-          </div>
-          <div></div>
-        </div>
-      </div>
-
-      <div
-        className="h-[25vh] flex flex-col items-center justify-center"
-        ref={aboutus}
-      >
+      <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
           CyberPackHQ is your

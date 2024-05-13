@@ -1,42 +1,40 @@
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import { useEffect, useRef, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
-import { partners } from "../Data/partners";
+import { partners, tech_stack_v1 } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
 // import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 // import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
-import { useAppDispatch } from "../Store/store";
-import { IServiceEnquiry } from "../Features/User/type";
+import { useAppDispatch, useAppSelector } from "../Store/store";
+// import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
-import nasa from "../Images/Companies/seven.png";
-import cisco from "../Images/Companies/eight.png";
 import ios from "../Images/ios-logo.png";
 import android from "../Images/Android.png";
 import windows from "../Images/windows.png";
 import html from "../Images/html5.png";
 import java from "../Images/java.png";
-import { setLastRoute } from "../Features/User/userSlice";
+import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation } from "react-router-dom";
 import programmer from "../Images/programmer.jpg";
 import { Challenges } from "../Components/Challenges";
+import pixa from "../Images/perkaloo.png";
+import { ConnectWithUs } from "../Components/ConnectWithUs";
+import { ClientsReview } from "../Components/ClientsReview";
+import macbook from "../Images/macbook.png";
 
 export const CustomSoftwareDev = () => {
   const dispatch = useAppDispatch();
+  const { header } = useAppSelector((state) => state.user);
   const location = useLocation();
   const [lslide, setLslide] = useState("cbp01");
   const [lslide2, setLslide2] = useState("cbp03");
   const [lslide3, setLslide3] = useState("cbp04");
   const [lslide4, setLslide4] = useState("cbp05");
-  const [isRead, setIsRead] = useState(false);
-  const [isSlideUp, setIsSlideUp] = useState(false);
-  const [isSlideDown, setIsSlideDown] = useState(false);
 
   // Accessing the current route
   const currentRoute = location.pathname;
@@ -48,16 +46,6 @@ export const CustomSoftwareDev = () => {
       setLslide3((prev) => (prev === "cbp04" ? "cbp07" : "cbp04"));
       setLslide4((prev) => (prev === "cbp05" ? "cbp08" : "cbp05"));
     }, 12000);
-    return () => {
-      clearInterval(LSlide);
-    };
-  }, []);
-
-  useEffect(() => {
-    const LSlide = setInterval(() => {
-      setIsSlideUp((prev) => (prev === true ? false : true));
-      setIsSlideDown((prev) => (prev === true ? false : true));
-    }, 5000);
     return () => {
       clearInterval(LSlide);
     };
@@ -128,32 +116,56 @@ export const CustomSoftwareDev = () => {
     arrows: false,
   };
 
-  const validationSchema = Yup.object({
-    Name: Yup.string().required("Name is required"),
-    Email: Yup.string().required("Email is required"),
-    Country: Yup.string().required("Country is required"),
-    Questions: Yup.string().required("Questions is required"),
-    IsGrantCyberPack: Yup.boolean().required("Questions is required"),
-  });
-
-  const initialValues = {
-    Name: "",
-    Email: "",
-    Country: "",
-    Questions: "",
-    IsGrantCyberPack: false,
+  const settings3: Settings = {
+    rtl: true,
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 6,
+    slidesToScroll: 4,
+    autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    autoplaySpeed: 8000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 2,
+          // arrows: true,
+        },
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     initialSlide: 1,
+      //     // arrows: true,
+      //   },
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //   },
+      // },
+    ],
   };
-
-  // Submit handler
-  const handleSubmit = (values: IServiceEnquiry) => {
-    dispatch(() => {});
-  };
-
-  const formik = useFormik<IServiceEnquiry>({
-    initialValues,
-    validationSchema,
-    onSubmit: handleSubmit,
-  });
 
   // const isDesktopOrLaptop = useMediaQuery({
   //   query: "(min-width: 1224px)",
@@ -169,6 +181,32 @@ export const CustomSoftwareDev = () => {
       connect.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const services = useRef<HTMLDivElement>(null);
+  const clients = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (header === "services") {
+        if (services.current) {
+          services.current.scrollIntoView({ behavior: "smooth" });
+        }
+        dispatch(setHeader(""));
+      } else if (header === "clients") {
+        if (clients.current) {
+          clients.current.scrollIntoView({ behavior: "smooth" });
+        }
+        dispatch(setHeader(""));
+      } else if (header === "contactus") {
+        if (connect.current) {
+          connect.current.scrollIntoView({ behavior: "smooth" });
+        }
+        dispatch(setHeader(""));
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [dispatch, header]);
 
   // useEffect(() => {
   //   const handleScrollToTop = () => {
@@ -188,15 +226,22 @@ export const CustomSoftwareDev = () => {
   return (
     <div>
       <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
-        <div className="text-[40px] md:text-6xl text-white w-[90vw] lg:w-[60vw] mt-[80px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
-          Custom Software and Data Engineering services.
+        <div className="flex items-center italic ml-[5vw] mt-16">
+          <div className="mr-3 size-3 bg-yellow-600 -skew-x-12"></div>
+          <div className="text-lg md:text-xl text-white font-poppins font-medium">
+            Software Engineering
+          </div>
         </div>
-        <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
+        <div className="text-[40px] md:text-6xl text-white w-[90vw] lg:w-[60vw] mt-[30px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
+          Custom Software Development
+        </div>
+        {/* <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
           Global Scale. Local Engagement.
-        </div>
-        <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw]">
-          Need an experienced software technology team or staff to build,
-          enhance or maintain your software applications?
+        </div> */}
+        <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw] mt-5">
+          Drive the digital distinction of your enterprise with custom web,
+          desktop and mobile applications. We deliver world class software
+          solutions through our recognised expertise in bespoke development.
         </div>
         <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
@@ -429,7 +474,7 @@ export const CustomSoftwareDev = () => {
       </div>
 
       {/* fixed right side navbar */}
-      <div className=" bg-sidenavbar w-[170px] rounded-tl-[30px] rounded-bl-[30px] z-[1] h-[300px] fixed right-0 top-[35vh] hidden lg:block">
+      <div className=" bg-sidenavbar w-[170px] rounded-tl-[30px] rounded-bl-[30px] z-[3] h-[300px] fixed right-0 top-[35vh] hidden lg:block">
         <div className=" text-main font-bold pl-7 pt-5">Quick Nav</div>
         <hr className="ml-7 mr-4 border-main my-3" />
         <ul className=" text-main pl-7">
@@ -448,10 +493,10 @@ export const CustomSoftwareDev = () => {
 
       {/* solve the business challenges */}
       <div className="mt-20">
-        <div className="text-xl pl-[5vw] italic font-bold text-customsoftware">
+        <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
           DVT CUSTOM SOFTWARE DEVELOPMENT SERVICES
         </div>
-        <div className="text-3xl pl-[5vw] italic font-bold text-blue-600">
+        <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
           SOLVE THESE BUSINESS CHALLENGES:
         </div>
       </div>
@@ -459,6 +504,9 @@ export const CustomSoftwareDev = () => {
         <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <Challenges
             classes={"mt-12"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
             title={"Sourcing scarce IT-skills:"}
             details={
               "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. DVT's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
@@ -466,16 +514,25 @@ export const CustomSoftwareDev = () => {
           />
           <Challenges
             classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
             title={"Faster delivery on business needs:"}
             details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. DVT has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
           />
           <Challenges
             classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
             title={"Reduce complexity and improve performance"}
             details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. DVT's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
           />
           <Challenges
             classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
             title={"Enable unique IP"}
             details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. DVT's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
           />
@@ -490,51 +547,153 @@ export const CustomSoftwareDev = () => {
         </div>
       </div>
 
-      {/* transparent background */}
-      <div className="glacier h-[300px] md:h-[670px] mb-16 overflow-hidden">
-        <div className="flex items-center h-full">
-          <div className="w-[50vw] h-full flex relative">
-            <div
-              className={`${
-                isSlideUp ? "slide-up-text" : "slide-up-text-off"
-              } text-white font-poppins w-[20vw] absolute right-[90px] md:right-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
-            >
-              "Comforting to have such a professional partner on call to help
-              you."
-            </div>
-            <div
-              className={`${
-                isSlideUp ? "slide-up" : "slide-up-off"
-              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute right-[0%] flex items-center justify-center`}
-            >
-              <img src={nasa} alt="nasa" className="w-[50px] md:w-[100px]" />
-            </div>
+      {/* Benefit of cybepack */}
+      <div className="mt-20 mb-10">
+        <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
+          BENEFITS OF CYBERPACKHQ'S
+        </div>
+        <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
+          CUSTOM SOFTWARE DEVELOPMENT SERVICES
+        </div>
+      </div>
+      <div className="mt-0 mb-10 flex flex-col lg:flex-row items-start">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[76vh] mb-6 mt-0 ml-[5vw] rounded-xl">
+          <img
+            src={programmer}
+            alt="programmer"
+            className="h-full w-full rounded-xl"
+          />
+        </div>
+
+        <div className="w-[100vw] lg:w-[55vw] pl-[2vw] lg:pl-0 lg:ml-[2vw]">
+          <Challenges
+            classes={"mt-0"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Skilled Development Capacity On-Demand"}
+            details={
+              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, DVT are able to assemble and provide you with the development capacity scale you need when you need it."
+            }
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Fast ramp-up and efficient delivery"}
+            details="Our experienced team members ramp-up quickly and as senior developers have the experience that ensures they are productive sooner."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"No language barrier"}
+            details="All DVT team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Favourable time-zone"}
+            details="All DVT team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Flexible engagement models"}
+            details="Client on-site, hybrid or remote work assignments are all facilitated to ensure the best fit with your needs and time-frames."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Experts in using Agile"}
+            details="DVT is an expert in using Agile methodologies for software development. Agile is a collaborative and iterative approach to software development that emphasizes flexibility, customer satisfaction, and continuous improvement. Working with DVT means that your business will benefit from their expertise in Agile development, ensuring that your software solution is built quickly and efficiently while meeting your specific needs and requirements."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Efficient support and resources"}
+            details="DVT's custom software services provide businesses with efficient support and resources throughout the software development process. This includes project management, quality assurance, testing, and maintenance. DVT's team of experts can help businesses navigate the complexities of software development, ensuring that the project is delivered on time, within budget, and to the highest standards of quality."
+          />
+          <Challenges
+            classes={"mt-1"}
+            titleClass={
+              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
+            }
+            title={"Certified Partners"}
+            details="DVT is a certified partner of leading technology providers, including Microsoft, AWS, and Oracle. This means that DVT has access to the latest tools, technologies, and resources required to deliver high-quality software solutions. Working with DVT as a certified partner ensures that your business will benefit from the latest innovations in software development, enabling you to stay competitive and meet the changing needs of your customers."
+          />
+        </div>
+      </div>
+
+      {/* Featured Case Study */}
+      <div className=" bg-main h-fit lg:h-[140vh] pt-10 lg:pt-0 pb-16 lg:pb-0 flex flex-col">
+        <div className="text-center font-poppins mt-10 flex flex-col">
+          <div className="text-white text-3xl font-bold">
+            Featured Case Study
           </div>
-          <div className="w-[50vw] h-full flex relative">
-            <div
-              className={`${
-                isSlideDown ? "slide-down-text" : "slide-down-text-off"
-              } text-white font-poppins w-[20vw] absolute top-[34%] md:top-[37%] left-[20vw] md:left-[170px] py-4 md:py-10 text-left font-semibold text-xxs md:text-xl`}
-            >
-              "Creativity delivered what others couldn't; cost-effective and
-              timely."
+          <hr className="border-[3px] border-orange-500 w-[100px] mx-auto mt-6" />
+        </div>
+        <div className="text-white italic font-semibold font-poppins text-lg text-center mt-10">
+          Case study for the development of a rewards web application system.
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center mt-24">
+          <div className="w-[100vw] lg:w-[50vw] flex flex-col items-center justify-center">
+            <img src={pixa} alt="pixa" className="w-[70%]" />
+          </div>
+
+          <div className="w-[95vw] lg:w-[50vw] mt-10 lg:mt-0">
+            <div className=" text-orange-400 font-bold text-center lg:text-left text-lg italic font-poppins">
+              Business Challenge
             </div>
-            <div
-              className={`${
-                isSlideDown ? "slide-down" : "slide-down-off"
-              } size-[20vw] md:size-40 bg-white rounded-[50%] absolute md:top-[37%] left-[-8%] md:left-[-3%] flex items-center justify-center`}
-            >
-              <img src={cisco} alt="cisco" className="w-[50px] md:w-[100px]" />
+            <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
+              Perkaloo provides a rewards system to businesses that keep
+              employees engaged and motivated through rewards and perks.
+              Perkaloo needed a system to manage the provision and
+              administration of their business rewards solution.
+            </div>
+
+            <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
+              DVT Solution
+            </div>
+            <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
+              DVT was able to ensure the entire platform runs on Microsoft Azure
+              and makes use of various platform as a service (PaaS) services,
+              removing the burden of maintaining and securing the underlying
+              infrastructure. The system gives Perkaloo partners access to
+              targeted marketing data from registered users, allowing them to
+              better tailor their rewards based on demand. An employer can log
+              in and register a dozen employees in minutes, giving them instant
+              access to the rewards they're entitled to.
+            </div>
+
+            <div className=" text-center lg:text-left">
+              <button className="rounded-[30px] text-white bg-blue-500 hover:bg-main py-2 px-5 mt-10 lg:mt-7 shadow-2xl shadow-black italic font-semibold text-sm">
+                VIEW CASE STUDY
+              </button>
             </div>
           </div>
         </div>
       </div>
 
+      {/* transparent background */}
+      <ClientsReview clients={clients} />
+
       {/* News and Insight */}
       <div className="flex flex-col mt-24">
         <div className="w-fit mx-auto md:mx-[5vw]">
-          <div className="font-Cervanttis text-blue-500 text-4xl md:text-5xl">
-            News and insights
+          <div className="font-Cervanttis text-blue-500 text-5xl md:text-7xl">
+            Case Studies
           </div>
           <hr className="ml-[40%] md:ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
         </div>
@@ -573,162 +732,120 @@ export const CustomSoftwareDev = () => {
         </div>
       </div>
 
+      {/* Tech stack */}
+      <div className="flex flex-col mt-24">
+        <div className="w-fit mx-auto md:mx-[5vw]">
+          <div className="font-Cervanttis text-blue-500 text-5xl md:text-7xl">
+            Tech Stack
+          </div>
+          <hr className="ml-[40%] md:ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
+        </div>
+
+        <div className=" text-slate-600 font-bold font-poppins text-center text-2xl mt-16">
+          Our Software Development Technology Expertise
+        </div>
+        <div className="h-fit mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[80vw] mx-auto">
+          <Slider {...settings3}>
+            {tech_stack_v1.map((image, index) => (
+              <div
+                key={index}
+                className="slider-news-v2 flex flex-col relative my-2"
+              >
+                <img
+                  src={image.src}
+                  alt={`Slide ${index + 1}`}
+                  className="w-[70px] md:w-[100px] my-5 mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* tech stack second row */}
+        <div className=" text-slate-600 font-bold font-poppins text-center text-2xl mt-16">
+          DevOps tools expertise
+        </div>
+        <div className="h-fit mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[80vw] mx-auto">
+          <Slider {...settings3}>
+            {tech_stack_v1.map((image, index) => (
+              <div
+                key={index}
+                className="slider-news-v2 flex flex-col relative my-2"
+              >
+                <img
+                  src={image.src}
+                  alt={`Slide ${index + 1}`}
+                  className="w-[70px] md:w-[100px] my-5 mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+
+      {/* video */}
+      <div className="cyberpack_video-bg h-fit lg:h-[500px] mt-10 flex flex-col lg:flex-row items-center">
+        <div className="w-[100vw] lg:w-[50vw] text-center mt-10 lg:mt-0">
+          <div className="text-white pl-[5vw] text-lg md:text-2xl italic font-poppins font-bold">
+            Meet
+          </div>
+          <div className="text-orange-600 pl-[5vw] text-xl md:text-3xl italic font-poppins font-bold">
+            Olakunle Igbaroola
+          </div>
+          <div className="text-white pl-[5vw] text-lg md:text-2xl italic font-poppins font-bold">
+            Executive Head: Software Development Services
+          </div>
+        </div>
+
+        <div className="w-[100vw] lg:w-[50vw] h-full flex flex-col justify-center mt-10 lg:mt-0">
+          <div className="relative w-[95vw] lg:w-[43vw] mx-auto lg:mx-0 h-[35vh] md:h-[65vh] lg:h-[58vh]">
+            <div className="absolute top-[] left-0 w-full h-full">
+              <img src={macbook} alt="macbook" className="w-full h-full" />
+            </div>
+            <iframe
+              className="absolute w-[71.80232558139535vw] lg:w-[32.5vw] top-[2.2vh] lg:top-[3.6vh] left-[12vw] lg:left-[5.4vw] h-[27.56551724137931vh] md:h-[53vh] lg:h-[45.68vh]"
+              // width="491"
+              // height="315"
+              src="https://www.youtube.com/embed/Vg9W2uPeezg"
+              title="You Are the Most High (Tungba) | Bisimanuel Live Session 2022"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
       {/* Connect with cyberpack */}
-      <div className="connect-with-us mt-28 flex flex-col" ref={connect}>
-        <div className=" font-Cervanttis text-blue-500 text-3xl md:text-5xl font-bold mt-10 text-center">
-          Connect with CyberPackHQ
-        </div>
-        <div className="my-24 flex flex-col lg:flex-row items-center">
-          <div className="w-[90vw] lg:w-[25vw] ml-[7vw]">
-            <h3 className="text-orange-600 text-3xl font-bold">
-              World Class IT services.
-            </h3>
-            <div className="text-white text-3xl font-bold">
-              Regional presence to partner with you for{" "}
-              <span className="text-orange-600 text-3xl font-bold">
-                success.
-              </span>
-            </div>
-            <div className="mt-5 text-slate-300 text-left">
-              CyberPackHQ leadership and experts are located in our customer
-              regions including the United Kingdom, Ireland, Netherlands,
-              Switzerland, South Africa, Kenya and the United Arab Emirates.
-              Local capability to partner with you for all your service
-              requirements. Global scalability to ensure fast, efficient and
-              effective fulfilment on your IT service and staffing needs. We are
-              ready to partner with you. Contact your local CyberPackHQ
-              leadership today.
-            </div>
+      <ConnectWithUs connect={connect} mt={"mt-0"} />
+
+      {/* FAQ's */}
+      <div className="mb-16">
+        <div className="flex flex-col mt-20">
+          <div className="text-5xl font-poppins font-bold text-main text-center">
+            FAQ's
           </div>
-          <div className="bg-white rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto">
-            <div className="pl-7 pt-3 text-3xl text-blue-600 flex items-center italic">
-              <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-              <span className="mr-2 font-bold">SERVICE</span>ENQUIRIES
-            </div>
-            <form onSubmit={formik.handleSubmit} className="">
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <input
-                  type="text"
-                  id="Name"
-                  name="Name"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Name || ""}
-                  placeholder="Name"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Name && formik.errors.Name && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Name}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <input
-                  type="text"
-                  id="Email"
-                  name="Email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Email || ""}
-                  placeholder="Email"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Email && formik.errors.Email && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Email}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <select
-                  id="Country"
-                  name="Country"
-                  value={formik.values.Country || ""}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                >
-                  <option value="" className="text-slate-400 option">
-                    Country
-                  </option>
-                  <option value="saab">Nigeria</option>
-                  <option value="mercedes">Australia</option>
-                  <option value="audi">Texas</option>
-                </select>
-                {formik.touched.Country && formik.errors.Country && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Country}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <textarea
-                  rows={4}
-                  id="Questions"
-                  name="Questions"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Questions || ""}
-                  placeholder="What can we help you with?"
-                  className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
-                />
-                {formik.touched.Questions && formik.errors.Questions && (
-                  <div className="error text-red-400 text-sm">
-                    {formik.errors.Questions}
-                  </div>
-                )}
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <div className="flex items-center">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="IsRead"
-                      checked={isRead}
-                      onChange={(e) => setIsRead(!isRead)}
-                    />
-                  </label>
-                  <div className="text-xs pl-2 underline">
-                    I have read, understand and accept the Privacy Notice and
-                    Terms of Service
-                  </div>
-                </div>
-              </div>
-
-              <div className="my-4 mx-auto w-[80vw] md:w-[70vw] lg:w-[30vw]">
-                <div className="flex items-center">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="IsGrantCyberPack"
-                      checked={formik.values.IsGrantCyberPack}
-                      onChange={formik.handleChange}
-                    />
-                  </label>
-                  <div className="text-xs pl-2">
-                    I grant CyberPackHQ permission to process the personal
-                    information provided
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="text-white font-bold rounded-3xl bg-main w-[90%] px-5 py-2"
-                >
-                  SUBMIT
-                </button>
-              </div>
-            </form>
-          </div>
-          <div></div>
+          <hr className="border-[3px] border-orange-500 w-[50px] mx-auto mt-5" />
         </div>
+        <Challenges
+          classes={"w-[95vw] md:w-[80vw] mt-10 mx-auto"}
+          titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
+          title={"What are the benefits of custom software development?"}
+          details="The benefits of custom software development include increased efficiency and productivity, improved data management, enhanced user experience, increased security, and a competitive advantage. Additionally, custom software can be easily integrated with existing systems and can be scaled to meet the changing needs of an organization."
+        />
+        <Challenges
+          classes={"w-[95vw] md:w-[80vw] mt-2 mx-auto"}
+          titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
+          title={"What are the stages of custom software development?"}
+          details="The stages of custom software development typically include: requirements gathering and analysis, design, development, testing and quality assurance, deployment, and maintenance."
+        />
+        <Challenges
+          classes={"w-[95vw] md:w-[80vw] mt-2 mx-auto"}
+          titleClass={"text-blue-600 text-lg md:text-xl font-bold font-poppins"}
+          title={"Can custom software be integrated with existing systems?"}
+          details="Yes, custom software can be easily integrated with existing systems. This allows for seamless data transfer and improved efficiency, as the custom software can be designed to work with the organization's existing systems and processes."
+        />
       </div>
 
       <div className="h-[25vh] flex flex-col items-center justify-center">
