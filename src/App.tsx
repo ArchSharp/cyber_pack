@@ -6,6 +6,7 @@ import { Home } from "./Screens/Home";
 import Error from "./Components/Error";
 import { Footer } from "./Components/Footer";
 import { CustomSoftwareDev } from "./Screens/CustomSoftwareDev";
+import { MobileAppDev } from "./Screens/MobileAppDev";
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <Routes>
         <Route path={routes.homepage} index element={<Home />} />
         <Route
-          path={routes.custom_softwareDev}
+          path={routes.custSoftDev}
           index
           element={<CustomSoftwareDev />}
         />
+        <Route path={routes.mobileAppDev} index element={<MobileAppDev />} />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

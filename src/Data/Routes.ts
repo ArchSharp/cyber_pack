@@ -5,4 +5,5 @@ export const appointment = "/appointment";
 export const f_password = "/forgot-password";
 export const availDocs = "/available-doctors";
 export const profile = "/profile";
-export const custom_softwareDev = "custom-software-development";
+export const custSoftDev = "custom-software-development";
+export const mobileAppDev = "mobile-app-development";

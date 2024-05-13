@@ -372,22 +372,18 @@ export const Home = () => {
           {ServicesComponent(
             "CUSTOM SOFTWARE DEVELOPMENT",
             "#",
-            routes.custom_softwareDev
+            routes.custSoftDev
           )}
           {ServicesComponent(
             "MOBILE APP DEVELOPMENT",
             "#",
-            routes.custom_softwareDev
+            routes.mobileAppDev
           )}
-          {ServicesComponent(
-            "MICROSOFT SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("MICROSOFT SERVICES", "#", routes.custSoftDev)}
           {ServicesComponent(
             "WEB APPLICATION SERVICES",
             "#",
-            routes.custom_softwareDev
+            routes.custSoftDev
           )}
         </div>
 
@@ -424,22 +420,10 @@ export const Home = () => {
             600+ employees and global presence means a solution to your on-hold
             projects, late or delayed delivery and backlog of business requests.
           </div>
-          {ServicesComponent(
-            "AGILE TECHNOLOGY TEAMS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "STAFF AUGMENTATION",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent("MICROSOFT", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "OPEN-SOURCE/JAVA",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("AGILE TECHNOLOGY TEAMS", "#", routes.custSoftDev)}
+          {ServicesComponent("STAFF AUGMENTATION", "#", routes.custSoftDev)}
+          {ServicesComponent("MICROSOFT", "#", routes.custSoftDev)}
+          {ServicesComponent("OPEN-SOURCE/JAVA", "#", routes.custSoftDev)}
         </div>
       </div>
 
@@ -462,22 +446,14 @@ export const Home = () => {
             intelligence, analytics and automation are ready to service your
             requirements and progress your digital business enablement maturity.
           </div>
-          {ServicesComponent(
-            "BI & DATA ANALYTICS",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("BI & DATA ANALYTICS", "#", routes.custSoftDev)}
           {ServicesComponent(
             "ROBOTIC PROCESS AUTOMATION",
             "#",
-            routes.custom_softwareDev
+            routes.custSoftDev
           )}
-          {ServicesComponent("AI SOLUTIONS", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "DATABRICKS SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("AI SOLUTIONS", "#", routes.custSoftDev)}
+          {ServicesComponent("DATABRICKS SERVICES", "#", routes.custSoftDev)}
         </div>
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
@@ -516,26 +492,10 @@ export const Home = () => {
             achieve greater success in IT projects, faster delivery, improved
             quality and real ROI.
           </div>
-          {ServicesComponent(
-            "BUSINESS ANALYSIS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "CHANGE MANAGEMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "DELIVERY MANAGEMENT",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent(
-            "AGILE CONSULTING",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("BUSINESS ANALYSIS", "#", routes.custSoftDev)}
+          {ServicesComponent("CHANGE MANAGEMENT", "#", routes.custSoftDev)}
+          {ServicesComponent("DELIVERY MANAGEMENT", "#", routes.custSoftDev)}
+          {ServicesComponent("AGILE CONSULTING", "#", routes.custSoftDev)}
         </div>
       </div>
 
@@ -561,18 +521,14 @@ export const Home = () => {
           {ServicesComponent(
             "APPLICATION MODERNISATION",
             "#",
-            routes.custom_softwareDev
+            routes.custSoftDev
           )}
           {ServicesComponent(
             "CLOUD APPLICATION SERVICES",
             "#",
-            routes.custom_softwareDev
+            routes.custSoftDev
           )}
-          {ServicesComponent(
-            "DEVOPS CONSULTING",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("DEVOPS CONSULTING", "#", routes.custSoftDev)}
         </div>
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
@@ -608,18 +564,10 @@ export const Home = () => {
             channels have the functional capability. We make it an incredible
             experience.
           </div>
-          {ServicesComponent(
-            "UX REVIEW & ANALYSIS",
-            "#",
-            routes.custom_softwareDev
-          )}
-          {ServicesComponent("UX DESIGN", "#", routes.custom_softwareDev)}
-          {ServicesComponent("UI DESIGN", "#", routes.custom_softwareDev)}
-          {ServicesComponent(
-            "OTHER DESIGN SERVICES",
-            "#",
-            routes.custom_softwareDev
-          )}
+          {ServicesComponent("UX REVIEW & ANALYSIS", "#", routes.custSoftDev)}
+          {ServicesComponent("UX DESIGN", "#", routes.custSoftDev)}
+          {ServicesComponent("UI DESIGN", "#", routes.custSoftDev)}
+          {ServicesComponent("OTHER DESIGN SERVICES", "#", routes.custSoftDev)}
         </div>
       </div>
 
