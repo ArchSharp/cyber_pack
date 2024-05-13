@@ -6,10 +6,13 @@ import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import flutter from "../Images/TechStacks/flutter.svg";
 import cbp01 from "../Images/cbp01.jpg";
-import mobile from "../Images/TechStacks/mobile.png";
+import mobile from "../Images/mobile.png";
 import { FaArrowCircleRight } from "react-icons/fa";
-// import ceo from "../Images/ceo.png";
-// import crypto from "../Images/crypto-shield.jpg";
+import strategy from "../Images/strategy.png";
+import design from "../Images/design.png";
+import develop from "../Images/develop.jpg";
+import test from "../Images/test.png";
+import deploy from "../Images/deploy.jpg";
 import { FcViewDetails } from "react-icons/fc";
 import { useAppDispatch, useAppSelector } from "../Store/store";
 // import { IServiceEnquiry } from "../Features/User/type";
@@ -23,7 +26,7 @@ import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation } from "react-router-dom";
 import programmer from "../Images/programmer.jpg";
 import { Challenges } from "../Components/Challenges";
-import media from "../Images/TechStacks/media.png";
+import media from "../Images/media.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
@@ -715,7 +718,7 @@ export const MobileAppDev = () => {
           <hr className="border-[2px] border-orange-500 w-[100px] mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] py-[1vh] lg:h-[700px] xl:h-[300px] w-[98vw] md:w-[80vw] lg:w-[85vw] mx-auto mt-10 overflow-x-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] py-[1vh] lg:h-[700px] xl:h-[350px] w-[98vw] md:w-[80vw] lg:w-[85vw] xl:w-[90vw] mx-auto mt-10 overflow-x-auto">
           {FlipCard2(
             "",
             "white",
@@ -727,7 +730,8 @@ export const MobileAppDev = () => {
               "Mobile Application Development Platform",
               "Cross-platform/native/ hybrid approach",
             ],
-            "border-blue-400"
+            "border-blue-400",
+            strategy
           )}
           {FlipCard2(
             "",
@@ -740,7 +744,8 @@ export const MobileAppDev = () => {
               "User experience (UX) analysis",
               "User interface (UI) design",
             ],
-            "border-slate-700"
+            "border-slate-700",
+            design
           )}
           {FlipCard2(
             "",
@@ -753,7 +758,8 @@ export const MobileAppDev = () => {
               "Continuous integration",
               "Agile methodology",
             ],
-            "border-slate-300"
+            "border-slate-300",
+            develop
           )}
           {FlipCard2(
             "",
@@ -766,8 +772,10 @@ export const MobileAppDev = () => {
               "Performance testing",
               "Testing lab",
             ],
-            "border-blue-900"
+            "border-blue-900",
+            test
           )}
+          <div className="w-[25vw] hidden lg:block xl:hidden"></div>
           {FlipCard2(
             "",
             "white",
@@ -779,7 +787,8 @@ export const MobileAppDev = () => {
               "Mobile Application Management",
               "Mobile Device Management",
             ],
-            "border-yellow-400"
+            "border-yellow-400",
+            deploy
           )}
         </div>
       </div>
@@ -917,7 +926,8 @@ export const MobileAppDev = () => {
     bgcolour: string,
     frontText: string,
     backText: string[],
-    borderColor: string
+    borderColor: string,
+    image: string
   ) {
     return (
       <div
@@ -926,14 +936,14 @@ export const MobileAppDev = () => {
             "--flip-card-bg-colour": `${bgcolour}`,
           } as any
         }
-        className={`flip-card h-fit md:h-[300px] py-2 w-[92vw] md:w-[35vw] lg:w-[20vw] xl:w-[15vw] mx-auto md:mx-0 text-center ${flipcss}`}
+        className={`flip-card h-fit md:h-[300px] py-2 w-[92vw] md:w-[35vw] lg:w-[25vw] xl:w-[15vw] mx-auto md:mx-0 text-center ${flipcss}`}
       >
         <div className="flip-card-inner hidden md:block">
           <div className="flip-card-front flex flex-col items-center justify-center px-5 rounded-[30px]">
             <div
               className={`border-[17px] ${borderColor} size-[170px] rounded-[50%] flex items-center justify-center shadow-xl shadow-black`}
             >
-              <FcViewDetails className="w-[100px]" />
+              <img src={image} alt="deploy-1" className="w-[100px]" />
             </div>
             <div className="text-lg text-slate-500 font-poppins font-semibold mt-4">
               {frontText}
@@ -941,7 +951,7 @@ export const MobileAppDev = () => {
           </div>
           <div
             style={{ backgroundColor: "slategray" }}
-            className="flip-card-back rounded-[30px] flex items-center justify-center p2-4 "
+            className="flip-card-back rounded-[30px] flex items-center"
           >
             <ul className=" text-left">
               {backText.map((text, index) => (
