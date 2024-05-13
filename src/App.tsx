@@ -7,6 +7,7 @@ import Error from "./Components/Error";
 import { Footer } from "./Components/Footer";
 import { CustomSoftwareDev } from "./Screens/CustomSoftwareDev";
 import { MobileAppDev } from "./Screens/MobileAppDev";
+import { WebAppServices } from "./Screens/WebAppServices";
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
           path={routes.custSoftDev}
           index
           element={<CustomSoftwareDev />}
+        />
+        <Route
+          path={routes.webAppServices}
+          index
+          element={<WebAppServices />}
         />
         <Route path={routes.mobileAppDev} index element={<MobileAppDev />} />
         <Route path="*" element={<Error />}></Route>

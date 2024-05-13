@@ -383,7 +383,7 @@ export const Home = () => {
           {ServicesComponent(
             "WEB APPLICATION SERVICES",
             "#",
-            routes.custSoftDev
+            routes.webAppServices
           )}
         </div>
 

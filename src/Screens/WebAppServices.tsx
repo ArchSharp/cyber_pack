@@ -4,35 +4,44 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
-import flutter from "../Images/TechStacks/flutter.svg";
+import typescript from "../Images/TechStacks/typescript.svg";
 import cbp01 from "../Images/cbp01.jpg";
 import mobile from "../Images/mobile.png";
 import { FaArrowCircleRight } from "react-icons/fa";
-import strategy from "../Images/strategy.png";
-import design from "../Images/design.png";
-import develop from "../Images/develop.jpg";
-import test from "../Images/test.png";
-import deploy from "../Images/deploy.jpg";
-import { FcViewDetails } from "react-icons/fc";
+// import strategy from "../Images/strategy.png";
+// import design from "../Images/design.png";
+// import develop from "../Images/develop.jpg";
+// import test from "../Images/test.png";
+// import deploy from "../Images/deploy.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
-// import { IServiceEnquiry } from "../Features/User/type";
+import responsive_design from "../Images/responsive-design.svg";
+import customui from "../Images/custom-ui-ux-design.svg";
+import interactive_element from "../Images/interactive-elements.svg";
+import cross_browser from "../Images/cross-browser-compatibility.svg";
+import optimized from "../Images/optimised-performance.svg";
+import accessibility from "../Images/accessibility.svg";
+import integration_backend from "../Images/integration-with-back-end.svg";
 import { useMediaQuery } from "react-responsive";
-import ios from "../Images/TechStacks/ios.svg";
-import android from "../Images/TechStacks/android.svg";
-import react_native from "../Images/TechStacks/react-native.svg";
-import xamarin from "../Images/TechStacks/xamarin2.svg";
-import ionic from "../Images/TechStacks/ionic2.svg";
+import js from "../Images/TechStacks/javascript.svg";
+import htmlv2 from "../Images/TechStacks/html5v2.svg";
+import css from "../Images/TechStacks/css.svg";
+import react_native from "../Images/TechStacks/react-native2.svg";
+import angular from "../Images/TechStacks/angular.svg";
 import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation } from "react-router-dom";
-import programmer from "../Images/programmer.jpg";
+// import programmer from "../Images/programmer.jpg";
 import { Challenges } from "../Components/Challenges";
 import media from "../Images/media.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
-import { LuDot } from "react-icons/lu";
+// import { LuDot } from "react-icons/lu";
+import experienced_team from "../Images/experienced-team.svg";
+import collaborate from "../Images/collaborative-approach.svg";
+import cuting_edge_tech from "../Images/cutting-edge-technology.svg";
+import client_focus from "../Images/client-centric-focus.svg";
 
-export const MobileAppDev = () => {
+export const WebAppServices = () => {
   const dispatch = useAppDispatch();
   const { header } = useAppSelector((state) => state.user);
   const location = useLocation();
@@ -162,16 +171,16 @@ export const MobileAppDev = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  //   useEffect(() => {
+  //     const handleScrollToTop = () => {
+  //       window.scrollTo({
+  //         top: 0,
+  //         behavior: "smooth", // Optional: smooth scrolling animation
+  //       });
+  //     };
 
-    handleScrollToTop();
-  }, []);
+  //     handleScrollToTop();
+  //   }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -187,15 +196,17 @@ export const MobileAppDev = () => {
           </div>
         </div>
         <div className="text-[40px] md:text-6xl text-white w-[90vw] lg:w-[60vw] mt-[30px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
-          Mobile App Development
+          Web Application Development Services
         </div>
         {/* <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
           Global Scale. Local Engagement.
         </div> */}
         <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw] mt-5">
-          Need an app to increase sales, improve efficiency, improve
-          productivity, increase workforce flexibility or to be a market
-          disruptor?
+          CyberPackHQ offers software development consultants to complement
+          client development capabilities, both internationally and locally,
+          alongside collaborative teams. Additionally, we provide services in
+          software development outsourcing, application re-platforming, and
+          enterprise application integration.
         </div>
         <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
@@ -265,28 +276,24 @@ export const MobileAppDev = () => {
       <div className="flex flex-col lg:flex-row items-center py-[8vh]">
         <div className="w-[90vw] lg:w-[30vw] ml-[1vw] md:ml-[2vw] lg:ml-[5vw]">
           <div className="text-main text-lg lg:text-xl font-bold italic w-fit">
-            MOBILE FIRST DEVELOPMENT FOR A
+            ADVANCED SOLUTIONS IN
           </div>
           <div className="text-blue-700 text-xl lg:text-2xl font-bold italic w-fit">
-            MOBILE FIRST WORLD
+            WEB APPLICATIONS{" "}
           </div>
 
           <p className="my-10 text-slate-600">
-            CyberPackHQ’s mobile application development services connect you
-            with your customers and employees in the mobile channel. Enable,
-            enhance and extend your business mobile presence with our mobile
-            services.
-            <br />
-            <br /> We deliver specialist consulting and development skills
-            across all the major mobile application platforms and technologies,
-            including native Android and iOS, Flutter and React Native.
+            We specialise in crafting exceptional user experiences through our
+            leading Front-End Web Development services. Our team of skilled
+            designers and developers work collaboratively to bring your digital
+            vision to life, ensuring your website captivates visitors and drives
+            engagement.
             <br />
             <br />
-            Our Mobile App development practice provides our customers with
-            access to the full set of capabilities needed to build world class
-            mobile solutions. From UI/UX design to App store deployment,
-            CyberPackHQ offers end-to-end service in respect to mobile
-            application development, services and consulting.
+            We deliver specialist consulting and development skills With our
+            expertise in the latest technologies and design trends, we are
+            committed to delivering user-friendly, visually appealing, and
+            responsive web solutions.
           </p>
         </div>
 
@@ -380,104 +387,143 @@ export const MobileAppDev = () => {
 
       <div className="min-h-[650px] pb-10 bg-customsoftware flex flex-col">
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
-          <div>Custom Software Development Services</div>
+          <div>Web Application Development Services</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-y-0 px-[1vw] lg:h-[700px] xl:h-[600px] w-[98vw] md:w-[80vw] lg:w-[85vw] xl:w-[65vw] mx-auto mt-10 overflow-x-auto">
-          {FlipCard(
-            "",
-            "orange",
-            "Custom Mobile Application",
-            "Our expert developers specialise in iOS, Android and flutter development platforms."
-          )}
-          {FlipCard(
-            "",
-            "#1F456E",
-            "IT Staff Augumentation",
-            "Providing software development consultants to augment client development capacity, off-shore and near-shore skills augmentation, and co-sourced teams."
-          )}
-          {FlipCard(
-            "",
-            "rgb(70,130,180)",
-            "Code Reviews",
-            "We analyse, identify and fix any faults in your code."
-          )}
-          {FlipCard(
-            "",
-            "#33363D",
-            "Technical Analysis",
-            "To define the application and required technical implementation architecture to meet your mobile audience requirements."
-          )}
-          <div className="w-[20vw] hidden lg:block"></div>
-          {FlipCard(
-            "justify-self-center",
-            "#666362",
-            "Mobile App Consulting",
-            "Expert advisory services in respect to mobile application concepts, architecture, development and maintenance."
-          )}
-          {FlipCard(
-            "justify-self-center",
-            "#666362",
-            "Application store policies",
-            "Review and guidance to ensure quality levels and best practices are implemented and so ensure acceptance by the major app stores."
-          )}
+        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-y-5 lg:gap-y-0 px-[1vw] py-10 w-[98vw] md:w-[85vw] lg:w-[90vw] mx-auto mt-10 overflow-x-auto">
+          <div className="flex flex-col items-center">
+            <img src={responsive_design} alt="responsive_design" />
+            <div className="text-white font-poppins text-sm font-bold mt-2 text-center">
+              Responsive Design
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-white font-poppins text-sm font-bold text-center">
+              Custom UI/UX Design
+            </div>
+            <img src={customui} alt="customui" className="mt-2" />
+          </div>
+          <div className="flex flex-col items-center">
+            <img src={interactive_element} alt="Interactive Elements" />
+            <div className="text-white font-poppins text-sm font-bold mt-2 text-center">
+              Interactive Elements
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-white font-poppins text-sm font-bold text-center">
+              Cross-browser Compatibility
+            </div>
+            <img src={cross_browser} alt="Cross-browser" className="mt-2" />
+          </div>
+          <div className="flex flex-col items-center">
+            <img src={optimized} alt="Optimised Performance" />
+            <div className="text-white font-poppins text-sm font-bold mt-2 text-center">
+              Optimised Performance
+            </div>
+          </div>
+          <div className="w-[20vw] hidden md:block lg:hidden"></div>
+          <div className="flex flex-col items-center">
+            <div className="text-white font-poppins text-sm font-bold text-center">
+              Accessibility
+            </div>
+            <img src={accessibility} alt="Accessibility" className="mt-2" />
+          </div>
+          <div className="w-[20vw] lg:hidden"></div>
+          <div className="flex flex-col items-center">
+            <img src={integration_backend} alt="backend_integration" />
+            <div className="text-white font-poppins text-sm font-bold mt-2 text-center">
+              Integration with Back-end
+            </div>
+          </div>
         </div>
 
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
-          <div>Supported Mobile Frameworks</div>
+          <div>Supported Software Frameworks</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
-        <div className="grid grid-cols-3 gap-y-5 lg:flex items-end justify-between px-[1vw] h-[250px] md:h-[420px] lg:h-[220px] w-[98vw] md:w-[70vw] lg:w[60vw] mx-auto mt-10 overflow-x-auto">
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={ios}
-              alt="ios"
-              className="w-[50px] md:w-[100px] mb-[50px]"
-            />
-            <div className=" text-white font-bold">iOS</div>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={android}
-              alt="android"
-              className="w-[50px] md:w-[100px]"
-            />
-            <div className="mt-3 text-white font-bold text-sm">Android</div>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={react_native}
-              alt="react_native"
-              className="w-[50px] md:w-[120px]"
-            />
-            <div className="mt-3 text-white font-bold text-sm">
-              React Native
+        <div className="flex flex-col lg:flex-row items-center mx-auto mt-10">
+          <div className="flex flex-col items-center">
+            <div className="flex items-center">
+              <img src={typescript} alt="typescript" />
+              <img src={js} alt="js" className="ml-5" />
+            </div>
+            <div className=" text-center text-white text-lg mt-4">
+              Typescript and JavaScript fundamentals
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={xamarin}
-              alt="xamarin"
-              className="w-[50px] md:w-[130px]"
-            />
-            <div className="mt-3 text-white font-bold text-sm">Xamarin</div>
+          <div className="flex flex-col items-center w-[70vw] lg:w-[25vw] mt-10 lg:mx-5">
+            <div className="flex items-center">
+              <img src={css} alt="css" />
+              <img src={htmlv2} alt="html5v2" className="ml-5" />
+            </div>
+            <div className=" text-center text-white text-lg mt-4">
+              HTML, CSS, Material and other utility class libraries like
+              Tailwind
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <img src={ionic} alt="ionic" className="w-[50px] md:w-[100px]" />
-            <div className="mt-3 text-white font-bold text-sm">Ionic</div>
+          <div className="flex flex-col items-center w-[70vw] lg:w-[25vw] mt-10">
+            <div className="flex items-center">
+              <img src={react_native} alt="react_native" />
+              <img src={angular} alt="angular" className="ml-5" />
+            </div>
+            <div className=" text-center text-white text-lg mt-4">
+              React & NextJS, Angular and Vue frameworks and meta-frameworks
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
+          <div>Why work with CyberPackHQ?</div>
+          <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
+        </div>
+
+        <div className="flex items-center flex-col lg:flex-row mx-auto mt-10 mb-5">
+          <div className="w-[90vw] lg:w-[20vw]">
+            <img src={experienced_team} alt="experienced_team" />
+            <div className="text-white font-bold text-lg font-poppins mt-4">
+              Experienced Team
+            </div>
+            <div className="mt-2 text-white font-medium">
+              Our skilled designers and developers have a proven track record of
+              creating visually stunning and highly functional websites.
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src={flutter}
-              alt="flutter"
-              className="w-[50px] md:w-[100px]"
-            />
-            <div className="mt-3 text-white font-bold text-sm">Flutter</div>
+          <div className="w-[90vw] lg:w-[20vw] mt-10 lg:mt-0 lg:ml-5">
+            <img src={collaborate} alt="collaborate" />
+            <div className="text-white font-bold text-lg font-poppins mt-4">
+              Collaborative Approach
+            </div>
+            <div className="mt-2 text-white font-medium">
+              We work closely with you to understand your goals and preferences,
+              ensuring your website reflects your unique vision.
+            </div>
+          </div>
+
+          <div className="w-[90vw] lg:w-[20vw] mt-10 lg:mt-0 lg:mx-5">
+            <img src={cuting_edge_tech} alt="cuting_edge_tech" />
+            <div className="text-white font-bold text-lg font-poppins mt-4">
+              Cutting-edge Technology
+            </div>
+            <div className="mt-2 text-white font-medium">
+              We stay up-to-date with the latest front-end technologies and
+              trends to deliver modern and future-proof solutions.
+            </div>
+          </div>
+
+          <div className="w-[90vw] lg:w-[20vw] mt-10 lg:mt-0">
+            <img src={client_focus} alt="client_focus" />
+            <div className="text-white font-bold text-lg font-poppins mt-4">
+              Client-centric Focus
+            </div>
+            <div className="mt-2 text-white font-medium">
+              Our skilled designers and developers have a proven track record of
+              creating visually stunning and highly functional websites.
+            </div>
           </div>
         </div>
       </div>
@@ -500,118 +546,6 @@ export const MobileAppDev = () => {
         </ul>
       </div>
 
-      {/* solve the business challenges */}
-      <div className="mt-20">
-        <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
-          CyberPackHQ MOBILE DEVELOPMENT SERVICES
-        </div>
-        <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
-          SOLVE THESE BUSINESS CHALLENGES:
-        </div>
-      </div>
-      <div className="mt-0 mb-10 flex flex-col lg:flex-row items-start">
-        <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
-          <Challenges
-            classes={"mt-12"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Sourcing scarce mobile development skills"}
-            details={
-              "Globally businesses struggle to find and hire scarce mobile developers to build and maintain mobile applications. The global shortage of iOS and Android skills means delays in development of apps,  new functionality, updates to align with OS releases or correction of non-performing apps. CyberPackHQ's mobile software development services across a range of technologies can help businesses overcome these challenges by providing access to highly skilled IT professionals with a range of expertise and experience in building mobile solutions."
-            }
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Faster delivery of your mobile app"}
-            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPackHQ has the depth in mobile development personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your mobile capacity up and down as needed, quickly and cost-effectively."
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Mobile App technical complexity and poor performance"}
-            details="Modern mobile apps can be complex in both deisgn and deployment. CyberPackHQ's experience in mobile application development will accellerate your builds, improve quality and shorten timelines to deployment of your apps to the mobile stores."
-          />
-        </div>
-
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] md:ml-auto md:mr-auto lg:mr-0 lg:ml-0 rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-      </div>
-
-      {/* Benefit of cybepack */}
-      <div className="mt-20 mb-10">
-        <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
-          BENEFITS OF CYBERPACKHQ'S
-        </div>
-        <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
-          MOBILE APP DEVELOPMENT SERVICES
-        </div>
-      </div>
-      <div className="mt-0 mb-10 flex flex-col lg:flex-row items-start">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[65vh] mb-6 mt-0 ml-[5vw] rounded-xl">
-          <img
-            src={programmer}
-            alt="programmer"
-            className="h-full w-full rounded-xl"
-          />
-        </div>
-
-        <div className="w-[100vw] lg:w-[55vw] pl-[2vw] lg:pl-0 lg:ml-[2vw]">
-          <Challenges
-            classes={"mt-0"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Skilled Development Capacity On-Demand"}
-            details={
-              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPackHQ are able to assemble and provide you with the development capacity scale you need when you need it."
-            }
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Fast ramp-up and efficient delivery"}
-            details="Our experienced team members ramp-up quickly and as senior developers have the experience that ensures they are productive sooner."
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"No language barrier"}
-            details="All CyberPackHQ team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Favourable time-zone"}
-            details="All CyberPackHQ team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
-          />
-          <Challenges
-            classes={"mt-1"}
-            titleClass={
-              "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
-            }
-            title={"Flexible engagement models"}
-            details="Client on-site, hybrid or remote work assignments are all facilitated to ensure the best fit with your needs and time-frames."
-          />
-        </div>
-      </div>
-
       {/* Featured Case Study */}
       <div className=" bg-main h-fit lg:h-[140vh] pt-10 lg:pt-0 pb-16 lg:pb-0 flex flex-col">
         <div className="text-center font-poppins mt-10 flex flex-col">
@@ -621,8 +555,7 @@ export const MobileAppDev = () => {
           <hr className="border-[3px] border-orange-500 w-[100px] mx-auto mt-6" />
         </div>
         <div className="text-white italic font-semibold font-poppins text-lg text-center mt-10">
-          Case study for web dashboard for customers to view their loyalty
-          status in the financial services industry.
+          Soccer League on-line News Portal​
         </div>
 
         <div className="flex flex-col lg:flex-row items-center mt-24">
@@ -635,24 +568,32 @@ export const MobileAppDev = () => {
               Business Challenge
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              Our client provides financial wellness products & services in
-              South Africa including medical aid, retirement annuities,
-              investments & insurance. Our client launched a new insurance plan
-              for the middle market segment, including an improved dashboard and
-              needed a way for customers to know how to improve their status
-              level, and to view partners.
+              Multichoice/Supersport embarked on a mission to revamp the entire
+              PSL (Premier Soccer League) website, aiming to deliver a fresh
+              user experience enriched with up-to-the-minute soccer news, live
+              scores, fixture updates, team profiles, and a “Goal of the Month”
+              feature.
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
               CyberPackHQ Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              CyberPackHQ assisted our client through a skills augmentation
-              service. CyberPackHQ provided software development professional
-              services that ensured our client had a high performing software
-              development team that can deliver business value faster in Scrum
-              Agile Sprints. CyberPackHQ utilised Scrum Masters, Java developer
-              and mobile developer consultants on the assignment.
+              Leveraging CyberPackHQ’s outsourced software development expertise
+              and cutting-edge UX/UI design, Multichoice/Supersport embarked on
+              a comprehensive website redevelopment project to meet their
+              objectives.​
+            </div>
+
+            <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
+              Result
+            </div>
+            <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
+              The project delivered an engaging and informative PSL website,
+              featuring real-time updates, team insights, and the exciting “Goal
+              of the Month” feature. This transformed portal has elevated the
+              league’s digital presence, delighting soccer enthusiasts and
+              boosting user engagement.
             </div>
 
             <div className=" text-center lg:text-left">
@@ -707,90 +648,6 @@ export const MobileAppDev = () => {
               </div>
             ))}
           </Slider>
-        </div>
-      </div>
-
-      {/* Our Mobile App Development */}
-      <div>
-        <div className="text-center font-poppins mt-10 flex flex-col">
-          <div className="text-main text-4xl font-poppins font-bold">
-            Our Mobile App Development Process
-          </div>
-          <hr className="border-[2px] border-orange-500 w-[100px] mx-auto mt-6" />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-y-5 lg:gap-y-0 px-[1vw] py-[1vh] lg:h-[700px] xl:h-[350px] w-[98vw] md:w-[80vw] lg:w-[85vw] xl:w-[90vw] mx-auto mt-10 overflow-x-auto">
-          {FlipCard2(
-            "",
-            "white",
-            "Strategise",
-            [
-              "MEAP decision",
-              "Build vs. buy",
-              "Hardware selection",
-              "Mobile Application Development Platform",
-              "Cross-platform/native/ hybrid approach",
-            ],
-            "border-blue-400",
-            strategy
-          )}
-          {FlipCard2(
-            "",
-            "white",
-            "Design",
-            [
-              "System architecture",
-              "Application architecture",
-              "Security focus",
-              "User experience (UX) analysis",
-              "User interface (UI) design",
-            ],
-            "border-slate-700",
-            design
-          )}
-          {FlipCard2(
-            "",
-            "white",
-            "Develop",
-            [
-              "Cross-platform development",
-              "Fully native development",
-              "HTML/ hybrid app development",
-              "Continuous integration",
-              "Agile methodology",
-            ],
-            "border-slate-300",
-            develop
-          )}
-          {FlipCard2(
-            "",
-            "white",
-            "Test",
-            [
-              "Test-driven development",
-              "UI automation testing",
-              "Integration testing",
-              "Performance testing",
-              "Testing lab",
-            ],
-            "border-blue-900",
-            test
-          )}
-          <div className="w-[25vw] hidden lg:block xl:hidden"></div>
-          {FlipCard2(
-            "",
-            "white",
-            "Deploy",
-            [
-              "Maintenence and support",
-              "Analytics and reporting",
-              "Enterprise Mobility Management",
-              "Mobile Application Management",
-              "Mobile Device Management",
-            ],
-            "border-yellow-400",
-            deploy
-          )}
         </div>
       </div>
 
@@ -894,102 +751,4 @@ export const MobileAppDev = () => {
       </div>
     </div>
   );
-
-  function FlipCard(
-    flipcss: string,
-    bgcolour: string,
-    frontText: string,
-    backText: string
-  ) {
-    return (
-      <div
-        style={
-          {
-            "--flip-card-bg-colour": `${bgcolour}`,
-          } as any
-        }
-        className={`flip-card h-[280px] w-[45vw] md:w-[35vw] lg:w-[20vw] xl:w-[15vw] rounded-[30px] text-center ${flipcss} shadow-xl`}
-      >
-        <div className="flip-card-inner">
-          <div className="flip-card-front flex items-center justify-center text-xl md:text-2xl text-white font-bold px-5 rounded-[30px]">
-            {frontText}
-          </div>
-          <div className="flip-card-back rounded-[30px] flex items-center justify-center px-4 ">
-            {backText}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  function FlipCard2(
-    flipcss: string,
-    bgcolour: string,
-    frontText: string,
-    backText: string[],
-    borderColor: string,
-    image: string
-  ) {
-    return (
-      <div
-        style={
-          {
-            "--flip-card-bg-colour": `${bgcolour}`,
-          } as any
-        }
-        className={`flip-card h-fit md:h-[300px] py-2 w-[92vw] md:w-[35vw] lg:w-[25vw] xl:w-[15vw] mx-auto md:mx-0 text-center ${flipcss}`}
-      >
-        <div className="flip-card-inner hidden md:block">
-          <div className="flip-card-front flex flex-col items-center justify-center px-5 rounded-[30px]">
-            <div
-              className={`border-[17px] ${borderColor} size-[170px] rounded-[50%] flex items-center justify-center shadow-xl shadow-black`}
-            >
-              <img src={image} alt="deploy-1" className="w-[100px]" />
-            </div>
-            <div className="text-lg text-slate-500 font-poppins font-semibold mt-4">
-              {frontText}
-            </div>
-          </div>
-          <div
-            style={{ backgroundColor: "slategray" }}
-            className="flip-card-back rounded-[30px] flex items-center"
-          >
-            <ul className=" text-left">
-              {backText.map((text, index) => (
-                <li key={index}>
-                  <div className="flex items-center">
-                    <LuDot className="text-2xl mr-2" /> {text}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* small screen */}
-        <div className="flex items-start md:hidden">
-          <div
-            className={`border-[7px] ${borderColor} size-[100px] rounded-[50%] flex items-center justify-center shadow-xl shadow-black`}
-          >
-            <FcViewDetails className="w-[100px]" />
-          </div>
-
-          <div className="flex flex-col px-4">
-            <div className="text-slate-600 text-left font-bold pl-2">
-              {frontText}
-            </div>
-            <ul className="text-left text-xs md:text-base">
-              {backText.map((text, index) => (
-                <li key={index}>
-                  <div className="flex items-center">
-                    <LuDot className="text-2xl mr-1" /> {text}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
 };

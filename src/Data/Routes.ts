@@ -7,3 +7,4 @@ export const availDocs = "/available-doctors";
 export const profile = "/profile";
 export const custSoftDev = "custom-software-development";
 export const mobileAppDev = "mobile-app-development";
+export const webAppServices = "web-application-services";
