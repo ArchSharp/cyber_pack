@@ -3,13 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
-import { partners, tech_stack_v1 } from "../Data/partners";
+import { partners } from "../Data/partners";
 import flutter from "../Images/TechStacks/flutter.svg";
 import cbp01 from "../Images/cbp01.jpg";
 import mobile from "../Images/TechStacks/mobile.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 // import ceo from "../Images/ceo.png";
-import crypto from "../Images/crypto-shield.jpg";
+// import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
 // import { IServiceEnquiry } from "../Features/User/type";
 import { useMediaQuery } from "react-responsive";
@@ -114,57 +114,6 @@ export const MobileAppDev = () => {
     pauseOnHover: true,
     autoplaySpeed: 3000,
     arrows: false,
-  };
-
-  const settings3: Settings = {
-    rtl: true,
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 6,
-    slidesToScroll: 4,
-    autoplay: true,
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    autoplaySpeed: 8000,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 2,
-          // arrows: true,
-        },
-      },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     initialSlide: 1,
-      //     // arrows: true,
-      //   },
-      // },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //   },
-      // },
-    ],
   };
 
   // const isDesktopOrLaptop = useMediaQuery({
