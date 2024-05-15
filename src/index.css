@@ -666,3 +666,55 @@ code {
   background-repeat: no-repeat;
   background-position: right;
 }
+
+.oval-bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100vw;
+  background-color: #087cb7;
+  overflow-x: hidden;
+}
+
+.custom-shape-divider-bottom-1715764172 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140vw;
+  overflow: hidden;
+  line-height: 0;
+  margin-left: -20vw;
+}
+
+.custom-shape-divider-bottom-1715764172 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  /* height: 70vh; */
+}
+
+.custom-shape-divider-bottom-1715764172 .shape-fill {
+  fill: rgb(240, 248, 255); /** #ffffff;*/
+}
+
+.ux-card {
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.gif-container {
+  position: relative;
+  display: inline-block; /* or inline-flex or block based on your layout */
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255); */
+  z-index: 1; /* Make sure the overlay is above the GIF */
+}

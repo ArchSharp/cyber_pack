@@ -8,6 +8,7 @@ import { Footer } from "./Components/Footer";
 import { CustomSoftwareDev } from "./Screens/CustomSoftwareDev";
 import { MobileAppDev } from "./Screens/MobileAppDev";
 import { WebAppServices } from "./Screens/WebAppServices";
+import { UxReviewAnalysis } from "./Screens/UxReviewAnalysis";
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
           element={<WebAppServices />}
         />
         <Route path={routes.mobileAppDev} index element={<MobileAppDev />} />
+        <Route
+          path={routes.uxReviewAnalysis}
+          index
+          element={<UxReviewAnalysis />}
+        />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

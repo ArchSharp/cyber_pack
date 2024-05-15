@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { MarqueeHolder } from "../Components/MarqueeHolder";
+import ux_svg from "../Images/ux-svg.svg";
+import { IoIosArrowForward } from "react-icons/io";
 import { partners, tech_stack_v1 } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
@@ -26,8 +28,11 @@ import pixa from "../Images/perkaloo.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
+import { UxSVG } from "../Components/UxSVG";
+import diagnosis from "../Images/diagnosis_frame.gif";
+import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 
-export const CustomSoftwareDev = () => {
+export const UxReviewAnalysis = () => {
   const dispatch = useAppDispatch();
   const { header } = useAppSelector((state) => state.user);
   const location = useLocation();
@@ -208,16 +213,16 @@ export const CustomSoftwareDev = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  //   useEffect(() => {
+  //     const handleScrollToTop = () => {
+  //       window.scrollTo({
+  //         top: 0,
+  //         behavior: "smooth", // Optional: smooth scrolling animation
+  //       });
+  //     };
 
-    handleScrollToTop();
-  }, []);
+  //     handleScrollToTop();
+  //   }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -225,87 +230,66 @@ export const CustomSoftwareDev = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-fit pb-10 flex flex-col">
-        <div className="flex items-center italic ml-[5vw] mt-16">
-          <div className="mr-3 size-3 bg-yellow-600 -skew-x-12"></div>
-          <div className="text-lg md:text-xl text-white font-poppins font-medium">
-            Software Engineering
-          </div>
+      <div className="oval-bottom h-[80vw] md:h-[100vh]">
+        <div className="text-white font-semibold text-lg md:text-3xl lg:text-6xl font-poppins text-center mt-16 z-[3]">
+          UX Review & Analysis <br />
+          <div className="mt-3 h-[4px] w-[150px] md:w-[300px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
         </div>
-        <div className="text-[40px] md:text-6xl text-white w-[90vw] lg:w-[60vw] mt-[30px] mx-[2vw] md:mx-[5vw] pr-0 md:pr-[10vw] font-bold">
-          Custom Software Development
+        <div className="text-orange-800 md:text-white font-semibold md:text-xl lg:text-2xl px-5 md:px-0 font-poppins text-center mt-8 md:mt-16 z-[3]">
+          “Supposing is good, but finding out is better.”{" "}
+          <span className="font-medium text-base">- Mark Twain</span>
         </div>
-        {/* <div className="w-fit mx-[2vw] md:mx-[5vw] my-5 font-semibold text-orange-600 text-2xl md:text-lg">
-          Global Scale. Local Engagement.
-        </div> */}
-        <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw] mt-5">
-          Drive the digital distinction of your enterprise with custom web,
-          desktop and mobile applications. We deliver world class software
-          solutions through our recognised expertise in bespoke development.
-        </div>
-        <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              24+
-            </div>
-            <div className="text-xxs md:text-xs w-fit text-white">
-              Years of service
-            </div>
-          </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              600+
-            </div>
-            <div className="text-xxs md:text-xs w-fit text-white">
-              IT Professionals
-            </div>
-          </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              500+
-            </div>
-            <div className="text-xxs md:text-xs text-white w-fit">
-              Completed projects
-            </div>
-          </div>
-          <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              10+
-            </div>
-            <div className="text-xxs md:text-xs text-white">
-              Digital services
-            </div>
-          </div>
-        </div>
-        <div className="mb-16">
-          <button
-            className="ml-[2vw] md:ml-[5vw] px-7 py-2 border-[3px] italic border-white text-lg font-bold text-white bg-gradient-to-r from-yellow-900 via-yellow-500 to-yellow-300 rounded-full"
-            onClick={handleScrollToBottom}
+
+        <UxSVG
+          classes={
+            "z-[2] absolute bottom-[7vh] md:bottom-[5vh] left-[25vw] md:left-[33vw] w-[50vw] md:w-[37vw]"
+          }
+        />
+        {/* oval bottom */}
+        <div className="custom-shape-divider-bottom-1715764172">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="h-[40vh] md:h-[70vh]"
           >
-            CONNECT WITH US
-          </button>
+            <path
+              d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+              className="shape-fill"
+            ></path>
+          </svg>
         </div>
-        <MarqueeHolder
-          mSpeed={70}
-          mDelay={5}
-          mGradient={false}
-          mgradientColor={"rgb(126, 200, 227)"}
-        >
-          <div className="flex items-center py-2">
-            {partners.map((eachImage, index) => (
-              <div
-                key={index}
-                className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-main"
-              >
-                <img
-                  src={eachImage.src}
-                  alt={eachImage.alt}
-                  className="w-[70px]"
-                />
+      </div>
+      <div className="text-center bg-ux_review_bg">
+        <button className=" text-main lg:text-xl font-bold bg-orange-400 font-poppins px-3 lg:px-5 py-2 lg:py-3 rounded-[50px] flex items-center mx-auto">
+          CONTACT US{" "}
+          <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+        </button>
+      </div>
+
+      <div className="min-h-[600px] bg-ux_review_bg flex flex-col pb-20">
+        <div className="mt-20 lg:shadow-ux_bx lg:bg-ux_review_bg2 w-[95vw] lg:w-[80vw] min-h-[400px] mx-auto flex flex-col-reverse lg:flex-row">
+          <div className="flex">
+            <div className="hidden lg:block text-8xl leading-[90px] font-poppins px-5 pt-5 text-blue-800 font-extrabold not-italic w-fit">
+              01
+            </div>
+            <div className="w-[98vw] lg:w-fit">
+              <div className="mt-20 text-xl lg:text-5xl text-main font-poppins font-bold">
+                Diagnosis
               </div>
-            ))}
+              <div className="mt-3 h-[4px] w-[350px] md:w-[400px] bg-gradient-to-r from-blue-400 via-blue-300 to-blue-100" />
+              <div className="text-blue-500 mt-10 lg:w-[400px] text-lg font-semibold font-poppins">
+                Review and analysis are about discovering potential issues that
+                could negatively affect user experience
+              </div>
+            </div>
           </div>
-        </MarqueeHolder>
+
+          <div className="w-[80vw] lg:w-[35vw] mx-auto lg:mx-0 lg:ml-10">
+            <DiagnosisSVG classes={""} />
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center py-[8vh]">
@@ -415,7 +399,6 @@ export const CustomSoftwareDev = () => {
           </div>
         </div>
       </div>
-
       <div className="min-h-[650px] pb-10 bg-customsoftware flex flex-col">
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
           <div>Custom Software Development Services</div>
@@ -493,7 +476,6 @@ export const CustomSoftwareDev = () => {
           </div>
         </div>
       </div>
-
       {/* fixed right side navbar */}
       <div className=" bg-sidenavbar w-[170px] rounded-tl-[30px] rounded-bl-[30px] z-[3] h-[300px] fixed right-0 top-[35vh] hidden lg:block">
         <div className=" text-main font-bold pl-7 pt-5">Quick Nav</div>
@@ -511,7 +493,6 @@ export const CustomSoftwareDev = () => {
           <li className="pt-2 cursor-pointer hover:text-orange-400">FAQ's</li>
         </ul>
       </div>
-
       {/* solve the business challenges */}
       <div className="mt-20">
         <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
@@ -567,7 +548,6 @@ export const CustomSoftwareDev = () => {
           />
         </div>
       </div>
-
       {/* Benefit of cybepack */}
       <div className="mt-20 mb-10">
         <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
@@ -655,7 +635,6 @@ export const CustomSoftwareDev = () => {
           />
         </div>
       </div>
-
       {/* Featured Case Study */}
       <div className=" bg-main h-fit lg:h-[140vh] pt-10 lg:pt-0 pb-16 lg:pb-0 flex flex-col">
         <div className="text-center font-poppins mt-10 flex flex-col">
@@ -706,10 +685,8 @@ export const CustomSoftwareDev = () => {
           </div>
         </div>
       </div>
-
       {/* transparent background */}
       <ClientsReview clients={clients} />
-
       {/* News and Insight */}
       <div className="flex flex-col mt-24">
         <div className="w-fit mx-auto md:mx-[5vw]">
@@ -752,7 +729,6 @@ export const CustomSoftwareDev = () => {
           </Slider>
         </div>
       </div>
-
       {/* Tech stack */}
       <div className="flex flex-col mt-24">
         <div className="w-fit mx-auto md:mx-[5vw]">
@@ -803,7 +779,6 @@ export const CustomSoftwareDev = () => {
           </Slider>
         </div>
       </div>
-
       {/* video */}
       <div className="cyberpack_video-bg h-fit lg:h-[500px] mt-10 flex flex-col lg:flex-row items-center">
         <div className="w-[100vw] lg:w-[50vw] text-center lg:text-left mt-10 lg:mt-0">
@@ -837,10 +812,8 @@ export const CustomSoftwareDev = () => {
           </div>
         </div>
       </div>
-
       {/* Connect with cyberpack */}
       <ConnectWithUs connect={connect} mt={"mt-0"} />
-
       {/* FAQ's */}
       <div className="mb-16">
         <div className="flex flex-col mt-20">
@@ -868,7 +841,6 @@ export const CustomSoftwareDev = () => {
           details="Yes, custom software can be easily integrated with existing systems. This allows for seamless data transfer and improved efficiency, as the custom software can be designed to work with the organization's existing systems and processes."
         />
       </div>
-
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>

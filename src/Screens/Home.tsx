@@ -564,7 +564,11 @@ export const Home = () => {
             channels have the functional capability. We make it an incredible
             experience.
           </div>
-          {ServicesComponent("UX REVIEW & ANALYSIS", "#", routes.custSoftDev)}
+          {ServicesComponent(
+            "UX REVIEW & ANALYSIS",
+            "#",
+            routes.uxReviewAnalysis
+          )}
           {ServicesComponent("UX DESIGN", "#", routes.custSoftDev)}
           {ServicesComponent("UI DESIGN", "#", routes.custSoftDev)}
           {ServicesComponent("OTHER DESIGN SERVICES", "#", routes.custSoftDev)}
