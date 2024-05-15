@@ -1,5 +1,5 @@
-import ux_svg from "../Images/ux-svg.svg";
-import React from "react";
+// import ux_svg from "../Images/ux-svg.svg";
+// import React from "react";
 
 interface UxSVGProps {
   classes: any;

@@ -2,8 +2,8 @@ import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
-import { MarqueeHolder } from "../Components/MarqueeHolder";
-import ux_svg from "../Images/ux-svg.svg";
+// import { MarqueeHolder } from "../Components/MarqueeHolder";
+// import ux_svg from "../Images/ux-svg.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import { partners, tech_stack_v1 } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
@@ -29,7 +29,7 @@ import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
 import { UxSVG } from "../Components/UxSVG";
-import diagnosis from "../Images/diagnosis_frame.gif";
+// import diagnosis from "../Images/diagnosis_frame.gif";
 import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 
 export const UxReviewAnalysis = () => {
@@ -180,12 +180,12 @@ export const UxReviewAnalysis = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
 
   const connect = useRef<HTMLDivElement>(null);
-  const handleScrollToBottom = () => {
-    if (connect.current) {
-      // Scroll to the third div
-      connect.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  //   const handleScrollToBottom = () => {
+  //     if (connect.current) {
+  //       // Scroll to the third div
+  //       connect.current.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
 
   const services = useRef<HTMLDivElement>(null);
   const clients = useRef<HTMLDivElement>(null);

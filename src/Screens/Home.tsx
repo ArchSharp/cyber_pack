@@ -397,8 +397,8 @@ export const Home = () => {
       </div>
 
       {/* IT Staff augumentation */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -466,8 +466,8 @@ export const Home = () => {
       </div>
 
       {/* Digital Transformation */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
@@ -541,8 +541,8 @@ export const Home = () => {
       </div>
 
       {/* Design Services */}
-      <div className="mt-20 mb-10 flex flex-col lg:flex-row items-center">
-        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-0 ml-[5vw] rounded-xl">
+      <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
+        <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
             src={programmer}
             alt="programmer"
