@@ -1,11 +1,11 @@
-import Slider, { Settings } from "react-slick";
+// import { /*Slider,*/ Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
 // import { MarqueeHolder } from "../Components/MarqueeHolder";
 // import ux_svg from "../Images/ux-svg.svg";
 import { IoIosArrowForward } from "react-icons/io";
-import { tech_stack_v1 } from "../Data/partners";
+// import { tech_stack_v1 } from "../Data/partners";
 // import microsoft from "../Images/microsoft.png";
 // import cbp01 from "../Images/cbp01.jpg";
 // import programmer from "../Images/programmer.jpg";
@@ -122,56 +122,56 @@ export const UxReviewAnalysis = () => {
   //   arrows: false,
   // };
 
-  const settings3: Settings = {
-    rtl: true,
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 6,
-    slidesToScroll: 4,
-    autoplay: true,
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    autoplaySpeed: 8000,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 2,
-          // arrows: true,
-        },
-      },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     initialSlide: 1,
-      //     // arrows: true,
-      //   },
-      // },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //   },
-      // },
-    ],
-  };
+  // const settings3: Settings = {
+  //   rtl: true,
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 3000,
+  //   slidesToShow: 6,
+  //   slidesToScroll: 4,
+  //   autoplay: true,
+  //   pauseOnFocus: true,
+  //   pauseOnHover: true,
+  //   autoplaySpeed: 8000,
+  //   arrows: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1440,
+  //       settings: {
+  //         slidesToShow: 6,
+  //         slidesToScroll: 4,
+  //         infinite: true,
+  //         dots: true,
+  //         arrows: false,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         initialSlide: 2,
+  //         // arrows: true,
+  //       },
+  //     },
+  //     // {
+  //     //   breakpoint: 600,
+  //     //   settings: {
+  //     //     slidesToShow: 1,
+  //     //     slidesToScroll: 1,
+  //     //     initialSlide: 1,
+  //     //     // arrows: true,
+  //     //   },
+  //     // },
+  //     // {
+  //     //   breakpoint: 480,
+  //     //   settings: {
+  //     //     slidesToShow: 3,
+  //     //     slidesToScroll: 3,
+  //     //   },
+  //     // },
+  //   ],
+  // };
 
   // const isDesktopOrLaptop = useMediaQuery({
   //   query: "(min-width: 1224px)",
@@ -230,7 +230,7 @@ export const UxReviewAnalysis = () => {
   }, [currentRoute, dispatch]);
 
   return (
-    <div>
+    <div className="h-fit">
       <div className="oval-bottom h-[60vh] md:h-[100vh]">
         <div className="text-white font-semibold text-lg md:text-3xl lg:text-6xl font-poppins text-center mt-16 z-[3]">
           UX Review & Analysis <br />
@@ -364,55 +364,21 @@ export const UxReviewAnalysis = () => {
         </div>
       </div>
 
-      {/* Tech stack */}
-      <div className="flex flex-col mt-24">
-        <div className="w-fit mx-auto md:mx-[5vw]">
-          <div className="font-Cervanttis text-blue-500 text-5xl md:text-7xl">
-            Tech Stack
+      {/*Our UX Strategy services*/}
+      <div className="bg-ux_review_bg flex flex-col">
+        <div className="curved-div h-[140vh]">
+          <div className="text-center mt-[30vh]">
+            <h1 className="text-5xl font-bold font-poppins text-white mx-auto">
+              Our UX Strategy services include
+            </h1>
           </div>
-          <hr className="ml-[40%] md:ml-[10%] mt-5 w-[90px] border-orange-500 border-[1px]" />
+          <div className="text-white text-xl font-bold font-poppins w-[80vw] mx-auto mt-16">
+            We offer a wide variety of sub-services within UX research and
+            analysis. Choose a unique selection of these sub-services to match
+            the scope of your project and business goals.
+          </div>
         </div>
-
-        <div className=" text-slate-600 font-bold font-poppins text-center text-2xl mt-16">
-          Our Software Development Technology Expertise
-        </div>
-        <div className="h-fit mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[80vw] mx-auto">
-          <Slider {...settings3}>
-            {tech_stack_v1.map((image, index) => (
-              <div
-                key={index}
-                className="slider-news-v2 flex flex-col relative my-2"
-              >
-                <img
-                  src={image.src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-[70px] md:w-[100px] my-5 mx-auto"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        {/* tech stack second row */}
-        <div className=" text-slate-600 font-bold font-poppins text-center text-2xl mt-16">
-          DevOps tools expertise
-        </div>
-        <div className="h-fit mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[80vw] mx-auto">
-          <Slider {...settings3}>
-            {tech_stack_v1.map((image, index) => (
-              <div
-                key={index}
-                className="slider-news-v2 flex flex-col relative my-2"
-              >
-                <img
-                  src={image.src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-[70px] md:w-[100px] my-5 mx-auto"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <div className="curved-div-2 h-[100px]"></div>
       </div>
     </div>
   );

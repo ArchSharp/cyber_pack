@@ -718,3 +718,16 @@ code {
   /* background-color: rgba(255, 255, 255); */
   z-index: 1; /* Make sure the overlay is above the GIF */
 }
+
+.curved-div {
+  background-image: url("./Images/ux-strategry-services-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.curved-div-2 {
+  background-image: url("./Images/case-studies-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
