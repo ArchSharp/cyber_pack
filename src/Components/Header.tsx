@@ -65,9 +65,11 @@ export const Header = () => {
   return (
     <div
       className={`flex flex-col items-center justify-center bg-main text-white font-poppins z-[4] ${
-        hideTopNav === true
-          ? "sticky top-0 header-minH"
-          : "relative header-maxH"
+        isTabletOrPhone === false
+          ? hideTopNav === true
+            ? "sticky top-0 header-minH"
+            : "relative header-maxH"
+          : "sticky top-0 header-minH"
       }`}
     >
       {/* {!hideTopNav && ( */}
