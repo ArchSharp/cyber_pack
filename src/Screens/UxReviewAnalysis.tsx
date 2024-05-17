@@ -8,7 +8,8 @@ import { IoIosArrowForward } from "react-icons/io";
 // import { tech_stack_v1 } from "../Data/partners";
 // import microsoft from "../Images/microsoft.png";
 // import cbp01 from "../Images/cbp01.jpg";
-// import programmer from "../Images/programmer.jpg";
+import miningClient from "../Images/mining-client-mas.jpg";
+import assupol from "../Images/assupol-sales.jpg";
 // import { FaArrowCircleRight } from "react-icons/fa";
 // import ceo from "../Images/ceo.png";
 // import crypto from "../Images/crypto-shield.jpg";
@@ -311,6 +312,57 @@ export const UxReviewAnalysis = () => {
           </div>
         </div>
         <div className="curved-div-2 h-[100px] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]"></div>
+      </div>
+
+      {/* Case studies */}
+      <div className="bg-ux_review_bg flex flex-col">
+        <div className="mx-auto text-center mt-[15vh] mb-16 w-fit">
+          <h1 className="text-2xl lg:text-5xl font-extrabold font-poppins text-main mx-auto">
+            Case Studies
+          </h1>
+          <div className="mt-3 h-[4px] w-[150px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center w-fit mx-auto mb-10">
+          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+            {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+            <img src={miningClient} alt="mining" className="w-full" />
+            <div className="text-center font-bold text-slate-800 text-xl mt-3">
+              Mining Client MAS
+            </div>
+            <div className="text-center text-slate-900 text-base">
+              Independent client
+            </div>
+            <div className="text-center text-slate-600 text-sm px-5 mt-3">
+              Metal Accounting system's user experience was complex and poor
+              after highly customising their off the shelf program. Informed by
+              UX Research, we designed and
+            </div>
+            <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+              View Case Studies
+              <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+            </button>
+          </div>
+          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] md:ml-[5vw] mt-10 md:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+            {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+            <img src={assupol} alt="assupol" className="w-full" />
+            <div className="text-center font-bold text-slate-800 text-xl mt-3">
+              Mining Client MAS
+            </div>
+            <div className="text-center text-slate-900 text-base">
+              Independent client
+            </div>
+            <div className="text-center text-slate-600 text-sm px-5 mt-3">
+              Metal Accounting system's user experience was complex and poor
+              after highly customising their off the shelf program. Informed by
+              UX Research, we designed and
+            </div>
+            <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+              View Case Studies
+              <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

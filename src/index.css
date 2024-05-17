@@ -748,3 +748,7 @@ code {
     position: relative;
   }
 }
+
+.ux-case-studies {
+  border-radius: 74% 26% 44% 56% / 55% 58% 42% 45%;
+}
