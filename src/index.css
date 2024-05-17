@@ -731,3 +731,20 @@ code {
   background-repeat: no-repeat;
   background-position: right;
 }
+.strategy-bg-col {
+  background-color: rgba(58, 179, 240, 0.1);
+}
+
+.strategy-card {
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .strategy-card {
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative;
+  }
+}

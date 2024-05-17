@@ -1,4 +1,4 @@
-// import { /*Slider,*/ Settings } from "react-slick";
+import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
@@ -32,6 +32,7 @@ import { UxSVG } from "../Components/UxSVG";
 // import diagnosis from "../Images/diagnosis_frame.gif";
 import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 import { LuDot } from "react-icons/lu";
+import { strategies } from "../Data/strategies";
 
 export const UxReviewAnalysis = () => {
   const dispatch = useAppDispatch();
@@ -56,122 +57,6 @@ export const UxReviewAnalysis = () => {
   //     clearInterval(LSlide);
   //   };
   // }, []);
-
-  // const settings: Settings = {
-  //   rtl: true,
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 4,
-  //   autoplay: true,
-  //   pauseOnFocus: true,
-  //   pauseOnHover: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         slidesToScroll: 4,
-  //         infinite: true,
-  //         dots: true,
-  //         arrows: false,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //         initialSlide: 2,
-  //         // arrows: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         initialSlide: 1,
-  //         // arrows: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
-  // const settings2: Settings = {
-  //   rtl: true,
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   pauseOnFocus: true,
-  //   pauseOnHover: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: false,
-  // };
-
-  // const settings3: Settings = {
-  //   rtl: true,
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 3000,
-  //   slidesToShow: 6,
-  //   slidesToScroll: 4,
-  //   autoplay: true,
-  //   pauseOnFocus: true,
-  //   pauseOnHover: true,
-  //   autoplaySpeed: 8000,
-  //   arrows: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1440,
-  //       settings: {
-  //         slidesToShow: 6,
-  //         slidesToScroll: 4,
-  //         infinite: true,
-  //         dots: true,
-  //         arrows: false,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3,
-  //         initialSlide: 2,
-  //         // arrows: true,
-  //       },
-  //     },
-  //     // {
-  //     //   breakpoint: 600,
-  //     //   settings: {
-  //     //     slidesToShow: 1,
-  //     //     slidesToScroll: 1,
-  //     //     initialSlide: 1,
-  //     //     // arrows: true,
-  //     //   },
-  //     // },
-  //     // {
-  //     //   breakpoint: 480,
-  //     //   settings: {
-  //     //     slidesToShow: 3,
-  //     //     slidesToScroll: 3,
-  //     //   },
-  //     // },
-  //   ],
-  // };
 
   // const isDesktopOrLaptop = useMediaQuery({
   //   query: "(min-width: 1224px)",
@@ -228,6 +113,20 @@ export const UxReviewAnalysis = () => {
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
   }, [currentRoute, dispatch]);
+
+  const settings: Settings = {
+    rtl: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
 
   return (
     <div className="h-fit">
@@ -365,20 +264,53 @@ export const UxReviewAnalysis = () => {
       </div>
 
       {/*Our UX Strategy services*/}
-      <div className="bg-ux_review_bg flex flex-col">
-        <div className="curved-div h-[140vh]">
-          <div className="text-center mt-[30vh]">
-            <h1 className="text-5xl font-bold font-poppins text-white mx-auto">
+      <div className="bg-ux_review_bg flex flex-col overflow-x-hidden">
+        <div className="curved-div h-[180vh] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]">
+          <div className="flex flex-col text-center mt-[30vh] w-[100vw] ml-[80vw] md:ml-[50vw] lg:ml-0">
+            <h1 className="text-2xl lg:text-5xl font-bold font-poppins text-white mx-auto">
               Our UX Strategy services include
             </h1>
+            <div className="mt-3 h-[4px] w-[150px] md:w-[300px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent z-[5] ml-5 md:ml-[25vw]" />
           </div>
-          <div className="text-white text-xl font-bold font-poppins w-[80vw] mx-auto mt-16">
+          <div className="text-white text-base lg:text-xl font-bold font-poppins w-[90vw] lg:w-[80vw] mx-auto mt-8 md:mt-16">
             We offer a wide variety of sub-services within UX research and
             analysis. Choose a unique selection of these sub-services to match
             the scope of your project and business goals.
           </div>
+          <div className="h-[650px] w-[90vw] lg:w-[80vw] mt-5 mb-10 ml-[85vw] md:ml-[55vw] lg:ml-[10vw] mx-auto">
+            <Slider {...settings}>
+              {strategies.map((strateg, index) => (
+                <div
+                  className="strategy-card w-[90vw] lg:w-[80vw] mt-20 strategy-bg-col shadow-ux_bx h-[95vh] md:h-[500px] relative"
+                  key={index}
+                >
+                  <div className="w-fit text-6xl md:text-7xl lg:text-9xl leading-[90px] font-extrabold font-poppins text-white z-[30] absolute top-[-50px] right-[20px] md:right-[50px]">
+                    {strateg.number}
+                  </div>
+                  <div className="w-[90vw] md:w-[45vw] lg:w-[40vw] h-[40vh] md:h-full flex flex-col justify-center">
+                    <img
+                      src={strateg.image}
+                      alt={strateg.title}
+                      className="w-[60%] md:w-[80%] mx-auto"
+                    />
+                  </div>
+                  <div className="w-[90vw] md:w-[45vw] lg:w-[40vw] h-full flex flex-col md:justify-center px-3 md:px-0">
+                    <div className=" text-white text-center md:text-left text-xl md:text-3xl font-bold font-poppins">
+                      {strateg.title}
+                    </div>
+                    <div className="flex flex-row items-center justify-center md:justify-normal text-white font-semibold text-sm md:text-lg  px-3 md:px-0 mt-5 font-poppins">
+                      {strateg.number} {strateg.title2}
+                    </div>
+                    <div className="text-white mt-10 text-sm md:text-base px-3 md:px-0 font-poppins">
+                      {strateg.description}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
-        <div className="curved-div-2 h-[100px]"></div>
+        <div className="curved-div-2 h-[100px] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]"></div>
       </div>
     </div>
   );
