@@ -1,7 +1,11 @@
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import * as routes from "../Data/Routes";
+import { tech_stack_v1 } from "../Data/partners";
 // import { MarqueeHolder } from "../Components/MarqueeHolder";
 // import ux_svg from "../Images/ux-svg.svg";
 import { IoIosArrowForward } from "react-icons/io";
@@ -22,7 +26,7 @@ import { useAppDispatch, useAppSelector } from "../Store/store";
 // import html from "../Images/html5.png";
 // import java from "../Images/java.png";
 import { setHeader, setLastRoute } from "../Features/User/userSlice";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 // import programmer from "../Images/programmer.jpg";
 // import { Challenges } from "../Components/Challenges";
 // import pixa from "../Images/perkaloo.png";
@@ -34,18 +38,24 @@ import { UxSVG } from "../Components/UxSVG";
 import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 import { LuDot } from "react-icons/lu";
 import { strategies } from "../Data/strategies";
+import { UiDesignSVG } from "../Components/UiDesignSVG";
+import { IoMail } from "react-icons/io5";
+import { FaHandshake } from "react-icons/fa6";
+import { IServiceEnquiry } from "../Features/User/type";
 
 export const UxReviewAnalysis = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const { header } = useAppSelector((state) => state.user);
+  const [isRead, setIsRead] = useState(false);
   const location = useLocation();
+  // Accessing the current route
+  const currentRoute = location.pathname;
+
   // const [lslide, setLslide] = useState("cbp01");
   // const [lslide2, setLslide2] = useState("cbp03");
   // const [lslide3, setLslide3] = useState("cbp04");
   // const [lslide4, setLslide4] = useState("cbp05");
-
-  // Accessing the current route
-  const currentRoute = location.pathname;
 
   // useEffect(() => {
   //   const LSlide = setInterval(() => {
@@ -100,16 +110,16 @@ export const UxReviewAnalysis = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  // useEffect(() => {
+  //   const handleScrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth", // Optional: smooth scrolling animation
+  //     });
+  //   };
 
-    handleScrollToTop();
-  }, []);
+  //   handleScrollToTop();
+  // }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -128,6 +138,91 @@ export const UxReviewAnalysis = () => {
     autoplaySpeed: 3000,
     arrows: false,
   };
+
+  const designServices = [
+    "UX REVIEW/ANALYSIS",
+    "UX DESIGN",
+    "UI DESIGN",
+    "OTHER SERVICES",
+  ];
+
+  const settings3: Settings = {
+    rtl: true,
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 6,
+    slidesToScroll: 4,
+    autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    autoplaySpeed: 8000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 2,
+          // arrows: true,
+        },
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     initialSlide: 1,
+      //     // arrows: true,
+      //   },
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //   },
+      // },
+    ],
+  };
+
+  const validationSchema = Yup.object({
+    Name: Yup.string().required("Name is required"),
+    Email: Yup.string().required("Email is required"),
+    Country: Yup.string().required("Country is required"),
+    Questions: Yup.string().required("Questions is required"),
+    IsGrantCyberPack: Yup.boolean().required("Questions is required"),
+  });
+
+  const initialValues = {
+    Name: "",
+    Email: "",
+    Country: "",
+    Questions: "",
+    IsGrantCyberPack: false,
+  };
+
+  // Submit handler
+  const handleSubmit = (values: IServiceEnquiry) => {
+    dispatch(() => {});
+  };
+
+  const formik = useFormik<IServiceEnquiry>({
+    initialValues,
+    validationSchema,
+    onSubmit: handleSubmit,
+  });
 
   return (
     <div className="h-fit">
@@ -360,6 +455,213 @@ export const UxReviewAnalysis = () => {
             <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
               View Case Studies
               <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between w-[96vw] md:w-[90vw] lg:w-[80vw] mx-auto mb-[10vh]">
+          <button
+            onClick={() => {
+              if (currentRoute === routes.uxReviewAnalysis)
+                navigate(routes.uxOtherServices);
+            }}
+            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
+          >
+            {currentRoute === routes.uxReviewAnalysis && designServices[3]}
+            <IoIosArrowForward className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
+            <UxSVG
+              classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
+            />
+          </button>
+          <button
+            onClick={() => {
+              if (currentRoute === routes.uxReviewAnalysis)
+                navigate(routes.uiDesign);
+            }}
+            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
+          >
+            {currentRoute === routes.uxReviewAnalysis && designServices[1]}
+            <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+            <UiDesignSVG
+              classes={"z-[2] absolute bottom-[-20px] left-[-30px] w-[100px]"}
+            />
+          </button>
+        </div>
+      </div>
+
+      {/* Our Clients */}
+      <div className="h-[300px]">
+        <div className="text-main text-center text-4xl mt-[40px] font-bold font-poppins">
+          Our Clients
+        </div>
+
+        <div className="h-fit mt-10 mb-10 w-[98vw] md:w-[96vw] lg:w-[80vw] mx-auto">
+          <Slider {...settings3}>
+            {tech_stack_v1.map((image, index) => (
+              <div
+                key={index}
+                className="slider-news-v2 flex flex-col relative my-2"
+              >
+                <img
+                  src={image.src}
+                  alt={`Slide ${index + 1}`}
+                  className="w-[70px] md:w-[100px] my-5 mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+
+      {/* Let's do business together */}
+      <div className="relative">
+        {/* form */}
+        <div className="bg-white w-[90vw] lg:w-[41vw] absolute top-[400px] lg:top-[75px] right-[5vw] lg:right-[8vw] h-[430px] shadow-ux_bx">
+          <form onSubmit={formik.handleSubmit} className="">
+            <div className="my-4 mx-auto w-[90%]">
+              <input
+                type="text"
+                id="Name"
+                name="Name"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.Name || ""}
+                placeholder="Name"
+                className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
+              />
+              {formik.touched.Name && formik.errors.Name && (
+                <div className="error text-red-400 text-sm">
+                  {formik.errors.Name}
+                </div>
+              )}
+            </div>
+
+            <div className="my-4 mx-auto w-[90%]">
+              <input
+                type="text"
+                id="Email"
+                name="Email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.Email || ""}
+                placeholder="Email"
+                className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
+              />
+              {formik.touched.Email && formik.errors.Email && (
+                <div className="error text-red-400 text-sm">
+                  {formik.errors.Email}
+                </div>
+              )}
+            </div>
+
+            <div className="my-4 mx-auto w-[90%]">
+              <select
+                id="Country"
+                name="Country"
+                value={formik.values.Country || ""}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
+              >
+                <option value="" className="text-slate-400 option">
+                  Country
+                </option>
+                <option value="saab">Nigeria</option>
+                <option value="mercedes">Australia</option>
+                <option value="audi">Texas</option>
+              </select>
+              {formik.touched.Country && formik.errors.Country && (
+                <div className="error text-red-400 text-sm">
+                  {formik.errors.Country}
+                </div>
+              )}
+            </div>
+
+            <div className="my-4 mx-auto w-[90%]">
+              <textarea
+                rows={3}
+                id="Questions"
+                name="Questions"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.Questions || ""}
+                placeholder="What can we help you with?"
+                className="w-[100%] border-[1px] border-gray-400 py-2 px-2 rounded-md text-sm"
+              />
+              {formik.touched.Questions && formik.errors.Questions && (
+                <div className="error text-red-400 text-sm">
+                  {formik.errors.Questions}
+                </div>
+              )}
+            </div>
+
+            <div className="my-4 mx-auto w-[90%]">
+              <div className="flex items-center">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="IsRead"
+                    checked={isRead}
+                    onChange={(e) => setIsRead(!isRead)}
+                  />
+                </label>
+                <div className="text-xs pl-2 underline">
+                  I have read, understand and accept the Privacy Notice and
+                  Terms of Service
+                </div>
+              </div>
+            </div>
+
+            <div className="my-4 mx-auto w-[90%]">
+              <div className="flex items-center">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="IsGrantCyberPack"
+                    checked={formik.values.IsGrantCyberPack}
+                    onChange={formik.handleChange}
+                  />
+                </label>
+                <div className="text-xs pl-2">
+                  I grant CyberPackHQ permission to process the personal
+                  information provided
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <button
+                type="submit"
+                className="text-white font-bold rounded-3xl bg-main w-[90%] px-5 py-2"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="flex items-center bg-yellow-400 h-[290px]">
+          <div className="w-[90vw] lg:w-[50vw] mx-auto lg:mx-0">
+            <div className="mb-0 flex flex-col lg:flex-row lg:items-center justify-start lg:justify-end lg:pr-7">
+              <FaHandshake className="lg:mr-[5vw] text-5xl lg:text-8xl text-blue-700" />
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins text-main">
+                Let's do business together!
+              </div>
+            </div>
+            <div className="text-main text-lg lg:text-xl font-poppins lg:text-right lg:pr-7 mt-5">
+              Get in touch for a free digital experience consultation!
+            </div>
+            <div className="text-main text-lg lg:text-xl font-poppins lg:text-right lg:pr-7">
+              We can have a look at your UX/UI needs.
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center bg-ux_review_bg lg:bg-white h-[600px] lg:h-[290px]">
+          <div className="w-[90vw] mx-auto lg:mx-0 lg:w-[50vw] h-full">
+            <button className="lg:ml-auto mt-10 lg:mr-5 mx-auto lg:mx-0 flex items-center justify-center w-[50vw] lg:w-[16vw] px-3 py-3 lg:py-2 font-semibold text-sm text-white rounded-3xl bg-main hover:bg-orange-500">
+              <IoMail className="mr-1 text-2xl" />
+              <a href="mailto:info@cyberpack.com" className="text-xl">
+                info@cyberpack.com
+              </a>
             </button>
           </div>
         </div>

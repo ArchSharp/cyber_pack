@@ -22,15 +22,14 @@ export const Header = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+  // Accessing the current route
+  const currentRoute = location.pathname;
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [hideTopNav, setHideTopNav] = useState(false);
   const isTabletOrPhone = useMediaQuery({ query: "(max-width: 768px)" });
   const isPhone = useMediaQuery({ query: "(max-width: 425px)" });
-
-  // Accessing the current route
-  const currentRoute = location.pathname;
 
   useEffect(() => {
     const handleScroll = () => {
