@@ -110,16 +110,16 @@ export const UxReviewAnalysis = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  // useEffect(() => {
-  //   const handleScrollToTop = () => {
-  //     window.scrollTo({
-  //       top: 0,
-  //       behavior: "smooth", // Optional: smooth scrolling animation
-  //     });
-  //   };
+  useEffect(() => {
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional: smooth scrolling animation
+      });
+    };
 
-  //   handleScrollToTop();
-  // }, []);
+    handleScrollToTop();
+  }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
