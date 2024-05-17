@@ -657,9 +657,12 @@ export const UxReviewAnalysis = () => {
         </div>
         <div className="flex items-center bg-ux_review_bg lg:bg-white h-[600px] lg:h-[290px]">
           <div className="w-[90vw] mx-auto lg:mx-0 lg:w-[50vw] h-full">
-            <button className="lg:ml-auto mt-10 lg:mr-5 mx-auto lg:mx-0 flex items-center justify-center w-[50vw] lg:w-[16vw] px-3 py-3 lg:py-2 font-semibold text-sm text-white rounded-3xl bg-main hover:bg-orange-500">
+            <button className="lg:ml-auto mt-10 lg:mr-5 mx-auto lg:mx-0 flex items-center justify-center w-[60vw] lg:w-[16vw] px-3 py-3 lg:py-2 font-semibold text-sm text-white rounded-3xl bg-main hover:bg-orange-500">
               <IoMail className="mr-1 text-2xl" />
-              <a href="mailto:info@cyberpack.com" className="text-xl">
+              <a
+                href="mailto:info@cyberpack.com"
+                className="text-lg lg:text-xl"
+              >
                 info@cyberpack.com
               </a>
             </button>
