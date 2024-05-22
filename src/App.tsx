@@ -9,6 +9,7 @@ import { CustomSoftwareDev } from "./Screens/CustomSoftwareDev";
 import { MobileAppDev } from "./Screens/MobileAppDev";
 import { WebAppServices } from "./Screens/WebAppServices";
 import { UxReviewAnalysis } from "./Screens/UxReviewAnalysis";
+import { UxDesign } from "./Screens/UxDesign";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           index
           element={<UxReviewAnalysis />}
         />
+        <Route path={routes.uxDesign} index element={<UxDesign />} />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

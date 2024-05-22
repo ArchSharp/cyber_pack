@@ -10,8 +10,8 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 431 319"
-        shape-rendering="geometricPrecision"
-        text-rendering="geometricPrecision"
+        shapeRendering="geometricPrecision"
+        textRendering="geometricPrecision"
       >
         <defs>
           <linearGradient
@@ -27,12 +27,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw2-fill-0"
               offset="0%"
-              stop-color="rgb(111,204,221)"
+              stopColor="rgb(111,204,221)"
             ></stop>
             <stop
               id="ehglyE2ivjw2-fill-1"
               offset="100%"
-              stop-color="rgb(57,83,164)"
+              stopColor="rgb(57,83,164)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -48,12 +48,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw8-fill-0"
               offset="0%"
-              stop-color="rgb(247,199,81)"
+              stopColor="rgb(247,199,81)"
             ></stop>
             <stop
               id="ehglyE2ivjw8-fill-1"
               offset="100%"
-              stop-color="rgb(9,137,186)"
+              stopColor="rgb(9,137,186)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -69,12 +69,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw15-fill-0"
               offset="0%"
-              stop-color="rgb(71,134,198)"
+              stopColor="rgb(71,134,198)"
             ></stop>
             <stop
               id="ehglyE2ivjw15-fill-1"
               offset="100%"
-              stop-color="rgb(61,194,211)"
+              stopColor="rgb(61,194,211)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -90,12 +90,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw16-fill-0"
               offset="0%"
-              stop-color="rgb(125,99,171)"
+              stopColor="rgb(125,99,171)"
             ></stop>
             <stop
               id="ehglyE2ivjw16-fill-1"
               offset="100%"
-              stop-color="rgb(229,145,189)"
+              stopColor="rgb(229,145,189)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -111,12 +111,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw17-fill-0"
               offset="0%"
-              stop-color="rgb(125,99,171)"
+              stopColor="rgb(125,99,171)"
             ></stop>
             <stop
               id="ehglyE2ivjw17-fill-1"
               offset="100%"
-              stop-color="rgb(229,145,189)"
+              stopColor="rgb(229,145,189)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -132,12 +132,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw21-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw21-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -153,12 +153,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw22-fill-0"
               offset="0%"
-              stop-color="rgb(13,75,128)"
+              stopColor="rgb(13,75,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw22-fill-1"
               offset="100%"
-              stop-color="rgb(13,21,61)"
+              stopColor="rgb(13,21,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -174,12 +174,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw23-fill-0"
               offset="0%"
-              stop-color="rgb(147,127,187)"
+              stopColor="rgb(147,127,187)"
             ></stop>
             <stop
               id="ehglyE2ivjw23-fill-1"
               offset="100%"
-              stop-color="rgb(96,102,174)"
+              stopColor="rgb(96,102,174)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -195,12 +195,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw29-fill-0"
               offset="0%"
-              stop-color="rgb(71,134,198)"
+              stopColor="rgb(71,134,198)"
             ></stop>
             <stop
               id="ehglyE2ivjw29-fill-1"
               offset="100%"
-              stop-color="rgb(61,194,211)"
+              stopColor="rgb(61,194,211)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -216,12 +216,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw43-fill-0"
               offset="0%"
-              stop-color="rgb(101,105,176)"
+              stopColor="rgb(101,105,176)"
             ></stop>
             <stop
               id="ehglyE2ivjw43-fill-1"
               offset="100%"
-              stop-color="rgb(85,172,224)"
+              stopColor="rgb(85,172,224)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -237,12 +237,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw47-fill-0"
               offset="0%"
-              stop-color="rgb(71,134,198)"
+              stopColor="rgb(71,134,198)"
             ></stop>
             <stop
               id="ehglyE2ivjw47-fill-1"
               offset="100%"
-              stop-color="rgb(61,194,211)"
+              stopColor="rgb(61,194,211)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -258,12 +258,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw49-fill-0"
               offset="0%"
-              stop-color="rgb(245,138,122)"
+              stopColor="rgb(245,138,122)"
             ></stop>
             <stop
               id="ehglyE2ivjw49-fill-1"
               offset="100%"
-              stop-color="rgb(248,166,154)"
+              stopColor="rgb(248,166,154)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -279,12 +279,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw50-fill-0"
               offset="0%"
-              stop-color="rgb(245,138,122)"
+              stopColor="rgb(245,138,122)"
             ></stop>
             <stop
               id="ehglyE2ivjw50-fill-1"
               offset="100%"
-              stop-color="rgb(248,166,154)"
+              stopColor="rgb(248,166,154)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -300,12 +300,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw51-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw51-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -321,12 +321,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw52-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw52-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -342,12 +342,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw53-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw53-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -363,12 +363,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw54-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw54-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -384,12 +384,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw55-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw55-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -405,12 +405,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw56-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw56-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -426,12 +426,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw57-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw57-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -447,12 +447,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw58-fill-0"
               offset="0%"
-              stop-color="rgb(62,72,150)"
+              stopColor="rgb(62,72,150)"
             ></stop>
             <stop
               id="ehglyE2ivjw58-fill-1"
               offset="100%"
-              stop-color="rgb(45,52,134)"
+              stopColor="rgb(45,52,134)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -468,12 +468,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw60-fill-0"
               offset="0%"
-              stop-color="rgb(245,138,122)"
+              stopColor="rgb(245,138,122)"
             ></stop>
             <stop
               id="ehglyE2ivjw60-fill-1"
               offset="100%"
-              stop-color="rgb(248,166,154)"
+              stopColor="rgb(248,166,154)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -489,12 +489,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw61-fill-0"
               offset="0%"
-              stop-color="rgb(250,183,159)"
+              stopColor="rgb(250,183,159)"
             ></stop>
             <stop
               id="ehglyE2ivjw61-fill-1"
               offset="100%"
-              stop-color="rgb(248,166,154)"
+              stopColor="rgb(248,166,154)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -510,12 +510,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw63-fill-0"
               offset="0%"
-              stop-color="rgb(9,93,169)"
+              stopColor="rgb(9,93,169)"
             ></stop>
             <stop
               id="ehglyE2ivjw63-fill-1"
               offset="100%"
-              stop-color="rgb(14,111,184)"
+              stopColor="rgb(14,111,184)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -531,12 +531,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw64-fill-0"
               offset="0%"
-              stop-color="rgb(125,99,171)"
+              stopColor="rgb(125,99,171)"
             ></stop>
             <stop
               id="ehglyE2ivjw64-fill-1"
               offset="100%"
-              stop-color="rgb(229,145,189)"
+              stopColor="rgb(229,145,189)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -552,12 +552,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw65-fill-0"
               offset="0%"
-              stop-color="rgb(125,99,171)"
+              stopColor="rgb(125,99,171)"
             ></stop>
             <stop
               id="ehglyE2ivjw65-fill-1"
               offset="100%"
-              stop-color="rgb(229,145,189)"
+              stopColor="rgb(229,145,189)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -573,12 +573,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw66-fill-0"
               offset="0%"
-              stop-color="rgb(37,48,105)"
+              stopColor="rgb(37,48,105)"
             ></stop>
             <stop
               id="ehglyE2ivjw66-fill-1"
               offset="100%"
-              stop-color="rgb(36,9,61)"
+              stopColor="rgb(36,9,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -594,12 +594,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw68-fill-0"
               offset="0%"
-              stop-color="rgb(245,138,122)"
+              stopColor="rgb(245,138,122)"
             ></stop>
             <stop
               id="ehglyE2ivjw68-fill-1"
               offset="100%"
-              stop-color="rgb(248,166,154)"
+              stopColor="rgb(248,166,154)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -615,12 +615,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw69-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw69-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -636,12 +636,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw70-fill-0"
               offset="0%"
-              stop-color="rgb(6,34,64)"
+              stopColor="rgb(6,34,64)"
             ></stop>
             <stop
               id="ehglyE2ivjw70-fill-1"
               offset="100%"
-              stop-color="rgb(4,74,118)"
+              stopColor="rgb(4,74,118)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -657,12 +657,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw71-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw71-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -678,12 +678,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw72-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw72-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -699,12 +699,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw73-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw73-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -720,12 +720,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw74-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw74-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -741,12 +741,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw75-fill-0"
               offset="0%"
-              stop-color="rgb(65,70,128)"
+              stopColor="rgb(65,70,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw75-fill-1"
               offset="100%"
-              stop-color="rgb(30,36,83)"
+              stopColor="rgb(30,36,83)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -762,12 +762,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw76-fill-0"
               offset="0%"
-              stop-color="rgb(13,75,128)"
+              stopColor="rgb(13,75,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw76-fill-1"
               offset="100%"
-              stop-color="rgb(13,21,61)"
+              stopColor="rgb(13,21,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -783,12 +783,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw77-fill-0"
               offset="0%"
-              stop-color="rgb(13,75,128)"
+              stopColor="rgb(13,75,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw77-fill-1"
               offset="100%"
-              stop-color="rgb(13,21,61)"
+              stopColor="rgb(13,21,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -804,12 +804,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw78-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw78-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -825,12 +825,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw79-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw79-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -846,12 +846,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw80-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw80-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -867,12 +867,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw81-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw81-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -888,12 +888,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw82-fill-0"
               offset="0%"
-              stop-color="rgb(6,6,10)"
+              stopColor="rgb(6,6,10)"
             ></stop>
             <stop
               id="ehglyE2ivjw82-fill-1"
               offset="100%"
-              stop-color="rgb(36,9,61)"
+              stopColor="rgb(36,9,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -909,12 +909,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw85-fill-0"
               offset="0%"
-              stop-color="rgb(111,76,48)"
+              stopColor="rgb(111,76,48)"
             ></stop>
             <stop
               id="ehglyE2ivjw85-fill-1"
               offset="100%"
-              stop-color="rgb(93,53,38)"
+              stopColor="rgb(93,53,38)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -930,12 +930,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw86-fill-0"
               offset="0%"
-              stop-color="rgb(13,75,128)"
+              stopColor="rgb(13,75,128)"
             ></stop>
             <stop
               id="ehglyE2ivjw86-fill-1"
               offset="100%"
-              stop-color="rgb(13,21,61)"
+              stopColor="rgb(13,21,61)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -951,12 +951,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw87-fill-0"
               offset="0%"
-              stop-color="rgb(147,127,187)"
+              stopColor="rgb(147,127,187)"
             ></stop>
             <stop
               id="ehglyE2ivjw87-fill-1"
               offset="100%"
-              stop-color="rgb(96,102,174)"
+              stopColor="rgb(96,102,174)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -972,12 +972,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw89-fill-0"
               offset="0%"
-              stop-color="rgb(8,84,162)"
+              stopColor="rgb(8,84,162)"
             ></stop>
             <stop
               id="ehglyE2ivjw89-fill-1"
               offset="100%"
-              stop-color="rgb(9,137,186)"
+              stopColor="rgb(9,137,186)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -993,12 +993,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw97-fill-0"
               offset="0%"
-              stop-color="rgb(8,84,162)"
+              stopColor="rgb(8,84,162)"
             ></stop>
             <stop
               id="ehglyE2ivjw97-fill-1"
               offset="100%"
-              stop-color="rgb(9,137,186)"
+              stopColor="rgb(9,137,186)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -1014,17 +1014,17 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw100-fill-0"
               offset="0%"
-              stop-color="rgb(5,85,164)"
+              stopColor="rgb(5,85,164)"
             ></stop>
             <stop
               id="ehglyE2ivjw100-fill-1"
               offset="56%"
-              stop-color="rgb(14,111,184)"
+              stopColor="rgb(14,111,184)"
             ></stop>
             <stop
               id="ehglyE2ivjw100-fill-2"
               offset="100%"
-              stop-color="rgb(6,134,166)"
+              stopColor="rgb(6,134,166)"
             ></stop>
           </linearGradient>
           <linearGradient
@@ -1040,12 +1040,12 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <stop
               id="ehglyE2ivjw101-fill-0"
               offset="0%"
-              stop-color="rgb(8,84,162)"
+              stopColor="rgb(8,84,162)"
             ></stop>
             <stop
               id="ehglyE2ivjw101-fill-1"
               offset="100%"
-              stop-color="rgb(9,137,186)"
+              stopColor="rgb(9,137,186)"
             ></stop>
           </linearGradient>
         </defs>
@@ -1055,7 +1055,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           opacity="0.4"
           fill="url(#ehglyE2ivjw2-fill)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <g
           id="ehglyE2ivjw3"
@@ -1067,7 +1067,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             d="M209.857,318.002C316.015,318.002,402.073,313.486,402.073,307.916C402.073,302.346,316.015,297.83,209.857,297.83C103.699,297.83,17.6406,302.346,17.6406,307.916C17.6406,313.486,103.699,318.002,209.857,318.002Z"
             fill="rgb(106,149,206)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
         <g
@@ -1078,11 +1078,11 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           <path
             id="ehglyE2ivjw6"
             d="M209.852,302.574C296.064,302.574,365.949,304.967,365.949,307.911C365.949,310.855,296.086,313.247,209.852,313.247C123.618,313.247,53.751,310.855,53.751,307.911C53.751,304.967,123.649,302.574,209.852,302.574Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="rgb(106,149,206)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
         <path
@@ -1090,23 +1090,23 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           d="M280.881,37.6406L131.54,37.6406C123.1,37.6406,116.259,44.4778,116.259,52.9118L116.259,290.972C116.259,299.406,123.1,306.243,131.54,306.243L280.881,306.243C289.321,306.243,296.162,299.406,296.162,290.972L296.162,52.9118C296.162,44.4778,289.321,37.6406,280.881,37.6406Z"
           fill="rgb(47,59,126)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw8"
           d="M275.893,44.2949L136.524,44.2949C128.792,44.2949,122.524,50.5587,122.524,58.2854L122.524,285.601C122.524,293.328,128.792,299.591,136.524,299.591L275.893,299.591C283.625,299.591,289.893,293.328,289.893,285.601L289.893,58.2854C289.893,50.5587,283.625,44.2949,275.893,44.2949Z"
           fill="url(#ehglyE2ivjw8-fill)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw9"
           d="M206.212,61.1523C208.888,61.1523,211.503,61.9452,213.728,63.4307C215.952,64.9162,217.686,67.0276,218.71,69.4979C219.734,71.9682,220.002,74.6864,219.48,77.3088C218.958,79.9313,217.669,82.3401,215.778,84.2308C213.886,86.1215,211.475,87.409,208.851,87.9307C206.227,88.4523,203.507,88.1846,201.035,87.1614C198.564,86.1381,196.451,84.4054,194.964,82.1822C193.478,79.959,192.685,77.3452,192.685,74.6714C192.685,71.0859,194.11,67.6473,196.647,65.112C199.184,62.5767,202.624,61.1523,206.212,61.1523ZM206.212,64.6522C204.229,64.6522,202.291,65.2398,200.642,66.3407C198.994,67.4416,197.709,69.0064,196.95,70.8372C196.191,72.668,195.992,74.6825,196.379,76.6261C196.766,78.5696,197.721,80.3548,199.123,81.756C200.525,83.1573,202.312,84.1115,204.256,84.4981C206.201,84.8847,208.217,84.6863,210.049,83.9279C211.881,83.1696,213.446,81.8854,214.548,80.2378C215.65,78.5901,216.238,76.653,216.238,74.6714C216.238,72.0141,215.181,69.4657,213.301,67.5867C211.421,65.7078,208.871,64.6522,206.212,64.6522Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(255,255,255)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <g id="ehglyE2ivjw10" transform="matrix(1 0 0 1 0 -89.551093)">
           <g
@@ -1117,69 +1117,69 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <path
               id="ehglyE2ivjw12"
               d="M116.231,136.846L182.036,136.895C183.727,136.895,185.115,138.74,185.115,140.981L185.115,183.015C185.115,185.239,183.727,187.097,182.036,187.097L116.231,187.066L116.231,136.846Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="rgb(238,97,164)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
           </g>
           <path
             id="ehglyE2ivjw13"
             d="M114.625,138.215L175.948,138.393C177.27,138.396,178.537,138.924,179.47,139.859C180.404,140.794,180.928,142.061,180.928,143.382L180.803,185.896C180.795,187.214,180.265,188.475,179.33,189.404C178.395,190.333,177.129,190.855,175.811,190.855L114.487,190.677C113.168,190.67,111.905,190.141,110.975,189.206C110.046,188.271,109.524,187.005,109.525,185.687L109.646,143.173C109.654,141.858,110.182,140.599,111.114,139.67C112.047,138.741,113.308,138.218,114.625,138.215Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="rgb(45,52,133)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw14"
             d="M116.93,140.902L173.617,141.067C174.801,141.075,175.933,141.551,176.767,142.391C177.601,143.231,178.068,144.366,178.067,145.55L177.956,183.714C177.946,184.896,177.47,186.026,176.631,186.859C175.792,187.692,174.657,188.16,173.475,188.161L116.788,187.997C115.604,187.988,114.472,187.512,113.638,186.672C112.804,185.833,112.337,184.697,112.338,183.514L112.449,145.349C112.457,144.167,112.933,143.036,113.773,142.203C114.612,141.37,115.747,140.902,116.93,140.902Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="rgb(221,232,247)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw15"
             d="M161.033,162.852C165.372,153.802,170.089,154.354,178.041,158.756L178.041,159.201C164.317,156.297,171.366,169.038,159.623,180.009C153.184,186.035,144.813,184.758,141.124,181.614C136.786,177.91,138.09,174.597,132.278,167.064C127.477,160.838,122.275,161.598,115.484,164.395C118.515,150.276,132.599,142.16,143.18,148.128C154.394,154.452,149.192,160.58,152.943,166.583C154.915,169.758,158.065,169.043,161.033,162.852Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw15-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw16"
             d="M112.369,170.242C130.925,160.183,132.669,172.466,135.686,183.69C136.109,185.349,136.968,186.864,138.174,188.08L153.361,188.106C155.037,186.8,156.341,185.079,157.144,183.112C160.53,174.827,161.447,162.184,162.168,160.65C160.312,162.82,147.768,177.771,145.512,168.184C140.056,144.992,119.511,155.794,112.374,169.073L112.369,170.242Z"
             opacity="0.5"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw16-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw17"
             d="M178.036,158.222C176.634,156.862,175.148,155.592,173.586,154.42C163.191,146.606,165.131,154.927,165.576,161.886C165.763,164.79,166.768,168.059,165.678,171.541C168.584,164.87,167.805,156.652,178.04,159.254L178.036,158.222Z"
             opacity="0.5"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw17-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
         <path
           id="ehglyE2ivjw18"
           d="M194.771,92.2637L217.657,92.2637C217.938,92.2875,218.199,92.4206,218.382,92.6343C218.566,92.848,218.659,93.1253,218.64,93.4066L218.64,95.3855C218.659,95.6667,218.566,95.944,218.382,96.1577C218.199,96.3714,217.938,96.5045,217.657,96.5284L194.771,96.5284C194.49,96.5056,194.228,96.373,194.043,96.1592C193.858,95.9453,193.765,95.6674,193.784,95.3855L193.784,93.4066C193.765,93.1246,193.858,92.8467,194.043,92.6329C194.228,92.419,194.49,92.2864,194.771,92.2637Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(255,255,255)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw19"
@@ -1187,7 +1187,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           opacity="0.5"
           fill="rgb(255,255,255)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <g
           id="ehglyE2ivjw20"
@@ -1196,31 +1196,31 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           <path
             id="ehglyE2ivjw21"
             d="M72.5338,134.805C83.0443,132.533,91.6682,121.807,96.1536,109.515C97.849,104.895,97.8357,103.734,97.4574,100.101C97.057,96.2273,97.1103,94.8487,98.4097,92.2649C99.7892,89.5345,100.83,89.9881,100.265,92.5496C100.047,93.5457,99.4866,93.9904,100.239,96.1961C102.406,91.3044,103.936,83.3975,109.37,84.3225C109.116,84.7672,108.444,85.8701,107.714,89.2409C106.985,92.6118,106.353,98.184,106.237,98.4953C105.294,101.057,104.083,103.027,103.474,106.86C99.7669,130.092,96.8478,139.768,77.0237,149.334L71.1143,141.383L72.5338,134.805Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw21-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw22"
             d="M83.6191,128.282C90.3918,122.159,95.5892,113.162,97.2401,105.478C97.7074,104.588,102.811,104.744,104.035,106.647C101.565,122.141,99.0201,131.68,91.9314,139.169C86.8008,144.585,77.4961,150.286,69.3306,152.172C62.9228,153.653,58.4907,152.225,57.0846,146.453C56.6085,144.505,57.6052,139.338,62.4244,137.279C71.1995,133.521,75.0798,136.011,83.6191,128.282Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw22-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw23"
             style={{ mixBlendMode: "multiply" }}
             d="M104.034,106.646C101.565,122.14,99.0194,131.679,91.9308,139.168C86.8001,144.584,77.4955,150.285,69.33,152.171C62.9222,153.652,58.4901,152.224,57.084,146.452C79.1864,149.596,96.2605,135.139,104.034,106.646Z"
             opacity="0.5"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw23-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
         <g id="ehglyE2ivjw24" transform="matrix(1 0 0 1 5.646499 58.966995)">
@@ -1232,11 +1232,11 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <path
               id="ehglyE2ivjw26"
               d="M116.45,37.2402L154.719,37.5916L184.711,37.5916L184.662,110.497C184.649,113.074,183.619,115.543,181.795,117.366C179.971,119.189,177.501,120.218,174.921,120.231L116.156,120.178L116.45,37.2402Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="rgb(238,97,164)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
           </g>
           <g id="ehglyE2ivjw27">
@@ -1246,25 +1246,25 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
                 d="M168.469,16.1523L92.9502,16.1523C88.0055,16.1523,83.9971,20.1583,83.9971,25.0998L83.9971,102.91C83.9971,107.851,88.0055,111.857,92.9502,111.857L168.469,111.857C173.413,111.857,177.422,107.851,177.422,102.91L177.422,25.0998C177.422,20.1583,173.413,16.1523,168.469,16.1523Z"
                 fill="url(#ehglyE2ivjw29-fill)"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw30"
                 d="M177.422,87.0332L177.422,102.905C177.414,105.275,176.468,107.546,174.79,109.222C173.113,110.899,170.841,111.844,168.469,111.852L92.9546,111.852C90.5819,111.845,88.3082,110.9,86.63,109.224C84.9518,107.548,84.0053,105.276,83.9971,102.905L83.9971,87.0332L177.422,87.0332Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw31"
                 d="M120.606,63.3262L140.813,63.3262C141.065,63.3433,141.3,63.4596,141.467,63.6496C141.634,63.8396,141.719,64.0879,141.703,64.3401L141.703,66.1056C141.719,66.3578,141.634,66.6061,141.467,66.7961C141.3,66.9861,141.065,67.1024,140.813,67.1195L120.606,67.1195C120.358,67.0968,120.128,66.9782,119.966,66.7888C119.804,66.5994,119.722,66.3543,119.738,66.1056L119.738,64.3268C119.726,64.0803,119.809,63.8385,119.971,63.6521C120.133,63.4656,120.36,63.3488,120.606,63.3262Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw32"
@@ -1272,27 +1272,27 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
                 opacity="0.5"
                 fill="rgb(255,255,255)"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw33"
                 d="M143.172,33.758C143.461,34.9587,143.501,36.3773,143.941,37.6714C144.934,40.602,146.077,40.6376,145.939,43.4526C145.717,47.8507,143.852,47.366,142.38,50.3633C141.018,53.1739,141.863,58.4303,130.271,56.6826C128.345,56.3891,124.771,57.4297,122.199,57.1273C117.069,56.5047,118.64,50.1988,117.923,47.9441C117.069,45.2092,114.19,43.9418,114.639,40.3041C115.191,35.857,118.644,36.9154,120.193,33.1043C122.226,28.0702,126.471,25.6822,130.743,27.4387C134.588,29.0174,137.418,27.043,139.905,28.7373C140.996,29.4844,142.482,30.9608,143.154,33.7536L143.172,33.758ZM130.739,30.6451C128.45,30.6451,126.214,31.3232,124.311,32.5937C122.408,33.8642,120.925,35.67,120.05,37.7827C119.174,39.8954,118.945,42.2202,119.391,44.4631C119.838,46.706,120.94,48.7662,122.558,50.3832C124.176,52.0002,126.237,53.1014,128.482,53.5476C130.726,53.9937,133.052,53.7647,135.166,52.8896C137.28,52.0145,139.087,50.5325,140.359,48.6311C141.63,46.7297,142.308,44.4942,142.308,42.2074C142.305,39.1432,141.084,36.2057,138.915,34.0402C136.746,31.8748,133.805,30.6584,130.739,30.6584L130.739,30.6451Z"
                 opacity="0.5"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw34"
                 d="M122.871,26.8165C124.206,26.6564,125.79,26.8165,127.267,26.483C130.614,25.7759,130.827,24.5263,133.889,25.051C138.686,25.8604,137.894,27.8438,141.009,29.8316C143.914,31.6905,149.797,31.4459,146.348,43.9288C145.779,46.0011,146.46,50.0568,145.779,52.8229C144.444,58.3639,137.711,55.838,135.144,56.3183C132.029,56.8964,130.276,59.8759,126.329,58.9242C121.518,57.7413,123.129,54.0769,119.146,51.8979C113.882,49.0162,111.813,44.0488,114.296,39.5929C116.521,35.5905,114.741,32.2063,116.913,29.716C117.878,28.6176,119.676,27.1812,122.844,26.8032L122.871,26.8165ZM117.856,40.0465C117.558,42.5568,118.011,45.0992,119.158,47.3522C120.306,49.6051,122.096,51.4673,124.303,52.7033C126.509,53.9393,129.033,54.4936,131.555,54.296C134.077,54.0984,136.484,53.1579,138.47,51.5934C140.457,50.0288,141.935,47.9105,142.718,45.5064C143.5,43.1023,143.551,40.5204,142.865,38.0872C142.179,35.654,140.786,33.4788,138.863,31.8368C136.939,30.1947,134.572,29.1595,132.06,28.8622C128.692,28.4635,125.304,29.4178,122.641,31.5152C119.977,33.6125,118.256,36.6812,117.856,40.0465Z"
                 opacity="0.5"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw35"
@@ -1300,35 +1300,35 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
                 opacity="0.5"
                 fill="rgb(103,166,218)"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw36"
                 d="M130.76,28.6035C133.459,28.6035,136.097,29.4032,138.34,30.9014C140.584,32.3996,142.333,34.529,143.365,37.0204C144.398,39.5118,144.668,42.2533,144.142,44.8982C143.615,47.543,142.316,49.9725,140.408,51.8793C138.5,53.7862,136.069,55.0848,133.422,55.6109C130.776,56.137,128.032,55.8669,125.539,54.835C123.046,53.803,120.916,52.0554,119.416,49.8132C117.917,47.571,117.117,44.9349,117.117,42.2382C117.117,38.622,118.555,35.154,121.113,32.597C123.672,30.04,127.142,28.6035,130.76,28.6035ZM130.76,32.1345C128.761,32.1353,126.807,32.7287,125.145,33.8394C123.483,34.9502,122.188,36.5284,121.423,38.3747C120.659,40.221,120.459,42.2524,120.85,44.212C121.24,46.1717,122.203,47.9716,123.618,49.3841C125.032,50.7967,126.833,51.7586,128.794,52.1481C130.755,52.5376,132.788,52.3372,134.635,51.5724C136.482,50.8075,138.061,49.5125,139.171,47.851C140.282,46.1896,140.875,44.2363,140.875,42.2382C140.875,40.911,140.613,39.5968,140.105,38.3706C139.597,37.1445,138.852,36.0305,137.912,35.0922C136.973,34.1539,135.858,33.4098,134.631,32.9023C133.404,32.3948,132.088,32.1339,130.76,32.1345Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw37"
                 d="M120.606,93.5664L140.813,93.5664C141.065,93.5835,141.3,93.6998,141.467,93.8898C141.634,94.0798,141.719,94.3281,141.703,94.5803L141.703,96.3458C141.719,96.5981,141.634,96.8463,141.467,97.0363C141.3,97.2263,141.065,97.3426,140.813,97.3597L120.606,97.3597C120.358,97.3371,120.128,97.2184,119.966,97.029C119.804,96.8397,119.722,96.5945,119.738,96.3458L119.738,94.567C119.726,94.3205,119.809,94.0788,119.971,93.8923C120.133,93.7058,120.36,93.589,120.606,93.5664Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(103,166,218)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
             </g>
             <path
               id="ehglyE2ivjw38"
               d="M130.757,34.252C131.616,34.252,132.456,34.5065,133.17,34.9834C133.884,35.4604,134.441,36.1382,134.769,36.9313C135.098,37.7244,135.184,38.5971,135.017,39.439C134.849,40.281,134.435,41.0544,133.828,41.6614C133.221,42.2684,132.447,42.6817,131.604,42.8492C130.762,43.0167,129.889,42.9307,129.095,42.6022C128.301,42.2737,127.623,41.7174,127.146,41.0036C126.669,40.2899,126.414,39.4507,126.414,38.5923C126.414,37.4412,126.872,36.3372,127.686,35.5232C128.501,34.7092,129.605,34.252,130.757,34.252ZM134.108,43.106C135.035,43.3049,135.866,43.8147,136.464,44.5508C137.061,45.287,137.389,46.2051,137.392,47.1529L137.392,47.2107C136.591,48.2006,135.579,48.999,134.429,49.5474C133.28,50.0959,132.022,50.3805,130.748,50.3805C129.474,50.3805,128.217,50.0959,127.067,49.5474C125.918,48.999,124.905,48.2006,124.104,47.2107L124.104,47.1529C124.107,46.2043,124.435,45.2852,125.033,44.5489C125.632,43.8125,126.464,43.3033,127.393,43.106C128.322,43.9204,129.515,44.3694,130.75,44.3694C131.986,44.3694,133.179,43.9204,134.108,43.106Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="rgb(255,255,255)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
           </g>
         </g>
@@ -1341,39 +1341,39 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             <path
               id="ehglyE2ivjw41"
               d="M296.148,113.041L198.18,113.09C195.613,113.09,193.508,115.914,193.508,119.356L193.508,186.506C193.508,189.948,195.613,192.772,198.18,192.772L296.148,192.723L296.148,113.041Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="rgb(238,97,164)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
           </g>
           <g id="ehglyE2ivjw42">
             <path
               id="ehglyE2ivjw43"
               d="M204.677,112.73L306.882,112.73C309.329,112.73,311.332,115.328,311.332,118.512L311.332,180.259C311.332,183.425,309.325,186.04,306.882,186.04L204.677,186.04C202.234,186.04,200.228,183.448,200.228,180.259L200.228,118.494C200.228,115.323,202.23,112.73,204.677,112.73Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="url(#ehglyE2ivjw43-fill)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
             <path
               id="ehglyE2ivjw44"
               d="M303.704,172.752L207.845,172.752C207.11,172.752,206.515,173.347,206.515,174.082L206.515,177.057C206.515,177.791,207.11,178.386,207.845,178.386L303.704,178.386C304.439,178.386,305.035,177.791,305.035,177.057L305.035,174.082C305.035,173.347,304.439,172.752,303.704,172.752Z"
               fill="rgb(56,156,215)"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
             <path
               id="ehglyE2ivjw45"
               d="M208.183,172.965L250.653,172.965C250.98,172.965,251.294,173.094,251.526,173.325C251.758,173.556,251.889,173.87,251.89,174.197L251.89,176.936C251.888,177.263,251.756,177.576,251.525,177.806C251.293,178.037,250.98,178.167,250.653,178.168L208.183,178.168C207.856,178.167,207.543,178.037,207.311,177.806C207.08,177.576,206.949,177.263,206.946,176.936L206.946,174.197C206.947,173.87,207.078,173.556,207.31,173.325C207.542,173.094,207.856,172.965,208.183,172.965Z"
               opacity="0.5"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               fill="rgb(102,203,228)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
             ></path>
             <g
               id="ehglyE2ivjw46"
@@ -1384,16 +1384,16 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
                 d="M268.639,155.354C275.99,148.008,275.99,136.098,268.639,128.751C261.289,121.405,249.371,121.405,242.02,128.751C234.669,136.097,234.669,148.008,242.02,155.354C249.371,162.7,261.289,162.7,268.639,155.354Z"
                 fill="url(#ehglyE2ivjw47-fill)"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
               <path
                 id="ehglyE2ivjw48"
                 d="M247.574,133.346L267.937,142.133L247.574,150.92L247.574,133.346Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
                 fill="rgb(255,255,255)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
               ></path>
             </g>
           </g>
@@ -1401,337 +1401,337 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
         <path
           id="ehglyE2ivjw49"
           d="M360.663,181.678L358.514,185.026L362.287,189.198C362.287,189.198,364.138,189.198,364.285,189.122C364.432,189.047,366.439,186.427,366.439,186.427L365.411,184.253L360.663,181.678Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw49-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw50"
           d="M262.761,160.385C261.796,157.325,261.929,156.298,262.512,156.053C263.095,155.809,263.714,156.992,264.737,159.059C265.916,161.408,267.354,163.747,269.601,165.072L266.597,169.483C263.927,166.909,261.302,166.522,258.939,164.836C255.975,162.719,255.005,160.527,252.941,156.743C249.901,151.17,254.747,151.01,257.644,154.297C259.575,156.462,261.11,159.558,262.761,160.385Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw50-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw51"
           d="M324.254,295.353C324.699,297.478,325.976,299.097,326.181,300.662C326.532,303.331,324.984,306.057,321.798,306.083L300.968,306.27C302.071,299.155,313.205,303.099,316.947,295.215L321.793,295.486L324.254,295.353Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw51-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw52"
           style={{ mixBlendMode: "multiply" }}
           d="M324.254,295.353C324.48,296.326,324.822,297.268,325.273,298.159C325.023,300.151,317.797,301.241,315.318,297.572C315.988,296.881,316.538,296.085,316.947,295.215L321.793,295.486L324.254,295.353Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw52-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw53"
           d="M334.765,197.824C330.066,212.784,326.265,225.026,323.907,236.815C320.347,254.533,318.941,271.947,315.724,295.277C318.438,298.167,324.232,297.5,325.687,296.869C337.701,251.509,342.045,242.681,364.895,205.837L359.47,188.4L340.839,192.879L334.765,197.824Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw53-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw54"
           style={{ mixBlendMode: "multiply" }}
           d="M345.746,215.047C337.572,228.539,326.43,265.299,325.687,296.873C336.041,257.739,340.7,245.807,356.435,219.641L345.746,215.047Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw54-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw55"
           d="M404.364,205.433C405.401,203.529,405.454,201.453,406.304,200.123C407.764,197.837,410.692,196.765,413.148,198.789L429.23,212.037C423.81,216.773,417.821,206.598,409.882,210.231L406.322,206.909L404.364,205.433Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw55-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw56"
           style={{ mixBlendMode: "multiply" }}
           d="M404.364,205.434C404.817,204.541,405.16,203.598,405.388,202.623C406.865,201.258,413.095,205.074,412.632,209.472C411.675,209.571,410.741,209.828,409.869,210.232L406.309,206.91L404.364,205.434Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw56-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw57"
           d="M334.004,198.416C342.512,214.902,348.791,228.541,363.226,236.274C383.633,247.205,400.658,223.582,412.295,210.317C409.046,205.051,407.275,204.202,403.925,203.246C394.01,211.486,380.67,223.444,372.509,217.623C369.95,215.795,368.428,211.686,367.004,205.843C365.553,199.897,364.441,194.312,360.89,189.544C359.555,187.766,357.855,186.311,355.937,184.746L334.004,198.416Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw57-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw58"
           style={{ mixBlendMode: "multiply" }}
           d="M334.004,198.416C342.512,214.901,348.791,228.54,363.226,236.274C383.633,247.205,400.658,223.582,412.295,210.316C382.258,242.117,356.511,239.409,334.004,198.416Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw58-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw59"
           d="M309.712,145.234C310.37,150.126,311.318,154.6,316.315,158.491L307.887,164.272C306.971,159.185,306.183,155.743,303.82,152.367L308.417,145.595L309.712,145.234Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(248,165,152)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw60"
           d="M309.712,145.234C309.938,147.294,310.377,149.326,311.02,151.296C311.465,153.266,308.35,157.037,305.627,155.6C305.135,154.463,304.53,153.379,303.82,152.363L308.417,145.59L309.712,145.234Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw60-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw61"
           d="M295.205,142.493C298.151,152.228,299.437,156.764,302.196,155.923C303.322,155.581,305.231,153.7,307.215,151.592C310.174,148.434,307.856,143.64,306.468,137.899L300.572,135.307L295.205,142.493Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw61-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw62"
           d="M295.205,142.493L295.739,144.272C298.725,145.162,302.209,141.506,303.032,140.741C304.247,143.632,305.983,147.065,308.577,148.71C308.991,145.798,307.482,142.106,306.468,137.913L300.572,135.32L295.205,142.493Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(248,165,152)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw63"
           d="M268.114,162.763C279.421,169.26,286.804,171.017,291.748,169.549C295.85,168.339,299.148,165.462,304.523,160.819C309.418,156.581,313.107,153.211,319.653,151.974C326.519,150.68,334.804,151.347,339.726,152.245C349.556,154.024,359.305,158.418,363.613,166C366.728,171.443,366.688,178.167,366.665,187.128C366.025,186.683,359.688,182.557,359.337,182.21C356.595,167.646,353.712,167.036,341.537,165.756C347.945,171.012,353.173,176.873,358.892,181.801C361.419,183.993,363.684,185.314,366.794,187.497C358.567,196.245,344.67,201.755,333.069,201.11C326.394,190.112,319.435,187.84,310.784,178.768C291.725,187.373,283.195,185.225,264.857,169.429C264.501,165.773,266.001,163.754,268.114,162.763Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw63-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw64"
           style={{ mixBlendMode: "multiply" }}
           d="M338.982,163.025C357.796,163.67,358.339,170.51,359.376,182.228C356.635,167.659,353.752,167.05,341.577,165.774C340.553,165.022,339.674,164.09,338.982,163.025Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw64-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw65"
           style={{ mixBlendMode: "multiply" }}
           d="M312.319,172.435C317.356,180.44,328.151,188.351,333.051,200.897C326.376,189.899,319.559,187.791,310.908,178.719C291.845,187.324,283.154,185.247,264.839,169.434C276.079,177.625,292.343,185.172,312.319,172.435Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw65-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw66"
           d="M300.336,132.208C312.31,114.314,327.685,122.425,336.825,121.753C349.703,120.837,352.337,113.077,359.862,110.018C371.547,105.264,382.89,108.559,388.786,120.926C395.558,135.081,383.553,166.326,359.822,159.193C352.025,156.85,348.252,149.717,340.803,150.25C335.859,150.606,320.988,160.478,309.725,149.539C306.566,146.475,304.221,142.143,303.215,139.39C301.608,141.218,299.17,142.668,297.047,143.033C291.765,143.922,288.686,139.72,289.38,136.033C290.484,130.261,297.252,130.403,300.336,132.208Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw66-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw67"
           d="M390.544,133.098C389.235,147.711,377.951,164.636,359.84,159.193C352.043,156.849,348.27,149.716,340.821,150.25C335.877,150.606,321.006,160.478,309.743,149.538C306.584,146.474,304.239,142.143,303.233,139.39C301.627,141.218,299.188,142.668,297.065,143.032C293.061,143.722,290.306,141.449,289.527,138.701C293.91,142.085,299.762,140.867,303.896,136.166C313.873,146.154,319.168,147.488,326.439,146.239C337.452,144.375,340.625,142.681,344.683,142.361C351.407,141.854,356.253,148.587,363.738,150.072C371.827,151.682,385.391,147.688,390.544,133.098Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(36,9,61)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw68"
           d="M262.41,159.767C261.449,156.712,261.578,155.68,262.161,155.435C262.744,155.191,263.309,156.405,264.386,158.442L265.276,160.092L261.596,163.271L262.41,159.767Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw68-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw69"
           d="M60.3366,296.464C59.8916,298.688,58.5566,300.355,58.3341,301.978C57.9648,304.771,59.5756,307.573,62.8819,307.604L84.4948,307.795C83.3512,300.417,71.7994,304.509,67.9147,296.326L62.8863,296.606L60.3366,296.464Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw69-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw70"
           style={{ mixBlendMode: "multiply" }}
           d="M60.3366,296.465C60.212,297.323,59.3754,299.195,59.1084,299.818C61.1331,301.223,69.0939,302.411,70.8916,299.947C70.0017,299.191,68.5821,297.879,67.9948,296.643L62.8863,296.607L60.3366,296.465Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw70-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw71"
           d="M32.9481,290.106C32.0047,293.415,30.5229,298.173,30.6653,301.557C30.7543,303.701,32.9347,302.851,34.1362,304.697C34.5812,305.399,34.1362,306.733,32.8012,306.885C30.0512,307.196,23.8214,306.733,21.7122,306.462C19.4872,306.173,21.0625,304.323,21.5119,299.471C21.6143,298.364,21.681,297.363,21.2761,296.679C20.4796,295.345,20.3505,294.01,21.1737,292.232C22.0993,290.23,24.0039,289.857,25.5925,287.34L32.9481,290.106Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw71-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw72"
           style={{ mixBlendMode: "multiply" }}
           d="M32.6681,290.603C32.2632,292.013,31.7159,294.085,31.3332,295.7C27.5641,294.557,23.9064,293.178,22.5625,290.55C23.0965,290.061,25.0856,288.166,25.5973,287.361L32.6681,290.603Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw72-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw73"
           d="M52.5941,188.922C51.8955,197.189,52.2826,204.856,51.9133,213.123C50.3069,249.371,43.374,252.622,24.1328,288.056C26.5491,292.903,31.9067,293.637,35.3509,292.303C65.5699,248.882,70.0954,241.731,78.1007,191.07L52.5941,188.922Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw73-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw74"
           style={{ mixBlendMode: "multiply" }}
           d="M59.9769,193.408C59.2783,201.675,59.1314,219.962,58.7665,228.229C57.7164,251.798,42.8316,275.501,36.0723,291.212C66.2913,247.791,70.0781,241.73,78.0834,191.047L59.9769,193.408Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw74-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw75"
           d="M88.8471,185.377C93.8976,234.539,91.2767,252.323,70.6605,298.083C68.4133,300.418,60.6305,298.973,59.4424,295.722C66.2907,270.102,70.122,255.169,70.8073,243.785C72.3959,216.769,60.457,216.244,59.6827,187.387L88.8471,185.377Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw75-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw76"
           d="M90.6493,149.53C92.3936,165.984,91.5392,181.744,90.6759,199.835C79.1286,202.765,62.8198,203.966,50.8809,195.832C52.6208,178.044,51.0144,152.981,54.8857,145.016C61.2713,131.924,84.2682,130.145,90.6493,149.53Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw76-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw77"
           style={{ mixBlendMode: "multiply" }}
           d="M90.0575,147.279C93.1101,163.146,90.6048,183.367,90.676,199.834L80.6816,145.58L90.0575,147.279Z"
           opacity="0.5"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw77-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw78"
           d="M71.8754,130.936C71.7775,132.746,72.6719,135.214,73.2103,136.41C72.3826,137.958,68.2487,139.848,64.5376,138.989C64.3551,135.645,63.7989,133.795,61.832,131.305L65.7657,129.339L69.2144,128.846L71.8754,130.936Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw78-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw79"
           d="M71.8751,130.935C71.861,131.837,71.9795,132.736,72.2267,133.604C71.7194,135.08,66.1037,138.051,63.9856,135.169C63.5334,133.75,62.8077,132.432,61.8496,131.291L65.7833,129.326L69.2319,128.832L71.8751,130.935Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw79-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw80"
           d="M72.0624,115.318C73.8424,119.743,75.5734,123.172,75.8849,127.735C76.0451,130.065,75.3642,130.75,73.1705,131.141C69.2101,131.857,66.1397,132.008,64.3686,130.136L61.1113,125.342L63.452,116.919L67.8217,115.318L72.0624,115.318Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw80-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw81"
           d="M72.0624,115.318C72.325,115.977,72.5875,116.612,72.8456,117.235C72.0149,117.968,71.0901,118.587,70.0956,119.076C69.041,121.3,70.2246,124.47,68.9297,125.169C68.3691,125.471,67.5725,125.169,67.0118,124.751C64.8314,123.065,65.2319,124.933,66.5936,126.605C67.7861,128.05,68.1733,128.806,67.8128,131.599C66.3889,131.479,65.2319,131.034,64.3686,130.145L61.1113,125.351L63.452,116.919L67.8217,115.318L72.0624,115.318Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw81-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw82"
           d="M51.8019,121.131C48.8605,115.941,51.9754,111.041,56.7456,111.739C57.3775,108.582,60.399,107.772,62.9532,108.315C63.8743,105.202,67.848,104.481,70.162,105.887C74.6875,108.617,76.1203,114.532,69.3076,118.063C68.3019,120.593,68.7113,121.749,68.3153,124.351C68.2441,124.822,67.2028,123.608,66.1749,123.159C65.4763,122.848,64.5774,122.999,64.2793,123.519C63.3047,125.249,65.7477,126.259,66.5442,128.157C67.0054,129.545,67.1169,131.025,66.8691,132.467C66.5576,133.899,65.4763,134.65,64.0924,133.734C57.4576,129.336,54.0535,125.111,51.8019,121.131Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw82-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw83"
           d="M72.5249,107.936C74.9279,110.96,74.7098,115.264,69.3077,118.061C68.302,120.592,68.7114,121.748,68.3154,124.35C68.2442,124.821,67.2029,123.607,66.175,123.153C65.4763,122.847,64.5775,122.998,64.2793,123.518C63.3048,125.248,65.7478,126.257,66.5443,128.156C67.0054,129.544,67.117,131.024,66.8692,132.465C66.5577,133.897,65.4763,134.649,64.0924,133.733C62.9711,132.99,61.9432,132.252,60.9775,131.509C62.4949,130.811,63.2025,129.357,62.5261,126.796C61.5783,123.296,61.0665,120.356,64.9824,120.89C67.0783,121.174,65.5787,119.493,67.2073,115.705C69.4768,114.45,72.2268,112.974,72.5249,107.936Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(36,9,61)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <g
           id="ehglyE2ivjw84"
@@ -1740,57 +1740,57 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           <path
             id="ehglyE2ivjw85"
             d="M93.4037,142.708C104.008,144.487,116,137.754,124.749,128.032C128.037,124.368,128.455,123.296,129.461,119.779C130.529,116.03,131.094,114.771,133.261,112.859C135.557,110.836,136.376,111.641,134.881,113.811C134.302,114.656,133.617,114.86,133.497,117.186C137.333,113.442,141.694,106.682,146.402,109.559C146.005,109.871,144.969,110.653,143.033,113.508C141.097,116.363,138.432,121.286,138.209,121.535C136.376,123.559,134.525,124.942,132.527,128.268C120.441,148.458,114.136,156.334,92.1666,157.859L89.6436,148.284L93.4037,142.708Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw85-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw86"
             d="M106.126,140.774C114.692,137.603,122.862,131.195,127.259,124.671C128.02,124.03,132.705,126.058,133.133,128.282C125.074,141.743,119.156,149.654,109.789,153.968C103.012,157.081,92.2518,158.922,83.9795,157.632C77.4782,156.627,73.8961,153.652,74.7416,147.773C75.0264,145.785,77.8565,141.374,83.1251,141.249C92.6478,141.018,95.3222,144.771,106.126,140.774Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw86-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw87"
             style={{ mixBlendMode: "multiply" }}
             d="M133.133,128.281C125.074,141.742,119.156,149.654,109.789,153.967C103.012,157.08,92.2518,158.921,83.9795,157.632C77.4782,156.627,73.8961,153.652,74.7416,147.773C94.0762,158.908,115.306,151.837,133.133,128.281Z"
             opacity="0.5"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw87-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
         <path
           id="ehglyE2ivjw88"
           d="M271.407,199.074L271.407,196.806C273.134,196.806,275.11,196.672,276.867,196.85L276.645,199.105C274.972,198.927,273.085,199.074,271.407,199.074ZM281.789,201.769C282.655,202.772,283.247,203.982,283.506,205.282L285.731,204.837C285.394,203.157,284.627,201.593,283.506,200.297L281.784,201.769L281.789,201.769ZM283.658,211.846L285.945,211.846L285.945,216.382L283.68,216.382L283.68,211.846L283.658,211.846ZM283.658,223.181L285.945,223.181L285.945,227.713L283.68,227.713L283.68,223.19L283.658,223.181ZM283.658,234.512L285.945,234.512L285.945,239.053L283.68,239.053L283.68,234.521L283.658,234.512ZM283.658,245.844L285.945,245.844L285.945,250.38L283.68,250.38L283.68,245.844L283.658,245.844ZM283.658,257.179L285.945,257.179L285.945,261.711L283.68,261.711L283.68,257.188L283.658,257.179ZM283.658,268.51L285.945,268.51L285.945,273.042L283.68,273.042L283.68,268.519L283.658,268.51ZM283.658,279.841L285.945,279.841C285.945,281.34,286.038,282.954,285.918,284.457L283.658,284.288C283.765,282.83,283.68,281.295,283.68,279.841L283.658,279.841ZM281.05,289.465C280.06,290.348,278.858,290.961,277.561,291.244L278.038,293.467C279.712,293.104,281.264,292.317,282.545,291.181L281.05,289.465ZM271.007,291.412L271.007,293.68L266.477,293.68L266.477,291.412L271.007,291.412ZM259.669,291.412L259.669,293.68L255.139,293.68L255.139,291.412L259.669,291.412ZM248.33,291.412L248.33,293.68L243.8,293.68L243.8,291.412L248.33,291.412ZM236.992,291.412L236.992,293.68L232.458,293.68L232.458,291.412L236.992,291.412ZM225.649,291.412L225.649,293.68L221.119,293.68L221.119,291.412L225.649,291.412ZM214.311,291.412L214.311,293.68L209.781,293.68L209.781,291.412L214.311,291.412ZM202.973,291.412L202.973,293.68L198.443,293.68L198.443,291.412L202.973,291.412ZM191.635,291.412L191.635,293.68L187.096,293.68L187.096,291.412L191.635,291.412ZM180.292,291.412L180.292,293.68L175.762,293.68L175.762,291.412L180.292,291.412ZM168.954,291.412L168.954,293.68L164.424,293.68L164.424,291.412L168.954,291.412ZM157.615,291.412L157.615,293.68L153.077,293.68L153.077,291.412L157.615,291.412ZM146.277,291.412L146.277,293.68L141.738,293.68L141.738,291.412L146.277,291.412ZM135.153,291.297C133.844,291.068,132.618,290.504,131.593,289.66L130.151,291.408C131.473,292.499,133.055,293.23,134.743,293.529L135.144,291.306L135.153,291.297ZM128.82,284.591C128.725,283.122,128.707,281.65,128.767,280.179L126.502,280.179C126.441,281.731,126.462,283.285,126.564,284.835L128.82,284.591ZM128.767,273.38L126.502,273.38L126.502,268.848L128.767,268.848L128.767,273.38ZM128.767,262.049L126.502,262.049L126.502,257.517L128.767,257.517L128.767,262.049ZM128.767,250.717L126.502,250.717L126.502,246.186L128.767,246.186L128.767,250.717ZM128.767,239.386L126.502,239.386L126.502,234.85L128.767,234.85L128.767,239.386ZM128.767,228.051L126.502,228.051L126.502,223.533L128.767,223.533L128.767,228.064L128.767,228.051ZM128.767,216.72L126.502,216.72L126.502,212.188L128.767,212.188L128.767,216.72ZM128.865,205.602C129.078,204.301,129.622,203.076,130.445,202.044L128.665,200.617C127.593,201.956,126.885,203.549,126.609,205.242L128.834,205.615L128.865,205.602ZM135.482,199.172C136.942,199.063,138.407,199.041,139.869,199.105L139.869,196.837C138.31,196.774,136.749,196.803,135.193,196.921L135.482,199.172ZM146.664,199.074L146.664,196.806L151.203,196.806L151.203,199.074L146.664,199.074ZM158.007,199.074L158.007,196.806L162.55,196.806L162.55,199.074L158.007,199.074ZM169.359,199.074L169.359,196.806L173.893,196.806L173.893,199.074L169.359,199.074ZM180.697,199.074L180.697,196.806L185.236,196.806L185.236,199.074L180.697,199.074ZM192.053,199.074L192.053,196.806L196.592,196.806L196.592,199.074L192.053,199.074ZM203.396,199.074L203.396,196.806L207.93,196.806L207.93,199.074L203.396,199.074ZM214.734,199.074L214.734,196.806L219.268,196.806L219.268,199.074L214.734,199.074ZM226.072,199.074L226.072,196.806L230.611,196.806L230.611,199.074L226.072,199.074ZM237.415,199.074L237.415,196.806L241.949,196.806L241.949,199.074L237.415,199.074ZM248.753,199.074L248.753,196.806L253.287,196.806L253.287,199.074L248.753,199.074ZM260.091,199.074L260.091,196.806L264.586,196.806L264.586,199.074L260.091,199.074Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="rgb(255,255,255)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw89"
           d="M229.632,270.227L276.498,270.227C277.508,270.227,278.336,270.907,278.336,271.743L278.336,283.634C278.336,284.47,277.508,285.151,276.498,285.151L229.632,285.151C228.622,285.151,227.794,284.47,227.794,283.634L227.794,271.761C227.794,270.925,228.622,270.227,229.632,270.227Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
           fill="url(#ehglyE2ivjw89-fill)"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         ></path>
         <path
           id="ehglyE2ivjw90"
           d="M253.228,206.002L228.766,206.002C228.342,206.002,227.997,206.637,227.997,207.42L227.997,210.584C227.997,211.367,228.342,212.002,228.766,212.002L253.228,212.002C253.653,212.002,253.997,211.367,253.997,210.584L253.997,207.42C253.997,206.637,253.653,206.002,253.228,206.002Z"
           fill="rgb(255,255,255)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           transform="matrix(1.94 0 0 1 -214.31718 0)"
         ></path>
         <path
@@ -1798,7 +1798,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           d="M253.228,222.002L228.766,222.002C228.342,222.002,227.997,222.637,227.997,223.42L227.997,226.584C227.997,227.367,228.342,228.002,228.766,228.002L253.228,228.002C253.653,228.002,253.997,227.367,253.997,226.584L253.997,223.42C253.997,222.637,253.653,222.002,253.228,222.002Z"
           fill="rgb(255,255,255)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           transform="matrix(1.936115 0 0 1 -213.431412 0)"
         ></path>
         <path
@@ -1806,7 +1806,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           d="M253.228,238.002L228.766,238.002C228.342,238.002,227.997,238.637,227.997,239.42L227.997,242.584C227.997,243.367,228.342,244.002,228.766,244.002L253.228,244.002C253.653,244.002,253.997,243.367,253.997,242.584L253.997,239.42C253.997,238.637,253.653,238.002,253.228,238.002Z"
           fill="rgb(255,255,255)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           transform="matrix(1.95582 0 0 1 -218.436412 0)"
         ></path>
         <path
@@ -1814,7 +1814,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
           d="M252.251,256.223L229.459,256.223C228.648,256.223,227.99,256.88,227.99,257.69L227.99,260.963C227.99,261.774,228.648,262.431,229.459,262.431L252.251,262.431C253.062,262.431,253.719,261.774,253.719,260.963L253.719,257.69C253.719,256.88,253.062,256.223,252.251,256.223Z"
           fill="rgb(255,255,255)"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           transform="matrix(1.949546 0 0 1 -216.300882 0)"
         ></path>
         <g
@@ -1826,24 +1826,24 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             d="M183.156,239.455L171.63,239.455C171.165,239.455,170.789,239.831,170.789,240.295L170.789,251.155C170.789,251.619,171.165,251.995,171.63,251.995L183.156,251.995C183.621,251.995,183.997,251.619,183.997,251.155L183.997,240.295C183.997,239.831,183.621,239.455,183.156,239.455Z"
             fill="rgb(255,255,255)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw96"
             d="M172.59,240.295C172.821,240.295,173.048,240.364,173.24,240.492C173.433,240.621,173.583,240.803,173.671,241.017C173.76,241.231,173.783,241.466,173.738,241.693C173.693,241.92,173.581,242.129,173.418,242.292C173.254,242.456,173.045,242.567,172.818,242.612C172.591,242.658,172.356,242.634,172.142,242.546C171.928,242.457,171.745,242.307,171.616,242.115C171.488,241.923,171.419,241.696,171.419,241.465C171.419,241.155,171.542,240.857,171.762,240.638C171.981,240.418,172.279,240.295,172.59,240.295Z"
             opacity="0.3"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="rgb(145,201,237)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw97"
             d="M172.59,242.096C172.939,242.096,173.221,241.814,173.221,241.466C173.221,241.118,172.939,240.836,172.59,240.836C172.242,240.836,171.96,241.118,171.96,241.466C171.96,241.814,172.242,242.096,172.59,242.096Z"
             fill="url(#ehglyE2ivjw97-fill)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw98"
@@ -1851,7 +1851,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             opacity="0.3"
             fill="rgb(145,201,237)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw99"
@@ -1859,7 +1859,7 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             opacity="0.3"
             fill="rgb(145,201,237)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw100"
@@ -1867,23 +1867,23 @@ export const UiDesignSVG = ({ classes }: UxSVGProps) => {
             opacity="0.2"
             fill="url(#ehglyE2ivjw100-fill)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw101"
             d="M174.856,244.359L178.248,248.889L180.345,247.091L182.841,250.839L171.944,250.839L174.856,244.359Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fill="url(#ehglyE2ivjw101-fill)"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
           <path
             id="ehglyE2ivjw102"
             d="M178.638,245.859C179.053,245.859,179.389,245.524,179.389,245.109C179.389,244.695,179.053,244.359,178.638,244.359C178.224,244.359,177.888,244.695,177.888,245.109C177.888,245.524,178.224,245.859,178.638,245.859Z"
             fill="rgb(254,199,113)"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
           ></path>
         </g>
       </svg>
