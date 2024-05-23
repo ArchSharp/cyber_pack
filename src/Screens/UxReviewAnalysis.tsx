@@ -377,7 +377,7 @@ export const UxReviewAnalysis = () => {
             <Slider {...settings}>
               {strategies.map((strateg, index) => (
                 <div
-                  className="strategy-card w-[90vw] lg:w-[80vw] mt-20 strategy-bg-col shadow-ux_bx h-[95vh] md:h-[600px] relative"
+                  className="strategy-card w-[90vw] lg:w-[80vw] mt-20 bg-navbar shadow-ux_bx h-[95vh] md:h-[600px] relative"
                   key={index}
                 >
                   <div className="w-fit text-6xl md:text-7xl lg:text-9xl leading-[90px] font-extrabold font-poppins text-white z-[30] absolute top-[-50px] right-[20px] md:right-[50px]">

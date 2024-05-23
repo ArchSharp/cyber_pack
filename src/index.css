@@ -758,7 +758,7 @@ code {
     display: flex !important;
     flex-direction: row !important;
     position: relative;
-    margin-left: 2vw !important;
+    /* margin-left: 2vw !important;*/
     margin-right: 2vw !important;
   }
 }

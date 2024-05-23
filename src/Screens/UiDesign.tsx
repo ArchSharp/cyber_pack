@@ -448,12 +448,18 @@ export const UiDesign = () => {
         <div className="curved-div-2 h-[100px] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]"></div>
       </div>
 
+      {/* Definition */}
       <div className="bg-ux_review_bg flex flex-col">
-        <div className="h-fit w-fit mx-auto border-2 border-red-600">
+        <div className="mt-[50px] lg:mt-[200px] text-navbar font-semibold text-xl md:text-3xl lg:text-6xl w-fit mx-auto font-poppins text-center z-[3]">
+          Definition
+          <br />
+          <div className="mt-3 h-[4px] w-[150px] md:w-[300px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
+        </div>
+        <div className="h-fit w-[80vw] mx-auto shadow-ux_bx_2 mt-20">
           <Slider {...settings}>
             {strategies.map((strateg, index) => (
               <div
-                className="strategy-card bg-white w-[90vw] lg:w-[76vw] mx-[2vw] mt-20 shadow-ux_bx_2 h-[95vh] md:h-[600px]"
+                className="strategy-card bg-white w-[90vw] lg:w-[76vw] h-[95vh] md:h-[600px] rounded-xl"
                 key={index}
               >
                 <div className="w-[90vw] md:w-[45vw] lg:w-[40vw] h-[40vh] md:h-full flex flex-col justify-center">
@@ -478,85 +484,128 @@ export const UiDesign = () => {
       </div>
 
       {/* Case studies */}
-      <div className="bg-ux_review_bg flex flex-col">
-        <div className="mx-auto text-center mt-[15vh] mb-16 w-fit">
-          <h1 className="text-2xl lg:text-5xl font-extrabold font-poppins text-main mx-auto">
-            Case Studies
-          </h1>
-          <div className="mt-3 h-[4px] w-[150px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
-        </div>
+      <div className="bg-ux_review_bg flex flex-col overflow-x-hidden">
+        <div className="curved-div h-fit lg:h-fit ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw] relative">
+          {/* top curve */}
+          <div className="custom-shape-divider-top-1716480124 lg:hidden">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+                className="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          {/* end curve */}
+          <div className="flex flex-col text-left mt-[200px] lg:mt-[150px] w-fit mx-auto">
+            <h1 className="text-2xl lg:text-5xl font-bold font-poppins text-white">
+              Case Studies
+            </h1>
+            <div className="mt-3 h-[4px] w-[100px] md:w-[200px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent z-[5]" />
+          </div>
 
-        <div className="flex flex-col md:flex-row items-center w-fit mx-auto mb-10">
-          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
-            {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
-            <img src={miningClient} alt="mining" className="w-full" />
-            <div className="text-center font-bold text-slate-800 text-xl mt-3">
-              Mining Client MAS
+          {/* three cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center w-fit mx-auto mt-[100px] mb-10">
+            {/* 1-card */}
+            <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] h-[530px] overflow-hidden md:ml-[3vw] lg:ml-0 rounded-[28px] shadow-inner bg-white relative">
+              {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+              <img src={miningClient} alt="mining" className="w-full" />
+              <div className="text-center font-bold text-slate-800 text-xl mt-3">
+                Mining Client MAS
+              </div>
+              <div className="text-center text-slate-900 text-base">
+                Independent client
+              </div>
+              <div className="text-center text-slate-600 text-sm px-5 mt-3">
+                Metal Accounting system's user experience was complex and poor
+                after highly customising their off the shelf program. Informed
+                by UX Research, we designed and
+              </div>
+              <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+                View Case Studies
+                <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+              </button>
             </div>
-            <div className="text-center text-slate-900 text-base">
-              Independent client
+            {/* 2-card */}
+            <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] md:ml-[2vw] mt-10 md:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+              {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+              <img src={assupol} alt="assupol" className="w-full" />
+              <div className="text-center font-bold text-slate-800 text-xl mt-3">
+                Mining Client MAS
+              </div>
+              <div className="text-center text-slate-900 text-base">
+                Independent client
+              </div>
+              <div className="text-center text-slate-600 text-sm px-5 mt-3">
+                Metal Accounting system's user experience was complex and poor
+                after highly customising their off the shelf program. Informed
+                by UX Research, we designed and
+              </div>
+              <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+                View Case Studies
+                <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+              </button>
             </div>
-            <div className="text-center text-slate-600 text-sm px-5 mt-3">
-              Metal Accounting system's user experience was complex and poor
-              after highly customising their off the shelf program. Informed by
-              UX Research, we designed and
+            {/* 3-card */}
+            <div className="md:ml-[25vw] lg:ml-[2vw] w-[80vw] md:w-[45vw] lg:w-[27vw] mt-10 md:mt-5 lg:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+              {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+              <img src={assupol} alt="assupol" className="w-full" />
+              <div className="text-center font-bold text-slate-800 text-xl mt-3">
+                Mining Client MAS
+              </div>
+              <div className="text-center text-slate-900 text-base">
+                Independent client
+              </div>
+              <div className="text-center text-slate-600 text-sm px-5 mt-3">
+                Metal Accounting system's user experience was complex and poor
+                after highly customising their off the shelf program. Informed
+                by UX Research, we designed and
+              </div>
+              <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+                View Case Studies
+                <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+              </button>
             </div>
-            <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
-              View Case Studies
+          </div>
+
+          {/* next, prev buttons */}
+          <div className="flex flex-col md:flex-row items-center justify-between w-[96vw] md:w-[90vw] lg:w-[80vw] mx-auto mb-[10vh]">
+            <button
+              onClick={() => {
+                if (currentRoute === routes.uiDesign) navigate(routes.uxDesign);
+              }}
+              className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
+            >
+              <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
+              <div className="mr-auto">
+                {currentRoute === routes.uiDesign && designServices[1]}
+              </div>
+              <UxDesignSVG
+                classes={
+                  "z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"
+                }
+              />
+            </button>
+            <button
+              onClick={() => {
+                if (currentRoute === routes.uiDesign)
+                  navigate(routes.uxOtherServices);
+              }}
+              className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
+            >
+              <div className="ml-auto">
+                {currentRoute === routes.uiDesign && designServices[3]}
+              </div>
               <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+              <UxSVG
+                classes={"z-[2] absolute bottom-[-20px] left-[-30px] w-[100px]"}
+              />
             </button>
           </div>
-          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] md:ml-[5vw] mt-10 md:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
-            {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
-            <img src={assupol} alt="assupol" className="w-full" />
-            <div className="text-center font-bold text-slate-800 text-xl mt-3">
-              Mining Client MAS
-            </div>
-            <div className="text-center text-slate-900 text-base">
-              Independent client
-            </div>
-            <div className="text-center text-slate-600 text-sm px-5 mt-3">
-              Metal Accounting system's user experience was complex and poor
-              after highly customising their off the shelf program. Informed by
-              UX Research, we designed and
-            </div>
-            <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
-              View Case Studies
-              <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
-            </button>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row items-center justify-between w-[96vw] md:w-[90vw] lg:w-[80vw] mx-auto mb-[10vh]">
-          <button
-            onClick={() => {
-              if (currentRoute === routes.uiDesign) navigate(routes.uxDesign);
-            }}
-            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
-          >
-            <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
-            <div className="mr-auto">
-              {currentRoute === routes.uiDesign && designServices[1]}
-            </div>
-            <UxDesignSVG
-              classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
-            />
-          </button>
-          <button
-            onClick={() => {
-              if (currentRoute === routes.uiDesign)
-                navigate(routes.uxOtherServices);
-            }}
-            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
-          >
-            <div className="ml-auto">
-              {currentRoute === routes.uiDesign && designServices[3]}
-            </div>
-            <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
-            <UxSVG
-              classes={"z-[2] absolute bottom-[-20px] left-[-30px] w-[100px]"}
-            />
-          </button>
         </div>
       </div>
 

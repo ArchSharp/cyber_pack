@@ -518,7 +518,7 @@ export const UxDesign = () => {
             <Slider {...settings}>
               {strategies.map((strateg, index) => (
                 <div
-                  className="strategy-card w-[90vw] lg:w-[80vw] mt-20 strategy-bg-col shadow-ux_bx h-[95vh] md:h-[600px] relative"
+                  className="strategy-card w-[90vw] lg:w-[80vw] mt-20 bg-navbar shadow-ux_bx h-[95vh] md:h-[600px] relative"
                   key={index}
                 >
                   <div className="w-fit text-6xl md:text-7xl lg:text-9xl leading-[90px] font-extrabold font-poppins text-white z-[30] absolute top-[-50px] right-[20px] md:right-[50px]">
@@ -628,7 +628,7 @@ export const UxDesign = () => {
               if (currentRoute === routes.uxDesign)
                 navigate(routes.uxReviewAnalysis);
             }}
-            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
+            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
             <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
             <div className="mr-auto">
