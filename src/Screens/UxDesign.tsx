@@ -502,7 +502,7 @@ export const UxDesign = () => {
 
       {/*Our UX Strategy services*/}
       <div className="bg-ux_review_bg flex flex-col overflow-x-hidden">
-        <div className="curved-div h-[180vh] lg:h-[140vh] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]">
+        <div className="curved-div h-[180vh] lg:h-fit ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]">
           <div className="flex flex-col text-center mt-[30vh] w-[100vw] ml-[80vw] md:ml-[50vw] lg:ml-0">
             <h1 className="text-2xl lg:text-5xl font-bold font-poppins text-white mx-auto">
               Our UX Strategy services include
@@ -514,7 +514,7 @@ export const UxDesign = () => {
             analysis. Choose a unique selection of these sub-services to match
             the scope of your project and business goals.
           </div>
-          <div className="h-[650px] w-[90vw] lg:w-[80vw] mt-5 mb-10 ml-[85vw] md:ml-[55vw] lg:ml-[10vw] mx-auto">
+          <div className="h-fit w-[90vw] lg:w-[80vw] mt-5 mb-10 ml-[85vw] md:ml-[55vw] lg:ml-[10vw] mx-auto">
             <Slider {...settings}>
               {strategies.map((strateg, index) => (
                 <div
