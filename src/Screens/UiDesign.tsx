@@ -37,7 +37,7 @@ import { UxSVG } from "../Components/UxSVG";
 // import diagnosis from "../Images/diagnosis_frame.gif";
 // import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 // import { LuDot } from "react-icons/lu";
-// import { strategies } from "../Data/strategies";
+import { strategies } from "../Data/strategies";
 import { UxDesignSVG } from "../Components/UxDesignSVG";
 import { IoMail, IoSearch } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
@@ -127,19 +127,19 @@ export const UiDesign = () => {
     dispatch(setLastRoute(currentRoute));
   }, [currentRoute, dispatch]);
 
-  //   const settings: Settings = {
-  //     rtl: true,
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 500,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     autoplay: true,
-  //     pauseOnFocus: true,
-  //     pauseOnHover: true,
-  //     autoplaySpeed: 3000,
-  //     arrows: false,
-  //   };
+  const settings: Settings = {
+    rtl: true,
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
 
   const designServices = [
     "UX REVIEW/ANALYSIS",
@@ -281,8 +281,23 @@ export const UiDesign = () => {
 
       {/*Our UX Strategy services*/}
       <div className="bg-ux_review_bg flex flex-col overflow-x-hidden">
-        <div className="curved-div h-fit lg:h-fit ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]">
-          <div className="flex flex-col text-left mt-[650px] w-[100vw] ml-[80vw] md:ml-[50vw] lg:ml-[10vw] pl-5">
+        <div className="curved-div h-fit lg:h-fit ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw] relative">
+          {/* top curve */}
+          <div className="custom-shape-divider-top-1716480124 lg:hidden">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+                className="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          {/* end curve */}
+          <div className="flex flex-col text-left mt-[200px] lg:mt-[650px] w-[100vw] ml-[80vw] md:ml-[50vw] lg:ml-[10vw] pl-5">
             <h1 className="text-2xl lg:text-5xl font-bold font-poppins text-white">
               UI Design & Subservices
             </h1>
@@ -431,6 +446,35 @@ export const UiDesign = () => {
           </div>
         </div>
         <div className="curved-div-2 h-[100px] ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]"></div>
+      </div>
+
+      <div className="bg-ux_review_bg flex flex-col">
+        <div className="h-fit w-fit mx-auto border-2 border-red-600">
+          <Slider {...settings}>
+            {strategies.map((strateg, index) => (
+              <div
+                className="strategy-card bg-white w-[90vw] lg:w-[76vw] mx-[2vw] mt-20 shadow-ux_bx_2 h-[95vh] md:h-[600px]"
+                key={index}
+              >
+                <div className="w-[90vw] md:w-[45vw] lg:w-[40vw] h-[40vh] md:h-full flex flex-col justify-center">
+                  <img
+                    src={strateg.image}
+                    alt={strateg.title}
+                    className="w-[60%] md:w-[80%] mx-auto"
+                  />
+                </div>
+                <div className="w-[90vw] md:w-[45vw] lg:w-[40vw] h-full flex flex-col md:justify-center px-3 md:px-0">
+                  <div className=" text-main text-center md:text-left text-xl md:text-5xl font-bold font-poppins">
+                    {strateg.title}
+                  </div>
+                  <div className="text-main mt-10 text-sm md:text-lg px-3 md:pr-5 font-poppins">
+                    {strateg.description}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
 
       {/* Case studies */}

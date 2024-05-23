@@ -18,7 +18,8 @@ module.exports = {
         xxs: "8px",
       },
       boxShadow: {
-        ux_bx: "-2px 4px 4px rgba(0, 0, 0, 0.25);",
+        ux_bx: "-2px 4px 4px rgba(0, 0, 0, 0.25)",
+        ux_bx_2: "4px 0 8px rgba(0, 0, 0, 0.8), 0 4px 8px rgba(0, 0, 0, 0.25)",
       },
     },
   },

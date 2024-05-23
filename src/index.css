@@ -720,19 +720,31 @@ code {
 }
 
 .curved-div {
-  background-image: url("./Images/maintopcurve.png");
+  background-image: url("./Images/phoneMainTop.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
 }
+
 .curved-div-2 {
   background-image: url("./Images/case-studies-background.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
 }
-.strategy-bg-col {
-  background-color: rgba(58, 179, 240, 0.1);
+
+@media screen and (min-width: 768px) {
+  .curved-div {
+    background-image: url("./Images/maintopcurve.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.hide-img-details {
+  clip-path: polygon(0% 14%, 100% 14%, 100% 100%, 0% 100%);
+  border: 3px solid orangered;
 }
 
 .strategy-card {
@@ -746,9 +758,38 @@ code {
     display: flex !important;
     flex-direction: row !important;
     position: relative;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
   }
 }
 
 .ux-case-studies {
   border-radius: 74% 26% 44% 56% / 55% 58% 42% 45%;
+}
+
+.clipped-image {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  clip-path: polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%);
+  /* The 20% value represents the portion of the top you want to hide */
+}
+
+.custom-shape-divider-top-1716480124 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1716480124 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1716480124 .shape-fill {
+  fill: rgb(240, 248, 255);
 }
