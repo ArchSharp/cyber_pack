@@ -9,7 +9,7 @@ import { tech_stack_v1 } from "../Data/partners";
 // import { MarqueeHolder } from "../Components/MarqueeHolder";
 // import ux_svg from "../Images/ux-svg.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-// import { tech_stack_v1 } from "../Data/partners";
+import devCost from "../Images/development-cost.svg";
 // import microsoft from "../Images/microsoft.png";
 // import cbp01 from "../Images/cbp01.jpg";
 import miningClient from "../Images/mining-client-mas.jpg";
@@ -36,14 +36,15 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { UxSVG } from "../Components/UxSVG";
 // import diagnosis from "../Images/diagnosis_frame.gif";
 import { DiagnosisSVG } from "../Components/DiagnosisSVG";
-import { LuDot } from "react-icons/lu";
+// import { LuDot } from "react-icons/lu";
 import { strategies } from "../Data/strategies";
 import { UxDesignSVG } from "../Components/UxDesignSVG";
 import { IoMail } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
 import { IServiceEnquiry } from "../Features/User/type";
+import { UiDesignSVG } from "../Components/UiDesignSVG";
 
-export const UxReviewAnalysis = () => {
+export const UiDesign = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const { header } = useAppSelector((state) => state.user);
@@ -110,16 +111,16 @@ export const UxReviewAnalysis = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  //   useEffect(() => {
+  //     const handleScrollToTop = () => {
+  //       window.scrollTo({
+  //         top: 0,
+  //         behavior: "smooth", // Optional: smooth scrolling animation
+  //       });
+  //     };
 
-    handleScrollToTop();
-  }, []);
+  //     handleScrollToTop();
+  //   }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -228,15 +229,15 @@ export const UxReviewAnalysis = () => {
     <div className="h-fit">
       <div className="oval-bottom h-[60vh] md:h-[100vh]">
         <div className="text-white font-semibold text-lg md:text-3xl lg:text-6xl font-poppins text-center mt-16 z-[3]">
-          UX Review & Analysis <br />
+          UI Design <br />
           <div className="mt-3 h-[4px] w-[150px] md:w-[300px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
         </div>
         <div className="text-orange-800 md:text-white font-semibold md:text-xl lg:text-2xl px-5 md:px-0 font-poppins text-center mt-8 md:mt-16 z-[3]">
-          “Supposing is good, but finding out is better.”{" "}
-          <span className="font-medium text-base">- Mark Twain</span>
+          “Beauty is a greater recommendation than any letter of reference.”
+          <span className="font-medium text-base">- Aristotle</span>
         </div>
 
-        <UxSVG
+        <UiDesignSVG
           classes={
             "z-[2] absolute bottom-[7vh] md:bottom-[5vh] left-[25vw] md:left-[33vw] w-[50vw] md:w-[30vw]"
           }
@@ -265,96 +266,173 @@ export const UxReviewAnalysis = () => {
         </button>
 
         <div className=" text-main text-lg md:text-2xl mt-16 mb-20 font-semibold font-poppins w-[90vw] md:w-[80vw] mx-auto">
-          UX research analysis is not a linear path but rather a systematic
-          journey consisting of discovery and diagnosis:
+          User interface design is a digital practice that considers the look,
+          feel, presentation and interactivity of a digital product.
         </div>
 
-        <div className="mt-[15vh] lg:mt-[25vh] lg:shadow-ux_bx lg:bg-ux_review_bg2 w-[95vw] lg:w-[80vw] min-h-[400px] mx-auto flex flex-col-reverse lg:flex-row">
-          <div className="flex">
-            <div className="hidden lg:block text-8xl leading-[90px] font-poppins px-5 pt-5 text-blue-800 font-extrabold not-italic w-fit">
-              01
-            </div>
+        <div className="text-main font-bold text-lg md:text-3xl lg:text-6xl font-poppins text-left mt-16 z-[3] pl-[7vw]">
+          Importance of UX <br />
+          <div className="mt-3 h-[4px] w-[150px] md:w-[200px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
+        </div>
+
+        <div className="hidden mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx lg:bg-white bg-opacity-[0.1] w-[95vw] lg:w-[55vw] min-h-[300px] ml-[7vw] lg:flex flex-col lg:flex-row items-center">
+          <div className="w-[80vw] lg:w-[10vw] mx-auto lg:mx-0 lg:ml-10">
+            <img src={devCost} alt="devCost" className="w-[6vw]" />
+          </div>
+
+          <div className="flex w-[40vw]">
             <div className="w-[98vw] lg:w-fit">
-              <div className="mt-20 text-xl lg:text-5xl text-main font-poppins font-bold">
-                Diagnosis
+              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium">
+                Reduced development cost
               </div>
-              <div className="mt-3 h-[4px] w-[300px] md:w-[400px] bg-gradient-to-r from-blue-400 via-blue-300 to-blue-100" />
-              <div className="text-blue-500 mt-10 lg:w-[400px] text-lg font-semibold font-poppins">
-                Review and analysis are about discovering potential issues that
-                could negatively affect user experience
+
+              <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
+                Save money on development costs, use UX to get your design right
+                up-front, shorten your release cycle and avoid costly
+                refactoring of your product down the line.
               </div>
-            </div>
-          </div>
-
-          <div className="w-[80vw] lg:w-[35vw] mx-auto lg:mx-0 lg:ml-10">
-            <DiagnosisSVG classes={""} />
-          </div>
-        </div>
-
-        <div className="mt-[15vh] lg:mt-[25vh] lg:shadow-ux_bx lg:bg-ux_review_bg2 w-[95vw] lg:w-[80vw] min-h-[400px] mx-auto flex flex-col lg:flex-row">
-          <div className="w-[80vw] lg:w-[35vw] mx-auto lg:mx-0">
-            <DiagnosisSVG classes={""} />
-          </div>
-
-          <div className="flex flex-1">
-            <div className="w-[98vw] lg:w-fit ml-auto">
-              <div className="mt-20 text-xl lg:text-5xl text-main font-poppins font-bold">
-                Problem Solving
-              </div>
-              <div className="mt-3 h-[4px] w-[300px] md:w-[400px] bg-gradient-to-r from-blue-400 via-blue-300 to-blue-100" />
-              <div className="text-blue-500 mt-10 lg:w-[400px] text-lg font-semibold font-poppins">
-                Once these problems are spotted, we begin devising ways to fix
-                them to create a practical and seamless user experience.
-              </div>
-            </div>
-
-            <div className="hidden lg:block text-8xl leading-[90px] font-poppins px-5 pt-[350px] text-blue-800 font-extrabold not-italic w-fit text-end">
-              02
             </div>
           </div>
         </div>
+        {/* First three cards */}
+        <div className="mt-[5vh] lg:mt-[13vh] w-[95vw] lg:w-[90vw] min-h-[400px] ml-[2.5vw] lg:ml-0 lg:mr-auto flex flex-col lg:flex-row">
+          <div className="w-[80vw] lg:w-[30vw]">
+            <DiagnosisSVG classes={""} />
+          </div>
 
-        <div className="mt-[15vh] lg:mt-[25vh] lg:shadow-ux_bx lg:bg-ux_review_bg2 w-[95vw] lg:w-[80vw] min-h-[400px] mx-auto flex flex-col-reverse lg:flex-row">
-          <div className="flex">
-            <div className="hidden lg:block text-8xl leading-[90px] font-poppins px-5 pt-5 text-blue-800 font-extrabold not-italic w-fit">
-              03
+          <div className="">
+            {/* 1-card */}
+            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[8vw] mx-auto lg:mx-0 lg:ml-10  hidden lg:block">
+                <img src={devCost} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={devCost}
+                      alt="devCost"
+                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                    />
+                    Reduced development cost
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    UX ensures comfortable, enjoyable designs that will
+                    encourage the frequent visiting of satisfied users.
+                  </div>
+                </div>
+              </div>
             </div>
+            {/* 2-card */}
+            <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
+                <img src={devCost} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={devCost}
+                      alt="devCost"
+                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                    />
+                    Intuitive Experience
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    UX goes the extra mile to ensure that the design of a
+                    product provides a meaningful, fulfilling and user-focused
+                    experience.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second three cards */}
+        <div className="mt-[5vh] lg:mt-[13vh] w-[95vw] lg:w-[90vw] min-h-[400px] ml-[2.5vw] lg:ml-auto flex flex-col-reverse lg:flex-row">
+          <div>
+            {/* 1-card */}
+            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
+                <img src={devCost} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="flex w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={devCost}
+                      alt="devCost"
+                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                    />
+                    Quality of products
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    Trust UX to ensure professional, consistent and focused
+                    designs that will help your product stand out and leave a
+                    lasting impression on users.
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* 2-card */}
+            <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
+                <img src={devCost} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="flex w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={devCost}
+                      alt="devCost"
+                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                    />
+                    Human-centred approach
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    Do we understand our user, their needs, and their
+                    challenges? These are the questions we ask each other in a
+                    process that ensures we are building a solution that people
+                    want and need!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[80vw] lg:w-[30vw]">
+            <DiagnosisSVG classes={""} />
+          </div>
+        </div>
+        {/*  */}
+        <div className="hidden mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx lg:bg-white bg-opacity-[0.1] w-[95vw] lg:w-[55vw] min-h-[300px] ml-auto mr-[12vw] lg:flex flex-col-reverse lg:flex-row items-center">
+          <div className="w-[80vw] lg:w-[10vw] mx-auto lg:mx-0 lg:ml-10">
+            <img src={devCost} alt="devCost" className="w-[6vw]" />
+          </div>
+
+          <div className="flex w-[40vw]">
             <div className="w-[98vw] lg:w-fit">
-              <div className="mt-20 text-xl lg:text-5xl text-main font-poppins font-bold">
-                Discovery
+              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium">
+                SEO
               </div>
-              <div className="mt-3 h-[4px] w-[300px] md:w-[400px] bg-gradient-to-r from-blue-400 via-blue-300 to-blue-100" />
-              <div className="text-blue-500 mt-10 lg:w-[400px] text-lg font-semibold font-poppins">
-                Additionally, UX Review and Analysis can identify apsects such
-                as:
-                <ul className="mt-5 text-base">
-                  <li className="flex items-center">
-                    <LuDot className="mr-2" />
-                    Who will be using a product,
-                  </li>
-                  <li className="flex items-center">
-                    <LuDot className="mr-2" />
-                    give insights into the product's design process,
-                  </li>
-                  <li className="flex items-center">
-                    <LuDot className="mr-2" />
-                    benchmark your product in the market,
-                  </li>
-                  <li className="flex items-center">
-                    <LuDot className="mr-2" />
-                    determine its value,
-                  </li>
-                  <li className="flex items-center">
-                    <LuDot className="mr-2" />
-                    provide recommendations for current and future releases.
-                  </li>
-                </ul>
+
+              <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
+                UX Design directly impacts your SEO rankings through various
+                metrics that search engines use to track user engagement. It
+                helps us understand how users engage and interact with a website
+                and consider page speed, mobile responsiveness, menu/header
+                layout and URL structure.
               </div>
             </div>
-          </div>
-
-          <div className="w-[80vw] lg:w-[35vw] mx-auto lg:mx-0 lg:ml-10">
-            <DiagnosisSVG classes={""} />
           </div>
         </div>
       </div>
@@ -462,31 +540,29 @@ export const UxReviewAnalysis = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-[96vw] md:w-[90vw] lg:w-[80vw] mx-auto mb-[10vh]">
           <button
             onClick={() => {
-              if (currentRoute === routes.uxReviewAnalysis)
-                navigate(routes.uxOtherServices);
+              if (currentRoute === routes.uiDesign) navigate(routes.uxDesign);
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
           >
             <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
             <div className="mr-auto">
-              {currentRoute === routes.uxReviewAnalysis && designServices[3]}
+              {currentRoute === routes.uiDesign && designServices[1]}
             </div>
-            <UxSVG
+            <UxDesignSVG
               classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
             />
           </button>
           <button
             onClick={() => {
-              if (currentRoute === routes.uxReviewAnalysis)
-                navigate(routes.uxDesign);
+              if (currentRoute === routes.uxDesign) navigate(routes.uiDesign);
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
             <div className="ml-auto">
-              {currentRoute === routes.uxReviewAnalysis && designServices[1]}
+              {currentRoute === routes.uiDesign && designServices[3]}
             </div>
             <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
-            <UxDesignSVG
+            <UxSVG
               classes={"z-[2] absolute bottom-[-20px] left-[-30px] w-[100px]"}
             />
           </button>

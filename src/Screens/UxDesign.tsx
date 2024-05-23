@@ -8,7 +8,7 @@ import * as routes from "../Data/Routes";
 import { tech_stack_v1 } from "../Data/partners";
 // import { MarqueeHolder } from "../Components/MarqueeHolder";
 // import ux_svg from "../Images/ux-svg.svg";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import devCost from "../Images/development-cost.svg";
 // import microsoft from "../Images/microsoft.png";
 // import cbp01 from "../Images/cbp01.jpg";
@@ -27,7 +27,12 @@ import { useAppDispatch, useAppSelector } from "../Store/store";
 // import java from "../Images/java.png";
 import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation, useNavigate } from "react-router-dom";
-// import programmer from "../Images/programmer.jpg";
+import { UserFriendlySVG } from "../Components/UserFriendlySVG";
+import intuitive from "../Images/intuitiveexperience.svg";
+import userfriendly from "../Images/userfriendly.svg";
+import quality from "../Images/quality-of-products.svg";
+import human from "../Images/human-centred-approach.svg";
+import seo from "../Images/seo.svg";
 // import { Challenges } from "../Components/Challenges";
 // import pixa from "../Images/perkaloo.png";
 // import { ConnectWithUs } from "../Components/ConnectWithUs";
@@ -35,7 +40,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 // import macbook from "../Images/macbook.png";
 import { UxSVG } from "../Components/UxSVG";
 // import diagnosis from "../Images/diagnosis_frame.gif";
-import { DiagnosisSVG } from "../Components/DiagnosisSVG";
 // import { LuDot } from "react-icons/lu";
 import { strategies } from "../Data/strategies";
 import { UiDesignSVG } from "../Components/UiDesignSVG";
@@ -43,6 +47,7 @@ import { UxDesignSVG } from "../Components/UxDesignSVG";
 import { IoMail } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
 import { IServiceEnquiry } from "../Features/User/type";
+import { QualitySVG } from "../Components/QualitySVG";
 
 export const UxDesign = () => {
   const dispatch = useAppDispatch();
@@ -111,16 +116,16 @@ export const UxDesign = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  //   useEffect(() => {
-  //     const handleScrollToTop = () => {
-  //       window.scrollTo({
-  //         top: 0,
-  //         behavior: "smooth", // Optional: smooth scrolling animation
-  //       });
-  //     };
+  useEffect(() => {
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional: smooth scrolling animation
+      });
+    };
 
-  //     handleScrollToTop();
-  //   }, []);
+    handleScrollToTop();
+  }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -297,25 +302,50 @@ export const UxDesign = () => {
         {/* First three cards */}
         <div className="mt-[5vh] lg:mt-[13vh] w-[95vw] lg:w-[90vw] min-h-[400px] ml-[2.5vw] lg:ml-0 lg:mr-auto flex flex-col lg:flex-row">
           <div className="w-[80vw] lg:w-[30vw]">
-            <DiagnosisSVG classes={""} />
+            <UserFriendlySVG classes={""} />
           </div>
 
           <div className="">
             {/* 1-card */}
-            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[8vw] mx-auto lg:mx-0 lg:ml-10  hidden lg:block">
-                <img src={devCost} alt="devCost" className="w-[4vw]" />
+            <div className="lg:hidden mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
+                <img src={intuitive} alt="devCost" className="w-[4vw]" />
               </div>
 
               <div className="w-full lg:w-[40vw]">
                 <div className="w-full lg:w-fit">
                   <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
                     <img
-                      src={devCost}
+                      src={intuitive}
                       alt="devCost"
-                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
                     />
                     Reduced development cost
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    Save money on development costs, use UX to get your design
+                    right up-front, shorten your release cycle and avoid costly
+                    refactoring of your product down the line.
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* 2-card */}
+            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[8vw] mx-auto lg:mx-0 lg:ml-10  hidden lg:block">
+                <img src={userfriendly} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={userfriendly}
+                      alt="devCost"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
+                    />
+                    Create user-friendly products
                   </div>
 
                   <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
@@ -325,19 +355,19 @@ export const UxDesign = () => {
                 </div>
               </div>
             </div>
-            {/* 2-card */}
+            {/* 3-card */}
             <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
               <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={devCost} alt="devCost" className="w-[4vw]" />
+                <img src={intuitive} alt="devCost" className="w-[4vw]" />
               </div>
 
               <div className="w-full lg:w-[40vw]">
                 <div className="w-full lg:w-fit">
                   <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
                     <img
-                      src={devCost}
+                      src={intuitive}
                       alt="devCost"
-                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
                     />
                     Intuitive Experience
                   </div>
@@ -359,16 +389,16 @@ export const UxDesign = () => {
             {/* 1-card */}
             <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
               <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={devCost} alt="devCost" className="w-[4vw]" />
+                <img src={quality} alt="devCost" className="w-[4vw]" />
               </div>
 
               <div className="flex w-full lg:w-[40vw]">
                 <div className="w-full lg:w-fit">
                   <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
                     <img
-                      src={devCost}
+                      src={quality}
                       alt="devCost"
-                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
                     />
                     Quality of products
                   </div>
@@ -384,16 +414,16 @@ export const UxDesign = () => {
             {/* 2-card */}
             <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
               <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={devCost} alt="devCost" className="w-[4vw]" />
+                <img src={human} alt="devCost" className="w-[4vw]" />
               </div>
 
               <div className="flex w-full lg:w-[40vw]">
                 <div className="w-full lg:w-fit">
                   <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
                     <img
-                      src={devCost}
+                      src={human}
                       alt="devCost"
-                      className="w-[4vw] ml-5 mr-7 lg:hidden"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
                     />
                     Human-centred approach
                   </div>
@@ -407,21 +437,54 @@ export const UxDesign = () => {
                 </div>
               </div>
             </div>
+
+            {/* 3-card */}
+            <div className="lg:hidden mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
+                <img src={human} alt="devCost" className="w-[4vw]" />
+              </div>
+
+              <div className="flex w-full lg:w-[40vw]">
+                <div className="w-full lg:w-fit">
+                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                    <img
+                      src={seo}
+                      alt="devCost"
+                      className="w-[40px] ml-5 mr-7 lg:hidden"
+                    />
+                    SEO
+                  </div>
+
+                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
+                    UX Design directly impacts your SEO rankings through various
+                    metrics that search engines use to track user engagement. It
+                    helps us understand how users engage and interact with a
+                    website and consider page speed, mobile responsiveness,
+                    menu/header layout and URL structure.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="w-[80vw] lg:w-[30vw]">
-            <DiagnosisSVG classes={""} />
+            <QualitySVG classes={""} />
           </div>
         </div>
         {/*  */}
         <div className="hidden mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx lg:bg-white bg-opacity-[0.1] w-[95vw] lg:w-[55vw] min-h-[300px] ml-auto mr-[12vw] lg:flex flex-col-reverse lg:flex-row items-center">
           <div className="w-[80vw] lg:w-[10vw] mx-auto lg:mx-0 lg:ml-10">
-            <img src={devCost} alt="devCost" className="w-[6vw]" />
+            <img src={seo} alt="devCost" className="w-[6vw]" />
           </div>
 
           <div className="flex w-[40vw]">
             <div className="w-[98vw] lg:w-fit">
-              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium">
+              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
+                <img
+                  src={seo}
+                  alt="devCost"
+                  className="w-[100px] ml-5 mr-7 lg:hidden"
+                />
                 SEO
               </div>
 
@@ -496,8 +559,9 @@ export const UxDesign = () => {
           <div className="mt-3 h-[4px] w-[150px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
         </div>
 
-        <div className="flex flex-col md:flex-row items-center w-fit mx-auto mb-10">
-          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center w-fit mx-auto mb-10">
+          {/* 1-card */}
+          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] h-[530px] overflow-hidden md:ml-[3vw] lg:ml-0 rounded-[28px] shadow-inner bg-white relative">
             {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
             <img src={miningClient} alt="mining" className="w-full" />
             <div className="text-center font-bold text-slate-800 text-xl mt-3">
@@ -516,7 +580,28 @@ export const UxDesign = () => {
               <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
             </button>
           </div>
-          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] md:ml-[5vw] mt-10 md:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+          {/* 2-card */}
+          <div className="w-[80vw] md:w-[45vw] lg:w-[27vw] md:ml-[2vw] mt-10 md:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
+            {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
+            <img src={assupol} alt="assupol" className="w-full" />
+            <div className="text-center font-bold text-slate-800 text-xl mt-3">
+              Mining Client MAS
+            </div>
+            <div className="text-center text-slate-900 text-base">
+              Independent client
+            </div>
+            <div className="text-center text-slate-600 text-sm px-5 mt-3">
+              Metal Accounting system's user experience was complex and poor
+              after highly customising their off the shelf program. Informed by
+              UX Research, we designed and
+            </div>
+            <button className="ml-[10vw] md:ml-[4.5vw] mt-8 text-white lg:text-lg font-semibold bg-main font-poppins w-[60vw] md:w-[35vw] lg:w-[18vw] py-1 rounded-[50px] flex items-center justify-center">
+              View Case Studies
+              <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
+            </button>
+          </div>
+          {/* 3-card */}
+          <div className="md:ml-[25vw] lg:ml-[2vw] w-[80vw] md:w-[45vw] lg:w-[27vw] mt-10 md:mt-5 lg:mt-0 h-[530px] overflow-hidden rounded-[28px] shadow-inner bg-white relative">
             {/* <div className="absolute top-[-80px] z-[1] left-3 ux-case-studies bg-blue-200 h-[252px] w-full"></div> */}
             <img src={assupol} alt="assupol" className="w-full" />
             <div className="text-center font-bold text-slate-800 text-xl mt-3">
@@ -545,8 +630,10 @@ export const UxDesign = () => {
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
           >
-            {currentRoute === routes.uxDesign && designServices[0]}
-            <IoIosArrowForward className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
+            <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
+            <div className="mr-auto">
+              {currentRoute === routes.uxDesign && designServices[0]}
+            </div>
             <UxSVG
               classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
             />
@@ -557,7 +644,9 @@ export const UxDesign = () => {
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
-            {currentRoute === routes.uxDesign && designServices[2]}
+            <div className="ml-auto">
+              {currentRoute === routes.uxDesign && designServices[2]}
+            </div>
             <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
             <UiDesignSVG
               classes={"z-[2] absolute bottom-[-20px] left-[-30px] w-[100px]"}
