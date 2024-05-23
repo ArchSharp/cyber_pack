@@ -280,7 +280,7 @@ export const UiDesign = () => {
       </div>
 
       {/*Our UX Strategy services*/}
-      <div className="bg-ux_review_bg flex flex-col overflow-x-hidden border-2 border-red-500">
+      <div className="bg-ux_review_bg flex flex-col overflow-x-hidden">
         <div className="curved-div h-fit lg:h-fit ml-[-80vw] w-[260vw] md:ml-[-50vw] md:w-[200vw] lg:ml-0 lg:w-[100vw]">
           <div className="flex flex-col text-left mt-[650px] w-[100vw] ml-[80vw] md:ml-[50vw] lg:ml-[10vw] pl-5">
             <h1 className="text-2xl lg:text-5xl font-bold font-poppins text-white">
