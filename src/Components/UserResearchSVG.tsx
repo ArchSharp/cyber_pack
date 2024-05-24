@@ -878,7 +878,7 @@ export const UserResearchSVG = ({ classes }: UxSVGProps) => {
           id="e16XPYsai9b17"
           transform="translate(-697.418091 -66.429108)"
           className={`${
-            scrollPosition - svgYindex >= -150 ? "translate-test" : ""
+            scrollPosition - svgYindex >= -300 ? "translate-test" : ""
           }`}
         >
           <path
