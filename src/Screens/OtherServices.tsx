@@ -347,7 +347,7 @@ export const OtherServices = () => {
 
           <UserTestingSVG
             classes={
-              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[35vw] lg:w-[50vw]"
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[55vw] lg:w-[50vw]"
             }
           />
         </div>

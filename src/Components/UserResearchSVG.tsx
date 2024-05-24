@@ -1,10 +1,40 @@
+import { useEffect, useState } from "react";
+
 interface UxSVGProps {
   classes: any;
 }
 
 export const UserResearchSVG = ({ classes }: UxSVGProps) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [svgYindex, setSvgYindex] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Update the scroll position
+      setScrollPosition(window.scrollY);
+    };
+
+    // Add the event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const div = document.getElementById("ux-research-svg"); // Replace 'myDiv' with your div's ID
+
+    if (div) {
+      const rect = div.getBoundingClientRect();
+      const yCoordinateDocument = rect.top + window.scrollY;
+      setSvgYindex(yCoordinateDocument);
+    }
+  }, []);
+
   return (
-    <div className={`${classes}`}>
+    <div className={`${classes}`} id="ux-research-svg">
       <svg
         id="e16XPYsai9b1"
         xmlns="http://www.w3.org/2000/svg"
@@ -844,7 +874,13 @@ export const UserResearchSVG = ({ classes }: UxSVGProps) => {
             fill="#8f8ce4"
           ></path>
         </g>
-        <g id="e16XPYsai9b17" transform="translate(-697.418091 -66.429108)">
+        <g
+          id="e16XPYsai9b17"
+          transform="translate(-697.418091 -66.429108)"
+          className={`${
+            scrollPosition - svgYindex >= -150 ? "translate-test" : ""
+          }`}
+        >
           <path
             d="M893.3,64.9l-56.9-1.4c-1.3,0-2.4,1-2.4,2.3s1.1,2.4,2.4,2.4l56.9,1.3c1.3,0,2.3-1,2.3-2.3.1-1.2-1-2.3-2.3-2.3Z"
             opacity="0.6"
@@ -1009,7 +1045,7 @@ export const UserResearchSVG = ({ classes }: UxSVGProps) => {
               ry="17"
               transform="translate(1101.5 420)"
               fill="#88a9c7"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
             ></ellipse>
             <path
               d="M1100.2,405.4c0,0-12.3,5.6-12.4,6.5-.2.9,7.9-.3,11.2-.2s6-.9,5.7-2.3-1.5-4.9-1.5-4.9l-3,.9Z"
