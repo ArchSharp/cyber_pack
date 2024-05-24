@@ -327,7 +327,7 @@ export const OtherServices = () => {
         {/* User Testing */}
         <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-[7vw] flex flex-col lg:flex-row items-center">
           <div className="mr-auto lg:mr-0 w-fit lg:h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
-            01
+            03
           </div>
 
           <div className="flex w-full mt-10 lg:mt-0 px-5 lg:px-0 lg:w-[40vw] mr-auto lg:mr-0">
@@ -376,7 +376,7 @@ export const OtherServices = () => {
           </div>
 
           <div className="absolute bottom-0 right-0 lg:relative w-fit lg:h-full lg:pt-[320px] px-10 text-6xl font-bold text-main font-poppins text-end">
-            02
+            04
           </div>
         </div>
       </div>
