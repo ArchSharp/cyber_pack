@@ -51,6 +51,8 @@ import { IServiceEnquiry } from "../Features/User/type";
 import { OtherServicesSVG } from "../Components/OtherServicesSVG";
 import { UserResearchSVG } from "../Components/UserResearchSVG";
 import { RapidPrototypeSVG } from "../Components/RapidPrototypeSVG";
+import { UxTrainingSVG } from "../Components/UxTrainingSVG";
+import { UserTestingSVG } from "../Components/UserTestingSVG";
 // import { UxTrainingSVG } from "../Components/UxTrainingSVG";
 // import { UserTestingSVG } from "../Components/UserTestingSVG";
 
@@ -323,12 +325,12 @@ export const OtherServices = () => {
         </div>
 
         {/* User Testing */}
-        {/* <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[7vw] flex flex-col lg:flex-row items-center">
-          <div className="w-fit h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
-            03
+        <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+          <div className="mr-auto lg:mr-0 w-fit lg:h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
+            01
           </div>
 
-          <div className="flex w-[40vw]">
+          <div className="flex w-full mt-10 lg:mt-0 px-5 lg:px-0 lg:w-[40vw] mr-auto lg:mr-0">
             <div className="w-[98vw] lg:w-fit">
               <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
                 User Testing
@@ -345,20 +347,20 @@ export const OtherServices = () => {
 
           <UserTestingSVG
             classes={
-              "z-[2] absolute bottom-[-30px] md:bottom-[-50px] right-[25vw] md:right-[-200px] w-[50vw] md:w-[50vw]"
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[35vw] lg:w-[30vw]"
             }
           />
-        </div> */}
+        </div>
 
         {/* UX Training & Workshops */}
-        {/* <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-auto mr-[7vw] flex flex-col lg:flex-row items-center">
+        <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-auto lg:mr-[7vw] flex flex-col lg:flex-row items-center">
           <UxTrainingSVG
             classes={
-              "z-[2] absolute bottom-[-30px] md:bottom-[-50px] left-[25vw] md:left-[-200px] w-[50vw] md:w-[30vw]"
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] left-[0vw] lg:left-[-200px] w-[35vw] lg:w-[30vw]"
             }
           />
 
-          <div className="flex w-[40vw] ml-auto">
+          <div className="flex w-full mt-24 md:mt-32 lg:mt-0 px-5 lg:px-0 lg:w-[40vw] ml-auto">
             <div className="w-[98vw] lg:w-fit">
               <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
                 UX Training & Workshops
@@ -373,10 +375,10 @@ export const OtherServices = () => {
             </div>
           </div>
 
-          <div className="w-fit h-full pt-[320px] px-10 text-6xl font-bold text-main font-poppins text-end">
-            04
+          <div className="absolute bottom-0 right-0 lg:relative w-fit lg:h-full lg:pt-[320px] px-10 text-6xl font-bold text-main font-poppins text-end">
+            02
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/*Our UX Strategy services*/}
