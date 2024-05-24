@@ -297,7 +297,7 @@ export const OtherServices = () => {
         </div>
 
         {/* Rapid Prototyping */}
-        <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-auto lg:mr-[7vw] flex flex-col lg:flex-row items-center">
+        <div className="relative mt-[20vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-auto lg:mr-[7vw] flex flex-col lg:flex-row items-center">
           <RapidPrototypeSVG
             classes={
               "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] left-[0vw] lg:left-[-200px] w-[35vw] lg:w-[30vw]"
@@ -325,7 +325,7 @@ export const OtherServices = () => {
         </div>
 
         {/* User Testing */}
-        <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+        <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-[7vw] flex flex-col lg:flex-row items-center">
           <div className="mr-auto lg:mr-0 w-fit lg:h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
             03
           </div>
@@ -347,7 +347,7 @@ export const OtherServices = () => {
 
           <UserTestingSVG
             classes={
-              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[35vw] lg:w-[30vw]"
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[35vw] lg:w-[50vw]"
             }
           />
         </div>
