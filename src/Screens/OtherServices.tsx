@@ -51,8 +51,8 @@ import { IServiceEnquiry } from "../Features/User/type";
 import { OtherServicesSVG } from "../Components/OtherServicesSVG";
 import { UserResearchSVG } from "../Components/UserResearchSVG";
 import { RapidPrototypeSVG } from "../Components/RapidPrototypeSVG";
-import { UxTrainingSVG } from "../Components/UxTrainingSVG";
-import { UserTestingSVG } from "../Components/UserTestingSVG";
+// import { UxTrainingSVG } from "../Components/UxTrainingSVG";
+// import { UserTestingSVG } from "../Components/UserTestingSVG";
 
 export const OtherServices = () => {
   const dispatch = useAppDispatch();
