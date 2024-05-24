@@ -11,6 +11,7 @@ import { WebAppServices } from "./Screens/WebAppServices";
 import { UxReviewAnalysis } from "./Screens/UxReviewAnalysis";
 import { UxDesign } from "./Screens/UxDesign";
 import { UiDesign } from "./Screens/UiDesign";
+import { OtherServices } from "./Screens/OtherServices";
 
 function App() {
   return (
@@ -36,6 +37,11 @@ function App() {
         />
         <Route path={routes.uxDesign} index element={<UxDesign />} />
         <Route path={routes.uiDesign} index element={<UiDesign />} />
+        <Route
+          path={routes.uxOtherServices}
+          index
+          element={<OtherServices />}
+        />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

@@ -569,9 +569,13 @@ export const Home = () => {
             "#",
             routes.uxReviewAnalysis
           )}
-          {ServicesComponent("UX DESIGN", "#", routes.custSoftDev)}
+          {ServicesComponent("UX DESIGN", "#", routes.uxDesign)}
           {ServicesComponent("UI DESIGN", "#", routes.uiDesign)}
-          {ServicesComponent("OTHER DESIGN SERVICES", "#", routes.custSoftDev)}
+          {ServicesComponent(
+            "OTHER DESIGN SERVICES",
+            "#",
+            routes.uxOtherServices
+          )}
         </div>
       </div>
 

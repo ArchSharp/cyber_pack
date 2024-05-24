@@ -42,6 +42,7 @@ import { UxDesignSVG } from "../Components/UxDesignSVG";
 import { IoMail } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
 import { IServiceEnquiry } from "../Features/User/type";
+import { OtherServicesSVG } from "../Components/OtherServicesSVG";
 
 export const UxReviewAnalysis = () => {
   const dispatch = useAppDispatch();
@@ -129,13 +130,13 @@ export const UxReviewAnalysis = () => {
     rtl: true,
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     pauseOnFocus: true,
     pauseOnHover: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 8000,
     arrows: false,
   };
 
@@ -465,13 +466,13 @@ export const UxReviewAnalysis = () => {
               if (currentRoute === routes.uxReviewAnalysis)
                 navigate(routes.uxOtherServices);
             }}
-            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-1 rounded-[50px] flex items-center justify-center"
+            className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
             <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
             <div className="mr-auto">
               {currentRoute === routes.uxReviewAnalysis && designServices[3]}
             </div>
-            <UxSVG
+            <OtherServicesSVG
               classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
             />
           </button>
