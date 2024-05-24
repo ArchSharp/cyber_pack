@@ -9,7 +9,7 @@ import { tech_stack_v1 } from "../Data/partners";
 // import { MarqueeHolder } from "../Components/MarqueeHolder";
 // import ux_svg from "../Images/ux-svg.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import devCost from "../Images/development-cost.svg";
+// import devCost from "../Images/development-cost.svg";
 // import microsoft from "../Images/microsoft.png";
 // import cbp01 from "../Images/cbp01.jpg";
 import miningClient from "../Images/mining-client-mas.jpg";
@@ -27,12 +27,12 @@ import { useAppDispatch, useAppSelector } from "../Store/store";
 // import java from "../Images/java.png";
 import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation, useNavigate } from "react-router-dom";
-import { UserFriendlySVG } from "../Components/UserFriendlySVG";
-import intuitive from "../Images/intuitiveexperience.svg";
-import userfriendly from "../Images/userfriendly.svg";
-import quality from "../Images/quality-of-products.svg";
-import human from "../Images/human-centred-approach.svg";
-import seo from "../Images/seo.svg";
+// import { UserFriendlySVG } from "../Components/UserFriendlySVG";
+// import intuitive from "../Images/intuitiveexperience.svg";
+// import userfriendly from "../Images/userfriendly.svg";
+// import quality from "../Images/quality-of-products.svg";
+// import human from "../Images/human-centred-approach.svg";
+// import seo from "../Images/seo.svg";
 // import { Challenges } from "../Components/Challenges";
 // import pixa from "../Images/perkaloo.png";
 // import { ConnectWithUs } from "../Components/ConnectWithUs";
@@ -47,8 +47,12 @@ import { UiDesignSVG } from "../Components/UiDesignSVG";
 import { IoMail } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
 import { IServiceEnquiry } from "../Features/User/type";
-import { QualitySVG } from "../Components/QualitySVG";
+// import { QualitySVG } from "../Components/QualitySVG";
 import { OtherServicesSVG } from "../Components/OtherServicesSVG";
+import { UserResearchSVG } from "../Components/UserResearchSVG";
+import { RapidPrototypeSVG } from "../Components/RapidPrototypeSVG";
+import { UxTrainingSVG } from "../Components/UxTrainingSVG";
+import { UserTestingSVG } from "../Components/UserTestingSVG";
 
 export const OtherServices = () => {
   const dispatch = useAppDispatch();
@@ -117,16 +121,16 @@ export const OtherServices = () => {
     return () => clearTimeout(timer);
   }, [dispatch, header]);
 
-  useEffect(() => {
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Optional: smooth scrolling animation
-      });
-    };
+  // useEffect(() => {
+  //   const handleScrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth", // Optional: smooth scrolling animation
+  //     });
+  //   };
 
-    handleScrollToTop();
-  }, []);
+  //   handleScrollToTop();
+  // }, []);
 
   useEffect(() => {
     dispatch(setLastRoute(currentRoute));
@@ -259,25 +263,21 @@ export const OtherServices = () => {
         </button>
 
         <div className=" text-main text-lg md:text-2xl mt-16 mb-20 font-semibold font-poppins w-[90vw] md:w-[80vw] mx-auto">
-          User-experience (UX) design is the process design teams use to create
-          products that provide meaningful and relevant experiences to users.
+          DVT also offers a dynamic range of Design-Related services, such as
+          Prototyping, User Testing and UX Info Sessions and Workshops.
         </div>
-
-        <div className="text-main font-bold text-lg md:text-3xl lg:text-6xl font-poppins text-left mt-16 z-[3] pl-[7vw]">
-          Importance of UX <br />
-          <div className="mt-3 h-[4px] w-[150px] md:w-[200px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
-        </div>
-
-        <div className="hidden mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx lg:bg-white bg-opacity-[0.1] w-[95vw] lg:w-[55vw] min-h-[300px] ml-[7vw] lg:flex flex-col lg:flex-row items-center">
-          <div className="w-[80vw] lg:w-[10vw] mx-auto lg:mx-0 lg:ml-10">
-            <img src={devCost} alt="devCost" className="w-[6vw]" />
+        {/* user research */}
+        <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-[7vw] flex flex-col lg:flex-row items-center">
+          <div className="mr-auto lg:mr-0 w-fit lg:h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
+            01
           </div>
 
-          <div className="flex w-[40vw]">
+          <div className="flex w-full mt-10 lg:mt-0 px-5 lg:px-0 lg:w-[40vw] mr-auto lg:mr-0">
             <div className="w-[98vw] lg:w-fit">
-              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium">
-                Reduced development cost
+              <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
+                User Research
               </div>
+              <div className="mt-3 h-[4px] w-[150px] md:w-[600px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
 
               <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
                 Save money on development costs, use UX to get your design right
@@ -286,206 +286,97 @@ export const OtherServices = () => {
               </div>
             </div>
           </div>
+
+          <UserResearchSVG
+            classes={
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] right-[0vw] lg:right-[-200px] w-[35vw] lg:w-[30vw]"
+            }
+          />
         </div>
-        {/* First three cards */}
-        <div className="mt-[5vh] lg:mt-[13vh] w-[95vw] lg:w-[90vw] min-h-[400px] ml-[2.5vw] lg:ml-0 lg:mr-auto flex flex-col lg:flex-row">
-          <div className="w-[80vw] lg:w-[30vw]">
-            <UserFriendlySVG classes={""} />
+
+        {/* Rapid Prototyping */}
+        <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[2.5vw] lg:ml-auto lg:mr-[7vw] flex flex-col lg:flex-row items-center">
+          <RapidPrototypeSVG
+            classes={
+              "z-[2] absolute top-[-40px] lg:top-0 lg:bottom-[-50px] left-[0vw] lg:left-[-200px] w-[35vw] lg:w-[30vw]"
+            }
+          />
+
+          <div className="flex w-full mt-24 md:mt-32 lg:mt-0 px-5 lg:px-0 lg:w-[40vw] ml-auto">
+            <div className="w-[98vw] lg:w-fit">
+              <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
+                Rapid Prototyping
+              </div>
+              <div className="mt-3 h-[4px] w-[150px] md:w-[600px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
+
+              <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
+                Save money on development costs, use UX to get your design right
+                up-front, shorten your release cycle and avoid costly
+                refactoring of your product down the line.
+              </div>
+            </div>
           </div>
 
-          <div className="">
-            {/* 1-card */}
-            <div className="lg:hidden mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={intuitive} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={intuitive}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    Reduced development cost
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    Save money on development costs, use UX to get your design
-                    right up-front, shorten your release cycle and avoid costly
-                    refactoring of your product down the line.
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* 2-card */}
-            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[8vw] mx-auto lg:mx-0 lg:ml-10  hidden lg:block">
-                <img src={userfriendly} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={userfriendly}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    Create user-friendly products
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    UX ensures comfortable, enjoyable designs that will
-                    encourage the frequent visiting of satisfied users.
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* 3-card */}
-            <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={intuitive} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={intuitive}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    Intuitive Experience
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-5 lg:mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    UX goes the extra mile to ensure that the design of a
-                    product provides a meaningful, fulfilling and user-focused
-                    experience.
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="absolute bottom-0 right-0 lg:relative w-fit lg:h-full lg:pt-[320px] px-10 text-6xl font-bold text-main font-poppins text-end">
+            02
           </div>
         </div>
 
-        {/* Second three cards */}
-        <div className="mt-[5vh] lg:mt-[13vh] w-[95vw] lg:w-[90vw] min-h-[400px] ml-[2.5vw] lg:ml-auto flex flex-col-reverse lg:flex-row">
-          <div>
-            {/* 1-card */}
-            <div className="shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[250px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={quality} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="flex w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={quality}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    Quality of products
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    Trust UX to ensure professional, consistent and focused
-                    designs that will help your product stand out and leave a
-                    lasting impression on users.
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* 2-card */}
-            <div className="mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={human} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="flex w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={human}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    Human-centred approach
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    Do we understand our user, their needs, and their
-                    challenges? These are the questions we ask each other in a
-                    process that ensures we are building a solution that people
-                    want and need!
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 3-card */}
-            <div className="lg:hidden mt-12 shadow-ux_bx bg-white bg-opacity-[0.6] w-[95vw] lg:w-[60vw] min-h-[280px] h-fit lg:ml-[7vw] flex flex-col lg:flex-row items-center">
-              <div className="w-[80vw] lg:w-[8vw] mx-auto lg:mx-0 lg:ml-10 hidden lg:block">
-                <img src={human} alt="devCost" className="w-[4vw]" />
-              </div>
-
-              <div className="flex w-full lg:w-[40vw]">
-                <div className="w-full lg:w-fit">
-                  <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                    <img
-                      src={seo}
-                      alt="devCost"
-                      className="w-[40px] ml-5 mr-7 lg:hidden"
-                    />
-                    SEO
-                  </div>
-
-                  <div className="text-main text-opacity-[0.8] mt-10 lg:text-xl font-semibold font-poppins leading-8 px-10 lg:px-0">
-                    UX Design directly impacts your SEO rankings through various
-                    metrics that search engines use to track user engagement. It
-                    helps us understand how users engage and interact with a
-                    website and consider page speed, mobile responsiveness,
-                    menu/header layout and URL structure.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-[80vw] lg:w-[30vw]">
-            <QualitySVG classes={""} />
-          </div>
-        </div>
-        {/*  */}
-        <div className="hidden mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx lg:bg-white bg-opacity-[0.1] w-[95vw] lg:w-[55vw] min-h-[300px] ml-auto mr-[12vw] lg:flex flex-col-reverse lg:flex-row items-center">
-          <div className="w-[80vw] lg:w-[10vw] mx-auto lg:mx-0 lg:ml-10">
-            <img src={seo} alt="devCost" className="w-[6vw]" />
+        {/* User Testing */}
+        {/* <div className="relative mt-[15vh] lg:mt-[5vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-[7vw] flex flex-col lg:flex-row items-center">
+          <div className="w-fit h-full pt-4 px-10 text-6xl font-bold text-main font-poppins">
+            03
           </div>
 
           <div className="flex w-[40vw]">
             <div className="w-[98vw] lg:w-fit">
-              <div className="mt-7 text-xl lg:text-5xl text-main text-opacity-[0.85] font-poppins font-medium flex items-center">
-                <img
-                  src={seo}
-                  alt="devCost"
-                  className="w-[100px] ml-5 mr-7 lg:hidden"
-                />
-                SEO
+              <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
+                User Testing
               </div>
+              <div className="mt-3 h-[4px] w-[150px] md:w-[600px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
 
               <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
-                UX Design directly impacts your SEO rankings through various
-                metrics that search engines use to track user engagement. It
-                helps us understand how users engage and interact with a website
-                and consider page speed, mobile responsiveness, menu/header
-                layout and URL structure.
+                Save money on development costs, use UX to get your design right
+                up-front, shorten your release cycle and avoid costly
+                refactoring of your product down the line.
               </div>
             </div>
           </div>
-        </div>
+
+          <UserTestingSVG
+            classes={
+              "z-[2] absolute bottom-[-30px] md:bottom-[-50px] right-[25vw] md:right-[-200px] w-[50vw] md:w-[50vw]"
+            }
+          />
+        </div> */}
+
+        {/* UX Training & Workshops */}
+        {/* <div className="relative mt-[15vh] lg:mt-[20vh] lg:shadow-ux_bx bg-white bg-opacity-[0.5] w-[95vw] lg:w-[70vw] h-[430px] ml-auto mr-[7vw] flex flex-col lg:flex-row items-center">
+          <UxTrainingSVG
+            classes={
+              "z-[2] absolute bottom-[-30px] md:bottom-[-50px] left-[25vw] md:left-[-200px] w-[50vw] md:w-[30vw]"
+            }
+          />
+
+          <div className="flex w-[40vw] ml-auto">
+            <div className="w-[98vw] lg:w-fit">
+              <div className="mt-7 text-xl lg:text-5xl text-main font-poppins font-bold">
+                UX Training & Workshops
+              </div>
+              <div className="mt-3 h-[4px] w-[150px] md:w-[600px] bg-gradient-to-r from-blue-400 via-blue-300 to-transparent" />
+
+              <div className="text-main text-opacity-[0.8] mt-10 text-xl font-semibold font-poppins leading-8">
+                Save money on development costs, use UX to get your design right
+                up-front, shorten your release cycle and avoid costly
+                refactoring of your product down the line.
+              </div>
+            </div>
+          </div>
+
+          <div className="w-fit h-full pt-[320px] px-10 text-6xl font-bold text-main font-poppins text-end">
+            04
+          </div>
+        </div> */}
       </div>
 
       {/*Our UX Strategy services*/}
