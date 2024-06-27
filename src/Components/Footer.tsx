@@ -56,7 +56,7 @@ export const Footer = () => {
               <div>
                 <span className="text-xs text-white">Lagos: </span>
                 <span className="text-orange-500 text-xs">
-                  +234 810 224 2355
+                  +234 904 933 8341
                 </span>
               </div>
             </div>
@@ -65,9 +65,7 @@ export const Footer = () => {
               <h3 className="text-white font-bold text-sm">United Kingdom</h3>
               <div>
                 <span className="text-xs text-white">UK: </span>
-                <span className="text-orange-500 text-xs">
-                  +234 810 224 2355
-                </span>
+                <span className="text-orange-500 text-xs">+447366355226</span>
               </div>
             </div>
 

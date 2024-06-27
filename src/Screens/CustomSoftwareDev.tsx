@@ -3,9 +3,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
 import { partners, tech_stack_v1 } from "../Data/partners";
-import microsoft from "../Images/microsoft.png";
+import Cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
 // import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
+import softwareImg from "../Images/software-engineering.jpg";
+import digitalTransform from "../Images/digital-transformation.jpg";
 // import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
@@ -18,9 +20,9 @@ import html from "../Images/html5.png";
 import java from "../Images/java.png";
 import { setHeader, setLastRoute } from "../Features/User/userSlice";
 import { useLocation } from "react-router-dom";
-import programmer from "../Images/programmer.jpg";
+// import programmer from "../Images/programmer.jpg";
 import { Challenges } from "../Components/Challenges";
-import pixa from "../Images/perkaloo.png";
+import pixa from "../Images/stormx.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
@@ -286,7 +288,11 @@ export const CustomSoftwareDev = () => {
             Microsoft .NET, JAVA and open-source technology development stacks.
           </p>
 
-          <img src={microsoft} alt="microsoft" className="" />
+          <img
+            src={Cyberpack}
+            alt="Cyberpack"
+            className="w-[70%] bg-slate-800 rounded-md p-3 mt-5"
+          />
         </div>
 
         <ServicesAnimation />
@@ -437,7 +443,7 @@ export const CustomSoftwareDev = () => {
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] md:ml-auto md:mr-auto lg:mr-0 lg:ml-0 rounded-xl">
           <img
-            src={programmer}
+            src={softwareImg}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -456,7 +462,7 @@ export const CustomSoftwareDev = () => {
       <div className="mt-0 mb-10 flex flex-col lg:flex-row items-start">
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[76vh] mb-6 mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={digitalTransform}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -554,10 +560,10 @@ export const CustomSoftwareDev = () => {
               Business Challenge
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              Perkaloo provides a rewards system to businesses that keep
-              employees engaged and motivated through rewards and perks.
-              Perkaloo needed a system to manage the provision and
-              administration of their business rewards solution.
+              StormX provides a rewards system to businesses that keep employees
+              engaged and motivated through rewards and perks. StormX needed a
+              system to manage the provision and administration of their
+              business rewards solution.
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
@@ -567,16 +573,18 @@ export const CustomSoftwareDev = () => {
               CyberPack was able to ensure the entire platform runs on Microsoft
               Azure and makes use of various platform as a service (PaaS)
               services, removing the burden of maintaining and securing the
-              underlying infrastructure. The system gives Perkaloo partners
-              access to targeted marketing data from registered users, allowing
-              them to better tailor their rewards based on demand. An employer
-              can log in and register a dozen employees in minutes, giving them
-              instant access to the rewards they're entitled to.
+              underlying infrastructure. The system gives StormX partners access
+              to targeted marketing data from registered users, allowing them to
+              better tailor their rewards based on demand. An employer can log
+              in and register a dozen employees in minutes, giving them instant
+              access to the rewards they're entitled to.
             </div>
 
             <div className=" text-center lg:text-left">
               <button className="rounded-[30px] text-white bg-blue-500 hover:bg-main py-2 px-5 mt-10 lg:mt-7 shadow-2xl shadow-black italic font-semibold text-sm">
-                VIEW CASE STUDY
+                <a href="https://stormx.io/" target="_blank" rel="noreferrer">
+                  VIEW PROJECT
+                </a>
               </button>
             </div>
           </div>
