@@ -463,14 +463,14 @@ export const UxReviewAnalysis = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-[96vw] md:w-[90vw] lg:w-[80vw] mx-auto mb-[10vh]">
           <button
             onClick={() => {
-              if (currentRoute === routes.uxReviewAnalysis)
-                navigate(routes.uxOtherServices);
+              if (currentRoute === routes.uxRevAnaly)
+                navigate(routes.uxOtherServ);
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
             <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
             <div className="mr-auto">
-              {currentRoute === routes.uxReviewAnalysis && designServices[3]}
+              {currentRoute === routes.uxRevAnaly && designServices[3]}
             </div>
             <OtherServicesSVG
               classes={"z-[2] absolute bottom-[-20px] right-[-30px] w-[100px]"}
@@ -478,13 +478,12 @@ export const UxReviewAnalysis = () => {
           </button>
           <button
             onClick={() => {
-              if (currentRoute === routes.uxReviewAnalysis)
-                navigate(routes.uxDesign);
+              if (currentRoute === routes.uxRevAnaly) navigate(routes.uxDesign);
             }}
             className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
           >
             <div className="ml-auto">
-              {currentRoute === routes.uxReviewAnalysis && designServices[1]}
+              {currentRoute === routes.uxRevAnaly && designServices[1]}
             </div>
             <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
             <UxDesignSVG
@@ -628,7 +627,7 @@ export const UxReviewAnalysis = () => {
                   />
                 </label>
                 <div className="text-xs pl-2">
-                  I grant CyberPackHQ permission to process the personal
+                  I grant CyberPack permission to process the personal
                   information provided
                 </div>
               </div>

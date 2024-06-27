@@ -444,7 +444,7 @@ export const OtherServices = () => {
             >
               <IoIosArrowBack className="ml-2 text-xl lg:text-3xl font-bold text-blue-500" />
               <div className="mr-auto">
-                {currentRoute === routes.uxOtherServices && designServices[2]}
+                {currentRoute === routes.uxOtherServ && designServices[2]}
               </div>
               <UiDesignSVG
                 classes={
@@ -454,13 +454,13 @@ export const OtherServices = () => {
             </button>
             <button
               onClick={() => {
-                if (currentRoute === routes.uxOtherServices)
-                  navigate(routes.uxReviewAnalysis);
+                if (currentRoute === routes.uxOtherServ)
+                  navigate(routes.uxRevAnaly);
               }}
               className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
             >
               <div className="ml-auto">
-                {currentRoute === routes.uxOtherServices && designServices[0]}
+                {currentRoute === routes.uxOtherServ && designServices[0]}
               </div>
               <IoIosArrowForward className="ml-2 text-xl lg:text-4xl font-bold text-blue-500" />
               <UxSVG
@@ -605,7 +605,7 @@ export const OtherServices = () => {
                   />
                 </label>
                 <div className="text-xs pl-2">
-                  I grant CyberPackHQ permission to process the personal
+                  I grant CyberPack permission to process the personal
                   information provided
                 </div>
               </div>

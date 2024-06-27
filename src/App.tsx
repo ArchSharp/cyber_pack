@@ -24,24 +24,12 @@ function App() {
           index
           element={<CustomSoftwareDev />}
         />
-        <Route
-          path={routes.webAppServices}
-          index
-          element={<WebAppServices />}
-        />
+        <Route path={routes.webAppServ} index element={<WebAppServices />} />
         <Route path={routes.mobileAppDev} index element={<MobileAppDev />} />
-        <Route
-          path={routes.uxReviewAnalysis}
-          index
-          element={<UxReviewAnalysis />}
-        />
+        <Route path={routes.uxRevAnaly} index element={<UxReviewAnalysis />} />
         <Route path={routes.uxDesign} index element={<UxDesign />} />
         <Route path={routes.uiDesign} index element={<UiDesign />} />
-        <Route
-          path={routes.uxOtherServices}
-          index
-          element={<OtherServices />}
-        />
+        <Route path={routes.uxOtherServ} index element={<OtherServices />} />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

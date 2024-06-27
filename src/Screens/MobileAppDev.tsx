@@ -208,7 +208,7 @@ export const MobileAppDev = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              600+
+              50+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               IT Professionals
@@ -216,16 +216,14 @@ export const MobileAppDev = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              500+
+              100+
             </div>
             <div className="text-xxs md:text-xs text-white w-fit">
               Completed projects
             </div>
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              10+
-            </div>
+            <div className="text-lg md:text-4xl text-white font-medium">6+</div>
             <div className="text-xxs md:text-xs text-white">
               Digital services
             </div>
@@ -272,10 +270,9 @@ export const MobileAppDev = () => {
           </div>
 
           <p className="my-10 text-slate-600">
-            CyberPackHQ’s mobile application development services connect you
-            with your customers and employees in the mobile channel. Enable,
-            enhance and extend your business mobile presence with our mobile
-            services.
+            CyberPack’s mobile application development services connect you with
+            your customers and employees in the mobile channel. Enable, enhance
+            and extend your business mobile presence with our mobile services.
             <br />
             <br /> We deliver specialist consulting and development skills
             across all the major mobile application platforms and technologies,
@@ -285,8 +282,8 @@ export const MobileAppDev = () => {
             Our Mobile App development practice provides our customers with
             access to the full set of capabilities needed to build world class
             mobile solutions. From UI/UX design to App store deployment,
-            CyberPackHQ offers end-to-end service in respect to mobile
-            application development, services and consulting.
+            CyberPack offers end-to-end service in respect to mobile application
+            development, services and consulting.
           </p>
         </div>
 
@@ -346,7 +343,7 @@ export const MobileAppDev = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">600+</div>
+                    <div className=" font-bold text-xl md:text-3xl">50+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       IT Professionals
                     </div>
@@ -366,7 +363,7 @@ export const MobileAppDev = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">500+</div>
+                    <div className=" font-bold text-xl md:text-3xl">100+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       Projects Completed
                     </div>
@@ -503,7 +500,7 @@ export const MobileAppDev = () => {
       {/* solve the business challenges */}
       <div className="mt-20">
         <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
-          CyberPackHQ MOBILE DEVELOPMENT SERVICES
+          CyberPack MOBILE DEVELOPMENT SERVICES
         </div>
         <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
           SOLVE THESE BUSINESS CHALLENGES:
@@ -518,7 +515,7 @@ export const MobileAppDev = () => {
             }
             title={"Sourcing scarce mobile development skills"}
             details={
-              "Globally businesses struggle to find and hire scarce mobile developers to build and maintain mobile applications. The global shortage of iOS and Android skills means delays in development of apps,  new functionality, updates to align with OS releases or correction of non-performing apps. CyberPackHQ's mobile software development services across a range of technologies can help businesses overcome these challenges by providing access to highly skilled IT professionals with a range of expertise and experience in building mobile solutions."
+              "Globally businesses struggle to find and hire scarce mobile developers to build and maintain mobile applications. The global shortage of iOS and Android skills means delays in development of apps,  new functionality, updates to align with OS releases or correction of non-performing apps. CyberPack's mobile software development services across a range of technologies can help businesses overcome these challenges by providing access to highly skilled IT professionals with a range of expertise and experience in building mobile solutions."
             }
           />
           <Challenges
@@ -527,7 +524,7 @@ export const MobileAppDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Faster delivery of your mobile app"}
-            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPackHQ has the depth in mobile development personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your mobile capacity up and down as needed, quickly and cost-effectively."
+            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPack has the depth in mobile development personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your mobile capacity up and down as needed, quickly and cost-effectively."
           />
           <Challenges
             classes={"mt-1"}
@@ -535,7 +532,7 @@ export const MobileAppDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Mobile App technical complexity and poor performance"}
-            details="Modern mobile apps can be complex in both deisgn and deployment. CyberPackHQ's experience in mobile application development will accellerate your builds, improve quality and shorten timelines to deployment of your apps to the mobile stores."
+            details="Modern mobile apps can be complex in both deisgn and deployment. CyberPack's experience in mobile application development will accellerate your builds, improve quality and shorten timelines to deployment of your apps to the mobile stores."
           />
         </div>
 
@@ -574,7 +571,7 @@ export const MobileAppDev = () => {
             }
             title={"Skilled Development Capacity On-Demand"}
             details={
-              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPackHQ are able to assemble and provide you with the development capacity scale you need when you need it."
+              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPack are able to assemble and provide you with the development capacity scale you need when you need it."
             }
           />
           <Challenges
@@ -591,7 +588,7 @@ export const MobileAppDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"No language barrier"}
-            details="All CyberPackHQ team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
+            details="All CyberPack team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
           />
           <Challenges
             classes={"mt-1"}
@@ -599,7 +596,7 @@ export const MobileAppDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Favourable time-zone"}
-            details="All CyberPackHQ team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
+            details="All CyberPack team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
           />
           <Challenges
             classes={"mt-1"}
@@ -644,14 +641,14 @@ export const MobileAppDev = () => {
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
-              CyberPackHQ Solution
+              CyberPack Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              CyberPackHQ assisted our client through a skills augmentation
-              service. CyberPackHQ provided software development professional
+              CyberPack assisted our client through a skills augmentation
+              service. CyberPack provided software development professional
               services that ensured our client had a high performing software
               development team that can deliver business value faster in Scrum
-              Agile Sprints. CyberPackHQ utilised Scrum Masters, Java developer
+              Agile Sprints. CyberPack utilised Scrum Masters, Java developer
               and mobile developer consultants on the assignment.
             </div>
 
@@ -864,7 +861,7 @@ export const MobileAppDev = () => {
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-          CyberPackHQ is your
+          CyberPack is your
         </div>
         <div className="h-[50px] w-[100vw] md:w-[30vw] mt-2 mx-auto">
           <Slider {...settings2}>

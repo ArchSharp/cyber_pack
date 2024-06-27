@@ -42,7 +42,7 @@ export const ConnectWithUs = ({ connect, mt }: ConnectWithUsProps) => {
   return (
     <div className={`connect-with-us ${mt} flex flex-col`} ref={connect}>
       <div className=" font-Cervanttis text-white text-3xl md:text-5xl font-bold mt-10 text-center z-[3]">
-        Connect with CyberPackHQ
+        Connect with CyberPack
       </div>
       <div className="my-24 flex flex-col lg:flex-row items-center">
         <div className="w-[90vw] lg:w-[25vw] ml-[7vw] z-[3]">
@@ -54,13 +54,13 @@ export const ConnectWithUs = ({ connect, mt }: ConnectWithUsProps) => {
             <span className="text-orange-600 text-3xl font-bold">success.</span>
           </div>
           <div className="mt-5 text-white text-left">
-            CyberPackHQ leadership and experts are located in our customer
-            regions including the United Kingdom, Ireland, Netherlands,
-            Switzerland, South Africa, Kenya and the United Arab Emirates. Local
-            capability to partner with you for all your service requirements.
-            Global scalability to ensure fast, efficient and effective
-            fulfilment on your IT service and staffing needs. We are ready to
-            partner with you. Contact your local CyberPackHQ leadership today.
+            CyberPack leadership and experts are located in our customer regions
+            including the United Kingdom, Ireland, Netherlands, Switzerland,
+            South Africa, Kenya and the United Arab Emirates. Local capability
+            to partner with you for all your service requirements. Global
+            scalability to ensure fast, efficient and effective fulfilment on
+            your IT service and staffing needs. We are ready to partner with
+            you. Contact your local CyberPack leadership today.
           </div>
         </div>
         <div className="bg-white z-[3] rounded-lg w-[90vw] md:w-[75vw] lg:w-[34vw] h-[515px] mx-[5vw] lg:mx-16 mt-10 lg:mt-0 overflow-y-auto">
@@ -174,7 +174,7 @@ export const ConnectWithUs = ({ connect, mt }: ConnectWithUsProps) => {
                   />
                 </label>
                 <div className="text-xs pl-2">
-                  I grant CyberPackHQ permission to process the personal
+                  I grant CyberPack permission to process the personal
                   information provided
                 </div>
               </div>

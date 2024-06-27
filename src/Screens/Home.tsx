@@ -2,7 +2,6 @@ import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
-import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
@@ -18,6 +17,7 @@ import * as routes from "../Data/Routes";
 import { setHeader } from "../Features/User/userSlice";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
+import { MarqueeComponent } from "../Components/MarqueeComponent";
 
 export const Home = () => {
   const dispatch = useAppDispatch();
@@ -172,7 +172,7 @@ export const Home = () => {
         <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              24+
+              10+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               Years of service
@@ -180,7 +180,7 @@ export const Home = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              600+
+              50+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               IT Professionals
@@ -188,16 +188,14 @@ export const Home = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              500+
+              100+
             </div>
             <div className="text-xxs md:text-xs text-white w-fit">
               Completed projects
             </div>
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              10+
-            </div>
+            <div className="text-lg md:text-4xl text-white font-medium">6+</div>
             <div className="text-xxs md:text-xs text-white">
               Digital services
             </div>
@@ -211,27 +209,7 @@ export const Home = () => {
             CONNECT WITH US
           </button>
         </div>
-        <MarqueeHolder
-          mSpeed={70}
-          mDelay={5}
-          mGradient={false}
-          mgradientColor={"rgb(126, 200, 227)"}
-        >
-          <div className="flex items-center py-2">
-            {partners.map((eachImage, index) => (
-              <div
-                key={index}
-                className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-main"
-              >
-                <img
-                  src={eachImage.src}
-                  alt={eachImage.alt}
-                  className="w-[70px]"
-                />
-              </div>
-            ))}
-          </div>
-        </MarqueeHolder>
+        <MarqueeComponent />
       </div>
 
       <div className="flex flex-col lg:flex-row items-center py-[8vh]">
@@ -246,9 +224,8 @@ export const Home = () => {
           <p className="my-10 text-slate-600">
             Need to build a new web or mobile application, enhance an existing
             application or require support to maintain your current application?
-            CyberPackHQ have the custom software development services you need
-            in Microsoft .NET, JAVA and open-source technology development
-            stacks.
+            CyberPack have the custom software development services you need in
+            Microsoft .NET, JAVA and open-source technology development stacks.
           </p>
 
           <img src={microsoft} alt="microsoft" className="" />
@@ -310,7 +287,7 @@ export const Home = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">600+</div>
+                    <div className=" font-bold text-xl md:text-3xl">50+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       IT Professionals
                     </div>
@@ -330,7 +307,7 @@ export const Home = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">500+</div>
+                    <div className=" font-bold text-xl md:text-3xl">100+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       Projects Completed
                     </div>
@@ -354,6 +331,7 @@ export const Home = () => {
         <hr className="w-[30px] border-orange-400 border-2 ml-[25%] mt-2" />
       </div>
 
+      {/* Software engineering */}
       <div className="mt-10 md:mt-20 flex flex-col lg:flex-row items-center">
         <div className="w-[100vw] lg:w-[55vw] pl-[5vw] lg:pl-0 lg:ml-[5vw]">
           <div className="text-2xl md:text-4xl text-blue-600 flex items-center italic">
@@ -362,7 +340,7 @@ export const Home = () => {
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
             With more than 24 years of success in custom (bespoke) software
-            development, CyberPackHQ has the expertise, experience and scale to
+            development, CyberPack has the expertise, experience and scale to
             service enterprise requirements in web and mobile applications.
             Whether your requirement is to build a new application, enhance an
             existing application or require support to maintain your current
@@ -379,11 +357,11 @@ export const Home = () => {
             "#",
             routes.mobileAppDev
           )}
-          {ServicesComponent("MICROSOFT SERVICES", "#", routes.custSoftDev)}
+          {/* {ServicesComponent("MICROSOFT SERVICES", "#", routes.custSoftDev)} */}
           {ServicesComponent(
             "WEB APPLICATION SERVICES",
             "#",
-            routes.webAppServices
+            routes.webAppServ
           )}
         </div>
 
@@ -413,11 +391,11 @@ export const Home = () => {
             <span className="ml-1 font-bold"> Augmentation</span>
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
-            CyberPackHQ solves your challenge to find scarce, high-performing IT
+            CyberPack solves your challenge to find scarce, high-performing IT
             staff for your IT projects and capacity needs. We provide remote,
             hybrid and on-site IT professionals to augment your team. Our
             capability to rapidly fulfil your staff requirements based on our
-            600+ employees and global presence means a solution to your on-hold
+            50+ employees and global presence means a solution to your on-hold
             projects, late or delayed delivery and backlog of business requests.
           </div>
           {ServicesComponent("AGILE TECHNOLOGY TEAMS", "#", routes.custSoftDev)}
@@ -440,7 +418,7 @@ export const Home = () => {
             retention and service leveraging our expertise in data, analytics
             and automation. Data, business intelligence, analytics and
             automation are critical capabilities in the modern, digital
-            business. CyberPackHQ enables your business to become data-driven,
+            business. CyberPack enables your business to become data-driven,
             gain key insights from analytics and benefit from efficiencies
             through automation. Our comprehensive services in data, business
             intelligence, analytics and automation are ready to service your
@@ -488,7 +466,7 @@ export const Home = () => {
             your digital business aspirations with CyberPackHQ’s services
             focused on enterprise Agile transformation, business analysis,
             change management and technology project delivery management.
-            CyberPackHQ partners with our customers on their Agile journey to
+            CyberPack partners with our customers on their Agile journey to
             achieve greater success in IT projects, faster delivery, improved
             quality and real ROI.
           </div>
@@ -509,7 +487,7 @@ export const Home = () => {
           </div>
           <div className="pl-7 mt-5 text-slate-600 text-left">
             Cloud adoption is a key enabler and critical success factor for
-            modern digital business. CyberPackHQ provides expertise in Microsoft
+            modern digital business. CyberPack provides expertise in Microsoft
             Azure, AWS and Google Cloud to ensure your successful migration,
             adoption and PAAS management on the world’s best cloud platforms.
             Realise the real benefits of cloud adoption through our application
@@ -564,18 +542,10 @@ export const Home = () => {
             channels have the functional capability. We make it an incredible
             experience.
           </div>
-          {ServicesComponent(
-            "UX REVIEW & ANALYSIS",
-            "#",
-            routes.uxReviewAnalysis
-          )}
+          {ServicesComponent("UX REVIEW & ANALYSIS", "#", routes.uxRevAnaly)}
           {ServicesComponent("UX DESIGN", "#", routes.uxDesign)}
           {ServicesComponent("UI DESIGN", "#", routes.uiDesign)}
-          {ServicesComponent(
-            "OTHER DESIGN SERVICES",
-            "#",
-            routes.uxOtherServices
-          )}
+          {ServicesComponent("OTHER DESIGN SERVICES", "#", routes.uxOtherServ)}
         </div>
       </div>
 
@@ -597,7 +567,7 @@ export const Home = () => {
           <div className=" text-slate-600 w-[100vw] md:w-[50vw] my-7 text-center md:text-left">
             I have been passionate about software solutions since I wrote my
             first software program on a ZX Spectrum in primary school! Leading a
-            team of IT professionals at CyberPackHQ who share this passion, is
+            team of IT professionals at CyberPack who share this passion, is
             immensely rewarding and a great privilege.
           </div>
           <div className=" text-blue-700 font-bold text-center md:text-left">
@@ -615,7 +585,7 @@ export const Home = () => {
             <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
           </div>
           <div className=" text-slate-600 w-[100vw] md:w-[400px] px-5 md:px-2 my-7 text-center md:text-left">
-            At CyberPackHQ, we are privileged to provide quality software
+            At CyberPack, we are privileged to provide quality software
             development services and solutions to our clients in Southern
             Africa, while also contributing meaningfully to addressing the
             technology skills gap in the region.
@@ -679,7 +649,7 @@ export const Home = () => {
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-          CyberPackHQ is your
+          CyberPack is your
         </div>
         <div className="h-[50px] w-[100vw] md:w-[30vw] mt-2 mx-auto">
           <Slider {...settings2}>

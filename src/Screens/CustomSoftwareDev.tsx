@@ -2,7 +2,6 @@ import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
-import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners, tech_stack_v1 } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import cbp01 from "../Images/cbp01.jpg";
@@ -26,6 +25,7 @@ import pixa from "../Images/perkaloo.png";
 import { ConnectWithUs } from "../Components/ConnectWithUs";
 import { ClientsReview } from "../Components/ClientsReview";
 import macbook from "../Images/macbook.png";
+import { MarqueeComponent } from "../Components/MarqueeComponent";
 
 export const CustomSoftwareDev = () => {
   const dispatch = useAppDispatch();
@@ -254,7 +254,7 @@ export const CustomSoftwareDev = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              600+
+              50+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               IT Professionals
@@ -262,16 +262,14 @@ export const CustomSoftwareDev = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              500+
+              100+
             </div>
             <div className="text-xxs md:text-xs text-white w-fit">
               Completed projects
             </div>
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              10+
-            </div>
+            <div className="text-lg md:text-4xl text-white font-medium">6+</div>
             <div className="text-xxs md:text-xs text-white">
               Digital services
             </div>
@@ -285,27 +283,7 @@ export const CustomSoftwareDev = () => {
             CONNECT WITH US
           </button>
         </div>
-        <MarqueeHolder
-          mSpeed={70}
-          mDelay={5}
-          mGradient={false}
-          mgradientColor={"rgb(126, 200, 227)"}
-        >
-          <div className="flex items-center py-2">
-            {partners.map((eachImage, index) => (
-              <div
-                key={index}
-                className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-main"
-              >
-                <img
-                  src={eachImage.src}
-                  alt={eachImage.alt}
-                  className="w-[70px]"
-                />
-              </div>
-            ))}
-          </div>
-        </MarqueeHolder>
+        <MarqueeComponent />
       </div>
 
       <div className="flex flex-col lg:flex-row items-center py-[8vh]">
@@ -320,9 +298,8 @@ export const CustomSoftwareDev = () => {
           <p className="my-10 text-slate-600">
             Need to build a new web or mobile application, enhance an existing
             application or require support to maintain your current application?
-            CyberPackHQ have the custom software development services you need
-            in Microsoft .NET, JAVA and open-source technology development
-            stacks.
+            CyberPack have the custom software development services you need in
+            Microsoft .NET, JAVA and open-source technology development stacks.
           </p>
 
           <img src={microsoft} alt="microsoft" className="" />
@@ -384,7 +361,7 @@ export const CustomSoftwareDev = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">600+</div>
+                    <div className=" font-bold text-xl md:text-3xl">50+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       IT Professionals
                     </div>
@@ -404,7 +381,7 @@ export const CustomSoftwareDev = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">500+</div>
+                    <div className=" font-bold text-xl md:text-3xl">100+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       Projects Completed
                     </div>
@@ -515,7 +492,7 @@ export const CustomSoftwareDev = () => {
       {/* solve the business challenges */}
       <div className="mt-20">
         <div className="text-lg md:text-xl pl-[5vw] italic font-bold text-customsoftware">
-          CyberPackHQ CUSTOM SOFTWARE DEVELOPMENT SERVICES
+          CyberPack CUSTOM SOFTWARE DEVELOPMENT SERVICES
         </div>
         <div className="text-2xl md:text-3xl pl-[5vw] italic font-bold text-blue-600">
           SOLVE THESE BUSINESS CHALLENGES:
@@ -530,7 +507,7 @@ export const CustomSoftwareDev = () => {
             }
             title={"Sourcing scarce IT-skills:"}
             details={
-              "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. CyberPackHQ's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
+              "Globally businesses struggle to find and hire scarce IT-skills to build and maintain custom software solutions. The global shortage of IT skills means delays in development of new functionality or correction of non-performing systems. CyberPack's custom software development services across a range of technologies can help businesses overcome this challenge by providing access to highly skilled IT professionals with a range of expertise and experience in building customized software solutions."
             }
           />
           <Challenges
@@ -539,7 +516,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Faster delivery on business needs:"}
-            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPackHQ has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
+            details="To deliver at the pace required by business, IT functions in organisations need burst capacity in respect to their development teams. CyberPack has the depth in personnel to provide IT professionals in all project roles on short notice and for the duration that is needed to address backlogs and meet demand. Scale your capacity up and down as needed, quickly and cost-effectively."
           />
           <Challenges
             classes={"mt-1"}
@@ -547,7 +524,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Reduce complexity and improve performance"}
-            details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. CyberPackHQ's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
+            details="Modern businesses have complex processes, workflows, and data structures that need to be streamlined and simplified to improve efficiency and reduce costs. Custom software solutions can help businesses achieve this, but the process of designing, building, and implementing these solutions can be complicated. CyberPack's custom software services solve these challenges and simplify the process by providing expert guidance and support to businesses throughout the entire software development lifecycle."
           />
           <Challenges
             classes={"mt-1"}
@@ -555,7 +532,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Enable unique IP"}
-            details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. CyberPackHQ's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
+            details="Sometimes, off-the-shelf software solutions may not fully meet the specific needs and requirements of a business. This can lead to inefficiencies, data silos, and missed opportunities. CyberPack's custom software services can help businesses overcome this challenge by building bespoke software solutions tailored to their specific needs and requirements. This ensures that the software solution is built to address the unique challenges and goals of the business, leading to improved efficiency, productivity, and competitiveness. Custom software development captures unique IP (Intellectual Property) and allows for distinction of your business from competitors."
           />
         </div>
 
@@ -594,7 +571,7 @@ export const CustomSoftwareDev = () => {
             }
             title={"Skilled Development Capacity On-Demand"}
             details={
-              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPackHQ are able to assemble and provide you with the development capacity scale you need when you need it."
+              "Engage and scale to meet your high-performing software development team requirements rapidly. With deep skills capacity, CyberPack are able to assemble and provide you with the development capacity scale you need when you need it."
             }
           />
           <Challenges
@@ -611,7 +588,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"No language barrier"}
-            details="All CyberPackHQ team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
+            details="All CyberPack team members have English as either their first language or as a second, high proficiency (business-level) language ensuring communication is as easy and effective as you need it to be."
           />
           <Challenges
             classes={"mt-1"}
@@ -619,7 +596,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Favourable time-zone"}
-            details="All CyberPackHQ team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
+            details="All CyberPack team members are within 2 hours of our client zone. This ensures our team members are able to work and overlap your business day."
           />
           <Challenges
             classes={"mt-1"}
@@ -635,7 +612,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Experts in using Agile"}
-            details="CyberPackHQ is an expert in using Agile methodologies for software development. Agile is a collaborative and iterative approach to software development that emphasizes flexibility, customer satisfaction, and continuous improvement. Working with CyberPackHQ means that your business will benefit from their expertise in Agile development, ensuring that your software solution is built quickly and efficiently while meeting your specific needs and requirements."
+            details="CyberPack is an expert in using Agile methodologies for software development. Agile is a collaborative and iterative approach to software development that emphasizes flexibility, customer satisfaction, and continuous improvement. Working with CyberPack means that your business will benefit from their expertise in Agile development, ensuring that your software solution is built quickly and efficiently while meeting your specific needs and requirements."
           />
           <Challenges
             classes={"mt-1"}
@@ -643,7 +620,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Efficient support and resources"}
-            details="CyberPackHQ's custom software services provide businesses with efficient support and resources throughout the software development process. This includes project management, quality assurance, testing, and maintenance. CyberPackHQ's team of experts can help businesses navigate the complexities of software development, ensuring that the project is delivered on time, within budget, and to the highest standards of quality."
+            details="CyberPack's custom software services provide businesses with efficient support and resources throughout the software development process. This includes project management, quality assurance, testing, and maintenance. CyberPack's team of experts can help businesses navigate the complexities of software development, ensuring that the project is delivered on time, within budget, and to the highest standards of quality."
           />
           <Challenges
             classes={"mt-1"}
@@ -651,7 +628,7 @@ export const CustomSoftwareDev = () => {
               "text-blue-600 text-xl md:text-2xl font-medium italic font-poppins"
             }
             title={"Certified Partners"}
-            details="CyberPackHQ is a certified partner of leading technology providers, including Microsoft, AWS, and Oracle. This means that CyberPackHQ has access to the latest tools, technologies, and resources required to deliver high-quality software solutions. Working with CyberPackHQ as a certified partner ensures that your business will benefit from the latest innovations in software development, enabling you to stay competitive and meet the changing needs of your customers."
+            details="CyberPack is a certified partner of leading technology providers, including Microsoft, AWS, and Oracle. This means that CyberPack has access to the latest tools, technologies, and resources required to deliver high-quality software solutions. Working with CyberPack as a certified partner ensures that your business will benefit from the latest innovations in software development, enabling you to stay competitive and meet the changing needs of your customers."
           />
         </div>
       </div>
@@ -685,13 +662,13 @@ export const CustomSoftwareDev = () => {
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
-              CyberPackHQ Solution
+              CyberPack Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              CyberPackHQ was able to ensure the entire platform runs on
-              Microsoft Azure and makes use of various platform as a service
-              (PaaS) services, removing the burden of maintaining and securing
-              the underlying infrastructure. The system gives Perkaloo partners
+              CyberPack was able to ensure the entire platform runs on Microsoft
+              Azure and makes use of various platform as a service (PaaS)
+              services, removing the burden of maintaining and securing the
+              underlying infrastructure. The system gives Perkaloo partners
               access to targeted marketing data from registered users, allowing
               them to better tailor their rewards based on demand. An employer
               can log in and register a dozen employees in minutes, giving them
@@ -872,7 +849,7 @@ export const CustomSoftwareDev = () => {
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-          CyberPackHQ is your
+          CyberPack is your
         </div>
         <div className="h-[50px] w-[100vw] md:w-[30vw] mt-2 mx-auto">
           <Slider {...settings2}>

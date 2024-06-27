@@ -202,11 +202,11 @@ export const WebAppServices = () => {
           Global Scale. Local Engagement.
         </div> */}
         <div className="w-[100vw] lg:w-[50vw] font-medium text-lg text-white px-[5vw] lg:px-0 lg:mx-[5vw] mt-5">
-          CyberPackHQ offers software development consultants to complement
-          client development capabilities, both internationally and locally,
-          alongside collaborative teams. Additionally, we provide services in
-          software development outsourcing, application re-platforming, and
-          enterprise application integration.
+          CyberPack offers software development consultants to complement client
+          development capabilities, both internationally and locally, alongside
+          collaborative teams. Additionally, we provide services in software
+          development outsourcing, application re-platforming, and enterprise
+          application integration.
         </div>
         <div className="flex w-fit ml-[2vw] md:ml-[5vw] my-8">
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
@@ -219,7 +219,7 @@ export const WebAppServices = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              600+
+              50+
             </div>
             <div className="text-xxs md:text-xs w-fit text-white">
               IT Professionals
@@ -227,16 +227,14 @@ export const WebAppServices = () => {
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] mr-2 border-2 flex items-center justify-center flex-col">
             <div className="text-lg md:text-4xl text-white font-medium">
-              500+
+              100+
             </div>
             <div className="text-xxs md:text-xs text-white w-fit">
               Completed projects
             </div>
           </div>
           <div className="size-[80px] md:size-[150px] rounded-[50%] border-2 flex items-center justify-center flex-col">
-            <div className="text-lg md:text-4xl text-white font-medium">
-              10+
-            </div>
+            <div className="text-lg md:text-4xl text-white font-medium">6+</div>
             <div className="text-xxs md:text-xs text-white">
               Digital services
             </div>
@@ -353,7 +351,7 @@ export const WebAppServices = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">600+</div>
+                    <div className=" font-bold text-xl md:text-3xl">50+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       IT Professionals
                     </div>
@@ -373,7 +371,7 @@ export const WebAppServices = () => {
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
                   <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">500+</div>
+                    <div className=" font-bold text-xl md:text-3xl">100+</div>
                     <div className=" font-medium text-xs md:text-sm">
                       Projects Completed
                     </div>
@@ -477,7 +475,7 @@ export const WebAppServices = () => {
         </div>
 
         <div className="text-center mt-16 mb-5 text-white text-4xl font-bold flex flex-col">
-          <div>Why work with CyberPackHQ?</div>
+          <div>Why work with CyberPack?</div>
           <hr className="w-[100px] border-2 border-yellow-500 mx-auto mt-5" />
         </div>
 
@@ -576,10 +574,10 @@ export const WebAppServices = () => {
             </div>
 
             <div className=" text-orange-400 font-bold mt-10 text-lg italic font-poppins text-center lg:text-left">
-              CyberPackHQ Solution
+              CyberPack Solution
             </div>
             <div className="mt-3 text-white lg:pr-20 text-center lg:text-left">
-              Leveraging CyberPackHQ’s outsourced software development expertise
+              Leveraging CyberPack’s outsourced software development expertise
               and cutting-edge UX/UI design, Multichoice/Supersport embarked on
               a comprehensive website redevelopment project to meet their
               objectives.​
@@ -721,7 +719,7 @@ export const WebAppServices = () => {
       <div className="h-[25vh] flex flex-col items-center justify-center">
         <div className="text-2xl w-fit mx-auto text-blue-600 flex items-center italic">
           <div className="mr-3 size-4 bg-yellow-600 -skew-x-12"></div>
-          CyberPackHQ is your
+          CyberPack is your
         </div>
         <div className="h-[50px] w-[100vw] md:w-[30vw] mt-2 mx-auto">
           <Slider {...settings2}>

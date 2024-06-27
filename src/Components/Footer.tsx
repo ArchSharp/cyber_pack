@@ -61,6 +61,16 @@ export const Footer = () => {
               </div>
             </div>
 
+            <div className="mt-10">
+              <h3 className="text-white font-bold text-sm">United Kingdom</h3>
+              <div>
+                <span className="text-xs text-white">UK: </span>
+                <span className="text-orange-500 text-xs">
+                  +234 810 224 2355
+                </span>
+              </div>
+            </div>
+
             <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
               <a href="mailto:info@cyberpack.com">info@cyberpack.com</a>
             </button>
@@ -73,11 +83,10 @@ export const Footer = () => {
             </div>
 
             <div className="mt-10 text-sm text-white">
-              CyberPack was founded in 1999 and has grown to over 600 staff with
-              offices in South Africa, Kenya and Europe (UK, Ireland, the
-              Netherlands and Switzerland). We service more than 100 medium and
-              large organisations and build long term partnerships with our
-              clients.
+              CyberPack was founded in 2014 and has grown to over 50 staff with
+              offices in United Kingdom UK and Nigeria. We service more than 50
+              medium and large organisations and build long term partnerships
+              with our clients.
             </div>
             <button className="mt-10 px-3 py-1 font-semibold text-sm text-white rounded-2xl bg-blue-400 hover:bg-orange-500">
               LEARN MORE

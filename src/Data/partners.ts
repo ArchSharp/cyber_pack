@@ -6,8 +6,8 @@ import five from "../Images/Companies/five.png";
 import six from "../Images/Companies/six.png";
 import seven from "../Images/Companies/seven.png";
 import eight from "../Images/Companies/eight.png";
-import nine from "../Images/Companies/nine.png";
-import ten from "../Images/Companies/ten.png";
+// import nine from "../Images/Companies/nine.png";
+// import ten from "../Images/Companies/ten.png";
 
 import objC from "../Images/TechStacks/objective-c.svg";
 import msql from "../Images/TechStacks/ms-sql.svg";
@@ -38,8 +38,8 @@ export const partners = [
   { src: six, alt: "six" },
   { src: seven, alt: "seven" },
   { src: eight, alt: "eight" },
-  { src: nine, alt: "nine" },
-  { src: ten, alt: "ten" },
+  // { src: nine, alt: "nine" },
+  // { src: ten, alt: "ten" },
 ];
 
 export const tech_stack_v1 = [

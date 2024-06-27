@@ -594,7 +594,7 @@ export const UiDesign = () => {
             <button
               onClick={() => {
                 if (currentRoute === routes.uiDesign)
-                  navigate(routes.uxOtherServices);
+                  navigate(routes.uxOtherServ);
               }}
               className="relative mt-10 text-main lg:text-lg font-bold bg-orange-400 font-poppins w-[280px] lg:w-[320px] px-3 lg:px-5 py-2 rounded-[50px] flex items-center justify-center"
             >
@@ -744,7 +744,7 @@ export const UiDesign = () => {
                   />
                 </label>
                 <div className="text-xs pl-2">
-                  I grant CyberPackHQ permission to process the personal
+                  I grant CyberPack permission to process the personal
                   information provided
                 </div>
               </div>
