@@ -24,7 +24,7 @@ export const ServicesAnimation = () => {
   }, []);
 
   return (
-    <div className="w-[100vw] lg:w-fit mt-16 lg:mt-0 relative">
+    <div className="w-fit mt-16 lg:mt-0 relative">
       <div className="absolute top-10 right-10 z-[3]">
         <div className="loader w-[10px] md:w-[13px] lg:w-[20px]"></div>
       </div>

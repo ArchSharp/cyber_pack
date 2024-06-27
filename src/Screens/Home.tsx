@@ -195,8 +195,8 @@ export const Home = () => {
         <MarqueeComponent />
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center py-[8vh]">
-        <div className="w-[90vw] lg:w-[25vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
+      <div className="flex flex-col lg:flex-row justify-center items-center py-[8vh]">
+        <div className="w-[90vw] lg:w-[30vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
           <div className="text-main text-lg lg:text-xl font-bold italic w-fit">
             CUSTOM SOFTWARE DEVELOPMENT
           </div>
