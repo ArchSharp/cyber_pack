@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
-import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 import softwareImg from "../Images/software-engineering.jpg";
 import dataAutomation from "../Images/data-driven-automation.jpg";
 import staffAug from "../Images/staff-aug.jpg";
 import digitalTransform from "../Images/digital-transformation.jpg";
 import cloudSolution from "../Images/cloud-solutions.jpg";
+import designServices from "../Images/design-services.png.jpg";
 import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
@@ -425,7 +425,7 @@ export const Home = () => {
       <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={designServices}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import nasa from "../Images/Companies/seven.png";
-import cisco from "../Images/Companies/eight.png";
+import { partners } from "../Data/partners";
 
 interface ClientsReviewProps {
   clients: any;
@@ -9,9 +8,11 @@ interface ClientsReviewProps {
 export const ClientsReview = ({ clients }: ClientsReviewProps) => {
   const [isSlideUp, setIsSlideUp] = useState(false);
   const [isSlideDown, setIsSlideDown] = useState(false);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const LSlide = setInterval(() => {
+      setIndex((prev) => (prev < 6 ? prev + 1 : 0));
       setIsSlideUp((prev) => (prev === true ? false : true));
       setIsSlideDown((prev) => (prev === true ? false : true));
     }, 5000);
@@ -40,7 +41,11 @@ export const ClientsReview = ({ clients }: ClientsReviewProps) => {
               isSlideUp ? "slide-up" : "slide-up-off"
             } size-[20vw] md:size-40 bg-white rounded-[50%] absolute right-[0%] flex items-center justify-center`}
           >
-            <img src={nasa} alt="nasa" className="w-[50px] md:w-[100px]" />
+            <img
+              src={partners[index].src}
+              alt="nasa"
+              className="w-[50px] md:w-[85%]"
+            />
           </div>
         </div>
         <div className="w-[50vw] h-full flex relative">
@@ -57,7 +62,11 @@ export const ClientsReview = ({ clients }: ClientsReviewProps) => {
               isSlideDown ? "slide-down" : "slide-down-off"
             } size-[20vw] md:size-40 bg-white rounded-[50%] absolute md:top-[37%] left-[-8%] md:left-[-3%] flex items-center justify-center`}
           >
-            <img src={cisco} alt="cisco" className="w-[50px] md:w-[100px]" />
+            <img
+              src={partners[index + 1].src}
+              alt="cisco"
+              className="w-[50px] md:w-[85%]"
+            />
           </div>
         </div>
       </div>
