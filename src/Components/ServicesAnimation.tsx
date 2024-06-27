@@ -40,7 +40,7 @@ export const ServicesAnimation = () => {
           >
             <div className="ml-5 md:ml-10">
               <div className="text-xs md:text-sm font-semibold text-white">
-                CYBERPACKHQ'S DEVELOPMENT
+                CYBERPACK'S DEVELOPMENT
               </div>
               <div className="text-lg w-fit md:text-2xl lg:text-4xl font-bold text-white">
                 CAPABILITIES

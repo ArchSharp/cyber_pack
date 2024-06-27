@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
 import { partners } from "../Data/partners";
-import microsoft from "../Images/microsoft.png";
+import Cyberpack from "../Images/CyberPack/Jpgs/Cyberpack.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 import softwareImg from "../Images/software-engineering.jpg";
 import dataAutomation from "../Images/data-driven-automation.jpg";
@@ -216,7 +216,11 @@ export const Home = () => {
             Microsoft .NET, JAVA and open-source technology development stacks.
           </p>
 
-          <img src={microsoft} alt="microsoft" className="" />
+          <img
+            src={Cyberpack}
+            alt="Cyberpack"
+            className="w-[70%] bg-slate-800 rounded-md p-3 mt-5"
+          />
         </div>
 
         <ServicesAnimation />

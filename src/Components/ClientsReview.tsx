@@ -12,10 +12,18 @@ export const ClientsReview = ({ clients }: ClientsReviewProps) => {
 
   useEffect(() => {
     const LSlide = setInterval(() => {
-      setIndex((prev) => (prev < 6 ? prev + 1 : 0));
       setIsSlideUp((prev) => (prev === true ? false : true));
       setIsSlideDown((prev) => (prev === true ? false : true));
     }, 5000);
+    return () => {
+      clearInterval(LSlide);
+    };
+  }, []);
+
+  useEffect(() => {
+    const LSlide = setInterval(() => {
+      setIndex((prev) => (prev < 6 ? prev + 1 : 0));
+    }, 10000);
     return () => {
       clearInterval(LSlide);
     };
