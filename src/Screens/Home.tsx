@@ -196,7 +196,7 @@ export const Home = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-center items-center py-[8vh]">
-        <div className="w-[90vw] lg:w-[30vw] mx-[1vw] md:mx-[2vw] lg:mx-[5vw]">
+        <div className="w-[90vw] lg:w-[30vw] mr-[1vw] md:mr-[2vw] lg:mr-[5vw]">
           <div className="text-main text-lg lg:text-xl font-bold italic w-fit">
             CUSTOM SOFTWARE DEVELOPMENT
           </div>
