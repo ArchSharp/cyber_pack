@@ -4,7 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
-import cbp01 from "../Images/cbp01.jpg";
+import cbp01 from "../Images/development-frameworks.svg";
+import cbp02 from "../Images/it-professionals.svg";
+import cbp03 from "../Images/projects-completed.svg";
 import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 import ceo from "../Images/ceo.png";
@@ -231,17 +233,19 @@ export const Home = () => {
           <img src={microsoft} alt="microsoft" className="" />
         </div>
 
-        <div className="w-[100vw] lg:w-[70vw] mt-16 lg:mt-0">
-          <div className="w-[90vw] lg:w-[56vw] h-[60vh] md:h-[70vh] ml-[5vw] lg:ml-20 flex flex-col top-display">
-            <div className="loader w-[10px] md:w-[13px] lg:w-[20px] ml-auto mr-2 mt-2"></div>
-            <div className="flex">
+        <div className="w-[100vw] lg:w-fit mt-16 lg:mt-0 relative">
+          <div className="absolute top-10 right-10 z-[3]">
+            <div className="loader w-[10px] md:w-[13px] lg:w-[20px]"></div>
+          </div>
+          <div className="relative w-[90vw] lg:w-[56vw] h-[60vh] md:h-[70vh] flex flex-col justify-center top-display">
+            <div className="flex justify-center items-center">
               <div
                 style={
                   {
                     "--cbpo1-width": `${isTablet ? "150px" : "300px"}`,
                   } as any
                 }
-                className={`${lslide} mt-[17vh] bg-cbp01_blue h-[30vh] italic flex items-center`}
+                className={`${lslide} bg-cbp01_blue h-[30vh] italic flex items-center`}
               >
                 <div className="ml-5 md:ml-10">
                   <div className="text-xs md:text-sm font-semibold text-white">
@@ -282,7 +286,7 @@ export const Home = () => {
                   className={`${lslide3} flex w-[90%] md:w-[80%] items-center mr-auto my-12`}
                 >
                   <img
-                    src={cbp01}
+                    src={cbp02}
                     alt="cbp01"
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
@@ -302,7 +306,7 @@ export const Home = () => {
                   className={`${lslide4} flex w-[90%] md:w-[80%] items-center mr-auto`}
                 >
                   <img
-                    src={cbp01}
+                    src={cbp03}
                     alt="cbp01"
                     className="w-[35px] md:w-[50px] lg:w-[80px]"
                   />
