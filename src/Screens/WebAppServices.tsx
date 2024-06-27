@@ -1,11 +1,10 @@
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useRef, useState } from "react";
-import { MarqueeHolder } from "../Components/MarqueeHolder";
+import { useEffect, useRef } from "react";
+// import { MarqueeHolder } from "../Components/MarqueeHolder";
 import { partners } from "../Data/partners";
 import typescript from "../Images/TechStacks/typescript.svg";
-import cbp01 from "../Images/cbp01.jpg";
 import mobile from "../Images/mobile.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 // import strategy from "../Images/strategy.png";
@@ -21,7 +20,7 @@ import cross_browser from "../Images/cross-browser-compatibility.svg";
 import optimized from "../Images/optimised-performance.svg";
 import accessibility from "../Images/accessibility.svg";
 import integration_backend from "../Images/integration-with-back-end.svg";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import js from "../Images/TechStacks/javascript.svg";
 import htmlv2 from "../Images/TechStacks/html5v2.svg";
 import css from "../Images/TechStacks/css.svg";
@@ -40,30 +39,16 @@ import experienced_team from "../Images/experienced-team.svg";
 import collaborate from "../Images/collaborative-approach.svg";
 import cuting_edge_tech from "../Images/cutting-edge-technology.svg";
 import client_focus from "../Images/client-centric-focus.svg";
+import { MarqueeComponent } from "../Components/MarqueeComponent";
+import { ServicesAnimation } from "../Components/ServicesAnimation";
 
 export const WebAppServices = () => {
   const dispatch = useAppDispatch();
   const { header } = useAppSelector((state) => state.user);
   const location = useLocation();
-  const [lslide, setLslide] = useState("cbp01");
-  const [lslide2, setLslide2] = useState("cbp03");
-  const [lslide3, setLslide3] = useState("cbp04");
-  const [lslide4, setLslide4] = useState("cbp05");
 
   // Accessing the current route
   const currentRoute = location.pathname;
-
-  useEffect(() => {
-    const LSlide = setInterval(() => {
-      setLslide((prev) => (prev === "cbp02" ? "cbp01" : "cbp02"));
-      setLslide2((prev) => (prev === "cbp03" ? "cbp06" : "cbp03"));
-      setLslide3((prev) => (prev === "cbp04" ? "cbp07" : "cbp04"));
-      setLslide4((prev) => (prev === "cbp05" ? "cbp08" : "cbp05"));
-    }, 12000);
-    return () => {
-      clearInterval(LSlide);
-    };
-  }, []);
 
   const settings: Settings = {
     rtl: true,
@@ -135,7 +120,7 @@ export const WebAppServices = () => {
   // });
   // const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
   // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
+  // const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
 
   const connect = useRef<HTMLDivElement>(null);
   const handleScrollToBottom = () => {
@@ -248,27 +233,7 @@ export const WebAppServices = () => {
             CONNECT WITH US
           </button>
         </div>
-        <MarqueeHolder
-          mSpeed={70}
-          mDelay={5}
-          mGradient={false}
-          mgradientColor={"rgb(126, 200, 227)"}
-        >
-          <div className="flex items-center py-2">
-            {partners.map((eachImage, index) => (
-              <div
-                key={index}
-                className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-main"
-              >
-                <img
-                  src={eachImage.src}
-                  alt={eachImage.alt}
-                  className="w-[70px]"
-                />
-              </div>
-            ))}
-          </div>
-        </MarqueeHolder>
+        <MarqueeComponent />
       </div>
 
       <div className="flex flex-col lg:flex-row items-center py-[8vh]">
@@ -295,92 +260,7 @@ export const WebAppServices = () => {
           </p>
         </div>
 
-        <div className="w-[100vw] lg:w-[65vw] mt-16 lg:mt-0">
-          <div className="w-[90vw] lg:w-[51vw] h-[60vh] md:h-[70vh] ml-[5vw] lg:ml-20 flex flex-col top-display">
-            <div className="loader w-[10px] md:w-[13px] lg:w-[20px] ml-auto mr-2 mt-2"></div>
-            <div className="flex">
-              <div
-                style={
-                  {
-                    "--cbpo1-width": `${isTablet ? "150px" : "300px"}`,
-                  } as any
-                }
-                className={`${lslide} mt-[17vh] bg-cbp01_blue h-[30vh] italic flex items-center`}
-              >
-                <div className="ml-5 md:ml-10">
-                  <div className="text-xs md:text-sm font-semibold text-white">
-                    CYBERPACKHQ'S DEVELOPMENT
-                  </div>
-                  <div className="text-lg w-fit md:text-2xl lg:text-4xl font-bold text-white">
-                    CAPABILITIES
-                  </div>
-                </div>
-              </div>
-              <div className="ml-auto w-[35vw] md:w-[28vw] overflow-hidden">
-                <div
-                  style={
-                    {
-                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
-                    } as any
-                  }
-                  className={`${lslide2} flex w-[90%] md:w-[80%] items-center mr-auto mt-14`}
-                >
-                  <img
-                    src={cbp01}
-                    alt="cbp02"
-                    className="w-[35px] md:w-[50px] lg:w-[80px]"
-                  />
-                  <div className="text-white ml-2 md:ml-3">
-                    <div className="font-bold text-xl md:text-3xl">21+</div>
-                    <div className=" font-medium text-xs md:text-sm">
-                      Development Frameworks
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style={
-                    {
-                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
-                    } as any
-                  }
-                  className={`${lslide3} flex w-[90%] md:w-[80%] items-center mr-auto my-12`}
-                >
-                  <img
-                    src={cbp01}
-                    alt="cbp01"
-                    className="w-[35px] md:w-[50px] lg:w-[80px]"
-                  />
-                  <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">50+</div>
-                    <div className=" font-medium text-xs md:text-sm">
-                      IT Professionals
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style={
-                    {
-                      "--cbpo3-ml": `${isTablet ? "5%" : "35%"}`,
-                    } as any
-                  }
-                  className={`${lslide4} flex w-[90%] md:w-[80%] items-center mr-auto`}
-                >
-                  <img
-                    src={cbp01}
-                    alt="cbp01"
-                    className="w-[35px] md:w-[50px] lg:w-[80px]"
-                  />
-                  <div className="text-white ml-2 md:ml-3">
-                    <div className=" font-bold text-xl md:text-3xl">100+</div>
-                    <div className=" font-medium text-xs md:text-sm">
-                      Projects Completed
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ServicesAnimation />
       </div>
 
       <div className="min-h-[650px] pb-10 bg-customsoftware flex flex-col">
