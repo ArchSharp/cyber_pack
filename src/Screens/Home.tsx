@@ -6,6 +6,11 @@ import { partners } from "../Data/partners";
 import microsoft from "../Images/microsoft.png";
 import programmer from "../Images/programmer.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
+import softwareImg from "../Images/software-engineering.jpg";
+import dataAutomation from "../Images/data-driven-automation.jpg";
+import staffAug from "../Images/staff-aug.jpg";
+import digitalTransform from "../Images/digital-transformation.jpg";
+import cloudSolution from "../Images/cloud-solutions.jpg";
 import ceo from "../Images/ceo.png";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
@@ -265,7 +270,7 @@ export const Home = () => {
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={softwareImg}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -276,7 +281,7 @@ export const Home = () => {
       <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={staffAug}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -334,7 +339,7 @@ export const Home = () => {
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={dataAutomation}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -345,7 +350,7 @@ export const Home = () => {
       <div className="mt-20 mb-10 flex flex-col-reverse lg:flex-row items-center">
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={digitalTransform}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
@@ -409,7 +414,7 @@ export const Home = () => {
 
         <div className="w-[90vw] md:w-[70vw] lg:w-[26vw] h-[55vw] md:h-[45vw] lg:h-[26vw] mb-6 mt-6 lg:mt-0 ml-[5vw] rounded-xl">
           <img
-            src={programmer}
+            src={cloudSolution}
             alt="programmer"
             className="h-full w-full rounded-xl"
           />
