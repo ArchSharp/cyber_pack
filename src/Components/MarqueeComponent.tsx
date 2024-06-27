@@ -14,7 +14,7 @@ export const MarqueeComponent = () => {
         {partners.map((eachImage, index) => (
           <div
             key={index}
-            className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-slate-50"
+            className="mx-2 h-[90px] sm:h-[130px] w-[150px] md:w-[250px] flex items-center justify-center rounded-lg bg-slate-50 overflow-clip"
           >
             <img src={eachImage.src} alt={eachImage.alt} className="w-[80%]" />
           </div>
