@@ -22,8 +22,8 @@ export const ClientsReview = ({ clients }: ClientsReviewProps) => {
 
   useEffect(() => {
     const LSlide = setInterval(() => {
-      setIndex((prev) => (prev < 6 ? prev + 1 : 0));
-    }, 10000);
+      setIndex((prev) => (prev < 6 ? prev + 2 : 0));
+    }, 11000);
     return () => {
       clearInterval(LSlide);
     };
