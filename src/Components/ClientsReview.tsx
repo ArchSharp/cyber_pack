@@ -23,7 +23,7 @@ export const ClientsReview = ({ clients }: ClientsReviewProps) => {
   useEffect(() => {
     const LSlide = setInterval(() => {
       setIndex((prev) => (prev < 6 ? prev + 2 : 0));
-    }, 11000);
+    }, 10000);
     return () => {
       clearInterval(LSlide);
     };

@@ -11,7 +11,7 @@ import staffAug from "../Images/staff-aug.jpg";
 import digitalTransform from "../Images/digital-transformation.jpg";
 import cloudSolution from "../Images/cloud-solutions.jpg";
 import designServices from "../Images/design-services.png.jpg";
-import ceo from "../Images/ceo.png";
+import ceo from "../Images/Staffs/Co-Founder_CEO.jpg";
 import crypto from "../Images/crypto-shield.jpg";
 import { useAppDispatch, useAppSelector } from "../Store/store";
 // import { IServiceEnquiry } from "../Features/User/type";
@@ -140,7 +140,7 @@ export const Home = () => {
         });
       };
 
-      handleScrollToTop();
+      // handleScrollToTop();
     }
   }, [lastRoute]);
 
@@ -461,8 +461,12 @@ export const Home = () => {
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip">
-          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
+        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative">
+          <img
+            src={ceo}
+            alt="ceo"
+            className="w-[610px] h-[420px] absolute -top-[120px] rounded-bc-[50%] bg-transparent z-[]"
+          />
         </div>
         <div className="ml-0 md:ml-8 mt-16 md:mt-0">
           <div className="w-[100vw] md:w-fit">
