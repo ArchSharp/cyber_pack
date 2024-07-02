@@ -140,7 +140,7 @@ export const Home = () => {
         });
       };
 
-      // handleScrollToTop();
+      handleScrollToTop();
     }
   }, [lastRoute]);
 
