@@ -461,12 +461,8 @@ export const Home = () => {
 
       {/* Meet our CEO */}
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative">
-          <img
-            src={ceo}
-            alt="ceo"
-            className="w-[610px] h-[420px] absolute -top-[120px] rounded-bc-[50%] bg-transparent z-[]"
-          />
+        <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
+          <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
         <div className="ml-0 md:ml-8 mt-16 md:mt-0">
           <div className="w-[100vw] md:w-fit">
