@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { store } from "../Store/store";
 
-const baseURL = "https://staging-posmiddleware.kongapay.com/";
+const baseURL = "/";
 
 export const axios = Axios.create({ baseURL, withCredentials: true }); // withCredentials: true
 
