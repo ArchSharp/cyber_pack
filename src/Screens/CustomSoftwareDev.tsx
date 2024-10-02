@@ -703,12 +703,12 @@ export const CustomSoftwareDev = () => {
         </div>
 
         <div className="w-[100vw] lg:w-[50vw] h-full flex flex-col justify-center mt-10 lg:mt-0">
-          <div className="relative w-[95vw] lg:w-[43vw] mx-auto lg:mx-0 h-[35vh] md:h-[65vh] lg:h-[58vh]">
+          <div className="relative w-[95vw] lg:w-[43vw] mx-auto lg:mx-0 h-[35vh] md:h-[65vh] lg:h-[500px]">
             <div className="absolute top-[] left-0 w-full h-full">
               <img src={macbook} alt="macbook" className="w-full h-full" />
             </div>
-            <iframe
-              className="absolute w-[71.80232558139535vw] lg:w-[32.5vw] top-[2.2vh] lg:top-[3.6vh] left-[12vw] lg:left-[5.4vw] h-[27.56551724137931vh] md:h-[53vh] lg:h-[45.68vh]"
+            {/* <iframe
+              className="absolute w-[71.80232558139535vw] lg:w-[32.5vw] top-[2.2vh] lg:top-[31px] left-[12vw] lg:left-[5.4vw] h-[27.56551724137931vh] md:h-[53vh] lg:h-[400px]"
               // width="491"
               // height="315"
               src="https://www.youtube.com/embed/JT0rkZd29ck"
@@ -717,7 +717,7 @@ export const CustomSoftwareDev = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </div>

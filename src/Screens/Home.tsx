@@ -472,18 +472,21 @@ export const Home = () => {
             <hr className="ml-[30%] mt-5 w-[130px] border-orange-500 border-[1px]" />
           </div>
           <div className=" text-slate-600 w-[100vw] md:w-[50vw] my-7 text-center md:text-left">
-            I have been passionate about software solutions since I wrote my
-            first software program on a ZX Spectrum in primary school! Leading a
-            team of IT professionals at CyberPack who share this passion, is
-            immensely rewarding and a great privilege.
+            OLAKUNLE is a dynamic leader with over a decade of experience in
+            marketing, product development, and team management. He co-founded
+            Westpay, a mobile payment platform simplifying financial services
+            for Nigeria’s underbanked population. He is also the CEO of
+            Cyberpack Technologies Limited (CyberPackHQ), a company that
+            partners with businesses to drive Agile transformation, enhance
+            business analysis, manage change, and improve IT project delivery.
           </div>
           <div className=" text-blue-700 font-bold text-center md:text-left">
-            Prof. OLAKUNLE IGBAROOLA
+            OLAKUNLE IGBAROOLA
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-36">
+      {/* <div className="flex flex-col md:flex-row justify-center items-center mt-36">
         <div className="ml-0 md:ml-8">
           <div className="w-[100vw] md:w-fit text-center md:text-left">
             <div className="font-Cervanttis text-blue-500 text-3xl md:text-5xl">
@@ -505,7 +508,7 @@ export const Home = () => {
         <div className="size-72 lg:size-96 rounded-[50%] bg-blue-700 relative overflow-clip mt-10 md:mt-0">
           <img src={ceo} alt="ceo" className="w-[610px] h-[420px]" />
         </div>
-      </div>
+      </div> */}
 
       {/* News and Insight */}
       <div className="flex flex-col mt-24">
